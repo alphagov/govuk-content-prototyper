@@ -13,4 +13,5 @@ gem 'listen'
 group :development, :test do
   gem "pry"
   gem "rspec-rails"
+  gem 'dotenv-rails'
 end
