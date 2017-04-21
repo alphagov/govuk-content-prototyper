@@ -15,6 +15,8 @@ gem "capybara", "~> 2.7"
 gem "poltergeist", "~> 1.9"
 gem "mime-types", "2.99.2"
 gem "gds-api-adapters", "~> 31.1"
+gem "slimmer", "~> 9.1"
+gem "govuk_frontend_toolkit"
 group :development, :test do
   gem "pry"
   gem "simplecov-rcov", "0.2.3", require: false
