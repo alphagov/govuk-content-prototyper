@@ -9,6 +9,7 @@ gem "uglifier"
 gem "gds-api-adapters"
 gem "slimmer"
 gem 'listen'
+gem 'logstasher'
 
 group :development, :test do
   gem "pry"
