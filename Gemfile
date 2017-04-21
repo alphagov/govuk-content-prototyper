@@ -6,6 +6,8 @@ gem "rails", "5.0.2"
 gem "unicorn", "~> 5.1.0"
 gem "logstasher", "0.6.2"
 gem "airbrake", "~> 5.4.1"
+gem "addressable", "~> 2.3.7"
+gem "govuk-content-schema-test-helpers", "~> 1.4"
 group :development, :test do
   gem "pry"
   gem "simplecov-rcov", "0.2.3", require: false
