@@ -10,6 +10,7 @@ gem "gds-api-adapters"
 gem "slimmer"
 gem 'listen'
 gem 'logstasher'
+gem 'puma'
 
 group :development, :test do
   gem "pry"

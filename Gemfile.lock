@@ -98,6 +98,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    puma (3.8.2)
     rack (2.0.1)
     rack-cache (1.7.0)
       rack (>= 0.4)
@@ -203,6 +204,7 @@ DEPENDENCIES
   listen
   logstasher
   pry
+  puma
   rails (= 5.0.2)
   rspec-rails
   sass-rails
