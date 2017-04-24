@@ -2,10 +2,12 @@ class TaxonsController < ApplicationController
   helper_method :taxon_overview_and_child_taxons
 
   def show
-    render :show, locals: {
-      taxon: taxon,
-      navigation_helpers: navigation_helpers
-    }
+    render :show,
+      layout: 'collections',
+      locals: {
+        taxon: taxon,
+        navigation_helpers: navigation_helpers,
+      }
   end
 
   private
@@ -41,6 +43,6 @@ class TaxonsController < ApplicationController
   end
 
   def taxon_path
-    "/" + params[:taxon]
+    "/#{params[:theme]}/#{params[:taxon]}"
   end
 end

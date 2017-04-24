@@ -16,6 +16,9 @@ module GovukNavPrototype
 
     # Custom directories with classes and modules you want to be
     # autoloadable.
-    config.autoload_paths += %W(#{config.root}/lib)
+    config.autoload_paths += %W[
+      #{config.root}/lib
+      app/controllers/segment_constraints
+    ]
   end
 end
