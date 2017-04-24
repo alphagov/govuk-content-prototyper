@@ -4,6 +4,6 @@ Rails.application.routes.draw do
 
   resources :welcome, only: :index
 
-  get '/:taxon', to: 'taxons#show', constraints: { taxon: /.*/ }
+  get '/:taxon', to: 'taxons#show', constraints: { taxon: /[a-z].*/ }
   root to: 'welcome#index'
 end
