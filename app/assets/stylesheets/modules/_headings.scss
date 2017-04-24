@@ -1,0 +1,13 @@
+.heading-xlarge {
+  @include bold-48;
+
+  margin-top: pem(15, 32);
+  margin-bottom: pem(30, 32);
+}
+
+.heading-large {
+  @include bold-24;
+
+  margin-top: pem(25, 24);
+  margin-bottom: pem(10, 24);
+}
