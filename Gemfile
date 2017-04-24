@@ -12,6 +12,7 @@ gem "slimmer"
 gem 'listen'
 gem 'logstasher'
 gem 'puma'
+gem 'foreman'
 
 group :development, :test do
   gem "pry"
