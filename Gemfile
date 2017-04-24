@@ -7,6 +7,7 @@ gem "unicorn"
 gem "sass-rails"
 gem "uglifier"
 gem "gds-api-adapters"
+gem 'govuk_navigation_helpers'
 gem "slimmer"
 gem 'listen'
 gem 'logstasher'
