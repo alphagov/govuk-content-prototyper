@@ -1,0 +1,18 @@
+@import 'colours/_palette.scss';
+@import '_measurements.scss';
+@import '_typography.scss';
+@import '_helpers.scss';
+
+@import 'modules/lists';
+@import 'modules/list-iterations';
+@import 'modules/headings';
+
+main {
+  @include core-19;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  margin-top: pem(5, 16);
+  margin-bottom: pem(20, 16);
+}

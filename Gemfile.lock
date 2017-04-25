@@ -64,6 +64,9 @@ GEM
       rest-client (~> 2.0)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
+    govuk_frontend_toolkit (5.2.0)
+      rails (>= 3.1.0)
+      sass (>= 3.2.0)
     govuk_navigation_helpers (5.1.0)
       gds-api-adapters (~> 41.0)
     http-cookie (1.0.3)
@@ -206,6 +209,7 @@ DEPENDENCIES
   dotenv-rails
   foreman
   gds-api-adapters
+  govuk_frontend_toolkit (= 5.2.0)
   govuk_navigation_helpers
   listen
   logstasher
