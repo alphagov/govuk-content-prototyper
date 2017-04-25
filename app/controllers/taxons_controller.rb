@@ -39,10 +39,10 @@ class TaxonsController < ApplicationController
   end
 
   def taxon
-    @taxon ||= Taxon.find(taxon_path)
+    @taxon ||= Taxon.new(env['content_item'])
   end
 
   def taxon_path
-    "/#{params[:theme]}/#{params[:taxon]}"
+    "/#{params[:base_path]}"
   end
 end

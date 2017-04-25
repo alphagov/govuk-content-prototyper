@@ -1,9 +1,9 @@
 class TaxonConstraint
-  THEMES = %w[
-    education
-  ].freeze
-
   def matches?(request)
-    THEMES.include?(request.path_parameters[:theme])
+    is_taxon?(request.env['content_item'])
+  end
+
+  def is_taxon?(content_item)
+    content_item && content_item['document_type'] == 'taxon'
   end
 end

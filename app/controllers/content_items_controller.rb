@@ -1,6 +1,8 @@
 require 'open-uri'
 
 class ContentItemsController < ApplicationController
+  rescue_from OpenURI::HTTPError, with: :handle_http_error
+
   def show
     render :show, locals: {
       content_html: content_html,
@@ -10,6 +12,13 @@ class ContentItemsController < ApplicationController
       taxonomy_sidebar: navigation_helpers.taxonomy_sidebar,
     }
   end
+
+  def fall_through
+    bypass_slimmer
+    render html: raw_content_item_html.html_safe
+  end
+
+private
 
   def content_html
     # Different rendering apps structure the sidebar differently - try to get the actual content without the sidebar.
@@ -39,12 +48,14 @@ class ContentItemsController < ApplicationController
   end
 
   def full_content_item_html
-    @full_content_item_html ||= Nokogiri::HTML(
-      open("https://www.gov.uk/#{params[:base_path]}",
-        # Ensure we get the new version of the page, which should have all content in a two-thirds column
-        'Cookie' => 'ABTest-EducationNavigation=B',
-      ).read
-    )
+    @full_content_item_html ||= Nokogiri::HTML(raw_content_item_html)
+  end
+
+  def raw_content_item_html
+    @raw_html ||= open("https://www.gov.uk/#{params[:base_path]}",
+      # Ensure we get the new version of the page, which should have all content in a two-thirds column
+      'Cookie' => 'ABTest-EducationNavigation=B',
+    ).read
   end
 
   def navigation_helpers
@@ -52,6 +63,15 @@ class ContentItemsController < ApplicationController
   end
 
   def content_item
-    @content_item ||= Services.content_store.content_item("/#{params[:base_path]}")
+    request.env['content_item']
+  end
+
+  def bypass_slimmer
+    response.headers[Slimmer::Headers::SKIP_HEADER] = 'true'
+  end
+
+  def handle_http_error(error)
+    puts "Error fetching #{request.path}: #{error}"
+    render plain: error
   end
 end

@@ -20,5 +20,7 @@ module GovukNavPrototype
       #{config.root}/lib
       app/controllers/segment_constraints
     ]
+
+    config.middleware.use 'ContentItemAppender'
   end
 end
