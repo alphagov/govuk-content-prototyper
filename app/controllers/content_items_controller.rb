@@ -13,6 +13,11 @@ class ContentItemsController < ApplicationController
     }
   end
 
+  # This method is used to display any pages the prototype is not concerned with. It does this by fetching the page
+  # from the production site and rendering the response verbatim as HTML.
+  # NB: Any **NON-HTML** requests will **STILL BE RETURNED AS HTML**. An example of this is the Miller Columns for
+  # the browse pages, which rely on a JSON object being returned (but is currently broken, because the JSON is returned
+  # as text/html, not as JSON)
   def fall_through
     bypass_slimmer
     render html: raw_content_item_html.html_safe
