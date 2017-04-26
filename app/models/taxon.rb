@@ -3,7 +3,7 @@ class Taxon
   attr_accessor :has_tagged_content
 
   def initialize(content_item)
-    @content_item = content_item
+    @content_item = content_item.to_hash
   end
 
   def self.find(base_path)

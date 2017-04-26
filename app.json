@@ -14,6 +14,9 @@
     "PLEK_SERVICE_SEARCH_URI": {
       "value": "https://www.gov.uk/api"
     },
+    "PLEK_SERVICE_RUMMAGER_URI": {
+      "value": "https://www.gov.uk/api"
+    },
     "PLEK_SERVICE_STATIC_URI": {
       "value": "assets.digital.cabinet-office.gov.uk"
     },
