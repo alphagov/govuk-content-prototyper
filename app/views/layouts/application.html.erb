@@ -10,6 +10,7 @@
 
 	<body class="<%= yield :body_classes %>">
 		<div class="wrapper" id="wrapper">
+      <%= render partial: 'components/beta_banner' %>
       <%= content_for?(:content) ? yield(:content) : yield %>
 		</div>
   </body>
