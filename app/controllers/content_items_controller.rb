@@ -52,7 +52,7 @@ private
   end
 
   def raw_content_item_html
-    @raw_html ||= open("https://www.gov.uk/#{params[:base_path]}",
+    @raw_html ||= open("https://www.gov.uk#{request.fullpath}",
       # Ensure we get the new version of the page, which should have all content in a two-thirds column
       'Cookie' => 'ABTest-EducationNavigation=B',
     ).read
