@@ -1,8 +1,17 @@
+// From govuk_frontend_toolkit
 @import 'colours/_palette.scss';
 @import '_measurements.scss';
 @import '_typography.scss';
 @import '_helpers.scss';
+@import '_grid_layout.scss';
+@import 'design-patterns/_buttons.scss';
 
+// These stylesheets are being fetched from GitHub via RemoteSass
+// From the collections app
+@import 'views/_taxons.scss';
+@import 'views/_email-signups.scss';
+
+// From this application
 @import 'modules/lists';
 @import 'modules/list-iterations';
 @import 'modules/headings';
