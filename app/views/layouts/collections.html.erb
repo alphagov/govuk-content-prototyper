@@ -1,9 +1,7 @@
 <% content_for :head do %>
-  <%# Remember to update this when things change live %>
-  <%= stylesheet_link_tag 'https://assets.publishing.service.gov.uk/collections/application-d9c0352763402df07c779a5acd4a4da20b674277bd3acac7c8e8eedd26e32412.css' %>
-
-  <%# Remember to update this when things change live %>
-  <%= javascript_include_tag 'https://assets.publishing.service.gov.uk/collections/application-2e97a2e54aaf338452e4d6e1f8b7dbe55642b5b297c44fb66d4f41211ea13579.js' %>
+  <script src="https://rawgit.com/alphagov/collections/master/app/assets/javascripts/support.js"/>
+  <script src="https://rawgit.com/alphagov/collections/master/app/assets/javascripts/modules/current-location.js"/>
+  <script src="https://rawgit.com/alphagov/collections/master/app/assets/javascripts/modules/accordion-with-descriptions.js"></script>
 <% end %>
 
 <% content_for :content do %>

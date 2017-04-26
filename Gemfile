@@ -14,6 +14,8 @@ gem 'listen'
 gem 'logstasher'
 gem 'puma'
 gem 'foreman'
+gem 'remote-sass'
+gem 'sprockets', github: 'rails/sprockets'
 
 group :development, :test do
   gem "pry"
