@@ -32,9 +32,11 @@ class Taxon
   def child_taxons
     return [] unless children?
 
-    linked_items('child_taxons').map do |child_taxon|
+    children = linked_items('child_taxons').map do |child_taxon|
       self.class.new(child_taxon)
     end
+
+    children.sort_by(&:title)
   end
 
   def grandchildren?
