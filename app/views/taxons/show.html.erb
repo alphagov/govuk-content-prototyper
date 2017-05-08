@@ -16,16 +16,19 @@
     taxon: taxon,
     tagged_content: taxon.tagged_content,
     is_grid: true,
+    mainstream_formats: mainstream_formats
   } %>
 <% else %>
   <% if taxon.children? %>
     <%= render partial: 'child_taxons_list', locals: {
       accordion_content: taxon_overview_and_child_taxons(taxon),
+      mainstream_formats: mainstream_formats
     } %>
   <% else %>
     <%= render partial: 'content_list_for_current_taxon', locals: {
       taxon: taxon,
       tagged_content: taxon.tagged_content,
+      mainstream_formats: mainstream_formats
     } %>
   <% end %>
 <% end %>

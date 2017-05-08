@@ -7,6 +7,7 @@ class TaxonsController < ApplicationController
       locals: {
         taxon: taxon,
         navigation_helpers: navigation_helpers,
+        mainstream_formats: mainstream_formats,
       }
   end
 
@@ -44,5 +45,21 @@ class TaxonsController < ApplicationController
 
   def taxon_path
     "/#{params[:base_path]}"
+  end
+
+  def mainstream_formats
+    [
+      "answer",
+      "calculator",
+      "calendar",
+      "completed_transaction",
+      "guide",
+      "local_transaction",
+      "place",
+      "programme",
+      "simple_smart_answer",
+      "smart_answer",
+      "transaction"
+    ]
   end
 end
