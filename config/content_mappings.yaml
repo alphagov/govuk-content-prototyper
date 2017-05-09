@@ -1,0 +1,15 @@
+hide_from_search:
+  - "/government/publications/16-to-18-minimum-standards-for-2016"
+  - "/government/publications/approval-of-independent-inspectorates"
+  - "/government/publications/ofsted-writing-complaint-and-compliance-action-summaries"
+  - "/government/publications/note-for-inspectors-use-of-assessment-information-during-inspections-in-201415"
+  - "/government/collections/letters-to-academies-about-poor-performance"
+  - "/government/publications/ofsted-advice-note-no-notice-school-inspections"
+  - "/government/publications/ofsted-provider-portal-guidance-for-providers"
+  - "/government/collections/ofsted-schools-survey-reports"
+  - "/government/publications/parent-view-poster-and-leaflet"
+  - "/government/publications/ofsted-advice-note-on-tower-hamlets-school-inspections"
+
+merge_into_content_item:
+#  "/education/primary-curriculum-key-stage-1":
+#    accordion_description: A new description

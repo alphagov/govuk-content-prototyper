@@ -50,6 +50,6 @@ private
   end
 
   def guidance_document_collections
-    @guidance_document_collections ||= DocumentCollectionFetcher.guidance
+    @guidance_document_collections ||= Config.guidance_document_collections
   end
 end

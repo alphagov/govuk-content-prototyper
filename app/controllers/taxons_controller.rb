@@ -23,7 +23,7 @@ class TaxonsController < ApplicationController
         'content_id' => taxon.content_id,
         'base_path' => current_taxon_title.downcase.tr(' ', '-'),
         'title' => current_taxon_title,
-        'description' => ''
+        'description' => taxon.to_hash['accordion_description'] || ''
       )
       guidance_taxon.has_tagged_content = true
 

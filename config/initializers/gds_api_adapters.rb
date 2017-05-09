@@ -1,1 +1,2 @@
-require 'services'
+require 'content_store'
+require 'rummager'
