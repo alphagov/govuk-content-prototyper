@@ -7,7 +7,7 @@ module Services
     end
 
     def self.mapping_for(base_path)
-      Config.content_mappings['merge_into_content_item'][base_path] || {}
+      Config.content_mappings[base_path] || {}
     end
   end
 end
