@@ -1,5 +1,6 @@
 class TaxonsController < ApplicationController
   helper_method :taxon_overview_and_child_taxons
+  helper_method :mainstream_content
 
   def show
     render :show,
@@ -61,5 +62,21 @@ class TaxonsController < ApplicationController
       "smart_answer",
       "transaction"
     ]
+  end
+
+  def mainstream_content(taxon)
+    return_array = []
+
+    return_array << taxon.tagged_content.select do |content_item|
+      mainstream_formats.include? content_item.content_store_document_type
+    end
+
+    taxon.child_taxons.each do |child|
+      return_array << child.tagged_content.select do |content_item|
+        mainstream_formats.include? content_item.content_store_document_type
+      end
+    end
+
+    return_array.flatten.uniq{|item| item.base_path}.sort_by(&:title)
   end
 end

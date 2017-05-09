@@ -1,3 +1,18 @@
+<% if mainstream_content.present? %>
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <div class="high-volume">
+      <h2>Popular guidance</h2>
+      <ol>
+        <% mainstream_content.each do |content_item| %>
+          <li><%= link_to(content_item.title, content_item.base_path) %></li>
+        <% end %>
+      </ol>
+    </div>
+  </div>
+</div>
+<% end %>
+
 <% if accordion_content.present? %>
   <div class="grid-row child-topic-contents">
     <div class="column-two-thirds">
