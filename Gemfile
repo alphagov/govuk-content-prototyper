@@ -18,7 +18,9 @@ gem 'remote-sass'
 gem 'sprockets', github: 'rails/sprockets'
 
 group :development, :test do
-  gem "pry"
-  gem "rspec-rails"
+  gem 'pry'
+  gem 'rspec-rails'
   gem 'dotenv-rails'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
