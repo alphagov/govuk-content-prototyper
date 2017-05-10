@@ -52,6 +52,9 @@ class Taxon
   end
 
   def tagged_content
-    @tagged_content ||= TaggedContent.fetch(content_id)
+    @tagged_content ||= TaggedContent.fetch(
+      content_id: content_id,
+      base_path: base_path
+    )
   end
 end

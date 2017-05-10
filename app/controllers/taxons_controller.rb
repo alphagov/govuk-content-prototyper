@@ -21,7 +21,7 @@ class TaxonsController < ApplicationController
     if taxon.tagged_content.count > 0
       guidance_taxon = Taxon.new(
         'content_id' => taxon.content_id,
-        'base_path' => current_taxon_title.downcase.tr(' ', '-'),
+        'base_path' => taxon.base_path,
         'title' => current_taxon_title,
         'description' => taxon.to_hash['accordion_description'] || ''
       )

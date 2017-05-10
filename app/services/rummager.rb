@@ -1,5 +1,4 @@
 require 'gds_api/rummager'
-require 'search_mutator'
 
 module Services
   def self.rummager
@@ -8,8 +7,7 @@ module Services
 
   class Rummager
     def search(args)
-      results = rummager.search(args)
-      SearchMutator.mutate_search(results)
+      rummager.search(args)
     end
 
     private
