@@ -10,6 +10,10 @@
             <p><%= taxon.description %></p>
           <% end %>
 
+          <% if mainstream_content.present? %>
+            <%= render partial: 'high-volume', locals: { mainstream_content: mainstream_content } %>
+          <% end %>
+
           <ol>
             <% tagged_content.each_with_index do |content_item, index| %>
               <li>
