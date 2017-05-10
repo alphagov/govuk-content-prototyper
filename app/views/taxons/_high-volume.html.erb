@@ -1,0 +1,8 @@
+<div class="high-volume">
+  <h2>Most viewed in this topic</h2>
+  <ol>
+    <% mainstream_content.each do |content_item| %>
+      <li><%= link_to(content_item.title, content_item.base_path) %></li>
+    <% end %>
+  </ol>
+</div>

@@ -1,3 +1,11 @@
+<% if mainstream_content.present? %>
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <%= render partial: 'high-volume', locals: { mainstream_content: mainstream_content } %>
+  </div>
+</div>
+<% end %>
+
 <% if accordion_content.present? %>
   <div class="grid-row child-topic-contents">
     <div class="column-two-thirds">
@@ -22,6 +30,7 @@
                   <%= render partial: 'content_list_for_child_taxon', locals: {
                       section_index: index,
                       tagged_content: taxon.tagged_content,
+                      mainstream_formats: mainstream_formats
                   } %>
                 </div>
               </div>

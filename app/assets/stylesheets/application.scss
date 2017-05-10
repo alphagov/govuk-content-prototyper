@@ -25,3 +25,14 @@ p {
   margin-top: pem(5, 16);
   margin-bottom: pem(20, 16);
 }
+
+.high-volume {
+  color: $white;
+  background-color: $govuk-blue;
+  padding: $gutter;
+  margin-bottom: $gutter;
+
+  a {
+    color: $white;
+  }
+}
