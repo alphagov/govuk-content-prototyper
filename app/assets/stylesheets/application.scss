@@ -36,3 +36,9 @@ p {
     color: $white;
   }
 }
+
+.header-wrapper {
+  .site-search {
+    display: none;
+  }
+}
