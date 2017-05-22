@@ -10,8 +10,8 @@
             <p><%= taxon.description %></p>
           <% end %>
 
-          <% if mainstream_content.present? %>
-            <%= render partial: 'high-volume', locals: { mainstream_content: mainstream_content } %>
+          <% unless is_grid %>
+            <%= render partial: 'high-volume', locals: { taxon: taxon } %>
           <% end %>
 
           <ol>

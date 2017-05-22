@@ -57,4 +57,10 @@ class Taxon
       base_path: base_path
     )
   end
+
+  def most_popular_content
+    @most_popular_content ||= MostPopularContent.fetch(
+      content_id: content_id,
+    )
+  end
 end
