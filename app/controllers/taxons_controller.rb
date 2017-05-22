@@ -1,6 +1,5 @@
 class TaxonsController < ApplicationController
   helper_method :taxon_overview_and_child_taxons
-  helper_method :mainstream_content
 
   def show
     render :show,
@@ -8,7 +7,6 @@ class TaxonsController < ApplicationController
       locals: {
         taxon: taxon,
         navigation_helpers: navigation_helpers,
-        mainstream_formats: mainstream_formats,
       }
   end
 
@@ -46,49 +44,5 @@ class TaxonsController < ApplicationController
 
   def taxon_path
     "/#{params[:base_path]}"
-  end
-
-  def mainstream_formats
-    [
-      "answer",
-      "calculator",
-      "calendar",
-      "completed_transaction",
-      "guide",
-      "local_transaction",
-      "place",
-      "programme",
-      "simple_smart_answer",
-      "smart_answer",
-      "transaction"
-    ]
-  end
-
-  def mainstream_content(taxon)
-    return_array = []
-
-    if Config.high_volume_content.include?(taxon.base_path)
-      return_array << taxon.tagged_content.select do |content_item|
-        Config.high_volume_content[taxon.base_path].include? content_item.base_path
-      end
-
-      taxon.child_taxons.each do |child|
-        return_array << child.tagged_content.select do |content_item|
-          Config.high_volume_content[taxon.base_path].include? content_item.base_path
-        end
-      end
-    else
-      return_array << taxon.tagged_content.select do |content_item|
-        mainstream_formats.include? content_item.content_store_document_type
-      end
-
-      taxon.child_taxons.each do |child|
-        return_array << child.tagged_content.select do |content_item|
-          mainstream_formats.include? content_item.content_store_document_type
-        end
-      end
-    end
-
-    return_array.flatten.uniq{|item| item.base_path}.sort_by(&:title)
   end
 end

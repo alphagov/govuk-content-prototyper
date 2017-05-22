@@ -17,12 +17,6 @@ class Config
     )
   end
 
-  def self.high_volume_content
-    @high_volume_content ||= JSON.parse(
-      load_config('high_volume_content.json')
-    )
-  end
-
   def self.load_config(filename)
     File.read(
       Rails.root.join(
