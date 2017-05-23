@@ -18,7 +18,16 @@ class MostPopularContent
 private
 
   def hide_from_most_popular
-    %w(/teacher-training-funding /nhs-bursaries)
+    %w(
+      /teacher-training-funding
+      /nhs-bursaries
+      /apply-online-for-student-finance
+      /student-finance
+      /apply-for-student-finance
+      /government/publications/apprenticeship-funding-and-performance-management-rules-2017-to-2018
+      /government/publications/apprenticeship-funding-bands
+      /government/collections/apprenticeship-standards
+    )
   end
 
   def search_response
