@@ -102,6 +102,21 @@ to push a certain version live, you can push it to the correct remote:
 git push heroku master
 ```
 
+### Use different GOV.UK environments
+
+If you need to point the prototype at a different environment, you can use the
+several `.env-<environment>` files provided. You will need to replace the
+existing `.env` with the corresponding file in order to use those APIs.
+
+As an example, if you want to point the prototype at our staging environment,
+copy the staging `.env` file like this:
+
+```
+cp .env-staging .env
+```
+
+Then restart your server for the changes to take effect.
+
 ## Licence
 
 [MIT License](LICENCE)
