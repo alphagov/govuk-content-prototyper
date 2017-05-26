@@ -57,7 +57,7 @@ private
   end
 
   def raw_content_item_html
-    @raw_html ||= open("https://www.gov.uk#{request.fullpath}",
+    @raw_html ||= open("https://#{ENV['GOVUK_APP_DOMAIN']}#{request.fullpath}?cachebust=#{Time.zone.now.to_i}",
       # Ensure we get the new version of the page, which should have all content in a two-thirds column
       'Cookie' => 'ABTest-EducationNavigation=B',
     ).read
