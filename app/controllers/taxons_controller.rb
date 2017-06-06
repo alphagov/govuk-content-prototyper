@@ -2,12 +2,21 @@ class TaxonsController < ApplicationController
   helper_method :taxon_overview_and_child_taxons
 
   def show
-    render :show,
-      layout: 'collections',
-      locals: {
-        taxon: taxon,
-        navigation_helpers: navigation_helpers,
-      }
+    if taxon_path == '/education/funding-and-finance-for-students'
+      render :new_accordion,
+        layout: 'collections',
+        locals: {
+          taxon: taxon,
+          navigation_helpers: navigation_helpers,
+        }
+    else
+      render :show,
+        layout: 'collections',
+        locals: {
+          taxon: taxon,
+          navigation_helpers: navigation_helpers,
+        }
+    end
   end
 
   private

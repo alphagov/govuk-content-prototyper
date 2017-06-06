@@ -42,3 +42,9 @@ p {
     display: none;
   }
 }
+
+.subsection-content {
+	h3 {
+		margin-top: $gutter * 1.5;
+	}
+}
