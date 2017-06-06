@@ -3,7 +3,7 @@ class TaxonsController < ApplicationController
 
   def show
     if taxon_path == '/education/funding-and-finance-for-students'
-      render :new_accordion,
+      render :accordion_student_finance,
         layout: 'collections',
         locals: {
           taxon: taxon,

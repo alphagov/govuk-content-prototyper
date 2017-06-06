@@ -44,7 +44,9 @@ p {
 }
 
 .subsection-content {
-	h3 {
-		margin-top: $gutter * 1.5;
-	}
+  h3 {
+    @include bold-19;
+    margin-top: $gutter * 1.5;
+    margin-bottom: $gutter-one-third;
+  }
 }
