@@ -8,7 +8,9 @@ class Taxon
 
   def self.find(base_path)
     content_item = Services.content_store.content_item(base_path)
-    new(content_item.to_hash)
+    new(
+      ContentItemMutator.mutate_content_item(content_item)
+    )
   end
 
   %w(content_id base_path title description).each do |method_name|
@@ -33,7 +35,9 @@ class Taxon
     return [] unless children?
 
     children = linked_items('child_taxons').map do |child_taxon|
-      self.class.new(child_taxon)
+      self.class.new(
+        ContentItemMutator.mutate_content_item(child_taxon)
+      )
     end
 
     children.sort_by(&:title)
