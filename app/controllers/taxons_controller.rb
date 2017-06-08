@@ -2,12 +2,21 @@ class TaxonsController < ApplicationController
   helper_method :taxon_overview_and_child_taxons
 
   def show
-    render :show,
-      layout: 'collections',
-      locals: {
-        taxon: taxon,
-        navigation_helpers: navigation_helpers,
-      }
+    locals = {
+          taxon: taxon,
+          navigation_helpers: navigation_helpers,
+        }
+
+    case taxon_path
+    when '/education/funding-and-finance-for-students'
+      render(:accordion_student_finance, layout: 'collections', locals: locals)
+    when '/education/school-governance'
+      render(:leaf_school_governance, layout: 'collections', locals: locals.merge(tagged_content: taxon.tagged_content))
+    when '/education/special-educational-needs-and-disability-send-and-high-needs'
+      render(:accordion_send, layout: 'collections', locals: locals.merge(accordion_content: taxon_overview_and_child_taxons(taxon)))
+    else
+      render(:show, layout: 'collections', locals: locals)
+    end
   end
 
   private

@@ -6,6 +6,7 @@
     "accordion_description": "What apprenticeships are, apprenticeship levy, resources for schools and apprentices."
   },
   "/education/funding-and-finance-for-students": {
-    "accordion_description": "Types of financial support and funding available."
+    "accordion_description": "Types of financial support and funding available.",
+    "description": "Student loans, grants, bursaries and scholarships."
   }
 }
