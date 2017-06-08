@@ -10,10 +10,6 @@
             <p><%= taxon.description %></p>
           <% end %>
 
-          <% unless is_grid %>
-            <%= render partial: 'high-volume', locals: { taxon: taxon } %>
-          <% end %>
-
           <ol>
             <% tagged_content.each_with_index do |content_item, index| %>
               <li>
