@@ -1,0 +1,79 @@
+<% content_for :page_class, "taxon-page" %>
+
+<%= render partial: 'govuk_component/breadcrumbs',
+  locals: {
+    breadcrumbs: navigation_helpers.taxon_breadcrumbs[:breadcrumbs],
+    collapse_on_mobile: true
+  } %>
+
+<%= render partial: 'page_header', locals: { taxon: taxon } %>
+
+<% if accordion_content.present? %>
+  <div class="grid-row child-topic-contents">
+    <div class="column-two-thirds">
+      <div class="topic-content">
+
+        <div data-module="accordion-with-descriptions" class="js-hidden">
+          <div class="subsection-wrapper">
+
+            <% accordion_content.each_with_index do |taxon, index| %>
+              <div class="subsection js-subsection" id="<%= taxon.base_path %>">
+                <div class="subsection-header js-subsection-header">
+                  <h2 class="subsection-title js-subsection-title"><%= taxon.title %></h2>
+                  <% if taxon.description.present? %>
+                    <p class="subsection-description"><%= taxon.description %></p>
+                  <% end %>
+                </div>
+
+                <% if taxon.base_path == "/education/support-for-special-educational-needs-and-disability-send" %>
+
+                  <div class="subsection-content js-subsection-content" id="subsection_content_<%= index + 1 %>">
+                    <h3>Get support for your child</h3>
+                    <ul class="subsection-list">
+                      <li class="subsection-list-item"><a href="/children-with-special-educational-needs">Children with special educational needs and disabilities (SEND)</a><p>Children with special educational needs (SEN) can get the help they need to get an education - SEN support, education, health and care plans, SEN before September 2014</p></li>
+                      <li class="subsection-list-item"><a href="/government/publications/send-support-easy-read-guide-for-children-and-young-people">SEND support: easy-read guide for children and young people</a><p>Guide for children and young people with learning disabilities on changes to the special needs educational and disability (SEND) system.</p></li>
+                      <li class="subsection-list-item"><a href="/government/publications/send-support-easy-read-guide-for-parents">SEND support: easy-read guide for parents</a><p>Guide for parents with learning disabilities, explaining changes to the special educational needs and disabilities (SEND) system.</p></li>
+                      <li class="subsection-list-item"><a href="/government/publications/send-guide-for-parents-and-carers">SEND: guide for parents and carers</a><p>A guide on the support system for children and young people with special educational needs and disability (SEND).</p></li>
+                    </ul>
+
+                    <h3>Duties for schools and colleges</h3>
+                    <ul class="subsection-list">
+                      <li class="subsection-list-item"><a href="/government/publications/send-code-of-practice-0-to-25">SEND code of practice: 0 to 25 years</a><p>Guidance on the special educational needs and disability (SEND) system for children and young people aged 0 to 25, from 1 September 2014.</p></li>
+                      <li class="subsection-list-item"><a href="/government/publications/implementing-the-0-to-25-special-needs-system-further-education">SEND reform: further education</a><p>Guidance for post-16 colleges and academies on the changes to the special educational needs and disability (SEND) system.</p></li>
+                      <li class="subsection-list-item"><a href="/government/publications/send-guide-for-further-education-providers">SEND: guide for further education providers</a><p>A guide for further education providers on the support system for children and young people with special educational needs and disability.</p></li>
+                      <li class="subsection-list-item"><a href="/government/publications/send-guide-for-schools-and-alternative-provision-settings">SEND: guide for schools and alternative provision settings</a><p>A guide for schools on the support system for children and young people with special educational needs and disability.</p></li>
+                      <li class="subsection-list-item"><a href="/government/publications/send-guide-for-social-care-professionals">SEND: guide for social care professionals</a><p>A guide for social care professionals on the support system for children and young people with special educational needs and disability.</p></li>
+                      <li class="subsection-list-item"><a href="/government/publications/safeguarding-disabled-children-practice-guidance">Safeguarding disabled children</a><p>Departmental advice setting out how agencies and professionals should work together to safeguard the welfare of disabled children.</p></li>
+                      <li class="subsection-list-item"><a href="/government/publications/national-award-for-sen-co-ordination-learning-outcomes">National Award for Special Educational Needs Co-ordinator: learning outcomes</a><p>Requirements for the National Award for Special Educational Needs Co-ordinator (SENCO).</p></li>
+                      <li class="subsection-list-item"><a href="/government/publications/residential-special-schools-national-minimum-standards">Residential special schools: national minimum standards</a><p>Guidance for special schools providing residential accommodation for any child.</p></li>
+                    </ul>
+
+                    <h3>Teaching resources</h3>
+                    <ul class="subsection-list">
+                      <li class="subsection-list-item"><a href="/government/publications/inclusion-development-programme-primary-and-secondary-supporting-pupils-on-the-autism-spectrum">Inclusion development programme: supporting pupils on the autism spectrum</a><p>Resource supporting teachers, initial teacher trainees, headteachers and leadership teams working with pupils on the autism spectrum.</p></li>
+                      <li class="subsection-list-item"><a href="/government/publications/mental-health-and-behaviour-in-schools--2">Mental health and behaviour in schools</a><p>How to identify and support pupils whose behaviour suggests they may have unmet mental health needs.</p></li>
+                      <li class="subsection-list-item"><a href="/government/publications/p-scales-attainment-targets-for-pupils-with-sen">P scales: attainment targets for pupils with SEN</a><p>Performance (P scale) attainment targets for pupils with special educational needs (SEN).</p></li>
+                      <li class="subsection-list-item"><a href="/government/publications/supported-internships-for-young-people-with-learning-difficulties">Providing supported internships for young people with an EHC plan</a><p>Guidance on how to provide supported internships for young people with special educational needs and an EHC plan.</p></li>
+                      <li class="subsection-list-item"><a href="/government/publications/supporting-looked-after-children-with-communication-needs">Supporting looked-after children with communication needs</a><p>Departmental advice for those working with children with communication needs to ensure a child's input into decisions made about their care.</p></li>
+                    </ul>
+                  </div>
+                <% else %>
+                <div class="subsection-content js-subsection-content" id="subsection_content_<%= index + 1 %>">
+                  <% unless taxon.has_tagged_content %>
+                    <%= render partial: 'email_alerts', locals: { taxon: taxon } %>
+                  <% end %>
+                  <%= render partial: 'content_list_for_child_taxon', locals: {
+                      section_index: index,
+                      tagged_content: taxon.tagged_content,
+                  } %>
+                </div>
+                <% end %>
+              </div>
+            <% end %>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
