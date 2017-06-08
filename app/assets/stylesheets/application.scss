@@ -50,3 +50,17 @@ p {
     margin-bottom: $gutter-one-third;
   }
 }
+
+.with-subheadings {
+  h2 {
+    @include bold-19;
+    margin-top: $gutter * 1.5;
+    margin-bottom: $gutter-one-third;
+  }
+
+  li {
+    a {
+      @include bold-19;
+    }
+  }
+}

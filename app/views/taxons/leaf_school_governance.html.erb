@@ -1,0 +1,73 @@
+<% content_for :page_class, "taxon-page" %>
+
+<%= render partial: 'govuk_component/breadcrumbs',
+  locals: {
+    breadcrumbs: navigation_helpers.taxon_breadcrumbs[:breadcrumbs],
+    collapse_on_mobile: true
+  } %>
+
+<%= render partial: 'page_header', locals: { taxon: taxon } %>
+
+<% is_grid ||= false %>
+
+<% if tagged_content.any? || !is_grid %>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <div class="parent-topic-contents">
+        <div class="topic-content with-subheadings">
+          <% if taxon.child_taxons.present? %>
+            <h2><%= taxon.title %> guidance</h2>
+            <p><%= taxon.description %></p>
+          <% end %>
+
+          <h2>Governance duties and obligations</h2>
+          <ol>
+            <li><a href="/government/publications/constitution-of-governing-bodies-of-maintained-schools">Constitution of governing bodies of maintained schools</a><p>Statutory guidance setting out the arrangements for the constitution of governing bodies of all local-authority-maintained schools.</p></li>
+            <li><a href="/government/publications/designated-teacher-for-looked-after-children">Designated teacher for looked-after children</a><p>Statutory guidance for local-authority-maintained schools carrying out duties for looked-after children.</p></li>
+            <li><a href="/government/publications/equality-act-2010-advice-for-schools">Equality Act 2010: advice for schools</a><p>Guidance to help schools understand how the Equality Act affects them and how to fulfil their duties under the act.</p></li>
+            <li><a href="/guidance/reviews-of-school-governance">External reviews of governance: a guide for schools</a><p>How to arrange an external review of governance for your school and improve the performance of your governing body.</p></li>
+            <li><a href="/guidance/updating-academy-trust-governance-contacts">Providing and updating academy trust governance contacts</a><p>Information about notifying EFA of new and replacement academy trust members, trustees, accounting officers and chief financial officers.</p></li>
+            <li><a href="/government/publications/residential-special-schools-national-minimum-standards">Residential special schools: national minimum standards</a><p>Guidance for special schools providing residential accommodation for any child.</p></li>
+            <li><a href="/government/publications/school-governance-collaboration-regulations-2003">School Governance (Collaboration) Regulations 2003</a><p>Statutory guidance setting out the arrangements for the collaboration of governing bodies in maintained schools in England.</p></li>
+            <li><a href="/government/publications/school-governance-constitution-regulations-2007">School Governance (Constitution) Regulations 2007</a><p>Statutory guidance setting out the arrangements for the constitution of school governing bodies formed prior to 1 September 2012.</p></li>
+            <li><a href="/government/publications/school-governance-regulations-2013">School governance regulations 2013</a><p>Guidance to help school leaders and governing bodies understand their obligations and duties.</p></li>
+            <li><a href="/government/publications/statutory-policies-for-schools">Statutory policies for schools</a><p>Guidance on the policies and documents that governing bodies and proprietors of schools must have.</p></li>
+            <li><a href="/guidance/what-academies-free-schools-and-colleges-should-publish-online">What academies, free schools and colleges should publish online</a><p>The information that all types of academies, free schools and 16 to 19 colleges should publish on their websites.</p></li>
+            <li><a href="/guidance/what-maintained-schools-must-publish-online">What maintained schools must publish online</a><p>The information that schools maintained by their local authorities must publish on their websites.</p></li>
+          </ol>
+
+          <h2>Resources for effective governance</h2>
+          <ol>
+            <li><a href="/government/publications/behaviour-and-discipline-in-schools-guidance-for-governing-bodies">Behaviour and discipline in schools: guide for governing bodies</a><p>Guidance for school governing bodies on their role in creating their school's behaviour policy.</p></li>
+            <li><a href="/guidance/reviews-of-school-governance">External reviews of governance: a guide for schools</a><p>How to arrange an external review of governance for your school and improve the performance of your governing body.</p></li>
+            <li><a href="/guidance/external-reviews-of-governance-whats-involved">External reviews of governance: what's involved</a><p>The process for those conducting external reviews of governance and schools being reviewed.</p></li>
+            <li><a href="/government/publications/school-governance-a-policy-overview">School governance: a policy overview</a><p>A presentation setting out our vision for school governance and summarising 5 key policy objectives.</p></li>
+            <li><a href="/guidance/schools-financial-efficiency-the-role-of-the-school-governor">Schools financial efficiency: the role of the school governor</a><p>Information for school governors about their role overseeing the financial performance of the school and making sure money is well spent.</p></li>
+            <li><a href="/guidance/schools-financial-efficiency-top-10-planning-checks-for-governors">Schools financial efficiency: top 10 planning checks for governors</a><p>Information for school and academy governors to help make sure schools manage their resources efficiently.</p></li>
+          </ol>
+
+          <h2>Roles in governance</h2>
+          <ol>
+            <li><a href="/become-school-college-governor">Become a school or college governor</a><p>Register your application to be a school or college governor - you can help decide how a local school or college is run</p></li>
+            <li><a href="/government/publications/constitution-of-governing-bodies-of-maintained-schools">Constitution of governing bodies of maintained schools</a><p>Statutory guidance setting out the arrangements for the constitution of governing bodies of all local-authority-maintained schools.</p></li>
+            <li><a href="/government/publications/identity-verification-for-new-chairs-of-trustees">Identity verification for new chairs of trustees</a><p>Form for new chairs of trustees in academies, free schools and independent schools to verify their identity.</p></li>
+            <li><a href="/government/publications/interim-executive-board-application-form">Interim executive board application form</a><p>How local authorities can apply to set up a school governing body as an interim executive board.</p></li>
+            <li><a href="/government/publications/leading-governors-the-role-of-the-chair-of-governors">Leading governors: The role of the chair of governors</a><p>A resource to help promote, develop and sustain effective governance in your school.</p></li>
+            <li><a href="/guidance/national-leaders-of-governance-a-guide-for-potential-applicants">National leaders of governance: a guide for potential applicants</a><p>Find out about becoming a national leader of governance (NLG), what's involved and how to apply.</p></li>
+            <li><a href="/guidance/the-role-of-the-school-business-manager">The role of the school business manager</a><p>Information for schools about the important role of the school business manager in achieving greater financial efficiency.</p></li>
+          </ol>
+
+          <h2>School structure and governance</h2>
+          <ol>
+            <li><a href="/government/publications/becoming-an-academy-top-tips-for-governors">Becoming an academy: top tips for governors</a><p>Tips for governors of schools on the path to becoming an academy.</p></li>
+            <li><a href="/government/publications/governance-in-federations">Governance in federations</a><p>Explore the leadership and governance structures of federations and the challenges faced by governors.</p></li>
+            <li><a href="/government/publications/governance-in-multi-academy-trusts">Governance in multi-academy trusts</a><p>Guidance for governors and school leaders considering becoming part of a multi-academy trust.</p></li>
+            <li><a href="/government/publications/making-significant-changes-to-an-existing-academy">Making significant changes to an existing academy</a><p>Guidance for academies wishing to make changes to their school, including how to expand.</p></li>
+            <li><a href="/government/publications/school-governance-federation-regulations-2007">School Governance (Federation) Regulations 2007</a><p>Statutory guidance setting out the arrangements for the federation of school governing bodies.</p></li>
+            <li><a href="/government/publications/school-organisation-maintained-schools">School organisation: local-authority-maintained schools</a><p>Statutory guidance about making organisation changes to local-authority-maintained schools, including school closure.</p></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
