@@ -10,8 +10,8 @@ class ContentItemAppender
     base_path = env['PATH_INFO']
     begin
       env['content_item'] = Services.content_store.content_item(base_path) if path_has_no_format?(base_path)
-    rescue GdsApi::ContentStore::ItemNotFound
-      # Ignore NotFound, and just don't set env['content_item']
+    rescue GdsApi::ContentStore::ItemNotFound, GdsApi::HTTPGone
+      # Ignore NotFound and Gone, and just don't set env['content_item']
     end
     @app.call(env)
   end
