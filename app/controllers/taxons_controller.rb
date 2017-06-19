@@ -14,6 +14,8 @@ class TaxonsController < ApplicationController
       render(:accordion_school_governance, layout: 'collections', locals: locals.merge(accordion_content: taxon_overview_and_child_taxons(taxon)))
     when '/education/special-educational-needs-and-disability-send-and-high-needs'
       render(:accordion_send, layout: 'collections', locals: locals.merge(accordion_content: taxon_overview_and_child_taxons(taxon)))
+    when '/education/funding-for-school-buildings-and-land'
+      render(:accordion_funding_for_school_buildings_and_land, layout: 'collections', locals: locals.merge(accordion_content: taxon_overview_and_child_taxons(taxon)))
     else
       render(:show, layout: 'collections', locals: locals)
     end
