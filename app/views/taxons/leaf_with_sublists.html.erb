@@ -1,0 +1,25 @@
+<% content_for :page_class, "taxon-page" %>
+
+<%= render partial: 'govuk_component/breadcrumbs',
+    locals: {
+        breadcrumbs: navigation_helpers.taxon_breadcrumbs[:breadcrumbs],
+        collapse_on_mobile: true
+    } %>
+
+<%= render partial: 'page_header', locals: {taxon: taxon} %>
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <div class="parent-topic-contents">
+      <div class="topic-content with-subheadings">
+        <% if taxon.child_taxons.present? %>
+          <h2><%= taxon.title %> guidance</h2>
+          <p><%= taxon.description %></p>
+        <% end %>
+
+        <%= render partial: leaf_template %>
+
+      </div>
+    </div>
+  </div>
+</div>

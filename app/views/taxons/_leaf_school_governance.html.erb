@@ -1,0 +1,51 @@
+<% is_being_displayed_in_accordion ||= false %>
+
+<%= render partial: 'leaf_with_sublists', locals: {
+  is_being_displayed_in_accordion: is_being_displayed_in_accordion,
+  sub_lists: [
+    {
+      title: 'Financial efficiency',
+      list_items: <<-LIST_ITEMS
+        <li class="subsection-list-item"><a href="/guidance/schools-financial-efficiency-the-role-of-the-school-governor">Schools financial efficiency: the role of the school governor</a><p>Information for school governors about their role overseeing the financial performance of the school and making sure money is well spent.</p></li>
+        <li class="subsection-list-item"><a href="/guidance/schools-financial-efficiency-top-10-planning-checks-for-governors">Schools financial efficiency: top 10 planning checks for governors</a><p>Information for school and academy governors to help make sure schools manage their resources efficiently.</p></li>
+      LIST_ITEMS
+    },
+    {
+      title: 'Governance constitutions',
+      list_items: <<-LIST_ITEMS
+        <li class="subsection-list-item"><a href="/government/publications/constitution-of-governing-bodies-of-maintained-schools">Constitution of governing bodies of maintained schools</a><p>Statutory guidance setting out the arrangements for the constitution of governing bodies of all local-authority-maintained schools.</p></li>
+        <li class="subsection-list-item"><a href="/government/publications/school-governance-constitution-regulations-2007">School Governance (Constitution) Regulations 2007</a><p>Statutory guidance setting out the arrangements for the constitution of school governing bodies formed prior to 1 September 2012.</p></li>
+      LIST_ITEMS
+    },
+    {
+      title: 'Policies and regulations',
+      list_items: <<-LIST_ITEMS
+        <li class="subsection-list-item"><a href="/government/publications/school-governance-regulations-2013">School governance regulations 2013</a><p>Guidance to help school leaders and governing bodies understand their obligations and duties.</p></li>
+        <li class="subsection-list-item"><a href="/government/publications/school-governance-a-policy-overview">School governance: a policy overview</a><p>A presentation setting out our vision for school governance and summarising 5 key policy objectives.</p></li>
+        <li class="subsection-list-item"><a href="/government/publications/statutory-policies-for-schools">Statutory policies for schools</a><p>Guidance on the policies and documents that governing bodies and proprietors of schools must have.</p></li>
+      LIST_ITEMS
+    },
+    {
+      title: 'Publishing online',
+      list_items: <<-LIST_ITEMS
+        <li class="subsection-list-item"><a href="/guidance/what-academies-free-schools-and-colleges-should-publish-online">What academies, free schools and colleges should publish online</a><p>The information that all types of academies, free schools and 16 to 19 colleges should publish on their websites.</p></li>
+        <li class="subsection-list-item"><a href="/guidance/what-maintained-schools-must-publish-online">What maintained schools must publish online</a><p>The information that schools maintained by their local authorities must publish on their websites.</p></li>
+      LIST_ITEMS
+    },
+    {
+      title: 'Reviewing governance',
+      list_items: <<-LIST_ITEMS
+        <li class="subsection-list-item"><a href="/guidance/reviews-of-school-governance">External reviews of governance: a guide for schools</a><p>How to arrange an external review of governance for your school and improve the performance of your governing body.</p></li>
+        <li class="subsection-list-item"><a href="/guidance/external-reviews-of-governance-whats-involved">External reviews of governance: what's involved</a><p>The process for those conducting external reviews of governance and schools being reviewed.</p></li>
+      LIST_ITEMS
+    },
+    {
+      title: 'Other guidance',
+      list_items: <<-LIST_ITEMS
+        <li class="subsection-list-item"><a href="/government/publications/behaviour-and-discipline-in-schools-guidance-for-governing-bodies">Behaviour and discipline in schools: guide for governing bodies</a><p>Guidance for school governing bodies on their role in creating their school's behaviour policy.</p></li>
+        <li class="subsection-list-item"><a href="/government/publications/equality-act-2010-advice-for-schools">Equality Act 2010: advice for schools</a><p>Guidance to help schools understand how the Equality Act affects them and how to fulfil their duties under the act.</p></li>
+        <li class="subsection-list-item"><a href="/government/publications/residential-special-schools-national-minimum-standards">Residential special schools: national minimum standards</a><p>Guidance for special schools providing residential accommodation for any child.</p></li>
+      LIST_ITEMS
+    }
+  ]
+} %>

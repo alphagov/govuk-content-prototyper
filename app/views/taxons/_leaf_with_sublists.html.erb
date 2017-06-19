@@ -1,0 +1,21 @@
+<% is_being_displayed_in_accordion ||= false %>
+
+<% if is_being_displayed_in_accordion %>
+
+  <% sub_lists.each do |sub_list| %>
+    <h3><%= sub_list[:title] %></h3>
+    <ul class="subsection-list-item">
+      <%= sub_list[:list_items].html_safe %>
+    </ul>
+  <% end %>
+
+<% else %>
+
+  <% sub_lists.each do |sub_list| %>
+    <h2><%= sub_list[:title] %></h2>
+    <ol>
+      <%= sub_list[:list_items].html_safe %>
+    </ol>
+  <% end %>
+
+<% end %>
