@@ -1,0 +1,112 @@
+<% content_for :page_class, "taxon-page" %>
+
+<%= render partial: 'govuk_component/breadcrumbs',
+    locals: {
+        breadcrumbs: navigation_helpers.taxon_breadcrumbs[:breadcrumbs],
+        collapse_on_mobile: true
+    } %>
+
+<%= render partial: 'page_header', locals: { taxon: taxon } %>
+
+<% if accordion_content.present? %>
+  <div class="grid-row child-topic-contents">
+    <div class="column-two-thirds">
+      <div class="topic-content">
+
+        <div data-module="accordion-with-descriptions" class="js-hidden">
+          <div class="subsection-wrapper">
+
+            <% accordion_content.each_with_index do |taxon, index| %>
+              <div class="subsection js-subsection" id="<%= taxon.base_path %>">
+                <div class="subsection-header js-subsection-header">
+                  <h2 class="subsection-title js-subsection-title"><%= taxon.title %></h2>
+                  <% if taxon.description.present? %>
+                    <p class="subsection-description"><%= taxon.description %></p>
+                  <% end %>
+                </div>
+
+                <% if taxon.base_path == "/education/pupil-premium" %>
+                  <div class="subsection-content js-subsection-content" id="subsection_content_<%= index + 1 %>">
+                    <h3>Forms and templates</h3>
+                    <ul class="subsection-list">
+                      <li class="subsection-list-item">
+                        <a href="/government/publications/children-adopted-from-care-and-the-pupil-premium-template-letter">Children adopted from care and the pupil premium: template letter</a>
+
+                        <p>A template local authorities can use to tell alternative education providers how to claim the pupil premium for children adopted from care.</p>
+                      </li>
+                      <li class="subsection-list-item">
+                        <a href="/government/publications/free-school-meals-and-pupil-premium-registration-form">Free school meals and pupil premium: model form for schools</a>
+
+                        <p>Model form that schools can use to determine which children are eligible for free school meals and the pupil premium.</p>
+                      </li>
+                    </ul>
+
+                    <h3>Funding allocations</h3>
+                    <ul class="subsection-list">
+                      <li class="subsection-list-item">
+                        <a href="/government/publications/pupil-premium-conditions-of-grant-2017-to-2018">Pupil premium: conditions of grant 2017 to 2018</a>
+
+                        <p>Pupil premium funding conditions of grant for the financial year 2017 to 2018. </p>
+                      </li>
+                      <li class="subsection-list-item">
+                        <a href="/guidance/pupil-premium-information-for-schools-and-alternative-provision-settings">Pupil premium: funding and accountability for schools</a>
+
+                        <p>How much pupil premium funding schools and non-mainstream settings receive, how they should spend it and how we hold them to account. </p>
+                      </li>
+                      <li class="subsection-list-item">
+                        <a href="/government/publications/pupil-premium-funding-tables-2012-to-2013">Pupil premium: funding for the 2012 to 2013 financial year</a>
+
+                        <p>How much pupil premium funding schools and local authorities will get for the 2012 to 2013 financial year. </p>
+                      </li>
+                      <li class="subsection-list-item">
+                        <a href="/government/publications/pupil-premium-summer-schools-programme-2014">Pupil premium: summer schools programme 2015</a>
+
+                        <p>Information for schools taking part in the 2015 to 2016 summer schools programme. </p>
+                      </li>
+                      <li class="subsection-list-item">
+                        <a href="/government/publications/using-the-pupil-premium-or-service-premium-in-admissions">School admissions: pupil, service and early years premiums</a>
+
+                        <p>Guidance about using the pupil premium, service premium or early years pupil premium oversubscription criteria in school admissions.</p>
+                      </li>
+                    </ul>
+
+                    <h3>Spending effectively</h3>
+                    <ul class="subsection-list">
+                      <li class="subsection-list-item">
+                        <a href="/guidance/pupil-premium-reviews">Pupil premium reviews</a>
+
+                        <p>How to commission a pupil premium review for your school.</p>
+                      </li>
+                      <li class="subsection-list-item">
+                        <a href="/guidance/pupil-premium-reviews-a-guide-for-nles">Pupil premium reviews: a guide for system leaders</a>
+
+                        <p>How system leaders can help schools improve how they spend their pupil premium budget.</p>
+                      </li>
+
+                      <li class="subsection-list-item">
+                        <a href="/guidance/pupil-premium-virtual-school-heads-responsibilities">Pupil premium: virtual school heads’ responsibilities</a>
+
+                        <p>How virtual school heads should manage the school-age pupil premium and the early years pupil premium for looked-after children.</p>
+                      </li>
+                    </ul>
+                  </div>
+                <% else %>
+                  <div class="subsection-content js-subsection-content" id="subsection_content_<%= index + 1 %>">
+                    <% unless taxon.has_tagged_content %>
+                      <%= render partial: 'email_alerts', locals: { taxon: taxon } %>
+                    <% end %>
+                    <%= render partial: 'content_list_for_child_taxon', locals: {
+                        section_index: index,
+                        tagged_content: taxon.tagged_content,
+                    } %>
+                  </div>
+                <% end %>
+              </div>
+            <% end %>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
