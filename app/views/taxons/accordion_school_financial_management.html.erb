@@ -1,0 +1,145 @@
+<% content_for :page_class, "taxon-page" %>
+
+<%= render partial: 'govuk_component/breadcrumbs',
+    locals: {
+        breadcrumbs: navigation_helpers.taxon_breadcrumbs[:breadcrumbs],
+        collapse_on_mobile: true
+    } %>
+
+<%= render partial: 'page_header', locals: { taxon: taxon } %>
+
+<% if accordion_content.present? %>
+  <div class="grid-row child-topic-contents">
+    <div class="column-two-thirds">
+      <div class="topic-content">
+
+        <div data-module="accordion-with-descriptions" class="js-hidden">
+          <div class="subsection-wrapper">
+
+            <% accordion_content.each_with_index do |taxon, index| %>
+              <div class="subsection js-subsection" id="<%= taxon.base_path %>">
+                <div class="subsection-header js-subsection-header">
+                  <h2 class="subsection-title js-subsection-title"><%= taxon.title %></h2>
+                  <% if taxon.description.present? %>
+                    <p class="subsection-description"><%= taxon.description %></p>
+                  <% end %>
+                </div>
+
+                <% if taxon.base_path == "/education/school-procurement" %>
+                  <div class="subsection-content js-subsection-content" id="subsection_content_<%= index + 1 %>">
+                    <h3>General procurement guidance</h3>
+                    <ul class="subsection-list">
+                      <li class="subsection-list-item">
+                        <a href="/guidance/buying-for-schools">Buying for schools</a>
+
+                        <p>Guidance on how to plan and run an efficient procurement process to buy goods, works or services for your school.  </p>
+                      </li>
+                      <li class="subsection-list-item">
+                        <a href="/government/publications/school-procurement-glossary">School procurement: glossary</a>
+
+                        <p>Definitions of common procurement terms. </p>
+                      </li>
+                      <li class="subsection-list-item">
+                        <a href="/guidance/schools-financial-efficiency-collaborative-procurement">Schools financial efficiency: collaborative procurement</a>
+
+                        <p>Information for schools about collaborative procurement to achieve greater efficiency and value for money.</p>
+                      </li>
+                      <li class="subsection-list-item">
+                        <a href="/guidance/schools-financial-efficiency-effective-procurement">Schools financial efficiency: effective procurement</a>
+
+                        <p>Information for schools and academies about effective procurement. </p>
+                      </li>
+                      <li class="subsection-list-item">
+                        <a href="/government/publications/schools-buying-strategy">Schools’ buying strategy</a>
+
+                        <p>An outline of initiatives to help all schools improve how they buy goods and services.</p>
+                      </li>
+                    </ul>
+
+                    <h3>Resources and templates</h3>
+                    <ul class="subsection-list">
+                      <li class="subsection-list-item">
+                        <a href="/government/publications/school-procurement-bid-evaluation-scoring-summary">School procurement: bid evaluation scoring summary</a>
+
+                        <p>Spreadsheet to help school business managers compare suppliers' bids during a procurement process. </p>
+                      </li>
+                      <li class="subsection-list-item">
+                        <a href="/government/publications/school-procurement-example-contracts">School procurement: example contracts</a>
+
+                        <p>Model documents for schools developing a contract with a supplier of goods or services. </p>
+                      </li>
+                      <li class="subsection-list-item">
+                        <a href="/government/publications/school-procurement-example-letters-for-the-tender-process">School procurement: example letters for the tender process</a>
+
+                        <p>Model letters for schools to use with suppliers bidding for high-value and EU-compliant tenders. </p>
+                      </li>
+                      <li class="subsection-list-item">
+                        <a href="/government/publications/school-procurement-example-timelines">School procurement: example timelines</a>
+
+                        <p>Example timescales for schools planning a procurement process for goods or services. </p>
+                      </li>
+                      <li class="subsection-list-item">
+                        <a href="/government/publications/school-procurement-expression-of-interest-form">School procurement: expression of interest form</a>
+
+                        <p>This document includes a blank expression of interest (EOI) form that schools can use to send to suppliers of goods and services.</p>
+                      </li>
+                    </ul>
+
+                    <h3>Technology and data</h3>
+                    <ul class="subsection-list">
+                      <li class="subsection-list-item">
+                        <a href="/government/publications/cloud-computing-how-schools-can-move-services-to-the-cloud">Cloud computing: how schools can move services to the cloud</a>
+
+                        <p>Guidance for schools on the benefits and risks of moving information and services to the cloud.</p>
+                      </li>
+                      <li class="subsection-list-item">
+                        <a href="/government/publications/cloud-software-services-and-the-data-protection-act">Cloud software services: how schools should protect data</a>
+
+                        <p>Data protection guidance for schools considering using cloud services ('the cloud') to hold sensitive information.</p>
+                      </li>
+                      <li class="subsection-list-item">
+                        <a href="/government/publications/buying-for-schools-microsoft-memorandum-of-understanding">School procurement: Microsoft memorandum of understanding</a>
+
+                        <p>How the memorandum of understanding (MoU) between Microsoft and the Department for Education can benefit schools.</p>
+                      </li>
+                      <li class="subsection-list-item">
+                        <a href="/government/publications/school-procurement-selecting-a-school-mis">School procurement: selecting a school MIS</a>
+
+                        <p>What schools need to consider when selecting a new management information system (MIS).</p>
+                      </li>
+                    </ul>
+
+                    <h3>Other procurement guidance</h3>
+                    <ul class="subsection-list">
+                      <li class="subsection-list-item">
+                        <a href="/guidance/copyright-licences-information-for-schools">Copyright licences for schools</a>
+
+                        <p>Licences the Department for Education provides to schools, and where to get advice on buying additional licences.</p>
+                      </li>
+                      <li class="subsection-list-item">
+                        <a href="/government/publications/school-procurement-buying-a-multi-functional-device-mfd">Leasing and subscription services for school equipment</a>
+
+                        <p>Best practice guidance, practical dos and don’ts and suggestions as to how to find the best value for money agreements. </p>
+                      </li>
+                    </ul>
+                  </div>
+                <% else %>
+                  <div class="subsection-content js-subsection-content" id="subsection_content_<%= index + 1 %>">
+                    <% unless taxon.has_tagged_content %>
+                      <%= render partial: 'email_alerts', locals: { taxon: taxon } %>
+                    <% end %>
+                    <%= render partial: 'content_list_for_child_taxon', locals: {
+                        section_index: index,
+                        tagged_content: taxon.tagged_content,
+                    } %>
+                  </div>
+                <% end %>
+              </div>
+            <% end %>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
