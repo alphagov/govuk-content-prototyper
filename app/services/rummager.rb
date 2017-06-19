@@ -13,7 +13,7 @@ module Services
     private
 
     def rummager
-      @rummager ||= GdsApi::Rummager.new(Plek.new.find('search'))
+      @rummager ||= GdsApi::Rummager.new(Plek.new.find('search'), verify_ssl: false)
     end
   end
 end

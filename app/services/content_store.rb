@@ -16,7 +16,7 @@ module Services
 
     def content_store
       @content_store ||=
-        GdsApi::ContentStore.new(Plek.new.find('content-store'))
+        GdsApi::ContentStore.new(Plek.new.find('content-store'), verify_ssl: false)
     end
   end
 end
