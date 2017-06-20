@@ -35,17 +35,25 @@ p {
 
 .subsection-content {
   h3 {
-    @include bold-19;
-    margin-top: $gutter * 1.5;
+    @include bold-24;
+    margin-top: $gutter;
     margin-bottom: $gutter-one-third;
+
+    &:first-child {
+      margin-top: $gutter;
+    }
   }
 }
 
 .with-subheadings {
   h2 {
-    @include bold-19;
-    margin-top: $gutter * 1.5;
+    @include bold-24;
+    margin-top: $gutter;
     margin-bottom: $gutter-one-third;
+
+    &:first-child {
+      margin-top: $gutter;
+    }
   }
 
   li {
