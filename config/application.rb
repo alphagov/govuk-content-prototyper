@@ -22,5 +22,6 @@ module GovukNavPrototype
     ]
 
     config.middleware.use 'ContentItemAppender'
+    config.middleware.use 'PathLogger'
   end
 end

@@ -37,6 +37,9 @@
   "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-ruby"
+    },
+    {
+      "url": "https://github.com/heroku/exec-buildpack"
     }
   ],
   "addons": []
