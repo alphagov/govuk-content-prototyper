@@ -33,11 +33,11 @@ class TaxonsController < ApplicationController
         layout: 'collections',
         locals: locals.merge(
           accordion_content: taxon_overview_and_child_taxons(taxon),
-          taxon_with_sublist_base_path: '/education/current-funding-schemes',
+          taxon_with_sublist_base_path: '/education/current-school-buildings-and-land-funding-schemes',
           leaf_template: 'leaf_funding_for_school_buildings_and_land',
         ),
       )
-    when '/education/current-funding-schemes'
+    when '/education/current-school-buildings-and-land-funding-schemes'
       render(:leaf_with_sublists,
         layout: 'collections',
         locals: locals.merge(
