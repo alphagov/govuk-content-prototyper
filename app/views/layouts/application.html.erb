@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GovukNavPrototype</title>
+    <title><%= yield :title %> - GOV.UK</title>
     <%= csrf_meta_tags %>
-
+    <%= javascript_include_tag "application" %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= yield :head %>
   </head>
 
-	<body class="<%= yield :body_classes %>">
-		<div class="wrapper" id="wrapper">
+  <body>
+<<<<<<< HEAD
+  <div class="wrapper" id="wrapper">
+    <%= render partial: 'components/beta_banner' %>
+    
+    <main id="content" role="main" class="content <%= yield :page_class %>">
+      <%= yield %>
+    </main>
+  </div>
+</body>
+=======
+    <div class="wrapper" id="wrapper">
       <%= render partial: 'components/beta_banner' %>
-      <%= content_for?(:content) ? yield(:content) : yield %>
-		</div>
+      <main role="main" class="content <%= yield :page_class %>">
+        <%= yield %>
+      </main>
+    </div>
   </body>
 </html>
+>>>>>>> 1a48ede... wip

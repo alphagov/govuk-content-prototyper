@@ -22,9 +22,11 @@ main {
   -webkit-font-smoothing: antialiased;
 }
 
-p {
-  margin-top: pem(5, 16);
-  margin-bottom: pem(20, 16);
+.prototype {
+  p {
+    margin-top: pem(5, 16);
+    margin-bottom: pem(20, 16);
+  }
 }
 
 .header-wrapper {
