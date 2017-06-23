@@ -49,6 +49,7 @@ private
   end
 
   def main_html
+    full_content_item_html.css('h2#history').remove_attr('id')
     @main_html ||= full_content_item_html.css('main').first
   end
 

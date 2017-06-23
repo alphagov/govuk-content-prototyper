@@ -10,9 +10,11 @@
   <body>
 <<<<<<< HEAD
   <div class="wrapper" id="wrapper">
+  
     <%= render partial: 'components/beta_banner' %>
-    
+
     <main id="content" role="main" class="content <%= yield :page_class %>">
+
       <%= yield %>
     </main>
   </div>
