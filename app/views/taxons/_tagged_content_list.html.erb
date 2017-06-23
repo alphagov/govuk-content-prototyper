@@ -16,7 +16,7 @@
                 <h2>
                   <%= link_to(
                     content_item.title,
-                    Plek.new.website_root + content_item.base_path,
+                    content_item.base_path,
                     data: {
                       track_category: is_grid ? 'navGridLeafLinkClicked' : 'navLeafLinkClicked',
                       track_action: index + 1,
