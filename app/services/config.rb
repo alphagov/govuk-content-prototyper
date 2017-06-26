@@ -17,6 +17,12 @@ class Config
     )
   end
 
+  def self.taxons
+    @taxons ||= JSON.parse(
+      load_config('taxons.json')
+    )
+  end
+
   def self.load_config(filename)
     File.read(
       Rails.root.join(

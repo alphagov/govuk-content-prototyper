@@ -57,10 +57,45 @@ private
   end
 
   def raw_content_item_html
-    @raw_html ||= open("https://#{ENV['GOVUK_APP_DOMAIN']}#{request.fullpath}?cachebust=#{Time.zone.now.to_i}",
-      # Ensure we get the new version of the page, which should have all content in a two-thirds column
-      'Cookie' => 'ABTest-EducationNavigation=B',
-    ).read
+    @raw_html ||= begin
+      raw_html = open("https://#{ENV['GOVUK_APP_DOMAIN']}#{request.fullpath}?cachebust=#{Time.zone.now.to_i}",
+        # Ensure we get the new version of the page, which should have all content in a two-thirds column
+        'Cookie' => 'ABTest-EducationNavigation=B',
+      ).read
+
+      request.path == '/' ? edit_home_page_html(raw_html) : raw_html
+    end
+  end
+
+  def edit_home_page_html(html)
+    document = Nokogiri::HTML(html)
+    document.at_css('.header-logo a')['href'] = '/'
+    update_childcare_and_parenting_on_home_page(document)
+    document.to_html
+  end
+
+  def update_childcare_and_parenting_on_home_page(document)
+    taxon = childcare_parenting_taxon
+
+    childcare_parenting_link = document.at_css('[href="/browse/childcare-parenting"]')
+    childcare_parenting_li = childcare_parenting_link.ancestors('li').first
+    childcare_parenting_description = childcare_parenting_li.at_css('p')
+
+    childcare_parenting_link['href'] = taxon['base_path']
+    childcare_parenting_link.content = taxon['title']
+    childcare_parenting_description.content = taxon['description']
+
+    tax_li = document
+      .at_css('[href="/browse/tax"]')
+      .ancestors('li')
+      .first
+
+    tax_li.add_next_sibling(childcare_parenting_li)
+  end
+
+  def childcare_parenting_taxon
+    @childcare_parenting_taxon ||= Config.taxons
+      .first { |taxon| taxon['base_path'] == '/childcare-parenting' }
   end
 
   def navigation_helpers
