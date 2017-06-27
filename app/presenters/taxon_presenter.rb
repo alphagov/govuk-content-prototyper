@@ -40,7 +40,7 @@ class TaxonPresenter
   end
 
   def accordion_content
-    return [] unless renders_as_accordion?
+    raise StandardError.new('Rendering type is not Accordion') unless renders_as_accordion?
     accordion_items = taxon.child_taxons.map { |taxon| TaxonPresenter.new(taxon) }
 
     general_information_title = 'General information and guidance'
