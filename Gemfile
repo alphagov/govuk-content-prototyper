@@ -16,7 +16,6 @@ gem 'puma'
 gem 'foreman'
 gem 'remote-sass'
 gem 'sprockets', github: 'rails/sprockets'
-gem 'govuk_ab_testing', '~> 2.4'
 
 group :development, :test do
   gem 'pry'

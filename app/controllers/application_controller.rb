@@ -5,15 +5,6 @@ class ApplicationController < ActionController::Base
 
   protect_from_forgery with: :exception
 
-  def education_ab_test
-    @education_ab_test ||= begin
-      ab_test_request = EducationNavigationAbTestRequest.new(request)
-      ab_test_request.set_response_vary_header(response)
-      ab_test_request
-    end
-  end
-
-
   private
 
   def authenticate

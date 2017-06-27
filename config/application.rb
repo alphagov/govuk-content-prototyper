@@ -23,7 +23,5 @@ module GovukNavPrototype
 
     config.middleware.use 'ContentItemAppender'
     config.middleware.use 'PathLogger'
-    # Google Analytics dimension assigned to the education navigation A/B test
-    config.navigation_ab_test_dimension = 41
   end
 end
