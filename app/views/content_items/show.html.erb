@@ -2,6 +2,10 @@
   <%= stylesheet_links_html %>
 <% end %>
 
+<% content_for :page_type do %>
+  <%= page_type %>
+<% end %>
+
 <%= render partial: 'govuk_component/breadcrumbs',
     locals: {
         breadcrumbs: breadcrumbs,

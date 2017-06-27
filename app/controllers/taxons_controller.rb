@@ -1,6 +1,8 @@
 class TaxonsController < ApplicationController
   helper_method :taxon_overview_and_child_taxons
 
+  layout 'collections'
+
   def show
     setup_content_item_and_navigation_helpers(taxon)
 

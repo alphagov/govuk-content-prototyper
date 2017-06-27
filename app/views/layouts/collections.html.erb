@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title><%= yield :title %> - GOV.UK</title>
@@ -8,10 +9,13 @@
     <script src="https://rawgit.com/alphagov/collections/master/app/assets/javascripts/modules/accordion-with-descriptions.js"></script>
   </head>
 
-<% content_for :content do %>
-  <main id="content" role="main" class="content <%= yield :page_class %>">
-    <%= yield %>
-  </main>
-<% end %>
-
-<%= render template: 'layouts/application' %>
+  <body>
+  <div class="wrapper" id="wrapper">
+    <%= render partial: 'components/beta_banner' %>
+    <%= yield :breadcrumbs %>
+    <main role="main" class="content <%= yield :page_class %>">
+      <%= yield %>
+    </main>
+  </div>
+</body>
+</html>

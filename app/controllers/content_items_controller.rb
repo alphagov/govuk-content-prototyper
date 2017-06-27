@@ -10,6 +10,7 @@ class ContentItemsController < ApplicationController
       main_attributes: main_attributes,
       breadcrumbs: navigation_helpers.taxon_breadcrumbs[:breadcrumbs],
       taxonomy_sidebar: navigation_helpers.taxonomy_sidebar,
+      page_type: page_type,
     }
   end
 
@@ -114,5 +115,9 @@ private
   def handle_http_error(error)
     puts "Error fetching #{request.path}: #{error}"
     render plain: error
+  end
+
+  def page_type
+    full_content_item_html.css('#wrapper').attr('class').value
   end
 end

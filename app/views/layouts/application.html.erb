@@ -8,24 +8,10 @@
   </head>
 
   <body>
-<<<<<<< HEAD
-  <div class="wrapper" id="wrapper">
-  
+  <div class="wrapper <%= yield :page_type %>" id="wrapper">
     <%= render partial: 'components/beta_banner' %>
-
-    <main id="content" role="main" class="content <%= yield :page_class %>">
-
-      <%= yield %>
-    </main>
+    <%= yield :breadcrumbs %>
+    <%= yield %>
   </div>
 </body>
-=======
-    <div class="wrapper" id="wrapper">
-      <%= render partial: 'components/beta_banner' %>
-      <main role="main" class="content <%= yield :page_class %>">
-        <%= yield %>
-      </main>
-    </div>
-  </body>
 </html>
->>>>>>> 1a48ede... wip
