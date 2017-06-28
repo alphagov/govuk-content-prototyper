@@ -1,0 +1,39 @@
+<%=
+  render(
+    partial: 'common',
+    locals: {
+      presented_taxon: presented_taxon
+    }
+  )
+%>
+
+<nav role="navigation" class="child-topics-list">
+  <ol>
+    <% presented_taxon.child_taxons.each_with_index do |child_taxon, index| %>
+      <li class="<%= 'leftmost-row-cell-clear-float' if index % 3 == 0 %>">
+        <h2>
+          <%= link_to(
+            child_taxon.title,
+            child_taxon.base_path,
+            data: {
+              track_category: 'navGridLinkClicked',
+              track_action: index + 1,
+              track_label: child_taxon.base_path,
+              track_options: {
+                dimension28: presented_taxon.child_taxons.size.to_s,
+                dimension29: child_taxon.title,
+              },
+              module: 'track-click',
+            }
+          )%>
+        </h2>
+        <p><%= child_taxon.description %></p>
+      </li>
+    <% end %>
+  </ol>
+</nav>
+
+<%= render partial: 'tagged_content_list', locals: {
+  presented_taxon: presented_taxon,
+  is_grid: true,
+} %>

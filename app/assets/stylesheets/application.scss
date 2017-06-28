@@ -16,15 +16,11 @@
 @import 'modules/lists';
 @import 'modules/list-iterations';
 @import 'modules/headings';
+@import 'modules/prototype';
 
 main {
   @include core-19;
   -webkit-font-smoothing: antialiased;
-}
-
-p {
-  margin-top: pem(5, 16);
-  margin-bottom: pem(20, 16);
 }
 
 .header-wrapper {
@@ -61,4 +57,12 @@ p {
       @include bold-19;
     }
   }
+}
+
+.publication .govuk-taxonomy-sidebar {
+  margin-top: 40px;
+}
+
+.govuk-taxonomy-sidebar {
+  margin-top: 0px;
 }

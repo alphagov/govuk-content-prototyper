@@ -1,6 +1,6 @@
 class Taxon
   attr_reader :content_item
-  attr_accessor :has_tagged_content
+  attr_accessor :has_tagged_content, :can_subscribe
 
   def initialize(content_item)
     @content_item = content_item.to_hash
@@ -61,4 +61,16 @@ class Taxon
       base_path: base_path
     )
   end
+
+  def most_popular_content
+    @most_popular_content ||= MostPopularContent.fetch(
+      content_id: content_id,
+    )
+  end
+
+  def can_subscribe?
+   return @can_subscribe if defined?(@can_subscribe)
+
+   true
+ end
 end
