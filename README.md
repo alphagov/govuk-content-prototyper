@@ -1,7 +1,5 @@
 # govuk-services-prototype
 
-[TODO: Add description]
-
 The `master` branch is automatically deployed to https://govuk-services-prototype.herokuapp.com/
 
 ## Live examples
