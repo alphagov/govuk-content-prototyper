@@ -1,6 +1,6 @@
 {
-  "name": "govuk-nav-prototype",
-  "repository": "https://github.com/alphagov/govuk-nav-prototype",
+  "name": "govuk-services-prototype",
+  "repository": "https://github.com/alphagov/govuk-services-prototype",
   "env": {
     "GOVUK_APP_DOMAIN": {
       "value": "www.gov.uk"

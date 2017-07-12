@@ -1,14 +1,13 @@
-# Govuk-nav-prototype
+# govuk-services-prototype
 
-This app serves up prototype navigation flows for the work-in-progress GOV.UK
-navigation.
+[TODO: Add description]
 
-The `master` branch is automatically deployed to https://govuk-nav-prototype.herokuapp.com/
+The `master` branch is automatically deployed to https://govuk-services-prototype.herokuapp.com/
 
 ## Live examples
 
-- [the home page](https://govuk-nav-prototype.herokuapp.com/)
-- [previous iterations](https://govuk-nav-prototype.herokuapp.com/prototype)
+- [the home page](https://govuk-services-prototype.herokuapp.com/)
+- [previous iterations](https://govuk-services-prototype.herokuapp.com/prototype)
 
 ## Nomenclature
 
@@ -50,8 +49,8 @@ First clone the repository:
 
 ```
 $ cd ~/govuk
-$ git clone git@github.com:alphagov/govuk-nav-prototype.git
-$ cd govuk-nav-prototype
+$ git clone git@github.com:alphagov/govuk-services-prototype.git
+$ cd govuk-services-prototype
 ```
 
 Then, install the dependencies with:
@@ -82,8 +81,8 @@ Then:
 At this point you can add the heroku app as a remote:
 
 ```
-$ cd ~/govuk/govuk-nav-prototype
-$ heroku git:remote -a govuk-nav-prototype
+$ cd ~/govuk/govuk-services-prototype
+$ heroku git:remote -a govuk-services-prototype
 ```
 
 In order to check it's working properly, run the following command:
