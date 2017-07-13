@@ -1,0 +1,38 @@
+<%= render partial: 'govuk_component/breadcrumbs', locals: {
+  breadcrumbs: [
+    {
+      title: "Services",
+      url: "/services"
+    },
+    {
+      title: "Education",
+      url: "/services/education"
+    },
+    {
+      title: "Early years",
+      url: "/services/education/early-years"
+    },
+    {
+      title: "Childcare",
+      url: "/services/education/early-years/childcare"
+    }
+  ]
+
+  } %>
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <h1 class="heading-xlarge">title</h1>
+    
+  </div>
+
+  <div class="column-third">
+    <aside class="govuk-related-items">
+      <h2>Related Items</h2>
+      <ul>
+        <li>one item</li>
+        <li>two items</li>
+      </ul>
+    </aside>
+  </div>
+</div>
