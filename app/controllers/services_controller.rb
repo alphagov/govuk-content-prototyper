@@ -1,4 +1,6 @@
 class ServicesController < ApplicationController
+  layout 'collections'
+
   def show
     @page_schema = ServincePageFinder.find(params[:base_path])
   end

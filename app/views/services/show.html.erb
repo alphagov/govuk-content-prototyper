@@ -1,6 +1,21 @@
+<%=
+  render(
+    partial: 'common',
+    locals: {
+      presented_taxon: ""
+    }
+  )
+%>
+
 <div class="grid-row">
   <div class="column-two-thirds">
-    <h2>Two Thirds</h2>
+    <div class="high-volume">
+      <h2>Most viewed in this topic</h2>
+      <ol>
+          <li><%= link_to("title", "base_path") %></li>
+          <li><%= link_to("title", "base_path") %></li>
+      </ol>
+    </div>
   </div>
 </div>
 
