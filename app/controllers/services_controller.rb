@@ -7,9 +7,8 @@ class ServicesController < ApplicationController
 
   class ServincePageFinder
     def self.find(base_path)
-      JSON.parse(
-        File.read("config/service_pages/#{base_path}.json")
-      ).with_indifferent_access
+      file = File.read("config/service_pages/#{base_path}.json")
+      JSON.parse(file, object_class: OpenStruct)
     rescue Errno::ENOENT
       return nil
     end
