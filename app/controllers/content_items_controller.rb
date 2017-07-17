@@ -65,7 +65,12 @@ private
         'Cookie' => 'ABTest-EducationNavigation=B',
       ).read
 
-      request.path == '/' ? edit_home_page_html(raw_html) : raw_html
+      if OverrideNavigationComponentsService.pages_to_override.include?(request.fullpath)
+        # TODO: replace elements
+        raw_html
+      else
+        request.path == '/' ? edit_home_page_html(raw_html) : raw_html
+      end
     end
   end
 
