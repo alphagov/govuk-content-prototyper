@@ -2,7 +2,13 @@
   "title": "Register as a childminder in England",
   "description": "You must register with Ofsted or a childminder agency if you want to be paid to look after children under 8 for more than 2 hours a day in England.",
   "document_type": "Guidance",
-  "blue_box_info": [ {"title": "Register as a childminder...", "url": "/url/blabla"}],
+  "rendering_type": "accordion",
+  "blue_box_info": [ {"title": "Register as a childminder...", "url": "/url/blabla"} ],
+  "related_links": [
+    {"title": "Register as childminder (Scotland)", "url": "/childminder-in-scotland"},
+    {"title": "Register as childminder (Wales)", "url": "/childminder-in-wales"},
+    {"title": "Register as childminder (Northern Ireland)", "url": "/childminder-in-northern-ireland"},
+  ],
   "steps": [
     {
       "position": 1,

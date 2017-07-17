@@ -1,12 +1,12 @@
-<% content_for :title, "Service Title" %>
+<% content_for :title, page_schema.title %>
 <% content_for :page_class, "taxon-page" %>
 <% content_for :meta_tags do %>
-  <meta name="description" content="<%= "description" %>">
+  <meta name="description" content="<%= page_schema.description %>">
 
-  <meta name="govuk:navigation-page-type" content="<%= "accordion" %>" />
+  <meta name="govuk:navigation-page-type" content="<%= page_schema.rendering_type %>" />
 <% end %>
 
-<%= render partial: 'page_header', locals: { presented_taxon: "" } %>
+<%= render partial: 'page_header', locals: { page_schema: page_schema } %>
 
 <% content_for :breadcrumbs do %>
   <%= render partial: 'govuk_component/breadcrumbs', locals: {
