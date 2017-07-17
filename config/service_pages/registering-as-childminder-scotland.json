@@ -1,0 +1,247 @@
+{
+  "analytics_identifier": null,
+  "base_path": "/registering-as-childminder-scotland",
+  "content_id": "4ba1356d-c4c7-4f6b-8738-3b9a52af1ddd",
+  "document_type": "licence",
+  "email_document_supertype": "other",
+  "first_published_at": "2016-02-29T09:24:10.000+00:00",
+  "government_document_supertype": "other",
+  "locale": "en",
+  "navigation_document_supertype": "guidance",
+  "need_ids": [
+
+  ],
+  "phase": "live",
+  "public_updated_at": "2015-07-30T14:01:10.000+00:00",
+  "publishing_app": "publisher",
+  "rendering_app": "frontend",
+  "schema_name": "licence",
+  "title": "Register as a childminder (Scotland)",
+  "updated_at": "2017-06-22T11:34:01.922Z",
+  "user_journey_document_supertype": "thing",
+  "withdrawn_notice": {
+
+  },
+  "publishing_request_id": null,
+  "links": {
+    "mainstream_browse_pages": [
+      {
+        "api_path": "/api/content/browse/business/childcare-providers",
+        "base_path": "/browse/business/childcare-providers",
+        "content_id": "85103ee3-ffe3-45b4-9e83-2c5917814bc8",
+        "description": "Includes registering as a childcare provider",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2017-05-09T12:37:34Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Childcare providers",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/business/childcare-providers",
+        "web_url": "https://www.gov.uk/browse/business/childcare-providers"
+      }
+    ],
+    "ordered_related_items": [
+      {
+        "api_path": "/api/content/services/register-as-childminder",
+        "base_path": "/services/register-as-childminder",
+        "content_id": "69af22e0-da49-4810-9ee4-22b4666acx27",
+        "description": "Service: Register as childminder",
+        "document_type": "guidance",
+        "locale": "en",
+        "public_updated_at": "2017-06-20T10:58:44Z",
+        "schema_name": "guidance",
+        "title": "Service: Register as childminder",
+        "withdrawn": false,
+        "links": {
+          "mainstream_browse_pages": [
+            {
+              "api_path": "/api/content/browse/business/licences",
+              "base_path": "/browse/business/licences",
+              "content_id": "fcf23e92-328f-4990-ba44-fbee5f2f7d64",
+              "description": "Applying for licences for events and businesses",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2016-11-18T16:02:30Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Licences and licence applications",
+              "withdrawn": false,
+              "links": {
+                "parent": [
+                  {
+                    "api_path": "/api/content/browse/business",
+                    "base_path": "/browse/business",
+                    "content_id": "2e47e500-8d91-4747-b6d8-cf6524d570f1",
+                    "description": "Information about starting up and running a business in the UK, including help if you're self employed or a sole trader.",
+                    "document_type": "mainstream_browse_page",
+                    "locale": "en",
+                    "public_updated_at": "2016-11-18T16:02:29Z",
+                    "schema_name": "mainstream_browse_page",
+                    "title": "Business and self-employed",
+                    "withdrawn": false,
+                    "links": {
+
+                    },
+                    "api_url": "https://www.gov.uk/api/content/browse/business",
+                    "web_url": "https://www.gov.uk/browse/business"
+                  }
+                ]
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/business/licences",
+              "web_url": "https://www.gov.uk/browse/business/licences"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/services/register-as-childminder",
+        "web_url": "https://www.gov.uk/services/register-as-childminder"
+      },
+      {
+        "api_path": "/api/content/licence-finder",
+        "base_path": "/licence-finder",
+        "content_id": "69af22e0-da49-4810-9ee4-22b4666ac627",
+        "description": "Find out which licences you might need for your activity or business",
+        "document_type": "transaction",
+        "locale": "en",
+        "public_updated_at": "2017-06-20T10:58:44Z",
+        "schema_name": "transaction",
+        "title": "Licence finder",
+        "withdrawn": false,
+        "links": {
+          "mainstream_browse_pages": [
+            {
+              "api_path": "/api/content/browse/business/licences",
+              "base_path": "/browse/business/licences",
+              "content_id": "fcf23e92-328f-4990-ba44-fbee5f2f7d64",
+              "description": "Applying for licences for events and businesses",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2016-11-18T16:02:30Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Licences and licence applications",
+              "withdrawn": false,
+              "links": {
+                "parent": [
+                  {
+                    "api_path": "/api/content/browse/business",
+                    "base_path": "/browse/business",
+                    "content_id": "2e47e500-8d91-4747-b6d8-cf6524d570f1",
+                    "description": "Information about starting up and running a business in the UK, including help if you're self employed or a sole trader.",
+                    "document_type": "mainstream_browse_page",
+                    "locale": "en",
+                    "public_updated_at": "2016-11-18T16:02:29Z",
+                    "schema_name": "mainstream_browse_page",
+                    "title": "Business and self-employed",
+                    "withdrawn": false,
+                    "links": {
+
+                    },
+                    "api_url": "https://www.gov.uk/api/content/browse/business",
+                    "web_url": "https://www.gov.uk/browse/business"
+                  }
+                ]
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/business/licences",
+              "web_url": "https://www.gov.uk/browse/business/licences"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/licence-finder",
+        "web_url": "https://www.gov.uk/licence-finder"
+      }
+    ],
+    "organisations": [
+      {
+        "analytics_identifier": "DA1020",
+        "api_path": "/api/content/government/organisations/the-scottish-government",
+        "base_path": "/government/organisations/the-scottish-government",
+        "content_id": "f4eaf4ab-3bf0-4c6e-b35c-852eaaa695d9",
+        "document_type": "organisation",
+        "locale": "en",
+        "public_updated_at": "2017-06-07T14:36:55Z",
+        "schema_name": "placeholder",
+        "title": "The Scottish Government",
+        "withdrawn": false,
+        "details": {
+          "brand": null,
+          "logo": {
+            "formatted_title": "Scottish <br/>Government"
+          }
+        },
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/government/organisations/the-scottish-government",
+        "web_url": "https://www.gov.uk/government/organisations/the-scottish-government"
+      }
+    ],
+    "parent": [
+      {
+        "api_path": "/api/content/browse/business/childcare-providers",
+        "base_path": "/browse/business/childcare-providers",
+        "content_id": "85103ee3-ffe3-45b4-9e83-2c5917814bc8",
+        "description": "Includes registering as a childcare provider",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2017-05-09T12:37:34Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Childcare providers",
+        "withdrawn": false,
+        "links": {
+          "parent": [
+            {
+              "api_path": "/api/content/browse/business",
+              "base_path": "/browse/business",
+              "content_id": "2e47e500-8d91-4747-b6d8-cf6524d570f1",
+              "description": "Information about starting up and running a business in the UK, including help if you're self employed or a sole trader.",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2016-11-18T16:02:29Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Business and self-employed",
+              "withdrawn": false,
+              "links": {
+
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/business",
+              "web_url": "https://www.gov.uk/browse/business"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/business/childcare-providers",
+        "web_url": "https://www.gov.uk/browse/business/childcare-providers"
+      }
+    ],
+    "available_translations": [
+      {
+        "title": "Register as a childminder (Scotland)",
+        "public_updated_at": "2015-07-30T14:01:10Z",
+        "document_type": "licence",
+        "schema_name": "licence",
+        "base_path": "/registering-as-childminder-scotland",
+        "description": "You must register with the Care Inspectorate if you want to become a childminder in Scotland",
+        "api_path": "/api/content/registering-as-childminder-scotland",
+        "withdrawn": false,
+        "content_id": "4ba1356d-c4c7-4f6b-8738-3b9a52af1ddd",
+        "locale": "en",
+        "api_url": "https://www.gov.uk/api/content/registering-as-childminder-scotland",
+        "web_url": "https://www.gov.uk/registering-as-childminder-scotland",
+        "links": {
+
+        }
+      }
+    ]
+  },
+  "description": "You must register with the Care Inspectorate if you want to become a childminder in Scotland",
+  "details": {
+    "licence_identifier": "1191-3-1",
+    "will_continue_on": "the Care Inspectorate website",
+    "continuation_link": "http://www.careinspectorate.com/index.php/register-a-care-service/register-a-childminding-service",
+    "licence_short_description": "You must register with the Care Inspectorate if you want to become a childminder in Scotland.",
+    "licence_overview": "\n<div class=\"summary\">\n<p>You must register online with the Care Inspectorate if you want to become a childminder in Scotland.</p>\n</div>\n\n<p>You must register if you’re paid to look after children:</p>\n\n<ul>\n  <li>16 or younger</li>\n  <li>for more than 2 hours a day</li>\n  <li>in a private home</li>\n</ul>\n\n<p>All the adults living or working at the home where you’re based must also register.</p>\n\n<p>You don’t have to register to do babysitting.</p>\n\n<p>The registration fee is £28. There is also an annual continuation fee of £17.</p>\n\n<h2 id=\"after-youve-applied\">After you’ve applied</h2>\n\n<p>The Care Inspectorate will:</p>\n\n<ul>\n  <li>check your references</li>\n  <li>carry out Protection of Vulnerable Groups (PVG) Scheme checks and <a rel=\"external\" href=\"https://mygov.scot/pvg-scheme/\">Disclosure Scotland</a> criminal records checks (fees apply)</li>\n  <li>check anyone else who will be living or working at the home</li>\n  <li>inspect the home</li>\n</ul>\n\n<h2 id=\"getting-your-registration\">Getting your registration</h2>\n\n<p>You’ll receive a certificate that shows you’re a registered childminder if you’re approved. This usually takes between 2 and 3 months.</p>\n\n<h2 id=\"displaying-your-certificate\">Displaying your certificate</h2>\n\n<p>You must keep your certificate of registration - or a copy of it - where it can be easily seen.</p>\n\n<h2 id=\"fines-and-penalties\">Fines and penalties</h2>\n\n<p>You could be fined £5,000, sent to prison, or both, if you work as or advertise for work as a childminder without registering.</p>\n",
+    "external_related_links": [
+
+    ]
+  }
+}

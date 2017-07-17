@@ -12,10 +12,26 @@
     <div class="high-volume">
       <h2>Topic related links</h2>
       <ol>
-          <li><%= link_to("title", "base_path") %></li>
-          <li><%= link_to("title", "base_path") %></li>
+      <% page_schema.related_links.each do |link| %>
+        <li><%= link_to(link.title, link.url) %></li>
+      <% end %>
       </ol>
+      <% if page_schema.related_links.count > 3 then %>
+      <%= link_to("More", "/test") %>
+      <% end %>
     </div>
+  </div>
+  <div class="column-third">
+    <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">Topic related links</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <a href="/services/registering-as-childminder-scotland">Register as a childminder (Scotland)</a><br>
+          <a href="#">Register as a childminder (Wales)</a><br>
+          <a href="#">Register as a childminder (Northern Ireland)</a><br>
+          <a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a>
+        </nav>
+        <a href="#" class="bold-xsmall"></a>
+    </aside>
   </div>
 </div>
 
@@ -27,23 +43,21 @@
       <div data-module="accordion-with-descriptions" class="js-hidden">
         <div class="subsection-wrapper">
 
-          <% @page_schema.steps.each_with_index do |step, index| %>
+          <% page_schema.steps.each_with_index do |step, index| %>
             <div class="subsection js-subsection" id="index-<%= index %>" data-track-count="accordionSection">
               <div class="subsection-header js-subsection-header">
-                <h2 class="subsection-title js-subsection-title"><%= step.title %></h2>
+                <h2 class="subsection-title js-subsection-title"><%= "#{index + 1 }. #{step.title}" %></h2>
                 <p class="subsection-description"><%= step.description %></p>
               </div>
 
               <div class="subsection-content js-subsection-content" id="subsection_content_<%= index + 1 %>">
-                <ol class="subsection-list">
+                <ul class="subsection-list">
                   <% step.links.each_with_index do |link, index| %>
                     <li class="subsection-list-item">
                       <%= link_to(link.title, link.url) %>
-
-                      <p><%= link.description %></p>
                     </li>
                   <% end %>
-                </ol>
+                </ul>
               </div>
             </div>
           <% end %>

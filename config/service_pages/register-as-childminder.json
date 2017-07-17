@@ -8,6 +8,7 @@
     {"title": "Register as childminder (Scotland)", "url": "/childminder-in-scotland"},
     {"title": "Register as childminder (Wales)", "url": "/childminder-in-wales"},
     {"title": "Register as childminder (Northern Ireland)", "url": "/childminder-in-northern-ireland"},
+    {"title": "Register as childminder (Northern Ireland)", "url": "/childminder-in-northern-ireland"}
   ],
   "steps": [
     {
@@ -36,6 +37,96 @@
       "position": 2,
       "title": "Contact your local council",
       "description": "You must contact your local council before you can start applying to be a childminder.",
+      "links": [
+        {
+          "title": "Find a registered childminder", "url": "/blahblah"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "title": "Get a criminal history check",
+      "description": "",
+      "links": [
+        {
+          "title": "Find a registered childminder", "url": "/blahblah"
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "title": "Get a health check",
+      "description": "",
+      "links": [
+        {
+          "title": "Find a registered childminder", "url": "/blahblah"
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "title": "Do childminder training",
+      "description": "",
+      "links": [
+        {
+          "title": "Find a registered childminder", "url": "/blahblah"
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "title": "Learn about the Early Years Foundation Stage",
+      "description": "",
+      "links": [
+        {
+          "title": "Find a registered childminder", "url": "/blahblah"
+        }
+      ]
+    },
+    {
+      "position": 7,
+      "title": "Do first aid training",
+      "description": "",
+      "links": [
+        {
+          "title": "Find a registered childminder", "url": "/blahblah"
+        }
+      ]
+    },
+    {
+      "position": 8,
+      "title": "Apply to Ofsted",
+      "description": "",
+      "links": [
+        {
+          "title": "Find a registered childminder", "url": "/blahblah"
+        }
+      ]
+    },
+    {
+      "position": 9,
+      "title": "Get your premesis inspected by Ofstead",
+      "description": "",
+      "links": [
+        {
+          "title": "Find a registered childminder", "url": "/blahblah"
+        }
+      ]
+    },
+    {
+      "position": 10,
+      "title": "Get insured",
+      "description": "",
+      "links": [
+        {
+          "title": "Find a registered childminder", "url": "/blahblah"
+        }
+      ]
+    },
+    {
+      "position": 11,
+      "title": "Register your business",
+      "description": "",
       "links": [
         {
           "title": "Find a registered childminder", "url": "/blahblah"
