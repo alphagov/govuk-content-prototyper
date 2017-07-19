@@ -2,10 +2,9 @@
   <div class="column-two-thirds">
     <div class="govuk-title length-long">
       <h1>
-        <%= presented_taxon.title %>
+        <%= page_schema.title %>
       </h1>
-      <p><%= presented_taxon.description %></p>
-      <%= render partial: 'email_alerts', locals: { taxon: presented_taxon } %>
+      <p><%= page_schema.description %></p>
     </div>
   </div>
 </div>
