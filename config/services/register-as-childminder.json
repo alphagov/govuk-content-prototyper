@@ -17,6 +17,7 @@
         "content_id": "6e7c1795-2592-4ada-adc7-2cdc478a607f",
         "title": "Check if you are eligible",
         "description": "You will need to fit certain criterea to get on the early years register.",
+        "ordered_task_list": false,
         "ordered_tasks": [
           {
             "title": "Check if someone can work in the UK",
@@ -36,6 +37,7 @@
         "content_id": "7f4175a3-3585-41b8-bd43-02689af39f03",
         "title": "Contact your local council",
         "description": "You must contact your local council before you can start applying to be a childminder. Your local council will often be your main point of contact when becoming a childminder.",
+        "ordered_task_list": false,
         "ordered_tasks": [
           {
             "title": "Find a registered childminder",
@@ -47,6 +49,7 @@
         "content_id": "f248f590-d1a3-4f6e-838b-1d42dd38478f",
         "title": "Get a criminal history check",
         "description": "Before you apply you must get a criminal record check for yourself and anyone else who will be on the premesis where you are looking after children. This is to ensure the safety of children in your care. This criminal check is called a DBS check, previously known as a CRB check.",
+        "ordered_task_list": false,
         "ordered_tasks": [
           {
             "title": "DBS checks (previously CRB checks)",
@@ -59,6 +62,72 @@
           {
             "title": "Disclosure and Barring Service (DBS) checks: childcare providers",
             "base_path": "/government/publications/disclosure-and-barring-service-dbs-checks-for-childcare-providers-who-register-with-ofsted"
+          }
+        ]
+      },
+      {
+        "content_id": "e2268311-ada2-477c-90dc-9837216e0108",
+        "title": "Get a health check",
+        "description": "You must complete a health declaration and take it to your GP. This will include information about any health condition that may affect your ability to safely care for children.",
+        "ordered_task_list": false,
+        "ordered_tasks": [
+          {
+            "title": "Become a childcare or children's social care provider: health declaration",
+            "base_path": "/government/publications/become-a-childcare-provider-health-declaration"
+          }
+        ]
+      },
+      {
+        "content_id": "21125700-2193-4021-9592-f6e9c1360951",
+        "title": "Do childminder training",
+        "description": "You must do training to look after children. You can get information about this through your local council.",
+        "ordered_task_list": false,
+        "ordered_tasks": [
+          {
+            "title": "Find a registered childminder",
+            "base_path": "/find-registered-childminder"
+          }
+        ]
+      },
+      {
+        "content_id": "f13587be-2d3e-40e8-a87a-ccdd85f9ee2e",
+        "title": "Learn about the Early Years Foundation Stage",
+        "description": "Childcare providers in England must follow the statutory guidance laid out in the Early Years Foundation Stage Framework. You should familiarise yourself with this before applying.",
+        "ordered_task_list": false,
+        "ordered_tasks": [
+          {
+            "title": "Early years foundation stage",
+            "base_path": "/early-years-foundation-stage"
+          },
+          {
+            "title": "Early years (under 5s) foundation stage framework (EYFS)",
+            "base_path": "/government/publications/early-years-foundation-stage-framework--2"
+          }
+        ]
+      },
+      {
+        "content_id": "f00ee470-5a4b-4823-a592-b27f54c3043f",
+        "title": "Do first aid training",
+        "description": "You need to do a 12-hour first aid training course with an accredited training provider if you are looking after children 5 years old and younger.",
+        "ordered_tasks": []
+      },
+      {
+        "content_id": "77d7d1fa-145c-42a3-98f6-f2b35a2cc78a",
+        "title": "Apply to Ofsted",
+        "description": "You must apply online with Ofsted. You will need two people to write references recommending you, your DBS checks and training certificates.",
+        "ordered_task_list": true,
+        "ordered_tasks": [
+          {
+            "title": "Get a Government Gateway account",
+            "base_path": "/government-gateway"
+          },
+          {
+            "title": "Apply online",
+            "external_link": "https://online.ofsted.gov.uk/OnlineOfsted/default.aspx"
+          },
+          {
+            "title": "Pay your registration and annual fee to Ofsted",
+            "base_path": "/pay-ofsted-registration-annual-fee"
           }
         ]
       }
