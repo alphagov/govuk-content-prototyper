@@ -8,11 +8,5 @@
 <%= render partial: 'page_header', locals: { page_schema: page_schema } %>
 
 <% content_for :breadcrumbs do %>
-  <%= render partial: 'govuk_component/breadcrumbs', locals: {
-    breadcrumbs: [
-       { title: "Services", url: "/services"},
-       { title: "Education", url: "/services/education" },
-       { title: "Early years", url: "/services/education/early-years" },
-       { title: "Childcare", url: "/services/education/early-years/childcare" }
-     ] } %>
+  <%= render partial: 'govuk_component/breadcrumbs', locals: { navigation.breadcrumbs } %>
 <% end %>
