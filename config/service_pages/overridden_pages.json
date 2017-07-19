@@ -1,61 +1,23 @@
 {
   "/registering-as-childminder-scotland": {
     "override": {
-      "ordered_related_items": [
-        {
-          "api_path": "/api/content/services/register-as-childminder",
-          "base_path": "/services/register-as-childminder",
-          "content_id": "69af22e0-da49-4810-9ee4-22b4666acx27",
-          "description": "Service: Register as childminder",
-          "document_type": "guidance",
-          "locale": "en",
-          "public_updated_at": "2017-06-20T10:58:44Z",
-          "schema_name": "guidance",
-          "title": "Service: Register as childminder",
-          "withdrawn": "false",
-          "links": {
-            "mainstream_browse_pages": [
+      "ordered_related_items": {
+        "sections": [
+          {
+            "header": "First Header",
+            "links": [
               {
-                "api_path": "/api/content/browse/business/licences",
-                "base_path": "/browse/business/licences",
-                "content_id": "fcf23e92-328f-4990-ba44-fbee5f2f7d64",
-                "description": "Applying for licences for events and businesses",
-                "document_type": "mainstream_browse_page",
-                "locale": "en",
-                "public_updated_at": "2016-11-18T16:02:30Z",
-                "schema_name": "mainstream_browse_page",
-                "title": "Licences and licence applications",
-                "withdrawn": "false",
-                "links": {
-                  "parent": [
-                    {
-                      "api_path": "/api/content/browse/business",
-                      "base_path": "/browse/business",
-                      "content_id": "2e47e500-8d91-4747-b6d8-cf6524d570f1",
-                      "description": "Information about starting up and running a business in the UK, including help if you're self employed or a sole trader.",
-                      "document_type": "mainstream_browse_page",
-                      "locale": "en",
-                      "public_updated_at": "2016-11-18T16:02:29Z",
-                      "schema_name": "mainstream_browse_page",
-                      "title": "Business and self-employed",
-                      "withdrawn": "false",
-                      "links": {
-
-                      },
-                      "api_url": "https://www.gov.uk/api/content/browse/business",
-                      "web_url": "https://www.gov.uk/browse/business"
-                    }
-                  ]
-                },
-                "api_url": "https://www.gov.uk/api/content/browse/business/licences",
-                "web_url": "https://www.gov.uk/browse/business/licences"
+                "title": "Licence Finder",
+                "base_path": "/licence-finder"
+              },
+              {
+                "title": "Licence Finder",
+                "base_path": "/licence-finder"
               }
             ]
-          },
-          "api_url": "https://www.gov.uk/api/content/services/register-as-childminder",
-          "web_url": "https://www.gov.uk/services/register-as-childminder"
-        }
-      ]
+          }
+        ]
+      }
     }
   }
 }
