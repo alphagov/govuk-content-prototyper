@@ -5,7 +5,7 @@ class ServicesController < ApplicationController
     page_template = page_schema.rendering_type
 
     render page_template, locals: {
-      page_schema: page_schema
+      page_schema: page_schema,
       navigation: navigation
     }
   end

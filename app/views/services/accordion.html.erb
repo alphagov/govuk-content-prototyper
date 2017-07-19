@@ -11,23 +11,13 @@
 <div class="grid-row">
   <div class="column-two-thirds">
     <div class="high-volume">
-      <%= render partial: 'govuk_component/related_items', locals: navigation.related_items %>
+      <h3>Hello World</h3>
     </div>
   </div>
   <div class="column-third">
-    <aside class="govuk-related-items" role="complementary">
-        <h2 class="heading-medium" id="subsection-title">Topic related links</h2>
-        <nav role="navigation" aria-labelledby="subsection-title">
-          <a href="/registering-as-childminder-scotland">Register as a childminder (Scotland)</a><br>
-          <a href="#">Register as a childminder (Wales)</a><br>
-          <a href="#">Register as a childminder (Northern Ireland)</a><br>
-          <a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a>
-        </nav>
-        <a href="#" class="bold-xsmall"></a>
-    </aside>
+    <%= render partial: 'govuk_component/related_items', locals: navigation.related_items %>
   </div>
 </div>
-
 
 <div class="grid-row child-topic-contents">
   <div class="column-two-thirds">
@@ -36,7 +26,7 @@
       <div data-module="accordion-with-descriptions" class="js-hidden">
         <div class="subsection-wrapper">
 
-          <% page_schema.steps.each_with_index do |step, index| %>
+          <% page_schema.links.ordered_steps.each_with_index do |step, index| %>
             <div class="subsection js-subsection" id="index-<%= index %>" data-track-count="accordionSection">
               <div class="subsection-header js-subsection-header">
                 <h2 class="subsection-title js-subsection-title"><%= "#{index + 1 }. #{step.title}" %></h2>
@@ -45,9 +35,9 @@
 
               <div class="subsection-content js-subsection-content" id="subsection_content_<%= index + 1 %>">
                 <ul class="subsection-list">
-                  <% step.links.each_with_index do |link, index| %>
+                  <% step.ordered_tasks.each_with_index do |task, index| %>
                     <li class="subsection-list-item">
-                      <%= link_to(link.title, link.url) %>
+                      <%= link_to(task.title, task.base_path || task.external_link) %>
                     </li>
                   <% end %>
                 </ul>
