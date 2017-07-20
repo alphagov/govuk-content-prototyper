@@ -17,6 +17,11 @@
     <div class="column-two-thirds">
       <%= content_html %>
     </div>
+
+    <div class="column-third">
+      <%= render partial: 'govuk_component/related_items', locals: related_items %>
+    </div>
+
     <div class="column-third add-title-margin">
       <%= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>
     </div>

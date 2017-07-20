@@ -10,6 +10,7 @@ class ContentItemsController < ApplicationController
       main_attributes: main_attributes,
       breadcrumbs: navigation_helpers.taxon_breadcrumbs[:breadcrumbs],
       taxonomy_sidebar: navigation_helpers.taxonomy_sidebar,
+      related_items: navigation_helpers.related_items,
       page_type: page_type,
     }
   end
