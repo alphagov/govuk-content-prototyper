@@ -35,7 +35,7 @@
 
               <div class="subsection-content js-subsection-content" id="subsection_content_<%= index + 1 %>">
                 <ul class="subsection-list">
-                  <% step.ordered_tasks.each_with_index do |task, index| %>
+                  <% step.links.ordered_tasks.each_with_index do |task, index| %>
                     <li class="subsection-list-item">
                       <%= link_to(task.title, task.base_path || task.external_link) %>
                     </li>

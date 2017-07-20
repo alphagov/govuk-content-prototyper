@@ -18,118 +18,175 @@
         "title": "Check if you are eligible",
         "description": "You will need to fit certain criterea to get on the early years register.",
         "ordered_task_list": false,
-        "ordered_tasks": [
-          {
-            "title": "Check if someone can work in the UK",
-            "base_path": "/legal-right-work-uk"
-          },
-          {
-            "title": "Become a registered early years or childcare provider in England",
-            "base_path": "/government/publications/become-a-registered-early-years-or-childcare-provider-in-england"
-          },
-          {
-            "title": "Applying to waive disqualification: early years and childcare providers",
-            "base_path": "/government/publications/applying-to-waive-disqualification-early-years-and-childcare-providers"
-          }
-        ]
+        "links": {
+          "ordered_tasks": [
+            {
+              "title": "Check if someone can work in the UK",
+              "base_path": "/legal-right-work-uk"
+            },
+            {
+              "title": "Become a registered early years or childcare provider in England",
+              "base_path": "/government/publications/become-a-registered-early-years-or-childcare-provider-in-england"
+            },
+            {
+              "title": "Applying to waive disqualification: early years and childcare providers",
+              "base_path": "/government/publications/applying-to-waive-disqualification-early-years-and-childcare-providers"
+            }
+          ]
+        }
       },
       {
         "content_id": "7f4175a3-3585-41b8-bd43-02689af39f03",
         "title": "Contact your local council",
         "description": "You must contact your local council before you can start applying to be a childminder. Your local council will often be your main point of contact when becoming a childminder.",
         "ordered_task_list": false,
-        "ordered_tasks": [
-          {
-            "title": "Find a registered childminder",
-            "base_path": "/find-registered-childminder"
-          }
-        ]
+        "links": {
+          "ordered_tasks": [
+            {
+              "title": "Find a registered childminder",
+              "base_path": "/find-registered-childminder"
+            }
+          ]
+        }
       },
       {
         "content_id": "f248f590-d1a3-4f6e-838b-1d42dd38478f",
         "title": "Get a criminal history check",
         "description": "Before you apply you must get a criminal record check for yourself and anyone else who will be on the premesis where you are looking after children. This is to ensure the safety of children in your care. This criminal check is called a DBS check, previously known as a CRB check.",
         "ordered_task_list": false,
-        "ordered_tasks": [
-          {
-            "title": "DBS checks (previously CRB checks)",
-            "base_path": "/disclosure-barring-service-check/overview"
-          },
-          {
-            "title": "Get a DBS check through Ofsted",
-            "external_link": "https://ofsteddbsapplication.co.uk/step-one.aspx"
-          },
-          {
-            "title": "Disclosure and Barring Service (DBS) checks: childcare providers",
-            "base_path": "/government/publications/disclosure-and-barring-service-dbs-checks-for-childcare-providers-who-register-with-ofsted"
-          }
-        ]
+        "links": {
+          "ordered_tasks": [
+            {
+              "title": "DBS checks (previously CRB checks)",
+              "base_path": "/disclosure-barring-service-check/overview"
+            },
+            {
+              "title": "Get a DBS check through Ofsted",
+              "external_link": "https://ofsteddbsapplication.co.uk/step-one.aspx"
+            },
+            {
+              "title": "Disclosure and Barring Service (DBS) checks: childcare providers",
+              "base_path": "/government/publications/disclosure-and-barring-service-dbs-checks-for-childcare-providers-who-register-with-ofsted"
+            }
+          ]
+        }
       },
       {
         "content_id": "e2268311-ada2-477c-90dc-9837216e0108",
         "title": "Get a health check",
         "description": "You must complete a health declaration and take it to your GP. This will include information about any health condition that may affect your ability to safely care for children.",
         "ordered_task_list": false,
-        "ordered_tasks": [
-          {
-            "title": "Become a childcare or children's social care provider: health declaration",
-            "base_path": "/government/publications/become-a-childcare-provider-health-declaration"
-          }
-        ]
+        "links": {
+          "ordered_tasks": [
+            {
+              "title": "Become a childcare or children's social care provider: health declaration",
+              "base_path": "/government/publications/become-a-childcare-provider-health-declaration"
+            }
+          ]
+        }
       },
       {
         "content_id": "21125700-2193-4021-9592-f6e9c1360951",
         "title": "Do childminder training",
         "description": "You must do training to look after children. You can get information about this through your local council.",
         "ordered_task_list": false,
-        "ordered_tasks": [
-          {
-            "title": "Find a registered childminder",
-            "base_path": "/find-registered-childminder"
-          }
-        ]
+        "links": {
+          "ordered_tasks": [
+            {
+              "title": "Find a registered childminder",
+              "base_path": "/find-registered-childminder"
+            }
+          ]
+        }
       },
       {
         "content_id": "f13587be-2d3e-40e8-a87a-ccdd85f9ee2e",
         "title": "Learn about the Early Years Foundation Stage",
         "description": "Childcare providers in England must follow the statutory guidance laid out in the Early Years Foundation Stage Framework. You should familiarise yourself with this before applying.",
         "ordered_task_list": false,
-        "ordered_tasks": [
-          {
-            "title": "Early years foundation stage",
-            "base_path": "/early-years-foundation-stage"
-          },
-          {
-            "title": "Early years (under 5s) foundation stage framework (EYFS)",
-            "base_path": "/government/publications/early-years-foundation-stage-framework--2"
-          }
-        ]
+        "links": {
+          "ordered_tasks": [
+            {
+              "title": "Early years foundation stage",
+              "base_path": "/early-years-foundation-stage"
+            },
+            {
+              "title": "Early years (under 5s) foundation stage framework (EYFS)",
+              "base_path": "/government/publications/early-years-foundation-stage-framework--2"
+            }
+          ]
+        }
       },
       {
         "content_id": "f00ee470-5a4b-4823-a592-b27f54c3043f",
         "title": "Do first aid training",
         "description": "You need to do a 12-hour first aid training course with an accredited training provider if you are looking after children 5 years old and younger.",
-        "ordered_tasks": []
+        "links": {
+          "ordered_tasks": []
+        }
       },
       {
         "content_id": "77d7d1fa-145c-42a3-98f6-f2b35a2cc78a",
         "title": "Apply to Ofsted",
         "description": "You must apply online with Ofsted. You will need two people to write references recommending you, your DBS checks and training certificates.",
         "ordered_task_list": true,
-        "ordered_tasks": [
-          {
-            "title": "Get a Government Gateway account",
-            "base_path": "/government-gateway"
-          },
-          {
-            "title": "Apply online",
-            "external_link": "https://online.ofsted.gov.uk/OnlineOfsted/default.aspx"
-          },
-          {
-            "title": "Pay your registration and annual fee to Ofsted",
-            "base_path": "/pay-ofsted-registration-annual-fee"
-          }
-        ]
+        "links": {
+          "ordered_tasks": [
+            {
+              "title": "Get a Government Gateway account",
+              "base_path": "/government-gateway"
+            },
+            {
+              "title": "Apply online",
+              "external_link": "https://online.ofsted.gov.uk/OnlineOfsted/default.aspx"
+            },
+            {
+              "title": "Pay your registration and annual fee to Ofsted",
+              "base_path": "/pay-ofsted-registration-annual-fee"
+            }
+          ]
+        }
+      },
+      {
+        "content_id": "24093779-298d-4d8e-92cc-1e4db8e7e151",
+        "title": "Get your premesis inspected by Ofsted",
+        "description": "Find out how to prepare for your registration visit in part 2 of the registration handbook.",
+        "ordered_task_list": false,
+        "links": {
+          "ordered_tasks": [
+            {
+              "title": "Become a registered early years or childcare provider in England",
+              "base_path": "/government/publications/become-a-registered-early-years-or-childcare-provider-in-england"
+            }
+          ]
+        }
+      },
+      {
+        "content_id": "787028bc-ea5f-4913-aa65-85f27677e2ee",
+        "title": "Get insured",
+        "description": "You need to have public laibility insurance before you open for business. You can get this from many providers.",
+        "ordered_task_list": false,
+        "links": {
+          "ordered_tasks": []
+        }
+      },
+      {
+        "content_id": "eee585a6-b455-4313-b853-b11879fc77bc",
+        "title": "Register your business",
+        "description": "You must register your business and pay tax on the money you earn.",
+        "ordered_task_list": false,
+        "links": {
+          "ordered_tasks": [
+            {
+              "title": "Register your new business with HMRC",
+              "base_path": "/new-business-register-for-tax"
+            },
+            {
+              "title": "Self Assessment tax returns",
+              "base_path": "/self-assessment-tax-returns/who-must-send-a-tax-return"
+            }
+          ]
+        }
       }
     ],
     "ordered_related_items": [
