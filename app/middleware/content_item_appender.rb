@@ -9,8 +9,6 @@ class ContentItemAppender
   def call(env)
     base_path = env['PATH_INFO']
     begin
-      # TODO: change this to use our content store version
-
       env['content_item'] = content_store_item(base_path)
     rescue GdsApi::ContentStore::ItemNotFound, GdsApi::HTTPGone
       # Ignore NotFound and Gone, and just don't set env['content_item']
