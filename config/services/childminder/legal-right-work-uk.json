@@ -1,0 +1,860 @@
+{
+  "analytics_identifier": null,
+  "base_path": "/legal-right-work-uk",
+  "content_id": "76ed4c84-3386-4b78-b0c6-e910e54f15df",
+  "document_type": "simple_smart_answer",
+  "email_document_supertype": "other",
+  "first_published_at": "2016-02-29T09:24:10.000+00:00",
+  "government_document_supertype": "other",
+  "locale": "en",
+  "navigation_document_supertype": "guidance",
+  "need_ids": [
+
+  ],
+  "phase": "live",
+  "public_updated_at": "2017-02-03T13:43:49.000+00:00",
+  "publishing_app": "publisher",
+  "rendering_app": "frontend",
+  "schema_name": "simple_smart_answer",
+  "title": "LOCAL Check if someone can work in the UK",
+  "updated_at": "2017-05-09T12:40:19.064Z",
+  "user_journey_document_supertype": "thing",
+  "withdrawn_notice": {
+
+  },
+  "publishing_request_id": null,
+  "links": {
+    "mainstream_browse_pages": [
+      {
+        "api_path": "/api/content/browse/employing-people/recruiting-hiring",
+        "base_path": "/browse/employing-people/recruiting-hiring",
+        "content_id": "18316184-f6ff-4581-a487-83935a490074",
+        "description": "Advertise a job, Disclosure and Barring (DBS) checks, discrimination law and apprenticeships",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-06-24T13:56:45Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Recruiting and hiring",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/employing-people/recruiting-hiring",
+        "web_url": "https://www.gov.uk/browse/employing-people/recruiting-hiring"
+      }
+    ],
+    "ordered_related_items": [
+      {
+        "api_path": "/api/content/check-job-applicant-right-to-work",
+        "base_path": "/check-job-applicant-right-to-work",
+        "content_id": "63fe19b5-bbcd-4712-9250-a1cd3125c470",
+        "description": "Make sure a job applicant can work in the UK - check they have the right documents and make sure you're not prosecuted for employing an illegal worker",
+        "document_type": "answer",
+        "locale": "en",
+        "public_updated_at": "2014-11-24T15:40:43Z",
+        "schema_name": "answer",
+        "title": "Check a job applicant's 'right to work' documents",
+        "withdrawn": false,
+        "links": {
+          "mainstream_browse_pages": [
+            {
+              "api_path": "/api/content/browse/employing-people/recruiting-hiring",
+              "base_path": "/browse/employing-people/recruiting-hiring",
+              "content_id": "18316184-f6ff-4581-a487-83935a490074",
+              "description": "Advertise a job, Disclosure and Barring (DBS) checks, discrimination law and apprenticeships",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2015-06-24T13:56:45Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Recruiting and hiring",
+              "withdrawn": false,
+              "links": {
+                "parent": [
+                  {
+                    "api_path": "/api/content/browse/employing-people",
+                    "base_path": "/browse/employing-people",
+                    "content_id": "a0a4c44e-5e8a-44f6-9e64-32ab2c9ba065",
+                    "description": "Includes pay, contracts and hiring",
+                    "document_type": "mainstream_browse_page",
+                    "locale": "en",
+                    "public_updated_at": "2015-04-08T10:48:44Z",
+                    "schema_name": "mainstream_browse_page",
+                    "title": "Employing people",
+                    "withdrawn": false,
+                    "links": {
+
+                    },
+                    "api_url": "https://www.gov.uk/api/content/browse/employing-people",
+                    "web_url": "https://www.gov.uk/browse/employing-people"
+                  }
+                ]
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/employing-people/recruiting-hiring",
+              "web_url": "https://www.gov.uk/browse/employing-people/recruiting-hiring"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/check-job-applicant-right-to-work",
+        "web_url": "https://www.gov.uk/check-job-applicant-right-to-work"
+      },
+      {
+        "api_path": "/api/content/penalties-for-employing-illegal-workers",
+        "base_path": "/penalties-for-employing-illegal-workers",
+        "content_id": "b482ebeb-d93a-48f2-8c22-c858234b3817",
+        "description": "You can receive an unlimited fine for employing an illegal worker - find out what happens and what you can do",
+        "document_type": "answer",
+        "locale": "en",
+        "public_updated_at": "2015-10-15T08:49:22Z",
+        "schema_name": "answer",
+        "title": "Penalties for employing illegal workers",
+        "withdrawn": false,
+        "links": {
+          "mainstream_browse_pages": [
+            {
+              "api_path": "/api/content/browse/employing-people/recruiting-hiring",
+              "base_path": "/browse/employing-people/recruiting-hiring",
+              "content_id": "18316184-f6ff-4581-a487-83935a490074",
+              "description": "Advertise a job, Disclosure and Barring (DBS) checks, discrimination law and apprenticeships",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2015-06-24T13:56:45Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Recruiting and hiring",
+              "withdrawn": false,
+              "links": {
+                "parent": [
+                  {
+                    "api_path": "/api/content/browse/employing-people",
+                    "base_path": "/browse/employing-people",
+                    "content_id": "a0a4c44e-5e8a-44f6-9e64-32ab2c9ba065",
+                    "description": "Includes pay, contracts and hiring",
+                    "document_type": "mainstream_browse_page",
+                    "locale": "en",
+                    "public_updated_at": "2015-04-08T10:48:44Z",
+                    "schema_name": "mainstream_browse_page",
+                    "title": "Employing people",
+                    "withdrawn": false,
+                    "links": {
+
+                    },
+                    "api_url": "https://www.gov.uk/api/content/browse/employing-people",
+                    "web_url": "https://www.gov.uk/browse/employing-people"
+                  }
+                ]
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/employing-people/recruiting-hiring",
+              "web_url": "https://www.gov.uk/browse/employing-people/recruiting-hiring"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/penalties-for-employing-illegal-workers",
+        "web_url": "https://www.gov.uk/penalties-for-employing-illegal-workers"
+      }
+    ],
+    "organisations": [
+      {
+        "analytics_identifier": "OT554",
+        "api_path": "/api/content/government/organisations/uk-visas-and-immigration",
+        "base_path": "/government/organisations/uk-visas-and-immigration",
+        "content_id": "04148522-b0c1-4137-b687-5f3c3bdd561a",
+        "document_type": "organisation",
+        "locale": "en",
+        "public_updated_at": "2014-10-15T14:36:48Z",
+        "schema_name": "placeholder",
+        "title": "UK Visas and Immigration",
+        "withdrawn": false,
+        "details": {
+          "brand": "home-office",
+          "logo": {
+            "formatted_title": "UK Visas and Immigration",
+            "crest": "ho"
+          }
+        },
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/government/organisations/uk-visas-and-immigration",
+        "web_url": "https://www.gov.uk/government/organisations/uk-visas-and-immigration"
+      }
+    ],
+    "parent": [
+      {
+        "api_path": "/api/content/browse/employing-people/recruiting-hiring",
+        "base_path": "/browse/employing-people/recruiting-hiring",
+        "content_id": "18316184-f6ff-4581-a487-83935a490074",
+        "description": "Advertise a job, Disclosure and Barring (DBS) checks, discrimination law and apprenticeships",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-06-24T13:56:45Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Recruiting and hiring",
+        "withdrawn": false,
+        "links": {
+          "parent": [
+            {
+              "api_path": "/api/content/browse/employing-people",
+              "base_path": "/browse/employing-people",
+              "content_id": "a0a4c44e-5e8a-44f6-9e64-32ab2c9ba065",
+              "description": "Includes pay, contracts and hiring",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2015-04-08T10:48:44Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Employing people",
+              "withdrawn": false,
+              "links": {
+
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/employing-people",
+              "web_url": "https://www.gov.uk/browse/employing-people"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/employing-people/recruiting-hiring",
+        "web_url": "https://www.gov.uk/browse/employing-people/recruiting-hiring"
+      }
+    ],
+    "available_translations": [
+      {
+        "title": "LOCAL: Check if someone can work in the UK",
+        "public_updated_at": "2017-02-03T13:43:49Z",
+        "document_type": "simple_smart_answer",
+        "schema_name": "simple_smart_answer",
+        "base_path": "/legal-right-work-uk",
+        "description": "Find out if a potential employee has the right to work in the UK and what documents employers should check",
+        "api_path": "/api/content/legal-right-work-uk",
+        "withdrawn": false,
+        "content_id": "76ed4c84-3386-4b78-b0c6-e910e54f15df",
+        "locale": "en",
+        "api_url": "https://www.gov.uk/api/content/legal-right-work-uk",
+        "web_url": "https://www.gov.uk/legal-right-work-uk",
+        "links": {
+
+        }
+      }
+    ]
+  },
+  "description": "Find out if a potential employee has the right to work in the UK and what documents employers should check",
+  "details": {
+    "start_button_text": "Start now",
+    "body": "<p>Find out if a potential employee has the right to work in the UK and what documents employers should check.</p>\n\n<p>You can also use this tool to find out which documents you need to produce to prove you’re eligible to work in the UK.</p>\n\n<div role=\"note\" aria-label=\"Information\" class=\"application-notice info-notice\">\n<p>There will be no change to the <a href=\"https://www.gov.uk/government/collections/uk-leaving-the-eu-what-you-need-to-know\">rights and status of EU nationals living in the UK, nor UK nationals living in the EU</a>, while the UK remains in the EU.</p>\n</div>\n",
+    "nodes": [
+      {
+        "kind": "question",
+        "slug": "question-1",
+        "title": "Does the worker have a UK passport?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "question-2"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-3"
+          }
+        ]
+      },
+      {
+        "kind": "question",
+        "slug": "question-2",
+        "title": "Is the worker a British citizen?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-1"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-3"
+          }
+        ],
+        "body": "<p>This does not include these kinds of British citizenship:</p>\n\n<ul>\n  <li>British Nationals Overseas, eg from Hong Kong</li>\n  <li>British protected persons (from former British Empire)</li>\n  <li>British subjects, eg from India before 1949</li>\n  <li>British Overseas Territories citizens</li>\n  <li>British Overseas citizens, eg from Malaysia, Kenya</li>\n</ul>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-3",
+        "title": "Does the worker have a Certificate of Registration or Naturalisation as a British Citizen?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-3"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-4"
+          }
+        ]
+      },
+      {
+        "kind": "question",
+        "slug": "question-4",
+        "title": "Is the worker:",
+        "options": [
+          {
+            "label": "a British Citizen",
+            "slug": "a-british-citizen",
+            "next_node": "outcome-2"
+          },
+          {
+            "label": "from the Channel Islands or the Isle of Man",
+            "slug": "from-the-channel-islands-or-the-isle-of-man",
+            "next_node": "outcome-4"
+          },
+          {
+            "label": "from the EU, EEA or Switzerland",
+            "slug": "from-the-eu-eea-or-switzerland",
+            "next_node": "question-5"
+          },
+          {
+            "label": "a non-EEA family member of someone from the EU, EEA or Switzerland",
+            "slug": "a-non-eea-family-member-of-someone-from-the-eu-eea-or-switzerland",
+            "next_node": "question-7"
+          },
+          {
+            "label": "from somewhere else",
+            "slug": "from-somewhere-else",
+            "next_node": "question-20"
+          }
+        ]
+      },
+      {
+        "kind": "question",
+        "slug": "question-5",
+        "title": "Does the worker have an EU, EEA or Swiss passport or National Identity Card or are they a named person in their parent's or child's passport?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-5"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-6"
+          }
+        ],
+        "body": "<p>Hint: A named person is someone who appears on someone else’s passport, eg a parent.</p>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-6",
+        "title": "Does the worker have a Registration Certificate or document certifying permanent residence from the Home Office?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-6"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-8"
+          }
+        ]
+      },
+      {
+        "kind": "question",
+        "slug": "question-7",
+        "title": "Does the worker have a Permanent Residence Card issued to the family member of an EU, EEA or Swiss national?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-6"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-10"
+          }
+        ]
+      },
+      {
+        "kind": "question",
+        "slug": "question-8",
+        "title": "Does the worker have a current Biometric Residence Permit or current passport endorsed to show they’re allowed to stay indefinitely in the UK?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-7"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-9"
+          }
+        ],
+        "body": "<p>The permit or passport endorsement needs to show that it’s been issued by the Home Office, it’s current, in the worker’s name and shows that the worker has one of the following:</p>\n\n<ul>\n  <li>indefinite leave to enter or remain</li>\n  <li>no time limit to their stay in the UK</li>\n  <li>a certificate of entitlement to the Right of Abode</li>\n  <li>is exempt from immigration control</li>\n</ul>\n\n<p>The passport must also be current.</p>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-9",
+        "title": "Does the worker have a current Immigration Status Document?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-8"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-13"
+          }
+        ],
+        "body": "<p>It must show that the person has indefinite leave to stay in the UK or has no time limit to their stay.</p>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-10",
+        "title": "Does the worker have a current Residence Card that is issued by the Home Office to a non-EEA national who is the family member of an EU, EEA or Swiss national?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-9"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-11"
+          }
+        ],
+        "body": "<p>This includes a current Accession Card or Derivative Card. It must allow the worker to do the work you’re offering.</p>\n\n<p>When the card is in a passport, that passport can be current or expired.</p>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-11",
+        "title": "Does the worker have a current Biometric Residence Permit or current passport endorsed to show they’re allowed to stay indefinitely in the UK?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-7"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-12"
+          }
+        ],
+        "body": "<p>The permit or passport endorsement needs to show that it’s been issued by the Home Office, it’s current, in the worker’s name and shows that the worker has one of the following:</p>\n\n<ul>\n  <li>indefinite leave to enter or remain</li>\n  <li>no time limit to their stay in the UK</li>\n  <li>a certificate of entitlement to the Right of Abode</li>\n  <li>is exempt from immigration control</li>\n</ul>\n\n<p>The passport must also be current.</p>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-12",
+        "title": "Does the worker have a current Immigration Status Document?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-8"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-13"
+          }
+        ],
+        "body": "<p>It must show that the person has indefinite leave to stay in the UK or has no time limit to their stay.</p>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-13",
+        "title": "Does the worker have a current passport with a current endorsement from the Home Office?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-10"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-14"
+          }
+        ],
+        "body": "<p>It must show that the worker:</p>\n\n<ul>\n  <li>can do the work you’re offering</li>\n  <li>has a legal right to stay in the UK</li>\n</ul>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-14",
+        "title": "Does the worker have a current Biometric Residence Permit?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-11"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-15"
+          }
+        ],
+        "body": "<p>The permit needs to show all of the following:</p>\n\n<ul>\n  <li>it’s been issued by the Home Office</li>\n  <li>it’s in the worker’s name</li>\n  <li>the worker is allowed to stay in the UK</li>\n  <li>the worker is allowed to do the work you’re offering</li>\n</ul>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-15",
+        "title": "Does the worker have an Immigration Status Document?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-12"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-16"
+          }
+        ],
+        "body": "<p>It must show that the worker is allowed to do the work you’re offering.</p>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-16",
+        "title": "Does the worker have a Certificate of Application issued by the Home Office?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-16"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-18"
+          }
+        ],
+        "body": "<p>The certificate must state that the worker is a family member of an EEA, EU or Swiss national and is allowed to work.</p>\n\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-18",
+        "title": "Does the worker have an Application Registration Card?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-13"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-19"
+          }
+        ],
+        "body": "<p>The card must be issued by the Home Office stating the worker can do the type of work you’re offering.</p>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-19",
+        "title": "Are you reasonably satisfied that the worker has an outstanding application with the Home Office that was made before their previous leave expired or have an outstanding appeal against a Home Office decision?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-13"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "outcome-15"
+          }
+        ],
+        "body": "<p>The previous Home Office leave or Home Office decision must have allowed the worker to do the work you’re offering.</p>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-20",
+        "title": "Does the worker have a current passport with a current endorsement from the Home Office?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-10"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-21"
+          }
+        ],
+        "body": "<p>It must show that the worker:</p>\n\n<ul>\n  <li>can do the work you’re offering</li>\n  <li>has a legal right to stay in the UK</li>\n</ul>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-21",
+        "title": "Does the worker have a current Biometric Residence Permit or current passport endorsed to show they’re allowed to stay indefinitely in the UK?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-7"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-22"
+          }
+        ],
+        "body": "<p>The permit or passport endorsement needs to show that it’s been issued by the Home Office, it’s current, in the worker’s name and shows that the worker has one of the following:</p>\n\n<ul>\n  <li>indefinite leave to enter or remain</li>\n  <li>no time limit to their stay in the UK</li>\n  <li>a certificate of entitlement to the Right of Abode</li>\n  <li>is exempt from immigration control.</li>\n</ul>\n\n<p>The passport must also be current.</p>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-22",
+        "title": "Does the worker have a current Immigration Status Document?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-8"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-23"
+          }
+        ],
+        "body": "<p>It must show that the person has indefinite leave to stay in the UK or has no time limit to their stay.</p>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-23",
+        "title": "Does the worker have a current Biometric Residence Permit?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-11"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-24"
+          }
+        ],
+        "body": "<p>The permit needs to show all of the following:</p>\n\n<ul>\n  <li>it’s been issued by the Home Office</li>\n  <li>it’s in the worker’s name</li>\n  <li>the worker is allowed to stay in the UK</li>\n  <li>the worker is allowed to do the work you’re offering</li>\n</ul>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-24",
+        "title": "Does the worker have an Immigration Status Document?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-12"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-25"
+          }
+        ],
+        "body": "<p>It must show that the worker is allowed to do the work you’re offering.</p>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-25",
+        "title": "Does the worker have a Certificate of Application issued by the Home Office?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-16"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-26"
+          }
+        ],
+        "body": "<p>The certificate must state that the worker is a family member of an EEA, EU or Swiss national and is allowed to work.</p>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-26",
+        "title": "Does the worker have an Application Registration Card?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-13"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "question-27"
+          }
+        ],
+        "body": "<p>The card must be issued by the Home Office stating the worker can do the type of work you’re offering.</p>\n"
+      },
+      {
+        "kind": "question",
+        "slug": "question-27",
+        "title": "Are you reasonably satisfied that the worker has an outstanding application with the Home Office that was made before their previous leave expired or has an outstanding appeal against a Home Office decision?",
+        "options": [
+          {
+            "label": "Yes",
+            "slug": "yes",
+            "next_node": "outcome-13"
+          },
+          {
+            "label": "No",
+            "slug": "no",
+            "next_node": "outcome-15"
+          }
+        ],
+        "body": "<p>The previous Home Office leave or Home Office decision must have allowed the worker to do the work you’re offering.</p>\n"
+      },
+      {
+        "kind": "outcome",
+        "slug": "outcome-1",
+        "title": "The person is entitled to work in the UK.",
+        "options": [
+
+        ],
+        "body": "<p>The person is entitled to work in the UK.</p>\n\n<p>Employers should make a copy of the <a href=\"/check-an-employees-right-to-work-documents\">relevant parts of their passport</a>.</p>\n\n<p>You don’t have to do this check again.</p>\n"
+      },
+      {
+        "kind": "outcome",
+        "slug": "outcome-2",
+        "title": "The worker needs to show proof of their permission to work in the UK.",
+        "options": [
+
+        ],
+        "body": "<p>They need to show both:</p>\n\n<ul>\n  <li>an official letter or document from a government agency (eg HM Revenue and Customs, Department for Work and Pensions, or the Social Security Agency in Northern Ireland) or previous employer, showing their name and National Insurance number</li>\n  <li>a full birth or adoption certificate (that shows details of at least one of the birth or adoptive parents)</li>\n</ul>\n\n<p>You should <a href=\"/check-an-employees-right-to-work-documents\">make a copy</a> of both documents.</p>\n\n<p>You don’t have to do this check again.</p>\n"
+      },
+      {
+        "kind": "outcome",
+        "slug": "outcome-3",
+        "title": "The worker needs to show proof of their permission to work in the UK.",
+        "options": [
+
+        ],
+        "body": "<p>They need to show both:</p>\n\n<ul>\n  <li>an official letter or document from a government agency (eg HM Revenue and Customs, Department for Work and Pensions, or the Social Security Agency in Northern Ireland) or previous employer, showing their name and National Insurance number</li>\n  <li>a Certificate of Registration or Naturalisation as a British Citizen</li>\n</ul>\n\n<p>You should make a copy of the <a href=\"/check-an-employees-right-to-work-documents\">relevant documents.</a></p>\n\n<p>You don’t have to do this check again.</p>\n"
+      },
+      {
+        "kind": "outcome",
+        "slug": "outcome-4",
+        "title": "The worker needs to show proof of their permission to work in the UK.",
+        "options": [
+
+        ],
+        "body": "<p>They need to show both:</p>\n\n<ul>\n  <li>an official letter or document from a government agency (eg HM Revenue and Customs, Department for Work and Pensions, or the Social Security Agency in Northern Ireland) or previous employer, showing their name and National Insurance number</li>\n  <li>a birth or adoption certificate from the Channel Islands, Isle of Man or Ireland</li>\n</ul>\n\n<p>You should make a copy of <a href=\"/check-an-employees-right-to-work-documents\">both documents.</a></p>\n\n<p>You don’t have to do this check again.</p>\n"
+      },
+      {
+        "kind": "outcome",
+        "slug": "outcome-5",
+        "title": "The person is entitled to work in the UK. ",
+        "options": [
+
+        ],
+        "body": "<p>You should make a <a href=\"/check-an-employees-right-to-work-documents\">copy of the relevant parts of the passport or the entire National Identity Card</a>.</p>\n\n<p>You don’t have to do this check again.</p>\n\n<h2 id=\"croatians\">Croatians</h2>\n<p>People from Croatia must show <a href=\"/croatian-national\">proof of permission to work</a>, eg a worker authorisation document (also known as a purple registration certificate), or proof that they’re exempt from this restriction.</p>\n\n<p>You can <a href=\"/croatian-national/purple-registration-certificate\">apply for purple registration certificates</a> for Croatian workers before they can work in the UK.</p>\n"
+      },
+      {
+        "kind": "outcome",
+        "slug": "outcome-6",
+        "title": "The person is entitled to work in the UK. ",
+        "options": [
+
+        ],
+        "body": "<p>You should make a copy of the <a href=\"/check-an-employees-right-to-work-documents\">relevant documents</a>.</p>\n\n<p>You don’t have to do this check again.</p>\n"
+      },
+      {
+        "kind": "outcome",
+        "slug": "outcome-7",
+        "title": "The person is entitled to work in the UK. ",
+        "options": [
+
+        ],
+        "body": "<p>You should make a copy of the <a href=\"/check-an-employees-right-to-work-documents\">relevant parts of the passport or the entire Biometric Residence Permit.</a></p>\n\n<p>You don’t have to do this check again.</p>\n"
+      },
+      {
+        "kind": "outcome",
+        "slug": "outcome-8",
+        "title": "The person may be entitled to work in the UK. ",
+        "options": [
+
+        ],
+        "body": "<p>The worker needs to have both of the following:</p>\n\n<ul>\n  <li>a current Immigration Status Document issued by the Home Office, stating that the the worker has indefinite leave to remain or has no time limit to their stay in the UK</li>\n  <li>an official letter or document from a government agency (eg HM Revenue and Customs, Department for Work and Pensions, or the Social Security Agency in Northern Ireland) or previous employer, showing their name and National Insurance number</li>\n</ul>\n\n<p>You should make a copy of <a href=\"/check-an-employees-right-to-work-documents\">both documents.</a></p>\n\n<p>You don’t have to do this check again.</p>\n"
+      },
+      {
+        "kind": "outcome",
+        "slug": "outcome-9",
+        "title": "The person is entitled to work in the UK. ",
+        "options": [
+
+        ],
+        "body": "<p>You should <a href=\"/check-an-employees-right-to-work-documents\">make a copy of the residence card</a>.</p>\n\n<p>You need to make this check again when the card expires.</p>\n"
+      },
+      {
+        "kind": "outcome",
+        "slug": "outcome-10",
+        "title": "The person is entitled to work in the UK.",
+        "options": [
+
+        ],
+        "body": "<p>You should make a copy of the <a href=\"/check-an-employees-right-to-work-documents\">relevant parts of the passport</a>.</p>\n\n<p>You have to make this check again when the endorsement expires.</p>\n"
+      },
+      {
+        "kind": "outcome",
+        "slug": "outcome-11",
+        "title": "The person is entitled to work in the UK.",
+        "options": [
+
+        ],
+        "body": "<p>You should <a href=\"/check-an-employees-right-to-work-documents\">make a copy of both sides of their Biometric Residence Permit</a>.</p>\n\n<p>You have to make this check again when the endorsement expires.</p>\n"
+      },
+      {
+        "kind": "outcome",
+        "slug": "outcome-12",
+        "title": "The worker is entitled to work in the UK while their documents are valid.",
+        "options": [
+
+        ],
+        "body": "<p>The worker needs to have both of the following:</p>\n\n<ul>\n  <li>a current immigration status document issued by the Home Office\n with a photograph, stating that the worker is currently allowed to do any work or a specific type of work you’re offering</li>\n  <li>an official letter or document from a government agency (eg HM Revenue and Customs, Department for Work and Pensions, or the Social Security Agency in Northern Ireland) or previous employer, showing their name and National Insurance number</li>\n</ul>\n\n<p>You should <a href=\"/check-an-employees-right-to-work-documents\">make a copy of both documents</a>.</p>\n\n<p>You have to make the check again when the endorsement expires.</p>\n"
+      },
+      {
+        "kind": "outcome",
+        "slug": "outcome-13",
+        "title": "The worker may be entitled to work in the UK.",
+        "options": [
+
+        ],
+        "body": "<p>You must ask the Home Office check your worker’s <a href=\"/employee-immigration-employment-status\">immigration employment status</a>.</p>\n\n<p>If the Home Office check says they’re allowed to work, the worker can work for 6 months from the date of the check. You’ll then have to make another check.</p>\n\n<div role=\"note\" aria-label=\"Information\" class=\"application-notice info-notice\">\n<p>You may get a <a href=\"/penalties-for-employing-illegal-workers\">civil penalty</a> if the Home Office says the worker isn’t allowed to do the work you’re offering.</p>\n</div>\n\n"
+      },
+      {
+        "kind": "outcome",
+        "slug": "outcome-15",
+        "title": "The worker doesn’t have enough evidence of their entitlement to work in the UK.",
+        "options": [
+
+        ],
+        "body": "<p>You <a href=\"/penalties-for-employing-illegal-workers\">may get a penalty</a> if you employ the worker and they’re not allowed to do the work you’re offering.</p>\n\n<p>Read the <a href=\"/government/publications/preventing-illegal-working-code-of-practice-for-employers\">civil penalty scheme for illegal working</a> or contact the Sponsorship, Employer and Education helpline for more information.</p>\n\n<div class=\"contact\">\n<p><strong>Sponsorship, Employer and Education helpline</strong>\n<a href=\"mailto:BusinessHelpdesk@homeoffice.gsi.gov.uk\">BusinessHelpdesk@homeoffice.gsi.gov.uk</a><br>\nTelephone: 0300 123 4699<br>\nMonday to Thursday, 9am to 5pm<br>\nFriday, 9am to 4:30pm <br>\n<a href=\"/call-charges\">Find out about call charges</a></p>\n</div>\n\n"
+      },
+      {
+        "kind": "outcome",
+        "slug": "outcome-16",
+        "title": "The worker may be entitled to work in the UK.",
+        "options": [
+
+        ],
+        "body": "<p>You must ask the Home Office check your worker’s <a href=\"/employee-immigration-employment-status\">immigration employment status</a>.</p>\n\n<p>If the Home Office check says they’re allowed to work, the worker can work for 6 months from the date of the check. You’ll then have to make another check.</p>\n\n<div role=\"note\" aria-label=\"Information\" class=\"application-notice info-notice\">\n<p>You may get a <a href=\"/penalties-for-employing-illegal-workers\">civil penalty</a> if the Home Office says the worker isn’t allowed to do the work you’re offering.</p>\n</div>\n\n<h3 id=\"if-the-workers-certificate-of-application-is-more-than-6-months-old\">If the worker’s Certificate of Application is more than 6 months old</h3>\n\n<p>The worker must apply for a new Certificate of Application from the Home Office. They can apply by email or post.</p>\n\n<div class=\"contact\">\n<p><strong>UK Visas and Immigration</strong><br>\nEmail: <a href=\"mailto:NWEUROCOARequests@homeoffice.gsi.gov.uk\">NWEUROCOARequests@homeoffice.gsi.gov.uk</a></p>\n</div>\n\n<div class=\"address\"><div class=\"adr org fn\"><p>\n\nUK Visas and Immigration  \n<br>European Applications   \n<br>Security Team COA Requests  \n<br>PO Box 306  \n<br>Liverpool  \n<br>L3 9PP\n<br>\n</p></div></div>\n\n"
+      }
+    ],
+    "external_related_links": [
+
+    ]
+  }
+}

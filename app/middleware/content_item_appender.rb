@@ -9,7 +9,9 @@ class ContentItemAppender
   def call(env)
     base_path = env['PATH_INFO']
     begin
-      env['content_item'] = Services.content_store.content_item(base_path) if path_has_no_format?(base_path)
+      # TODO: change this to use our content store version
+
+      env['content_item'] = content_store_item(base_path)
     rescue GdsApi::ContentStore::ItemNotFound, GdsApi::HTTPGone
       # Ignore NotFound and Gone, and just don't set env['content_item']
     end
@@ -20,5 +22,15 @@ class ContentItemAppender
   # item for it
   def path_has_no_format?(path)
     /\./ !~ path
+  end
+
+  def content_store_item(base_path)
+    fake_content_store = FakeContentStore.new(base_path: base_path)
+
+    if fake_content_store.has_local_file?
+      fake_content_store.content_item
+    else
+      Services.content_store.content_item(base_path) if path_has_no_format?(base_path)
+    end
   end
 end
