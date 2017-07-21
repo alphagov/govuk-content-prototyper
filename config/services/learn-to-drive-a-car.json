@@ -1,0 +1,312 @@
+{
+  "base_path": "/services/learn-to-drive-a-car",
+  "content_id": "4ba1356d-c4c7-4f6b-7777-3b9a52af1ddd",
+  "document_type": "service",
+  "government_document_supertype": "other",
+  "navigation_document_supertype": "guidance",
+  "locale": "en",
+  "user_journey_document_supertype": "service",
+  "title": "Learn to drive a car",
+  "publishing_app": "publisher",
+  "rendering_app": "collections",
+  "rendering_type": "accordion",
+  "schema_name": "service",
+  "links": {
+    "ordered_steps": [
+      {
+        "content_id": "6e7c1795-2592-4ada-adc7-2cdc478a607f",
+        "title": "Check you're allowed to drive",
+        "description": "You and your vehicle must comply with certain rules before you are allowed to learn to drive on the road in the UK.",
+        "ordered_task_list": false,
+        "links": {
+          "ordered_tasks": [
+            {
+              "title": "Legal obligations of drivers and riders",
+              "base_path": "/legal-obligations-drivers-riders"
+            },
+            {
+              "title": "Vehicles you can drive",
+              "base_path": "/vehicles-can-drive"
+            },
+            {
+              "title": "Driving eyesight rules",
+              "base_path": "/driving-eyesight-rules"
+            }
+          ]
+        }
+      },
+      {
+        "content_id": "7f4175a3-3585-41b8-bd43-02689af39f03",
+        "title": "Get a provisional driving licence",
+        "description": "You must have a provisional driving licence in order to learn to drive on the road in the UK. When you pass your test you will get a full driving licence.",
+        "ordered_task_list": false,
+        "links": {
+          "ordered_tasks": [
+            {
+              "title": "Apply for your first provisional driving licence",
+              "base_path": "/apply-first-provisional-driving-licence"
+            },
+            {
+              "title": "Driving licence fees",
+              "base_path": "/driving-licence-fees"
+            },
+            {
+              "title": "Track your driving licence application",
+              "base_path": "/track-your-driving-licence-application"
+            },
+            {
+              "title": "Order DVLA forms",
+              "base_path": "/dvlaforms"
+            }
+          ]
+        }
+      },
+      {
+        "content_id": "f248f590-d1a3-4f6e-838b-1d42dd38478f",
+        "title": "Take driving lessons",
+        "description": "You can take lessons with a driving instructor to help you prepare for your driving tests.",
+        "ordered_task_list": false,
+        "links": {
+          "ordered_tasks": [
+            {
+              "title": "Driving lessons and learning to drive",
+              "base_path": "/driving-lessons-learning-to-drive"
+            },
+            {
+              "title": "Find driving schools, lessons and instructors",
+              "external_link": "/find-driving-schools-and-lessons"
+            },
+            {
+              "title": "View or share your driving licence information",
+              "base_path": "/view-driving-licence"
+            },
+            {
+              "title": "Complain about a driving instructor",
+              "base_path": "/complain-about-a-driving-instructor"
+            },
+            {
+              "title": "Report an illegal driving instructor",
+              "base_path": "/report-an-illegal-driving-instructor"
+            }
+          ]
+        }
+      },
+      {
+        "content_id": "e2268311-ada2-477c-90dc-9837216e0108",
+        "title": "Prepare for your theory test.",
+        "description": "You must pass your driving theory test before you can book your practical driving test.",
+        "ordered_task_list": false,
+        "links": {
+          "ordered_tasks": [
+            {
+              "title": "Theory test: cars",
+              "base_path": "/theory-test"
+            },
+            {
+              "title": "Take a practice theory test",
+              "base_path": "/take-practice-theory-test"
+            },
+            {
+              "title": "The Highway Code",
+              "base_path": "/guidance/the-highway-code"
+            },
+            {
+              "title": "Find your lost theory test pass certificate number",
+              "base_path": "/find-theory-test-pass-number"
+            }
+          ]
+        }
+      },
+      {
+        "content_id": "21125700-2193-4021-9592-f6e9c1360951",
+        "title": "Book and manage your theory test",
+        "description": "",
+        "ordered_task_list": false,
+        "links": {
+          "ordered_tasks": [
+            {
+              "title": "Book your theory test",
+              "base_path": "/book-theory-test"
+            },
+            {
+              "title": "Change your theory test appointment",
+              "base_path": "/change-theory-test"
+            },
+            {
+              "title": "Check your theory test appointment details",
+              "base_path": "/check-theory-test"
+            },
+            {
+              "title": "Cancel your theory test",
+              "base_path": "/cancel-theory-test"
+            },
+            {
+              "title": "Find a theory test centre",
+              "base_path": "/find-theory-test-centre"
+            },
+            {
+              "title": "Driving test costs",
+              "base_path": "/driving-test-cost"
+            }
+          ]
+        }
+      },
+      {
+        "content_id": "f13587be-2d3e-40e8-a87a-ccdd85f9ee2e",
+        "title": "Prepare for your driving test",
+        "description": "To pass the driving test you must be able to drive safely in different road and traffic conditions, and show that you know the Highway Code by the way you drive.",
+        "ordered_task_list": false,
+        "links": {
+          "ordered_tasks": [
+            {
+              "title": "Driving test: cars",
+              "base_path": "/book-driving-test"
+            },
+            {
+              "title": "'Show me, tell me' questions: car driving test",
+              "base_path": "/government/publications/car-show-me-tell-me-vehicle-safety-questions"
+            }
+          ]
+        }
+      },
+      {
+        "content_id": "f00ee470-5a4b-4823-a592-b27f54c3043f",
+        "title": "Book and manage your driving test",
+        "description": "You can book your driving test when you have passed your theory test.",
+        "links": {
+          "ordered_tasks": [
+            {
+              "title": "Book your driving test",
+              "base_path": "/book-driving-test"
+            },
+            {
+              "title": "Change your driving test appointment",
+              "base_path": "/change-driving-test"
+            },
+            {
+              "title": "Check your driving test appointment details",
+              "base_path": "/check-driving-test"
+            },
+            {
+              "title": "Cancel your driving test",
+              "base_path": "/cancel-driving-test"
+            },
+            {
+              "title": "Find a driving test centre",
+              "base_path": "/find-driving-test-centre"
+            },
+            {
+              "title": "Driving test costs",
+              "base_path": "driving-test-cost"
+            },
+            {
+              "title": "Apply for a refund of expenses for a cancelled driving test",
+              "base_path": "/government/publications/application-for-refunding-out-of-pocket-expenses"
+            },
+            {
+              "title": "Report someone impersonating driving test candidates",
+              "base_path": "/report-driving-test-impersonation"
+            }
+          ]
+        }
+      },
+      {
+        "content_id": "77d7d1fa-145c-42a3-98f6-f2b35a2cc78a",
+        "title": "When you pass",
+        "description": "You can apply for your full driving licence as soon as you’ve passed your practical driving test. You can also do additional training to improve your skills and drive more safely.",
+        "ordered_task_list": true,
+        "links": {
+          "ordered_tasks": [
+            {
+              "title": "Apply for your full driving licence",
+              "base_path": "/apply-for-your-full-driving-licence"
+            },
+            {
+              "title": "Pass Plus",
+              "external_link": "/pass-plus"
+            }
+          ]
+        }
+      }
+    ],
+    "ordered_related_items": [
+    {
+      "api_path": "/api/content/ofsted-inspection-childcare-provider",
+      "base_path": "/ofsted-inspection-childcare-provider",
+      "content_id": "a14926b3-90f9-4ffa-9b17-83cc6602946d",
+      "description": "Find out when you'll be inspected by Ofsted, how to prepare, how you'll be inspected and how you'll be graded",
+      "document_type": "answer",
+      "locale": "en",
+      "public_updated_at": "2014-11-27T15:14:39Z",
+      "schema_name": "answer",
+      "title": "Being inspected as a childminder or childcare provider",
+      "withdrawn": false,
+      "links": {
+        "mainstream_browse_pages": [
+          {
+            "api_path": "/api/content/browse/business/childcare-providers",
+            "base_path": "/browse/business/childcare-providers",
+            "content_id": "85103ee3-ffe3-45b4-9e83-2c5917814bc8",
+            "description": "Includes registering as a childcare provider",
+            "document_type": "mainstream_browse_page",
+            "locale": "en",
+            "public_updated_at": "2017-05-09T12:37:34Z",
+            "schema_name": "mainstream_browse_page",
+            "title": "Childcare providers",
+            "withdrawn": false,
+            "links": {
+              "parent": [
+                {
+                  "api_path": "/api/content/browse/business",
+                  "base_path": "/browse/business",
+                  "content_id": "2e47e500-8d91-4747-b6d8-cf6524d570f1",
+                  "description": "Information about starting up and running a business in the UK, including help if you're self employed or a sole trader.",
+                  "document_type": "mainstream_browse_page",
+                  "locale": "en",
+                  "public_updated_at": "2016-11-18T16:02:29Z",
+                  "schema_name": "mainstream_browse_page",
+                  "title": "Business and self-employed",
+                  "withdrawn": false,
+                  "links": {
+
+                  },
+                  "api_url": "https://www.gov.uk/api/content/browse/business",
+                  "web_url": "https://www.gov.uk/browse/business"
+                }
+              ]
+            },
+            "api_url": "https://www.gov.uk/api/content/browse/business/childcare-providers",
+            "web_url": "https://www.gov.uk/browse/business/childcare-providers"
+          }
+        ]
+      },
+      "api_url": "https://www.gov.uk/api/content/ofsted-inspection-childcare-provider",
+      "web_url": "https://www.gov.uk/ofsted-inspection-childcare-provider"
+    }
+  ],
+  "parent": [
+      {
+        "api_path": "/api/content/browse/education",
+        "base_path": "/browse/education",
+        "content_id": "4ba04d39-1f8c-4117-89f5-73ec4f1b48e8",
+        "description": "Get help if you’re at school, planning to go on to further or higher education, looking for training or interested in a student or career development loan.",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-04-08T16:02:29Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Education and learning",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/education",
+        "web_url": "https://www.gov.uk/browse/education"
+      }
+    ]
+  },
+  "description": "You must check your eligibility and pass a test to get a driving licence to drive on the roads in the UK. [Statutory guidance for learner drivers.]",
+  "details": {
+    "body": "\n<div class=\"summary\">\n<p>Statutory guidance for learner drivers.</p>\n"
+  }
+}
+
