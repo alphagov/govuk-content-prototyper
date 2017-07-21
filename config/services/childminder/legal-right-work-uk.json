@@ -1,48 +1,10 @@
 {
-  "analytics_identifier": null,
   "base_path": "/legal-right-work-uk",
   "content_id": "76ed4c84-3386-4b78-b0c6-e910e54f15df",
-  "document_type": "simple_smart_answer",
-  "email_document_supertype": "other",
-  "first_published_at": "2016-02-29T09:24:10.000+00:00",
-  "government_document_supertype": "other",
   "locale": "en",
   "navigation_document_supertype": "guidance",
-  "need_ids": [
-
-  ],
-  "phase": "live",
-  "public_updated_at": "2017-02-03T13:43:49.000+00:00",
-  "publishing_app": "publisher",
-  "rendering_app": "frontend",
-  "schema_name": "simple_smart_answer",
   "title": "LOCAL Check if someone can work in the UK",
-  "updated_at": "2017-05-09T12:40:19.064Z",
-  "user_journey_document_supertype": "thing",
-  "withdrawn_notice": {
-
-  },
-  "publishing_request_id": null,
   "links": {
-    "mainstream_browse_pages": [
-      {
-        "api_path": "/api/content/browse/employing-people/recruiting-hiring",
-        "base_path": "/browse/employing-people/recruiting-hiring",
-        "content_id": "18316184-f6ff-4581-a487-83935a490074",
-        "description": "Advertise a job, Disclosure and Barring (DBS) checks, discrimination law and apprenticeships",
-        "document_type": "mainstream_browse_page",
-        "locale": "en",
-        "public_updated_at": "2015-06-24T13:56:45Z",
-        "schema_name": "mainstream_browse_page",
-        "title": "Recruiting and hiring",
-        "withdrawn": false,
-        "links": {
-
-        },
-        "api_url": "https://www.gov.uk/api/content/browse/employing-people/recruiting-hiring",
-        "web_url": "https://www.gov.uk/browse/employing-people/recruiting-hiring"
-      }
-    ],
     "ordered_related_items": [
       {
         "api_path": "/api/content/check-job-applicant-right-to-work",
@@ -66,7 +28,7 @@
               "locale": "en",
               "public_updated_at": "2015-06-24T13:56:45Z",
               "schema_name": "mainstream_browse_page",
-              "title": "Recruiting and hiring",
+              "title": "Recruiting and hiring 1",
               "withdrawn": false,
               "links": {
                 "parent": [
@@ -79,7 +41,7 @@
                     "locale": "en",
                     "public_updated_at": "2015-04-08T10:48:44Z",
                     "schema_name": "mainstream_browse_page",
-                    "title": "Employing people",
+                    "title": "Employing people 1",
                     "withdrawn": false,
                     "links": {
 
@@ -119,7 +81,7 @@
               "locale": "en",
               "public_updated_at": "2015-06-24T13:56:45Z",
               "schema_name": "mainstream_browse_page",
-              "title": "Recruiting and hiring",
+              "title": "Recruiting and hiring 2",
               "withdrawn": false,
               "links": {
                 "parent": [
@@ -132,7 +94,7 @@
                     "locale": "en",
                     "public_updated_at": "2015-04-08T10:48:44Z",
                     "schema_name": "mainstream_browse_page",
-                    "title": "Employing people",
+                    "title": "Employing people 2",
                     "withdrawn": false,
                     "links": {
 
@@ -187,7 +149,7 @@
         "locale": "en",
         "public_updated_at": "2015-06-24T13:56:45Z",
         "schema_name": "mainstream_browse_page",
-        "title": "Recruiting and hiring",
+        "title": "Recruiting and hiring 3",
         "withdrawn": false,
         "links": {
           "parent": [
@@ -200,7 +162,7 @@
               "locale": "en",
               "public_updated_at": "2015-04-08T10:48:44Z",
               "schema_name": "mainstream_browse_page",
-              "title": "Employing people",
+              "title": "Employineg people 3",
               "withdrawn": false,
               "links": {
 
