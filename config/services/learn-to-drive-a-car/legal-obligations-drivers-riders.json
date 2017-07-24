@@ -1,0 +1,800 @@
+{
+  "analytics_identifier": null,
+  "base_path": "/legal-obligations-drivers-riders",
+  "content_id": "2148f116-f909-4976-bb05-cb4899f3272a",
+  "document_type": "answer",
+  "email_document_supertype": "other",
+  "first_published_at": "2016-02-29T09:24:10.000+00:00",
+  "government_document_supertype": "other",
+  "locale": "en",
+  "navigation_document_supertype": "guidance",
+  "need_ids": [
+
+  ],
+  "phase": "live",
+  "public_updated_at": "2015-08-27T16:32:37.000+00:00",
+  "publishing_app": "publisher",
+  "rendering_app": "government-frontend",
+  "schema_name": "answer",
+  "title": "Legal obligations of drivers and riders ",
+  "updated_at": "2017-07-24T08:23:37.238Z",
+  "user_journey_document_supertype": "thing",
+  "withdrawn_notice": {
+
+  },
+  "publishing_request_id": "26016-1498742638.488-193.240.153.162-8367",
+  "links": {
+    "mainstream_browse_pages": [
+      {
+        "api_path": "/api/content/browse/driving/driving-enforcing-the-law",
+        "base_path": "/browse/driving/driving-enforcing-the-law",
+        "content_id": "32cd2eb4-26bc-4b1e-863a-f30a1d5a18b5",
+        "description": "",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2016-11-04T16:10:44Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Driving and enforcing the law",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/driving/driving-enforcing-the-law",
+        "web_url": "https://www.gov.uk/browse/driving/driving-enforcing-the-law"
+      },
+      {
+        "api_path": "/api/content/browse/driving/driving-licences",
+        "base_path": "/browse/driving/driving-licences",
+        "content_id": "bbbfd4b9-10e4-4cae-b4b9-2797ffa6a036",
+        "description": "",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2017-07-15T21:08:04Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Driving licences",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/driving/driving-licences",
+        "web_url": "https://www.gov.uk/browse/driving/driving-licences"
+      },
+      {
+        "api_path": "/api/content/browse/driving/learning-to-drive",
+        "base_path": "/browse/driving/learning-to-drive",
+        "content_id": "6af0f337-4da6-415c-a760-55b612d0e3e3",
+        "description": "",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2017-07-15T20:59:38Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Driving tests and learning to drive or ride",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/driving/learning-to-drive",
+        "web_url": "https://www.gov.uk/browse/driving/learning-to-drive"
+      },
+      {
+        "api_path": "/api/content/browse/driving/highway-code-road-safety",
+        "base_path": "/browse/driving/highway-code-road-safety",
+        "content_id": "eab15e3e-b9a5-48a9-82fe-6485d48a559d",
+        "description": "",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2016-11-26T22:08:33Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "The Highway Code, road safety and vehicle rules",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/driving/highway-code-road-safety",
+        "web_url": "https://www.gov.uk/browse/driving/highway-code-road-safety"
+      },
+      {
+        "api_path": "/api/content/browse/driving/vehicle-tax-mot-insurance",
+        "base_path": "/browse/driving/vehicle-tax-mot-insurance",
+        "content_id": "c4cbf7d1-c44e-4f47-b2c8-380e0609f8b0",
+        "description": "",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2017-07-15T21:13:17Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Vehicle tax, MOT and insurance",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/driving/vehicle-tax-mot-insurance",
+        "web_url": "https://www.gov.uk/browse/driving/vehicle-tax-mot-insurance"
+      }
+    ],
+    "ordered_related_items": [
+      {
+        "api_path": "/api/content/apply-first-provisional-driving-licence",
+        "base_path": "/apply-first-provisional-driving-licence",
+        "content_id": "f725a60e-a666-4269-82b0-946ecfb84b7c",
+        "description": "Apply for your first provisional driving licence from DVLA online to drive a car, moped or motorcycle",
+        "document_type": "transaction",
+        "locale": "en",
+        "public_updated_at": "2014-12-04T00:01:05Z",
+        "schema_name": "transaction",
+        "title": "Apply for your first provisional driving licence",
+        "withdrawn": false,
+        "links": {
+          "mainstream_browse_pages": [
+            {
+              "api_path": "/api/content/browse/driving/driving-licences",
+              "base_path": "/browse/driving/driving-licences",
+              "content_id": "bbbfd4b9-10e4-4cae-b4b9-2797ffa6a036",
+              "description": "",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-07-15T21:08:04Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Driving licences",
+              "withdrawn": false,
+              "links": {
+                "parent": [
+                  {
+                    "api_path": "/api/content/browse/driving",
+                    "base_path": "/browse/driving",
+                    "content_id": "03531ffd-314b-4fed-9361-fa9816005c31",
+                    "description": "Apply for a driving licence, tax your vehicle, book your driving test, and find out the legal requirements for buying, owning, importing or scrapping a car or motorcycle, and read about your rights and responsibilities as a driver",
+                    "document_type": "mainstream_browse_page",
+                    "locale": "en",
+                    "public_updated_at": "2016-10-07T22:18:32Z",
+                    "schema_name": "mainstream_browse_page",
+                    "title": "Driving and transport",
+                    "withdrawn": false,
+                    "links": {
+
+                    },
+                    "api_url": "https://www.gov.uk/api/content/browse/driving",
+                    "web_url": "https://www.gov.uk/browse/driving"
+                  }
+                ]
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/driving/driving-licences",
+              "web_url": "https://www.gov.uk/browse/driving/driving-licences"
+            },
+            {
+              "api_path": "/api/content/browse/driving/learning-to-drive",
+              "base_path": "/browse/driving/learning-to-drive",
+              "content_id": "6af0f337-4da6-415c-a760-55b612d0e3e3",
+              "description": "",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-07-15T20:59:38Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Driving tests and learning to drive or ride",
+              "withdrawn": false,
+              "links": {
+                "parent": [
+                  {
+                    "api_path": "/api/content/browse/driving",
+                    "base_path": "/browse/driving",
+                    "content_id": "03531ffd-314b-4fed-9361-fa9816005c31",
+                    "description": "Apply for a driving licence, tax your vehicle, book your driving test, and find out the legal requirements for buying, owning, importing or scrapping a car or motorcycle, and read about your rights and responsibilities as a driver",
+                    "document_type": "mainstream_browse_page",
+                    "locale": "en",
+                    "public_updated_at": "2016-10-07T22:18:32Z",
+                    "schema_name": "mainstream_browse_page",
+                    "title": "Driving and transport",
+                    "withdrawn": false,
+                    "links": {
+
+                    },
+                    "api_url": "https://www.gov.uk/api/content/browse/driving",
+                    "web_url": "https://www.gov.uk/browse/driving"
+                  }
+                ]
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/driving/learning-to-drive",
+              "web_url": "https://www.gov.uk/browse/driving/learning-to-drive"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/apply-first-provisional-driving-licence",
+        "web_url": "https://www.gov.uk/apply-first-provisional-driving-licence"
+      },
+      {
+        "api_path": "/api/content/become-lorry-bus-driver",
+        "base_path": "/become-lorry-bus-driver",
+        "content_id": "ade4791d-a7fa-451b-afd1-6d0ad00ee630",
+        "description": "How to become a lorry or bus driver and get the Driver Certificate of Professional Competence (CPC) to drive heavy goods vehicles (HGVs) or passenger carrying vehicles (PCVs)",
+        "document_type": "guide",
+        "locale": "en",
+        "public_updated_at": "2015-03-09T09:21:27Z",
+        "schema_name": "guide",
+        "title": "Become a lorry or bus driver",
+        "withdrawn": false,
+        "links": {
+          "mainstream_browse_pages": [
+            {
+              "api_path": "/api/content/browse/driving/drivers-lorries-buses",
+              "base_path": "/browse/driving/drivers-lorries-buses",
+              "content_id": "13a30e05-d75e-45d8-95d9-0445042a4066",
+              "description": "",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2016-11-20T23:47:29Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Lorry, bus and coach drivers",
+              "withdrawn": false,
+              "links": {
+                "parent": [
+                  {
+                    "api_path": "/api/content/browse/driving",
+                    "base_path": "/browse/driving",
+                    "content_id": "03531ffd-314b-4fed-9361-fa9816005c31",
+                    "description": "Apply for a driving licence, tax your vehicle, book your driving test, and find out the legal requirements for buying, owning, importing or scrapping a car or motorcycle, and read about your rights and responsibilities as a driver",
+                    "document_type": "mainstream_browse_page",
+                    "locale": "en",
+                    "public_updated_at": "2016-10-07T22:18:32Z",
+                    "schema_name": "mainstream_browse_page",
+                    "title": "Driving and transport",
+                    "withdrawn": false,
+                    "links": {
+
+                    },
+                    "api_url": "https://www.gov.uk/api/content/browse/driving",
+                    "web_url": "https://www.gov.uk/browse/driving"
+                  }
+                ]
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/driving/drivers-lorries-buses",
+              "web_url": "https://www.gov.uk/browse/driving/drivers-lorries-buses"
+            },
+            {
+              "api_path": "/api/content/browse/driving/driving-licences",
+              "base_path": "/browse/driving/driving-licences",
+              "content_id": "bbbfd4b9-10e4-4cae-b4b9-2797ffa6a036",
+              "description": "",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-07-15T21:08:04Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Driving licences",
+              "withdrawn": false,
+              "links": {
+                "parent": [
+                  {
+                    "api_path": "/api/content/browse/driving",
+                    "base_path": "/browse/driving",
+                    "content_id": "03531ffd-314b-4fed-9361-fa9816005c31",
+                    "description": "Apply for a driving licence, tax your vehicle, book your driving test, and find out the legal requirements for buying, owning, importing or scrapping a car or motorcycle, and read about your rights and responsibilities as a driver",
+                    "document_type": "mainstream_browse_page",
+                    "locale": "en",
+                    "public_updated_at": "2016-10-07T22:18:32Z",
+                    "schema_name": "mainstream_browse_page",
+                    "title": "Driving and transport",
+                    "withdrawn": false,
+                    "links": {
+
+                    },
+                    "api_url": "https://www.gov.uk/api/content/browse/driving",
+                    "web_url": "https://www.gov.uk/browse/driving"
+                  }
+                ]
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/driving/driving-licences",
+              "web_url": "https://www.gov.uk/browse/driving/driving-licences"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/become-lorry-bus-driver",
+        "web_url": "https://www.gov.uk/become-lorry-bus-driver"
+      },
+      {
+        "api_path": "/api/content/change-address-driving-licence",
+        "base_path": "/change-address-driving-licence",
+        "content_id": "eafed48e-6a19-44cf-993c-c7b9a3a22cfa",
+        "description": "Change the address on your full or provisional driving licence for free - do it online or by post",
+        "document_type": "guide",
+        "locale": "en",
+        "public_updated_at": "2014-12-04T00:01:05Z",
+        "schema_name": "guide",
+        "title": "Change the address on your driving licence",
+        "withdrawn": false,
+        "links": {
+          "mainstream_browse_pages": [
+            {
+              "api_path": "/api/content/browse/driving/driving-licences",
+              "base_path": "/browse/driving/driving-licences",
+              "content_id": "bbbfd4b9-10e4-4cae-b4b9-2797ffa6a036",
+              "description": "",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-07-15T21:08:04Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Driving licences",
+              "withdrawn": false,
+              "links": {
+                "parent": [
+                  {
+                    "api_path": "/api/content/browse/driving",
+                    "base_path": "/browse/driving",
+                    "content_id": "03531ffd-314b-4fed-9361-fa9816005c31",
+                    "description": "Apply for a driving licence, tax your vehicle, book your driving test, and find out the legal requirements for buying, owning, importing or scrapping a car or motorcycle, and read about your rights and responsibilities as a driver",
+                    "document_type": "mainstream_browse_page",
+                    "locale": "en",
+                    "public_updated_at": "2016-10-07T22:18:32Z",
+                    "schema_name": "mainstream_browse_page",
+                    "title": "Driving and transport",
+                    "withdrawn": false,
+                    "links": {
+
+                    },
+                    "api_url": "https://www.gov.uk/api/content/browse/driving",
+                    "web_url": "https://www.gov.uk/browse/driving"
+                  }
+                ]
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/driving/driving-licences",
+              "web_url": "https://www.gov.uk/browse/driving/driving-licences"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/change-address-driving-licence",
+        "web_url": "https://www.gov.uk/change-address-driving-licence"
+      },
+      {
+        "api_path": "/api/content/change-name-driving-licence",
+        "base_path": "/change-name-driving-licence",
+        "content_id": "b76efbaa-5cdb-4465-96fa-bac8903943c8",
+        "description": "Change the name, title or gender on your driving licence by completing form D1 and sending it with your licence and supporting documents to DVLA",
+        "document_type": "answer",
+        "locale": "en",
+        "public_updated_at": "2015-06-07T23:01:02Z",
+        "schema_name": "answer",
+        "title": "Change the name or gender on your driving licence",
+        "withdrawn": false,
+        "links": {
+          "mainstream_browse_pages": [
+            {
+              "api_path": "/api/content/browse/driving/driving-licences",
+              "base_path": "/browse/driving/driving-licences",
+              "content_id": "bbbfd4b9-10e4-4cae-b4b9-2797ffa6a036",
+              "description": "",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-07-15T21:08:04Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Driving licences",
+              "withdrawn": false,
+              "links": {
+                "parent": [
+                  {
+                    "api_path": "/api/content/browse/driving",
+                    "base_path": "/browse/driving",
+                    "content_id": "03531ffd-314b-4fed-9361-fa9816005c31",
+                    "description": "Apply for a driving licence, tax your vehicle, book your driving test, and find out the legal requirements for buying, owning, importing or scrapping a car or motorcycle, and read about your rights and responsibilities as a driver",
+                    "document_type": "mainstream_browse_page",
+                    "locale": "en",
+                    "public_updated_at": "2016-10-07T22:18:32Z",
+                    "schema_name": "mainstream_browse_page",
+                    "title": "Driving and transport",
+                    "withdrawn": false,
+                    "links": {
+
+                    },
+                    "api_url": "https://www.gov.uk/api/content/browse/driving",
+                    "web_url": "https://www.gov.uk/browse/driving"
+                  }
+                ]
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/driving/driving-licences",
+              "web_url": "https://www.gov.uk/browse/driving/driving-licences"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/change-name-driving-licence",
+        "web_url": "https://www.gov.uk/change-name-driving-licence"
+      },
+      {
+        "api_path": "/api/content/driving-eyesight-rules",
+        "base_path": "/driving-eyesight-rules",
+        "content_id": "57a1253c-68d3-4a93-bb47-b67b9b4f6b9a",
+        "description": "The eyesight rules to pass your driving test and for whenever you're driving ",
+        "document_type": "answer",
+        "locale": "en",
+        "public_updated_at": "2014-08-08T16:08:26Z",
+        "schema_name": "answer",
+        "title": "Driving eyesight rules",
+        "withdrawn": false,
+        "links": {
+          "mainstream_browse_pages": [
+            {
+              "api_path": "/api/content/browse/driving/driving-licences",
+              "base_path": "/browse/driving/driving-licences",
+              "content_id": "bbbfd4b9-10e4-4cae-b4b9-2797ffa6a036",
+              "description": "",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-07-15T21:08:04Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Driving licences",
+              "withdrawn": false,
+              "links": {
+                "parent": [
+                  {
+                    "api_path": "/api/content/browse/driving",
+                    "base_path": "/browse/driving",
+                    "content_id": "03531ffd-314b-4fed-9361-fa9816005c31",
+                    "description": "Apply for a driving licence, tax your vehicle, book your driving test, and find out the legal requirements for buying, owning, importing or scrapping a car or motorcycle, and read about your rights and responsibilities as a driver",
+                    "document_type": "mainstream_browse_page",
+                    "locale": "en",
+                    "public_updated_at": "2016-10-07T22:18:32Z",
+                    "schema_name": "mainstream_browse_page",
+                    "title": "Driving and transport",
+                    "withdrawn": false,
+                    "links": {
+
+                    },
+                    "api_url": "https://www.gov.uk/api/content/browse/driving",
+                    "web_url": "https://www.gov.uk/browse/driving"
+                  }
+                ]
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/driving/driving-licences",
+              "web_url": "https://www.gov.uk/browse/driving/driving-licences"
+            },
+            {
+              "api_path": "/api/content/browse/driving/learning-to-drive",
+              "base_path": "/browse/driving/learning-to-drive",
+              "content_id": "6af0f337-4da6-415c-a760-55b612d0e3e3",
+              "description": "",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-07-15T20:59:38Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Driving tests and learning to drive or ride",
+              "withdrawn": false,
+              "links": {
+                "parent": [
+                  {
+                    "api_path": "/api/content/browse/driving",
+                    "base_path": "/browse/driving",
+                    "content_id": "03531ffd-314b-4fed-9361-fa9816005c31",
+                    "description": "Apply for a driving licence, tax your vehicle, book your driving test, and find out the legal requirements for buying, owning, importing or scrapping a car or motorcycle, and read about your rights and responsibilities as a driver",
+                    "document_type": "mainstream_browse_page",
+                    "locale": "en",
+                    "public_updated_at": "2016-10-07T22:18:32Z",
+                    "schema_name": "mainstream_browse_page",
+                    "title": "Driving and transport",
+                    "withdrawn": false,
+                    "links": {
+
+                    },
+                    "api_url": "https://www.gov.uk/api/content/browse/driving",
+                    "web_url": "https://www.gov.uk/browse/driving"
+                  }
+                ]
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/driving/learning-to-drive",
+              "web_url": "https://www.gov.uk/browse/driving/learning-to-drive"
+            },
+            {
+              "api_path": "/api/content/browse/driving/disability-health-condition",
+              "base_path": "/browse/driving/disability-health-condition",
+              "content_id": "bf25c800-46e1-468b-8d79-beec491cfa89",
+              "description": "",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-03-29T12:38:01Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Driving with medical conditions, Blue Badges and public transport if you're disabled",
+              "withdrawn": false,
+              "links": {
+                "parent": [
+                  {
+                    "api_path": "/api/content/browse/driving",
+                    "base_path": "/browse/driving",
+                    "content_id": "03531ffd-314b-4fed-9361-fa9816005c31",
+                    "description": "Apply for a driving licence, tax your vehicle, book your driving test, and find out the legal requirements for buying, owning, importing or scrapping a car or motorcycle, and read about your rights and responsibilities as a driver",
+                    "document_type": "mainstream_browse_page",
+                    "locale": "en",
+                    "public_updated_at": "2016-10-07T22:18:32Z",
+                    "schema_name": "mainstream_browse_page",
+                    "title": "Driving and transport",
+                    "withdrawn": false,
+                    "links": {
+
+                    },
+                    "api_url": "https://www.gov.uk/api/content/browse/driving",
+                    "web_url": "https://www.gov.uk/browse/driving"
+                  }
+                ]
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/driving/disability-health-condition",
+              "web_url": "https://www.gov.uk/browse/driving/disability-health-condition"
+            },
+            {
+              "api_path": "/api/content/browse/driving/highway-code-road-safety",
+              "base_path": "/browse/driving/highway-code-road-safety",
+              "content_id": "eab15e3e-b9a5-48a9-82fe-6485d48a559d",
+              "description": "",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2016-11-26T22:08:33Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "The Highway Code, road safety and vehicle rules",
+              "withdrawn": false,
+              "links": {
+                "parent": [
+                  {
+                    "api_path": "/api/content/browse/driving",
+                    "base_path": "/browse/driving",
+                    "content_id": "03531ffd-314b-4fed-9361-fa9816005c31",
+                    "description": "Apply for a driving licence, tax your vehicle, book your driving test, and find out the legal requirements for buying, owning, importing or scrapping a car or motorcycle, and read about your rights and responsibilities as a driver",
+                    "document_type": "mainstream_browse_page",
+                    "locale": "en",
+                    "public_updated_at": "2016-10-07T22:18:32Z",
+                    "schema_name": "mainstream_browse_page",
+                    "title": "Driving and transport",
+                    "withdrawn": false,
+                    "links": {
+
+                    },
+                    "api_url": "https://www.gov.uk/api/content/browse/driving",
+                    "web_url": "https://www.gov.uk/browse/driving"
+                  }
+                ]
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/driving/highway-code-road-safety",
+              "web_url": "https://www.gov.uk/browse/driving/highway-code-road-safety"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/driving-eyesight-rules",
+        "web_url": "https://www.gov.uk/driving-eyesight-rules"
+      },
+      {
+        "api_path": "/api/content/vehicle-tax",
+        "base_path": "/vehicle-tax",
+        "content_id": "fa748fae-3de4-4266-ae85-0797ada3f40c",
+        "description": "Renew or tax your vehicle for the first time using a reminder letter, your log book, the 'new keeper's details' section of a log book - and how to tax if you don't have any documents",
+        "document_type": "transaction",
+        "locale": "en",
+        "public_updated_at": "2014-12-09T16:21:03Z",
+        "schema_name": "transaction",
+        "title": "Tax your vehicle",
+        "withdrawn": false,
+        "links": {
+          "mainstream_browse_pages": [
+            {
+              "api_path": "/api/content/browse/driving/vehicle-tax-mot-insurance",
+              "base_path": "/browse/driving/vehicle-tax-mot-insurance",
+              "content_id": "c4cbf7d1-c44e-4f47-b2c8-380e0609f8b0",
+              "description": "",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-07-15T21:13:17Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Vehicle tax, MOT and insurance",
+              "withdrawn": false,
+              "links": {
+                "parent": [
+                  {
+                    "api_path": "/api/content/browse/driving",
+                    "base_path": "/browse/driving",
+                    "content_id": "03531ffd-314b-4fed-9361-fa9816005c31",
+                    "description": "Apply for a driving licence, tax your vehicle, book your driving test, and find out the legal requirements for buying, owning, importing or scrapping a car or motorcycle, and read about your rights and responsibilities as a driver",
+                    "document_type": "mainstream_browse_page",
+                    "locale": "en",
+                    "public_updated_at": "2016-10-07T22:18:32Z",
+                    "schema_name": "mainstream_browse_page",
+                    "title": "Driving and transport",
+                    "withdrawn": false,
+                    "links": {
+
+                    },
+                    "api_url": "https://www.gov.uk/api/content/browse/driving",
+                    "web_url": "https://www.gov.uk/browse/driving"
+                  }
+                ]
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/driving/vehicle-tax-mot-insurance",
+              "web_url": "https://www.gov.uk/browse/driving/vehicle-tax-mot-insurance"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/vehicle-tax",
+        "web_url": "https://www.gov.uk/vehicle-tax"
+      },
+      {
+        "api_path": "/api/content/vehicle-insurance",
+        "base_path": "/vehicle-insurance",
+        "content_id": "5305660e-bfba-4c41-b170-96dcfcf88099",
+        "description": "Rules on what motor insurance you need, what to do if you're in an accident, insurance for driving abroad, penalties for uninsured vehicles and drivers",
+        "document_type": "guide",
+        "locale": "en",
+        "public_updated_at": "2015-03-12T00:15:00Z",
+        "schema_name": "guide",
+        "title": "Vehicle insurance",
+        "withdrawn": false,
+        "links": {
+          "mainstream_browse_pages": [
+            {
+              "api_path": "/api/content/browse/driving/vehicle-tax-mot-insurance",
+              "base_path": "/browse/driving/vehicle-tax-mot-insurance",
+              "content_id": "c4cbf7d1-c44e-4f47-b2c8-380e0609f8b0",
+              "description": "",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-07-15T21:13:17Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Vehicle tax, MOT and insurance",
+              "withdrawn": false,
+              "links": {
+                "parent": [
+                  {
+                    "api_path": "/api/content/browse/driving",
+                    "base_path": "/browse/driving",
+                    "content_id": "03531ffd-314b-4fed-9361-fa9816005c31",
+                    "description": "Apply for a driving licence, tax your vehicle, book your driving test, and find out the legal requirements for buying, owning, importing or scrapping a car or motorcycle, and read about your rights and responsibilities as a driver",
+                    "document_type": "mainstream_browse_page",
+                    "locale": "en",
+                    "public_updated_at": "2016-10-07T22:18:32Z",
+                    "schema_name": "mainstream_browse_page",
+                    "title": "Driving and transport",
+                    "withdrawn": false,
+                    "links": {
+
+                    },
+                    "api_url": "https://www.gov.uk/api/content/browse/driving",
+                    "web_url": "https://www.gov.uk/browse/driving"
+                  }
+                ]
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/driving/vehicle-tax-mot-insurance",
+              "web_url": "https://www.gov.uk/browse/driving/vehicle-tax-mot-insurance"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/vehicle-insurance",
+        "web_url": "https://www.gov.uk/vehicle-insurance"
+      }
+    ],
+    "organisations": [
+      {
+        "analytics_identifier": "D9",
+        "api_path": "/api/content/government/organisations/department-for-transport",
+        "base_path": "/government/organisations/department-for-transport",
+        "content_id": "4c717efc-f47b-478e-a76d-ce1ae0af1946",
+        "document_type": "organisation",
+        "locale": "en",
+        "public_updated_at": "2017-06-16T11:58:13Z",
+        "schema_name": "placeholder",
+        "title": "Department for Transport",
+        "withdrawn": false,
+        "details": {
+          "brand": "department-for-transport",
+          "logo": {
+            "formatted_title": "Department<br/>for Transport",
+            "crest": "single-identity"
+          }
+        },
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/government/organisations/department-for-transport",
+        "web_url": "https://www.gov.uk/government/organisations/department-for-transport"
+      },
+      {
+        "analytics_identifier": "EA74",
+        "api_path": "/api/content/government/organisations/driver-and-vehicle-licensing-agency",
+        "base_path": "/government/organisations/driver-and-vehicle-licensing-agency",
+        "content_id": "70580624-93b5-4aed-823b-76042486c769",
+        "document_type": "organisation",
+        "locale": "en",
+        "public_updated_at": "2016-12-28T14:18:40Z",
+        "schema_name": "placeholder",
+        "title": "Driver and Vehicle Licensing Agency",
+        "withdrawn": false,
+        "details": {
+          "brand": "department-for-transport",
+          "logo": {
+            "formatted_title": "Driver &amp; Vehicle<br/>Licensing<br/>Agency",
+            "crest": "single-identity"
+          }
+        },
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/government/organisations/driver-and-vehicle-licensing-agency",
+        "web_url": "https://www.gov.uk/government/organisations/driver-and-vehicle-licensing-agency"
+      },
+      {
+        "analytics_identifier": "EA570",
+        "api_path": "/api/content/government/organisations/driver-and-vehicle-standards-agency",
+        "base_path": "/government/organisations/driver-and-vehicle-standards-agency",
+        "content_id": "d39237a5-678b-4bb5-a372-eb2cb036933d",
+        "document_type": "organisation",
+        "locale": "en",
+        "public_updated_at": "2017-06-16T10:43:07Z",
+        "schema_name": "placeholder",
+        "title": "Driver and Vehicle Standards Agency",
+        "withdrawn": false,
+        "details": {
+          "brand": "department-for-transport",
+          "logo": {
+            "formatted_title": "Driver &amp; Vehicle<br/>Standards<br/>Agency",
+            "crest": "single-identity"
+          }
+        },
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/government/organisations/driver-and-vehicle-standards-agency",
+        "web_url": "https://www.gov.uk/government/organisations/driver-and-vehicle-standards-agency"
+      }
+    ],
+    "parent": [
+      {
+        "api_path": "/api/content/browse/driving/driving-enforcing-the-law",
+        "base_path": "/browse/driving/driving-enforcing-the-law",
+        "content_id": "32cd2eb4-26bc-4b1e-863a-f30a1d5a18b5",
+        "description": "",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2016-11-04T16:10:44Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Driving and enforcing the law",
+        "withdrawn": false,
+        "links": {
+          "parent": [
+            {
+              "api_path": "/api/content/browse/driving",
+              "base_path": "/browse/driving",
+              "content_id": "03531ffd-314b-4fed-9361-fa9816005c31",
+              "description": "Apply for a driving licence, tax your vehicle, book your driving test, and find out the legal requirements for buying, owning, importing or scrapping a car or motorcycle, and read about your rights and responsibilities as a driver",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2016-10-07T22:18:32Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Driving and transport",
+              "withdrawn": false,
+              "links": {
+
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/driving",
+              "web_url": "https://www.gov.uk/browse/driving"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/driving/driving-enforcing-the-law",
+        "web_url": "https://www.gov.uk/browse/driving/driving-enforcing-the-law"
+      }
+    ],
+    "available_translations": [
+      {
+        "title": "Legal obligations of drivers and riders ",
+        "public_updated_at": "2015-08-27T16:32:37Z",
+        "document_type": "answer",
+        "schema_name": "answer",
+        "base_path": "/legal-obligations-drivers-riders",
+        "description": "What you need to do before you can drive a car or ride a motorcycle - driving licence, registering your vehicle, insurance, vehicle tax, MOT",
+        "api_path": "/api/content/legal-obligations-drivers-riders",
+        "withdrawn": false,
+        "content_id": "2148f116-f909-4976-bb05-cb4899f3272a",
+        "locale": "en",
+        "api_url": "https://www.gov.uk/api/content/legal-obligations-drivers-riders",
+        "web_url": "https://www.gov.uk/legal-obligations-drivers-riders",
+        "links": {
+
+        }
+      }
+    ]
+  },
+  "description": "What you need to do before you can drive a car or ride a motorcycle - driving licence, registering your vehicle, insurance, vehicle tax, MOT",
+  "details": {
+    "body": "\n<div class=\"summary\">\n<p>You must do several things before you drive a car or ride a motorcycle. These include getting a driving licence, registering your vehicle and making sure it’s insured, paying vehicle tax and getting an MOT.</p>\n</div>\n\n<h2 id=\"before-you-drive-or-ride\">Before you drive or ride</h2>\n\n<p>You must:</p>\n\n<ul>\n  <li>have the correct driving licence</li>\n  <li>be the minimum driving or riding age</li>\n  <li>meet the <a href=\"/driving-eyesight-rules\">minimum eyesight rules</a>\n</li>\n</ul>\n\n<h2 id=\"learner-drivers\">Learner drivers</h2>\n\n<p>You must:</p>\n\n<ul>\n  <li>be supervised by a qualified driver (except if riding a motorcycle)</li>\n  <li>\n<a href=\"/driving-lessons-learning-to-drive/using-l-and-p-plates\">display L plates</a> (L plates or D plates in Wales)</li>\n</ul>\n\n<h2 id=\"vehicle-requirements\">Vehicle requirements</h2>\n\n<p>The vehicle must:</p>\n\n<ul>\n  <li>be <a href=\"/vehicle-registration\">registered with <abbr title=\"Driver and Vehicle Licensing Agency\">DVLA</abbr></a>\n</li>\n  <li>have up to date <a href=\"/tax-disc\">vehicle tax</a> (<a href=\"/check-vehicle-tax\">check if your vehicle is taxed</a> online)</li>\n  <li>have a current MOT certificate (<a href=\"/getting-an-mot\">if your vehicle needs one</a>)</li>\n</ul>\n\n<p>You must also have a minimum of third party <a href=\"/vehicle-insurance\">insurance</a> that covers your use of the vehicle.</p>\n\n<h2 id=\"changes-to-personal-or-vehicle-details\">Changes to personal or vehicle details</h2>\n\n<p>You must tell <abbr title=\"Driver and Vehicle Licensing Agency\">DVLA</abbr> if you:</p>\n\n<ul>\n  <li>change your name or address</li>\n  <li>make any alterations to your vehicle</li>\n  <li><a href=\"/notifying-dvla-if-you-sell-your-vehicle\">sell your vehicle</a></li>\n  <li><a href=\"/driving-medical-conditions\">have or develop a medical condition</a></li>\n</ul>\n\n<h2 id=\"driving-larger-vehicles-or-buses\">Driving larger vehicles or buses</h2>\n\n<p>There are higher medical and eyesight standards for driving larger vehicles.</p>\n\n<p>You must tell <abbr title=\"Driver and Vehicle Licensing Agency\">DVLA</abbr> if you have any driving convictions.</p>\n\n<p>If you’re applying for a passenger-carrying vehicle (<abbr title=\"Passenger Carrying Vehicle\">PCV</abbr>) licence then you must also tell <abbr title=\"Driver and Vehicle Licensing Agency\">DVLA</abbr> if you have any other convictions.</p>\n\n<h2 id=\"showing-your-driving-documents\">Showing your driving documents</h2>\n\n<p>If a police officer asks you to, you must be able to show:</p>\n\n<ul>\n  <li>your driving licence</li>\n  <li>a valid insurance certificate</li>\n  <li>a valid MOT certificate (if your vehicle needs one)</li>\n</ul>\n\n<p>If you don’t have the documents with you at the time, you may be asked to take them to a police station within 7 days.</p>\n\n",
+    "external_related_links": [
+
+    ]
+  }
+}

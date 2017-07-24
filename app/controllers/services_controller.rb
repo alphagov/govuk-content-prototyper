@@ -13,6 +13,7 @@ class ServicesController < ApplicationController
 private
 
   def service
+    cookies[:theme] = params[:base_path]
     SchemaFinderService.new(base_path: params[:base_path])
   end
 

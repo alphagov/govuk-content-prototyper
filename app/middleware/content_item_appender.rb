@@ -8,8 +8,10 @@ class ContentItemAppender
 
   def call(env)
     base_path = env['PATH_INFO']
+    theme = theme(env)
+
     begin
-      env['content_item'] = content_store_item(base_path)
+      env['content_item'] = content_store_item(base_path, theme)
     rescue GdsApi::ContentStore::ItemNotFound, GdsApi::HTTPGone
       # Ignore NotFound and Gone, and just don't set env['content_item']
     end
@@ -22,8 +24,13 @@ class ContentItemAppender
     /\./ !~ path
   end
 
-  def content_store_item(base_path)
-    fake_content_store = FakeContentStore.new(base_path: base_path)
+  def theme(env)
+    request = ActionDispatch::Request.new(env)
+    theme = request.cookies["theme"]
+  end
+
+  def content_store_item(base_path, theme)
+    fake_content_store = FakeContentStore.new(base_path: base_path, theme: theme)
 
     if fake_content_store.has_local_file?
       fake_content_store.content_item
