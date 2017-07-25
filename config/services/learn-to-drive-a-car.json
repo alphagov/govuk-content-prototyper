@@ -27,10 +27,6 @@
             {
               "title": "Driving eyesight rules",
               "base_path": "/driving-eyesight-rules"
-            },
-            {
-              "title": "Legal obligations of drivers and riders",
-              "base_path": "/legal-obligations-drivers-riders"
             }
           ]
         }
@@ -49,14 +45,6 @@
             {
               "title": "Track your driving licence application",
               "base_path": "/track-your-driving-licence-application"
-            },
-            {
-              "title": "Order DVLA forms",
-              "base_path": "/dvlaforms"
-            },
-            {
-              "title": "Driving lessons and learning to drive - chapter 1: Overview",
-              "base_path": "/driving-lessons-learning-to-drive"
             }
           ]
         }
@@ -89,7 +77,7 @@
               "base_path": "/driving-lessons-learning-to-drive/using-l-and-p-plates"
             },
             {
-              "title": "Show me, tell me' questions: car driving test",
+              "title": "‘Show me, tell me’ questions",
               "base_path": "/government/publications/car-show-me-tell-me-vehicle-safety-questions"
             },
             {
@@ -99,21 +87,13 @@
             {
               "title": "Report an illegal driving instructor",
               "base_path": "/report-an-illegal-driving-instructor"
-            },
-            {
-              "title": "L plate size rules",
-              "base_path": "/government/publications/l-plate-size-rules"
-            },
-            {
-              "title": "Driver's record for learner drivers",
-              "base_path": "/government/publications/drivers-record-for-learner-drivers"
             }
           ]
         }
       },
       {
         "content_id": "e2268311-ada2-477c-90dc-9837216e0108",
-        "title": "Prepare for your theory test.",
+        "title": "Prepare for your theory test",
         "description": "You must pass your driving theory test before you can book your practical driving test.",
         "ordered_task_list": false,
         "links": {
@@ -137,15 +117,6 @@
         "links": {
           "ordered_tasks": [
             {
-              "title": "The Highway Code",
-              "base_path": "/guidance/the-highway-code"
-            },
-            {
-              "title": "Know your traffic signs",
-              "base_path": "/government/publications/know-your-traffic-signs"
-            },
-
-            {
               "title": "Book your theory test",
               "base_path": "/book-theory-test"
             },
@@ -160,14 +131,6 @@
             {
               "title": "Cancel your theory test",
               "base_path": "/cancel-theory-test"
-            },
-            {
-              "title": "Find a theory test centre",
-              "base_path": "/driving-test-cost"
-            },
-            {
-              "title": "Archebu eich prawf gyrru theori",
-              "base_path": "/archebu-prawf-gyrru-theori"
             }
           ]
         }
@@ -198,18 +161,6 @@
             {
               "title": "Find your lost theory test pass certificate number",
               "base_path": "/find-theory-test-pass-number"
-            },
-            {
-              "title": "Driving test costs",
-              "base_path": "/driving-test-cost"
-            },
-            {
-              "title": "Apply for a refund of expenses for a cancelled driving test",
-              "base_path": "/government/publications/application-for-refunding-out-of-pocket-expenses"
-            },
-            {
-              "title": "Report someone impersonating driving test candidates",
-              "base_path": "/report-driving-test-impersonation"
             }
           ]
         }
@@ -228,10 +179,6 @@
             {
               "title": "Pass Plus",
               "external_link": "/pass-plus"
-            },
-            {
-              "title": "View or share your driving licence information",
-              "external_link": "/view-driving-licence"
             }
           ]
         }
@@ -317,4 +264,3 @@
     "body": "\n<div class=\"summary\">\n<p>Statutory guidance for learner drivers.</p>\n"
   }
 }
-
