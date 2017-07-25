@@ -21,10 +21,6 @@
         "links": {
           "ordered_tasks": [
             {
-              "title": "Legal obligations of drivers and riders",
-              "base_path": "/legal-obligations-drivers-riders"
-            },
-            {
               "title": "Vehicles you can drive",
               "base_path": "/vehicles-can-drive"
             },
@@ -47,38 +43,42 @@
               "base_path": "/apply-first-provisional-driving-licence"
             },
             {
-              "title": "Driving licence fees",
-              "base_path": "/driving-licence-fees"
-            },
-            {
               "title": "Track your driving licence application",
               "base_path": "/track-your-driving-licence-application"
-            },
-            {
-              "title": "Order DVLA forms",
-              "base_path": "/dvlaforms"
             }
           ]
         }
       },
       {
         "content_id": "f248f590-d1a3-4f6e-838b-1d42dd38478f",
-        "title": "Take driving lessons",
+        "title": "Driving lessons and practice",
         "description": "You can take lessons with a driving instructor to help you prepare for your driving tests.",
         "ordered_task_list": false,
         "links": {
           "ordered_tasks": [
             {
-              "title": "Driving lessons and learning to drive",
-              "base_path": "/driving-lessons-learning-to-drive"
+              "title": "Driving lessons and learning to drive - chapter 2: Taking driving lessons",
+              "base_path": "/driving-lessons-learning-to-drive/taking-driving-lessons"
+            },
+            {
+              "title": "Driving lessons and learning to drive - chapter 3: Practising with family or friends",
+              "base_path": "/driving-lessons-learning-to-drive/practising-with-family-or-friends"
             },
             {
               "title": "Find driving schools, lessons and instructors",
               "external_link": "/find-driving-schools-and-lessons"
             },
             {
-              "title": "View or share your driving licence information",
-              "base_path": "/view-driving-licence"
+              "title": "Driving test: cars",
+              "base_path": "/driving-test"
+            },
+            {
+              "title": "Driving lessons and learning to drive - chapter 4: Using 'L' and 'P' plates",
+              "base_path": "/driving-lessons-learning-to-drive/using-l-and-p-plates"
+            },
+            {
+              "title": "‘Show me, tell me’ questions",
+              "base_path": "/government/publications/car-show-me-tell-me-vehicle-safety-questions"
             },
             {
               "title": "Complain about a driving instructor",
@@ -93,7 +93,7 @@
       },
       {
         "content_id": "e2268311-ada2-477c-90dc-9837216e0108",
-        "title": "Prepare for your theory test.",
+        "title": "Prepare for your theory test",
         "description": "You must pass your driving theory test before you can book your practical driving test.",
         "ordered_task_list": false,
         "links": {
@@ -105,14 +105,6 @@
             {
               "title": "Take a practice theory test",
               "base_path": "/take-practice-theory-test"
-            },
-            {
-              "title": "The Highway Code",
-              "base_path": "/guidance/the-highway-code"
-            },
-            {
-              "title": "Find your lost theory test pass certificate number",
-              "base_path": "/find-theory-test-pass-number"
             }
           ]
         }
@@ -139,40 +131,15 @@
             {
               "title": "Cancel your theory test",
               "base_path": "/cancel-theory-test"
-            },
-            {
-              "title": "Find a theory test centre",
-              "base_path": "/find-theory-test-centre"
-            },
-            {
-              "title": "Driving test costs",
-              "base_path": "/driving-test-cost"
             }
           ]
         }
       },
       {
         "content_id": "f13587be-2d3e-40e8-a87a-ccdd85f9ee2e",
-        "title": "Prepare for your driving test",
-        "description": "To pass the driving test you must be able to drive safely in different road and traffic conditions, and show that you know the Highway Code by the way you drive.",
-        "ordered_task_list": false,
-        "links": {
-          "ordered_tasks": [
-            {
-              "title": "Driving test: cars",
-              "base_path": "/book-driving-test"
-            },
-            {
-              "title": "'Show me, tell me' questions: car driving test",
-              "base_path": "/government/publications/car-show-me-tell-me-vehicle-safety-questions"
-            }
-          ]
-        }
-      },
-      {
-        "content_id": "f00ee470-5a4b-4823-a592-b27f54c3043f",
         "title": "Book and manage your driving test",
-        "description": "You can book your driving test when you have passed your theory test.",
+        "description": "",
+        "ordered_task_list": false,
         "links": {
           "ordered_tasks": [
             {
@@ -192,20 +159,8 @@
               "base_path": "/cancel-driving-test"
             },
             {
-              "title": "Find a driving test centre",
-              "base_path": "/find-driving-test-centre"
-            },
-            {
-              "title": "Driving test costs",
-              "base_path": "driving-test-cost"
-            },
-            {
-              "title": "Apply for a refund of expenses for a cancelled driving test",
-              "base_path": "/government/publications/application-for-refunding-out-of-pocket-expenses"
-            },
-            {
-              "title": "Report someone impersonating driving test candidates",
-              "base_path": "/report-driving-test-impersonation"
+              "title": "Find your lost theory test pass certificate number",
+              "base_path": "/find-theory-test-pass-number"
             }
           ]
         }
@@ -309,4 +264,3 @@
     "body": "\n<div class=\"summary\">\n<p>Statutory guidance for learner drivers.</p>\n"
   }
 }
-

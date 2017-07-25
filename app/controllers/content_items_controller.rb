@@ -29,8 +29,19 @@ private
   def content_html
     # Different rendering apps structure the sidebar differently - try to get the actual content without the sidebar.
     # Note that this approach may break for content not styled properly for the Navigation Beta
-    content_html = main_html.css('.column-two-thirds').first || main_html
+    content_html = if guidance_page?
+      main_html.css('.column-two-thirds') || main_html
+    else
+      main_html.css('.column-two-thirds').first || main_html
+    end
+
     content_html.inner_html.html_safe
+  end
+
+  def guidance_page?
+    main_html.css('.govuk-title').children.any? do |child|
+      child.text == "Guidance"
+    end
   end
 
   def stylesheet_links_html
