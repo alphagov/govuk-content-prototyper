@@ -19,16 +19,17 @@
     </div>
     <div class="column-third add-title-margin">
       <% if override_sidebar?(base_path: params[:base_path]) %>
-        <aside class="govuk-related-items" role="complementary">
-          <h2>Learn to drive a car</h2>
-          <nav role="navigation">
-            <ul>
-                <li>
-                  <a href="/services/learn-to-drive-a-car">Learn to drive a car</a>
-                </li>
-            </ul>
-          </nav>
-        </aside>
+      <aside class="govuk-taxonomy-sidebar" data-module="track-click" role="complementary">
+      <div class="sidebar-taxon" data-track-count="sidebarTaxonSection">
+        <h2>
+          <a class="taxon-link" href="/services/learn-to-drive-a-car">Learn to drive a car</a>
+        </h2>
+
+        <p class="taxon-description">
+          Find out what you need to do to drive a car in the UK.
+        </p>
+      </div>
+  </aside>
       <% else %>
         <%= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>
       <% end %>
