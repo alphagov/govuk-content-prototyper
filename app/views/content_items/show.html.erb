@@ -18,7 +18,11 @@
       <%= content_html %>
     </div>
     <div class="column-third add-title-margin">
-      <%= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>
+      <% if override_sidebar?(params[:base_path]) %>
+        <% # TODO: ADD sidebar html here %>
+      <% else %>
+        <%= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>
+      <% end %>
     </div>
   </div>
 </main>

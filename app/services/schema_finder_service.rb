@@ -11,4 +11,16 @@ class SchemaFinderService
   def content_item
     JSON.parse(@file)
   end
+
+  # keep this method for now
+  # might be useful to use it for other themes other than learn to drive.
+  def override_sidebar?(base_path)
+    ordered_tasks = content_item.dig('links', 'ordered_steps').flat_map do |step|
+      step["links"]["ordered_tasks"]
+    end
+
+    ordered_tasks.map! { |task| task["base_path"] }
+
+    ordered_tasks.include?(base_path)
+  end
 end
