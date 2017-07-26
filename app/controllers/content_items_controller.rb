@@ -8,7 +8,7 @@ class ContentItemsController < ApplicationController
       content_html: content_html,
       stylesheet_links_html: stylesheet_links_html,
       main_attributes: main_attributes,
-      breadcrumbs: navigation_helpers.taxon_breadcrumbs[:breadcrumbs],
+      breadcrumbs: navigation_helpers.breadcrumbs[:breadcrumbs],
       taxonomy_sidebar: navigation_helpers.taxonomy_sidebar,
       page_type: page_type,
     }
