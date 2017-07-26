@@ -19,7 +19,16 @@
     </div>
     <div class="column-third add-title-margin">
       <% if override_sidebar?(params[:base_path]) %>
-        <% # TODO: ADD sidebar html here %>
+        <aside class="govuk-related-items" role="complementary">
+          <h2>Learn to drive a car</h2>
+          <nav role="navigation">
+            <ul>
+                <li>
+                  <a href="/services/learn-to-drive-a-car">Learn to drive a car</a>
+                </li>
+            </ul>
+          </nav>
+        </aside>
       <% else %>
         <%= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>
       <% end %>
