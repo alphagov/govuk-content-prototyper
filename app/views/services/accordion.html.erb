@@ -38,7 +38,8 @@
     </div>
   </div>
 
-  <div class="column-third">
-    <%= render partial: 'govuk_component/related_items', locals: navigation.related_items %>
-  </div>
+  <% # TODO: render the sidebar when we decide to render it on a task list page. %>
+  <% if render = false %>
+    <%= render(partial: 'sidebar', locals: {navigation: navigation}) %>
+  <% end %>
 </div>
