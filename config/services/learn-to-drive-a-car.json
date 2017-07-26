@@ -16,7 +16,7 @@
       {
         "content_id": "6e7c1795-2592-4ada-adc7-2cdc478a607f",
         "title": "Check you're allowed to drive",
-        "description": "You and your vehicle must comply with certain rules before you are allowed to learn to drive on the road in the UK.",
+        "description": "Most people can start learning to drive when they’re 17.",
         "ordered_task_list": false,
         "links": {
           "ordered_tasks": [
@@ -27,6 +27,10 @@
             {
               "title": "Driving eyesight rules",
               "base_path": "/driving-eyesight-rules"
+            },
+            {
+              "title": "Legal obligations of drivers and riders",
+              "base_path": "/legal-obligations-drivers-riders"
             }
           ]
         }
@@ -34,7 +38,7 @@
       {
         "content_id": "7f4175a3-3585-41b8-bd43-02689af39f03",
         "title": "Get a provisional driving licence",
-        "description": "You must have a provisional driving licence in order to learn to drive on the road in the UK. When you pass your test you will get a full driving licence.",
+        "description": "",
         "ordered_task_list": false,
         "links": {
           "ordered_tasks": [
@@ -52,16 +56,16 @@
       {
         "content_id": "f248f590-d1a3-4f6e-838b-1d42dd38478f",
         "title": "Driving lessons and practice",
-        "description": "You can take lessons with a driving instructor to help you prepare for your driving tests.",
+        "description": "You must get a provisional driving licence before you can take lessons or practice.",
         "ordered_task_list": false,
         "links": {
           "ordered_tasks": [
             {
-              "title": "Driving lessons and learning to drive - chapter 2: Taking driving lessons",
+              "title": "Taking driving lessons",
               "base_path": "/driving-lessons-learning-to-drive/taking-driving-lessons"
             },
             {
-              "title": "Driving lessons and learning to drive - chapter 3: Practising with family or friends",
+              "title": "Practising with family or friends",
               "base_path": "/driving-lessons-learning-to-drive/practising-with-family-or-friends"
             },
             {
@@ -69,11 +73,7 @@
               "external_link": "/find-driving-schools-and-lessons"
             },
             {
-              "title": "Driving test: cars",
-              "base_path": "/driving-test"
-            },
-            {
-              "title": "Driving lessons and learning to drive - chapter 4: Using 'L' and 'P' plates",
+              "title": "Using 'L' and 'P' plates",
               "base_path": "/driving-lessons-learning-to-drive/using-l-and-p-plates"
             },
             {
@@ -94,13 +94,13 @@
       {
         "content_id": "e2268311-ada2-477c-90dc-9837216e0108",
         "title": "Prepare for your theory test",
-        "description": "You must pass your driving theory test before you can book your practical driving test.",
+        "description": "",
         "ordered_task_list": false,
         "links": {
           "ordered_tasks": [
             {
-              "title": "Theory test: cars",
-              "base_path": "/theory-test"
+              "title": "Theory test revision and practice",
+              "base_path": "/theory-test/revision-and-practice"
             },
             {
               "title": "Take a practice theory test",
@@ -112,10 +112,14 @@
       {
         "content_id": "21125700-2193-4021-9592-f6e9c1360951",
         "title": "Book and manage your theory test",
-        "description": "",
+        "description": "You need a provisional driving licence to book your theory test.",
         "ordered_task_list": false,
         "links": {
           "ordered_tasks": [
+            {
+              "title": "What to take to your test",
+              "base_path": "/theory-test/what-to-take"
+            },
             {
               "title": "Book your theory test",
               "base_path": "/book-theory-test"
@@ -138,10 +142,14 @@
       {
         "content_id": "f13587be-2d3e-40e8-a87a-ccdd85f9ee2e",
         "title": "Book and manage your driving test",
-        "description": "",
+        "description": "You must pass your theory test before you can book your driving test.",
         "ordered_task_list": false,
         "links": {
           "ordered_tasks": [
+            {
+              "title": "What to take to your test",
+              "base_path": "/driving-test/what-to-take"
+            },
             {
               "title": "Book your driving test",
               "base_path": "/book-driving-test"
@@ -168,7 +176,7 @@
       {
         "content_id": "77d7d1fa-145c-42a3-98f6-f2b35a2cc78a",
         "title": "When you pass",
-        "description": "You can apply for your full driving licence as soon as you’ve passed your practical driving test. You can also do additional training to improve your skills and drive more safely.",
+        "description": "You can start driving as soon as your pass your driving test.",
         "ordered_task_list": true,
         "links": {
           "ordered_tasks": [
@@ -241,25 +249,25 @@
   ],
   "parent": [
       {
-        "api_path": "/api/content/browse/education",
-        "base_path": "/browse/education",
-        "content_id": "4ba04d39-1f8c-4117-89f5-73ec4f1b48e8",
-        "description": "Get help if you’re at school, planning to go on to further or higher education, looking for training or interested in a student or career development loan.",
+        "api_path": "/api/content/browse/driving",
+        "base_path": "/browse/driving",
+        "content_id": "03531ffd-314b-4fed-9361-fa9816005c31",
+        "description": "Apply for a driving licence, tax your vehicle, book your driving test, and find out the legal requirements for buying, owning, importing or scrapping a car or motorcycle, and read about your rights and responsibilities as a driver",
         "document_type": "mainstream_browse_page",
         "locale": "en",
         "public_updated_at": "2015-04-08T16:02:29Z",
         "schema_name": "mainstream_browse_page",
-        "title": "Education and learning",
+        "title": "Driving and transport",
         "withdrawn": false,
         "links": {
 
         },
-        "api_url": "https://www.gov.uk/api/content/browse/education",
-        "web_url": "https://www.gov.uk/browse/education"
+        "api_url": "https://www.gov.uk/api/content/browse/driving",
+        "web_url": "https://www.gov.uk/browse/driving"
       }
     ]
   },
-  "description": "You must check your eligibility and pass a test to get a driving licence to drive on the roads in the UK. [Statutory guidance for learner drivers.]",
+  "description": "Find out what you need to do to drive a car in the UK.",
   "details": {
     "body": "\n<div class=\"summary\">\n<p>Statutory guidance for learner drivers.</p>\n"
   }
