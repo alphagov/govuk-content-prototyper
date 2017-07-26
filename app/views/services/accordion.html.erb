@@ -8,17 +8,6 @@
   )
 %>
 
-<div class="grid-row">
-  <div class="column-two-thirds">
-    <div class="high-volume">
-      <h3>Hello World</h3>
-    </div>
-  </div>
-  <div class="column-third">
-    <%= render partial: 'govuk_component/related_items', locals: navigation.related_items %>
-  </div>
-</div>
-
 <div class="grid-row child-topic-contents">
   <div class="column-two-thirds">
     <div class="topic-content">
@@ -47,5 +36,9 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="column-third">
+    <%= render partial: 'govuk_component/related_items', locals: navigation.related_items %>
   </div>
 </div>
