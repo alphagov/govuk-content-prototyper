@@ -129,6 +129,7 @@ private
   end
 
   def page_type
-    full_content_item_html.css('#wrapper').attr('class').value
+    wrapper_class = full_content_item_html.css('#wrapper').attr('class')
+    wrapper_class && wrapper_class.value || 'guidance'
   end
 end
