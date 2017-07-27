@@ -1,8 +1,11 @@
-class SecondLevelBrowsePageController < ApplicationController
+cd class SecondLevelBrowsePageController < ApplicationController
   def show
     setup_content_item_and_navigation_helpers(page)
 
     respond_to do |f|
+      f.html do
+        render :show, locals: { page: page, meta_section: meta_section }
+      end
       f.json do
         render json: {
           breadcrumbs: breadcrumb_content,
