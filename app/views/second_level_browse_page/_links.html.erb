@@ -1,7 +1,7 @@
 <div class="pane-inner <%= page.lists.curated? ? 'curated-list' : 'a-to-z' %>">
   <h1 tabindex="-1"><%= page.title %></h1>
 
-  <% page.lists.each do |list| %>
+  <% page.lists.each_with_index do |list, index| %>
     <% if page.lists.curated? %>
       <h2 class='list-header'><%= list.title %></h2>
     <% else %>
@@ -10,7 +10,7 @@
 
     <ul>
 
-      <% if override_browse_page?(params) %>
+      <% if override_browse_page?(params) && index.zero? %>
         <% override_browse_page_with(params).each do |link|%>
         <li>
           <a href="<%= link[:base_path] %>"><%= link[:title]%></a>
