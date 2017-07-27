@@ -1,4 +1,6 @@
-cd class SecondLevelBrowsePageController < ApplicationController
+class SecondLevelBrowsePageController < ApplicationController
+  layout 'collections'
+
   def show
     setup_content_item_and_navigation_helpers(page)
 

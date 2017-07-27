@@ -1,4 +1,5 @@
 class BrowseController < ApplicationController
+  layout 'collections'
 
   def show
     page =
