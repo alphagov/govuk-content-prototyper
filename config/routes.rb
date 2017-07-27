@@ -4,6 +4,12 @@ Rails.application.routes.draw do
 
   get '/services/:base_path', to: 'services#show'
 
+  get "/browse.json" => redirect("/api/content/browse")
+
+  resources :browse, only: [:show], defaults: { format: 'json' }, param: :top_level_slug do
+    get ':second_level_slug', on: :member, to: "second_level_browse_page#show"
+  end
+
   get '/prototype', to: 'welcome#index'
   get '/*base_path', to: 'taxons#show', constraints: TaxonConstraint.new
   get '/*base_path', to: 'content_items#show', constraints: ContentItemConstraint.new

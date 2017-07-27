@@ -20,4 +20,15 @@ class ApplicationController < ActionController::Base
     @navigation_helpers =
       GovukNavigationHelpers::NavigationHelper.new(@content_item)
   end
+
+  def breadcrumb_content
+    render_partial(
+      '_breadcrumbs',
+      navigation_helpers: @navigation_helpers
+    )
+  end
+
+  def render_partial(partial_name, locals = {})
+    render_to_string(partial_name, formats: 'html', layout: false, locals: locals)
+  end
 end
