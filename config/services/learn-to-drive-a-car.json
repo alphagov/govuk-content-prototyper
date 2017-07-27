@@ -105,6 +105,10 @@
             {
               "title": "Take a practice theory test",
               "base_path": "/take-practice-theory-test"
+            },
+            {
+              "title": "The Highway Code",
+              "base_path": "/guidance/the-highway-code"
             }
           ]
         }
@@ -117,12 +121,12 @@
         "links": {
           "ordered_tasks": [
             {
-              "title": "What to take to your test",
-              "base_path": "/theory-test/what-to-take"
-            },
-            {
               "title": "Book your theory test",
               "base_path": "/book-theory-test"
+            },
+            {
+              "title": "What to take to your test",
+              "base_path": "/theory-test/what-to-take"
             },
             {
               "title": "Change your theory test appointment",
@@ -147,12 +151,12 @@
         "links": {
           "ordered_tasks": [
             {
-              "title": "What to take to your test",
-              "base_path": "/driving-test/what-to-take"
-            },
-            {
               "title": "Book your driving test",
               "base_path": "/book-driving-test"
+            },
+            {
+              "title": "What to take to your test",
+              "base_path": "/driving-test/what-to-take"
             },
             {
               "title": "Change your driving test appointment",
