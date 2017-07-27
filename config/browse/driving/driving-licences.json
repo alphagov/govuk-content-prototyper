@@ -1406,7 +1406,8 @@
   {"groups":
     [{"name": "Popular services",
       "contents":
-       ["/apply-first-provisional-driving-licence",
+       ["/services/learn-to-drive-a-car",
+        "/apply-first-provisional-driving-licence",
         "/view-driving-licence",
         "/dvla-change-address",
         "/apply-online-to-replace-a-driving-licence",

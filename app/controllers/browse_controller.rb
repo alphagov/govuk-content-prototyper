@@ -1,10 +1,23 @@
 class BrowseController < ApplicationController
+
+  def index
+    page = MainstreamBrowsePage.find("/browse")
+    setup_content_item_and_navigation_helpers(page)
+
+    render :index, locals: {
+      page: page
+    }
+  end
+
   def show
     page =
       MainstreamBrowsePage.find("/browse/#{params[:top_level_slug]}")
     setup_content_item_and_navigation_helpers(page)
 
     respond_to do |f|
+      f.html do
+        render :show, locals: { page: page }
+      end
       f.json do
         render json: {
           breadcrumbs: breadcrumb_content,

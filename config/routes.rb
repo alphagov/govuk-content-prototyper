@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get "/browse.json" => redirect("/api/content/browse")
 
-  resources :browse, only: [:show], defaults: { format: 'json' }, param: :top_level_slug do
+  resources :browse, only: [:show], param: :top_level_slug do
     get ':second_level_slug', on: :member, to: "second_level_browse_page#show"
   end
 

@@ -9,6 +9,14 @@
     <% end %>
 
     <ul>
+
+      <% if override_browse_page?(params) %>
+        <% override_browse_page_with(params).each do |link|%>
+        <li>
+          <a href="<%= link[:base_path] %>"><%= link[:title]%></a>
+        </li>
+        <% end %>
+      <% end %>
       <% list.contents.each do |list_item| %>
         <li><%= link_to list_item.title, list_item.base_path %></li>
       <% end %>
