@@ -45,4 +45,9 @@ module ApplicationHelper
     path = "/browse/driving/#{params[:second_level_slug]}"
     OVERRIDE_BROWSE_PAGES[path]
   end
+
+  def render_popular_list?
+    return false if params[:second_level_slug] == "learning-to-drive"
+    true
+  end
 end

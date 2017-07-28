@@ -9,16 +9,22 @@
     <% end %>
 
     <ul>
-
       <% if override_browse_page?(params) && index.zero? %>
         <% override_browse_page_with(params).each do |link|%>
         <li>
           <a href="<%= link[:base_path] %>"><%= link[:title]%></a>
         </li>
         <% end %>
-      <% end %>
-      <% list.contents.each do |list_item| %>
-        <li><%= link_to list_item.title, list_item.base_path %></li>
+
+        <% if render_popular_list? %>
+          <% list.contents.each_with_index do |list_item, list_index| %>
+            <li><%= link_to list_item.title, list_item.base_path %></li>
+          <% end %>
+        <% end %>
+      <% else %>
+        <% list.contents.each_with_index do |list_item, list_index| %>
+          <li><%= link_to list_item.title, list_item.base_path %></li>
+        <% end %>
       <% end %>
     </ul>
   <% end %>
