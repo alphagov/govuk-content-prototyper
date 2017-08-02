@@ -10,6 +10,9 @@ class ServicesController < ApplicationController
     }
   end
 
+  def index
+  end
+
 private
 
   def service
