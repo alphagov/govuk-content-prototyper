@@ -8,7 +8,7 @@ class ContentItemsController < ApplicationController
       content_html: content_html,
       stylesheet_links_html: stylesheet_links_html,
       main_attributes: main_attributes,
-      breadcrumbs: navigation_helpers.breadcrumbs[:breadcrumbs],
+      breadcrumbs: breadcrumbs,
       taxonomy_sidebar: navigation_helpers.taxonomy_sidebar,
       page_type: page_type,
     }
@@ -25,6 +25,14 @@ class ContentItemsController < ApplicationController
   end
 
 private
+
+  def breadcrumbs
+    if SchemaFinderService.taxonomy_supported?(params[:base_path])
+      navigation_helpers.taxon_breadcrumbs[:breadcrumbs]
+    else
+      navigation_helpers.breadcrumbs[:breadcrumbs]
+    end
+  end
 
   def content_html
     # Different rendering apps structure the sidebar differently - try to get the actual content without the sidebar.
