@@ -50,4 +50,8 @@ module ApplicationHelper
     return false if params[:second_level_slug] == "learning-to-drive"
     true
   end
+
+  def hairspace(string)
+    string.gsub(/\s/, "\u200A") # \u200A = unicode hairspace
+  end
 end
