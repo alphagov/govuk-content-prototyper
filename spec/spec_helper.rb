@@ -1,7 +1,6 @@
-  require "pry"
-  require "byebug"
-require "webmock"
+require "pry"
 require "timecop"
+require "webmock"
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
