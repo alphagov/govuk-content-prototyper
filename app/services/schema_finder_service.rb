@@ -2,7 +2,7 @@ class SchemaFinderService
 
   SERVICE_FILE_NAMES = %w(
     learn-to-drive-a-car
-    becoming-a-childminder
+    how-to-become-a-childminder
   )
 
   def self.all
