@@ -18,18 +18,38 @@
       <%= content_html %>
     </div>
     <div class="column-third add-title-margin">
-      <% if override_sidebar?(base_path: params[:base_path]) %>
-      <aside class="govuk-taxonomy-sidebar" data-module="track-click" role="complementary">
-      <div class="sidebar-taxon" data-track-count="sidebarTaxonSection">
-        <h2>
-          <a class="taxon-link" href="/services/learn-to-drive-a-car">Learn to drive a car</a>
-        </h2>
-
-        <p class="taxon-description">
-          Find out what you need to do to drive a car in the UK.
-        </p>
-      </div>
-  </aside>
+      <% if true %>
+        <aside class="govuk-taxonomy-sidebar">
+          <div class="sidebar-taxon">
+            <h2 class="task-list-navigation-heading">
+              <a href="#" class="taxon-link">Becoming a childminder</a>
+            </h2>
+            <ol class="task-list-navigation">
+              <li>
+                <a href="#">Check you're allowed to drive</a>
+              </li>
+              <li>
+                <a href="#">Get a provisional driving licence</a>
+                <a href="#">Book a lesson</a>
+              </li>
+              <li>
+                <a href="#">Driving lessons and practice</a>
+              </li>
+              <li class="highlighted">
+                <a href="#">Prepare for your theory test</a>
+              </li>
+              <li>
+                <a href="#">Book and manage your theory test</a>
+              </li>
+              <li>
+                <a href="#">Book and manage your driving test</a>
+              </li>
+              <li>
+                <a href="#">When you pass</a>
+              </li>
+            </ol>
+          </div>
+        </aside>
       <% else %>
         <%= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>
       <% end %>
