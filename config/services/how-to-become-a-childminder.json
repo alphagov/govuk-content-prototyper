@@ -1,12 +1,12 @@
 {
-  "base_path": "/services/becoming-a-childminder",
+  "base_path": "/services/how-to-become-a-childminder",
   "content_id": "4ba1356d-c4c7-4f6b-7777-3b9a52af1ddd",
   "document_type": "service",
   "government_document_supertype": "other",
   "navigation_document_supertype": "guidance",
   "locale": "en",
   "user_journey_document_supertype": "service",
-  "title": "Becoming a childminder",
+  "title": "How to become a childminder",
   "publishing_app": "publisher",
   "rendering_app": "collections",
   "rendering_type": "accordion",
@@ -15,58 +15,54 @@
     "ordered_steps": [
       {
         "content_id": "6e7c1795-2592-4ada-adc7-2cdc478a607f",
-        "title": "Check if you are eligible",
-        "description": "You will need to fit certain criterea to get on the early years register.",
+        "title": "Check you can register",
+        "description": "You have to register with Ofsted if you're paid to look after children under 8 for more than 2 hours a day. You must be 18 or over and legally allowed to work in the UK.",
         "ordered_task_list": false,
         "links": {
           "ordered_tasks": [
             {
               "title": "Check if someone can work in the UK",
               "base_path": "/legal-right-work-uk"
-            },
-            {
-              "title": "Become a registered early years or childcare provider in England",
-              "base_path": "/government/publications/become-a-registered-early-years-or-childcare-provider-in-england"
-            },
-            {
-              "title": "Applying to waive disqualification: early years and childcare providers",
-              "base_path": "/government/publications/applying-to-waive-disqualification-early-years-and-childcare-providers"
             }
           ]
         }
       },
       {
         "content_id": "7f4175a3-3585-41b8-bd43-02689af39f03",
-        "title": "Contact your local council",
-        "description": "You must contact your local council before you can start applying to be a childminder. Your local council will often be your main point of contact when becoming a childminder.",
+        "title": "Contact your local council about training",
+        "description": "Your council will tell you which training courses you need to do to become a childminder in your area. This will include first aid training.",
         "ordered_task_list": false,
         "links": {
           "ordered_tasks": [
             {
-              "title": "Find a registered childminder",
+              "title": "Contact your council about childminding training",
               "base_path": "/find-registered-childminder"
+            },
+            {
+              "title": "Get help with your training costs",
+              "base_path": "https://www.childcarebusinessgrants.com/"
             }
           ]
         }
       },
       {
         "content_id": "f248f590-d1a3-4f6e-838b-1d42dd38478f",
-        "title": "Get a criminal history check",
-        "description": "Before you apply you must get a criminal record check for yourself and anyone else who will be on the premises where you are looking after children. This is to ensure the safety of children in your care. This criminal check is called a DBS check, previously known as a CRB check.",
+        "title": "Get a criminal record check",
+        "description": "You'll also need to do this for anyone aged 16 or over that lives with you.",
         "ordered_task_list": false,
         "links": {
           "ordered_tasks": [
             {
-              "title": "DBS checks (previously CRB checks)",
-              "base_path": "/disclosure-barring-service-check/overview"
+              "title": "Disclosure and Barring Service (DBS) checks: childcare providers",
+              "base_path": "/government/publications/disclosure-and-barring-service-dbs-checks-for-childcare-providers-who-register-with-ofsted"
             },
             {
-              "title": "Get a DBS check through Ofsted",
+              "title": "Apply for a DBS check",
               "external_link": "https://ofsteddbsapplication.co.uk/step-one.aspx"
             },
             {
-              "title": "Disclosure and Barring Service (DBS) checks: childcare providers",
-              "base_path": "/government/publications/disclosure-and-barring-service-dbs-checks-for-childcare-providers-who-register-with-ofsted"
+              "title": "Get a DBS check for someone who lives with you",
+              "base_path": "/government/organisations/ofsted"
             }
           ]
         }
@@ -74,12 +70,12 @@
       {
         "content_id": "e2268311-ada2-477c-90dc-9837216e0108",
         "title": "Get a health check",
-        "description": "You must complete a health declaration and take it to your GP. This will include information about any health condition that may affect your ability to safely care for children.",
+        "description": "",
         "ordered_task_list": false,
         "links": {
           "ordered_tasks": [
             {
-              "title": "Become a childcare or children's social care provider: health declaration",
+              "title": "Fill in a health declaration form",
               "base_path": "/government/publications/become-a-childcare-provider-health-declaration"
             }
           ]
@@ -87,103 +83,76 @@
       },
       {
         "content_id": "21125700-2193-4021-9592-f6e9c1360951",
-        "title": "Do childminder training",
-        "description": "You must do training to look after children. You can get information about this through your local council.",
+        "title": "Register with Ofsted",
+        "description": "",
         "ordered_task_list": false,
         "links": {
           "ordered_tasks": [
             {
-              "title": "Find a registered childminder",
-              "base_path": "/find-registered-childminder"
+              "title": "Apply to Ofsted",
+              "base_path": "https://online.ofsted.gov.uk/onlineofsted/Default.aspx"
+            },
+            {
+              "title": "What to register as",
+              "base_path": "/register-childminder-childcare-provider/what-to-register-as"
+            },
+            {
+              "title": "Application fees",
+              "base_path": "/register-childminder-childcare-provider/how-to-apply"
             }
           ]
         }
       },
       {
         "content_id": "f13587be-2d3e-40e8-a87a-ccdd85f9ee2e",
-        "title": "Learn about the Early Years Foundation Stage",
-        "description": "Childcare providers in England must follow the statutory guidance laid out in the Early Years Foundation Stage Framework. You should familiarise yourself with this before applying.",
+        "title": "Prepare for your Ofsted registration visit",
+        "description": "You'll only get a visit if you'll be looking after children aged 5 or under. Ofsted will check your premises and your knowledge of the early years foundation stage.",
         "ordered_task_list": false,
         "links": {
           "ordered_tasks": [
             {
-              "title": "Early years foundation stage",
-              "base_path": "/early-years-foundation-stage"
+              "title": "Your Ofsted registration visit",
+              "base_path": "/register-childminder-childcare-provider/after-you-apply"
             },
             {
-              "title": "Early years (under 5s) foundation stage framework (EYFS)",
-              "base_path": "/government/publications/early-years-foundation-stage-framework--2"
+              "title": "Find out about the early years foundation stage",
+              "base_path": "/early-years-foundation-stage"
             }
           ]
         }
       },
       {
         "content_id": "f00ee470-5a4b-4823-a592-b27f54c3043f",
-        "title": "Do first aid training",
-        "description": "You need to do a 12-hour first aid training course with an accredited training provider if you are looking after children 5 years old and younger.",
-        "links": {
-          "ordered_tasks": []
-        }
-      },
-      {
-        "content_id": "77d7d1fa-145c-42a3-98f6-f2b35a2cc78a",
-        "title": "Apply to Ofsted",
-        "description": "You must apply online with Ofsted. You will need two people to write references recommending you, your DBS checks and training certificates.",
+        "title": "Arrange your taxes if you're self-employed",
+        "description": "You usually won't need to do anything if you're working for someone else, for example a company.",
         "ordered_task_list": true,
         "links": {
           "ordered_tasks": [
             {
-              "title": "Get a Government Gateway account",
-              "base_path": "/government-gateway"
-            },
-            {
-              "title": "Apply online",
-              "external_link": "https://online.ofsted.gov.uk/OnlineOfsted/default.aspx"
-            },
-            {
-              "title": "Pay your registration and annual fee to Ofsted",
-              "base_path": "/pay-ofsted-registration-annual-fee"
-            }
-          ]
+              "title": "Working for yourself",
+              "base_path": "https://www.gov.uk/working-for-yourself"
+            }]
         }
       },
       {
-        "content_id": "24093779-298d-4d8e-92cc-1e4db8e7e151",
-        "title": "Get your premesis inspected by Ofsted",
-        "description": "Find out how to prepare for your registration visit in part 2 of the registration handbook.",
-        "ordered_task_list": false,
-        "links": {
-          "ordered_tasks": [
-            {
-              "title": "Become a registered early years or childcare provider in England",
-              "base_path": "/government/publications/become-a-registered-early-years-or-childcare-provider-in-england"
-            }
-          ]
-        }
-      },
-      {
-        "content_id": "787028bc-ea5f-4913-aa65-85f27677e2ee",
-        "title": "Get insured",
-        "description": "You need to have public laibility insurance before you open for business. You can get this from many providers.",
+        "content_id": "77d7d1fa-145c-42a3-98f6-f2b35a2cc78a",
+        "title": "Get insurance",
+        "description": "You'll need to arrange public liability insurance. Check with your training provider to see if you need any other types of insurance.",
         "ordered_task_list": false,
         "links": {
           "ordered_tasks": []
         }
       },
       {
-        "content_id": "eee585a6-b455-4313-b853-b11879fc77bc",
-        "title": "Register your business",
-        "description": "You must register your business and pay tax on the money you earn.",
+        "content_id": "24093779-298d-4d8e-92cc-1e4db8e7e151",
+        "title": "Register as a data controller",
+        "description": "You must do this if you use a digital camera for work or keep information about your childminding on your laptop.",
         "ordered_task_list": false,
         "links": {
           "ordered_tasks": [
             {
-              "title": "Register your new business with HMRC",
-              "base_path": "/new-business-register-for-tax"
-            },
-            {
-              "title": "Self Assessment tax returns",
-              "base_path": "/self-assessment-tax-returns/who-must-send-a-tax-return"
+              "title": "Register as a data controller",
+              "external_link": "https://ico.org.uk/for-organisations/register/"
             }
           ]
         }
@@ -264,7 +233,7 @@
       }
     ]
   },
-  "description": "You must register with Ofsted or a childminder agency.",
+  "description": "You need to follow this process if you're registering as a childminder with Ofsted. You don't need to do this if you're registering with an agency. The process is different if you're in Wales, Scotland or Northern Ireland.",
   "details": {
     "body": "\n<div class=\"summary\">\n<p>You must register with Ofsted or a childminder agency if you want to be paid to look after children under 8 for more than 2 hours a day in England.</p><p>The process to register can take from 4 to 12 weeks.</p>\n"
   }
