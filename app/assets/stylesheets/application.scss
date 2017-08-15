@@ -69,9 +69,7 @@ main {
 
 
 .task-list {
-  .subsection {
-    position: relative;
-  }
+  cursor: default;
 
   .subsection-header,
   .subsection-content {
@@ -85,5 +83,31 @@ main {
     @include core-48;
     font-weight: bold;
     color: $black;
+  }
+
+  .subsection {
+    position: relative;
+    cursor: pointer;
+
+    &.subsection-no-expand {
+      cursor: default;
+
+      .subsection-title,
+      .subsection-header,
+      .subsection-header:hover,
+      .subsection-description {
+        cursor: default;
+      }
+
+      .subsection-icon {
+        display: none;
+      }
+
+      .subsection-header {
+        &:hover {
+          background: none;
+        }
+      }
+    }
   }
 }
