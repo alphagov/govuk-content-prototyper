@@ -64,7 +64,11 @@ main {
 }
 
 .govuk-taxonomy-sidebar {
-  margin-top: 0px;
+  margin-top: $gutter;
+
+  @include media(tablet) {
+    margin-top: 0px;
+  }
 }
 
 .task-list {
