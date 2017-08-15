@@ -76,6 +76,12 @@ main {
     padding-left: 15%;
   }
 
+  .subsection-header {
+    @include media(tablet) {
+      min-height: 45px;
+    }
+  }
+
   &.js-accordion-with-descriptions .subsection-header {
     border: 0;
   }
@@ -89,9 +95,11 @@ main {
     color: $black;
   }
 
-  .subsection {
-    position: relative;
+  .subsection-border {
     border-top: solid 1px $grey-2;
+  }
+
+  .subsection {
     cursor: pointer;
 
     &.subsection-no-expand {
