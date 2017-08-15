@@ -76,6 +76,10 @@ main {
     padding-left: 15%;
   }
 
+  &.js-accordion-with-descriptions .subsection-header {
+    border: 0;
+  }
+
   .subsection-number {
     position: absolute;
     top: 14px;
@@ -87,6 +91,7 @@ main {
 
   .subsection {
     position: relative;
+    border-top: solid 1px $grey-2;
     cursor: pointer;
 
     &.subsection-no-expand {
