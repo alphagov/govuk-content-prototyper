@@ -13,189 +13,202 @@
   "schema_name": "service",
   "links": {
     "ordered_steps": [
-      [{
-        "content_id": "6e7c1795-2592-4ada-adc7-2cdc478a607f",
-        "title": "Check you're allowed to drive",
-        "description": "Most people can start learning to drive when they’re 17.",
-        "ordered_task_list": false,
-        "links": {
-          "ordered_tasks": [
-            {
-              "title": "Vehicles you can drive",
-              "base_path": "/vehicles-can-drive"
-            },
-            {
-              "title": "Driving eyesight rules",
-              "base_path": "/driving-eyesight-rules"
-            },
-            {
-              "title": "Legal obligations of drivers and riders",
-              "base_path": "/legal-obligations-drivers-riders"
-            }
-          ]
+      [
+        {
+          "content_id": "6e7c1795-2592-4ada-adc7-2cdc478a607f",
+          "title": "Check you're allowed to drive",
+          "description": "Most people can start learning to drive when they’re 17.",
+          "ordered_task_list": false,
+          "links": {
+            "ordered_tasks": [
+              {
+                "title": "Vehicles you can drive",
+                "base_path": "/vehicles-can-drive"
+              },
+              {
+                "title": "Driving eyesight rules",
+                "base_path": "/driving-eyesight-rules"
+              },
+              {
+                "title": "Legal obligations of drivers and riders",
+                "base_path": "/legal-obligations-drivers-riders"
+              }
+            ]
+          }
         }
-      }]
-      ,
-      [{
-        "content_id": "7f4175a3-3585-41b8-bd43-02689af39f03",
-        "title": "Get a provisional driving licence",
-        "description": "",
-        "ordered_task_list": false,
-        "links": {
-          "ordered_tasks": [
-            {
-              "title": "Apply for your first provisional driving licence",
-              "base_path": "/apply-first-provisional-driving-licence"
-            },
-            {
-              "title": "Track your driving licence application",
-              "base_path": "/track-your-driving-licence-application"
-            }
-          ]
+      ],
+      [
+        {
+          "content_id": "7f4175a3-3585-41b8-bd43-02689af39f03",
+          "title": "Get a provisional driving licence",
+          "description": "",
+          "ordered_task_list": false,
+          "links": {
+            "ordered_tasks": [
+              {
+                "title": "Apply for your first provisional driving licence",
+                "base_path": "/apply-first-provisional-driving-licence"
+              },
+              {
+                "title": "Track your driving licence application",
+                "base_path": "/track-your-driving-licence-application"
+              }
+            ]
+          }
         }
-      }],
-      [{
-        "content_id": "f248f590-d1a3-4f6e-838b-1d42dd38478f",
-        "title": "Driving lessons and practice",
-        "description": "You must get a provisional driving licence before you can take lessons or practice.",
-        "ordered_task_list": false,
-        "links": {
-          "ordered_tasks": [
-            {
-              "title": "Taking driving lessons",
-              "base_path": "/driving-lessons-learning-to-drive/taking-driving-lessons"
-            },
-            {
-              "title": "Practising with family or friends",
-              "base_path": "/driving-lessons-learning-to-drive/practising-with-family-or-friends"
-            },
-            {
-              "title": "Find driving schools, lessons and instructors",
-              "external_link": "/find-driving-schools-and-lessons"
-            },
-            {
-              "title": "Using 'L' and 'P' plates",
-              "base_path": "/driving-lessons-learning-to-drive/using-l-and-p-plates"
-            },
-            {
-              "title": "‘Show me, tell me’ questions",
-              "base_path": "/government/publications/car-show-me-tell-me-vehicle-safety-questions"
-            },
-            {
-              "title": "Complain about a driving instructor",
-              "base_path": "/complain-about-a-driving-instructor"
-            },
-            {
-              "title": "Report an illegal driving instructor",
-              "base_path": "/report-an-illegal-driving-instructor"
-            }
-          ]
+      ],
+      [
+        {
+          "content_id": "f248f590-d1a3-4f6e-838b-1d42dd38478f",
+          "title": "Driving lessons and practice",
+          "description": "You must get a provisional driving licence before you can take lessons or practice.",
+          "ordered_task_list": false,
+          "links": {
+            "ordered_tasks": [
+              {
+                "title": "Taking driving lessons",
+                "base_path": "/driving-lessons-learning-to-drive/taking-driving-lessons"
+              },
+              {
+                "title": "Practising with family or friends",
+                "base_path": "/driving-lessons-learning-to-drive/practising-with-family-or-friends"
+              },
+              {
+                "title": "Find driving schools, lessons and instructors",
+                "external_link": "/find-driving-schools-and-lessons"
+              },
+              {
+                "title": "Using 'L' and 'P' plates",
+                "base_path": "/driving-lessons-learning-to-drive/using-l-and-p-plates"
+              },
+              {
+                "title": "‘Show me, tell me’ questions",
+                "base_path": "/government/publications/car-show-me-tell-me-vehicle-safety-questions"
+              },
+              {
+                "title": "Complain about a driving instructor",
+                "base_path": "/complain-about-a-driving-instructor"
+              },
+              {
+                "title": "Report an illegal driving instructor",
+                "base_path": "/report-an-illegal-driving-instructor"
+              }
+            ]
+          }
         }
-      }],
-      [{
-        "content_id": "e2268311-ada2-477c-90dc-9837216e0108",
-        "title": "Prepare for your theory test",
-        "description": "",
-        "ordered_task_list": false,
-        "links": {
-          "ordered_tasks": [
-            {
-              "title": "Theory test revision and practice",
-              "base_path": "/theory-test/revision-and-practice"
-            },
-            {
-              "title": "Take a practice theory test",
-              "base_path": "/take-practice-theory-test"
-            },
-            {
-              "title": "The Highway Code",
-              "base_path": "/guidance/the-highway-code"
-            }
-          ]
+      ],
+      [
+        {
+          "content_id": "e2268311-ada2-477c-90dc-9837216e0108",
+          "title": "Prepare for your theory test",
+          "description": "",
+          "ordered_task_list": false,
+          "links": {
+            "ordered_tasks": [
+              {
+                "title": "Theory test revision and practice",
+                "base_path": "/theory-test/revision-and-practice"
+              },
+              {
+                "title": "Take a practice theory test",
+                "base_path": "/take-practice-theory-test"
+              },
+              {
+                "title": "The Highway Code",
+                "base_path": "/guidance/the-highway-code"
+              }
+            ]
+          }
         }
-      }],
-      [{
-        "content_id": "21125700-2193-4021-9592-f6e9c1360951",
-        "title": "Book and manage your theory test",
-        "description": "You need a provisional driving licence to book your theory test.",
-        "ordered_task_list": false,
-        "links": {
-          "ordered_tasks": [
-            {
-              "title": "Book your theory test",
-              "base_path": "/book-theory-test"
-            },
-            {
-              "title": "What to take to your test",
-              "base_path": "/theory-test/what-to-take"
-            },
-            {
-              "title": "Change your theory test appointment",
-              "base_path": "/change-theory-test"
-            },
-            {
-              "title": "Check your theory test appointment details",
-              "base_path": "/check-theory-test"
-            },
-            {
-              "title": "Cancel your theory test",
-              "base_path": "/cancel-theory-test"
-            }
-          ]
+      ],
+      [
+        {
+          "content_id": "21125700-2193-4021-9592-f6e9c1360951",
+          "title": "Book and manage your theory test",
+          "description": "You need a provisional driving licence to book your theory test.",
+          "ordered_task_list": false,
+          "links": {
+            "ordered_tasks": [
+              {
+                "title": "Book your theory test",
+                "base_path": "/book-theory-test"
+              },
+              {
+                "title": "What to take to your test",
+                "base_path": "/theory-test/what-to-take"
+              },
+              {
+                "title": "Change your theory test appointment",
+                "base_path": "/change-theory-test"
+              },
+              {
+                "title": "Check your theory test appointment details",
+                "base_path": "/check-theory-test"
+              },
+              {
+                "title": "Cancel your theory test",
+                "base_path": "/cancel-theory-test"
+              }
+            ]
+          }
         }
-      }],
-      [{
-        "content_id": "f13587be-2d3e-40e8-a87a-ccdd85f9ee2e",
-        "title": "Book and manage your driving test",
-        "description": "You must pass your theory test before you can book your driving test.",
-        "ordered_task_list": false,
-        "links": {
-          "ordered_tasks": [
-            {
-              "title": "Book your driving test",
-              "base_path": "/book-driving-test"
-            },
-            {
-              "title": "What to take to your test",
-              "base_path": "/driving-test/what-to-take"
-            },
-            {
-              "title": "Change your driving test appointment",
-              "base_path": "/change-driving-test"
-            },
-            {
-              "title": "Check your driving test appointment details",
-              "base_path": "/check-driving-test"
-            },
-            {
-              "title": "Cancel your driving test",
-              "base_path": "/cancel-driving-test"
-            },
-            {
-              "title": "Find your lost theory test pass certificate number",
-              "base_path": "/find-theory-test-pass-number"
-            }
-          ]
+      ],
+      [
+        {
+          "content_id": "f13587be-2d3e-40e8-a87a-ccdd85f9ee2e",
+          "title": "Book and manage your driving test",
+          "description": "You must pass your theory test before you can book your driving test.",
+          "ordered_task_list": false,
+          "links": {
+            "ordered_tasks": [
+              {
+                "title": "Book your driving test",
+                "base_path": "/book-driving-test"
+              },
+              {
+                "title": "What to take to your test",
+                "base_path": "/driving-test/what-to-take"
+              },
+              {
+                "title": "Change your driving test appointment",
+                "base_path": "/change-driving-test"
+              },
+              {
+                "title": "Check your driving test appointment details",
+                "base_path": "/check-driving-test"
+              },
+              {
+                "title": "Cancel your driving test",
+                "base_path": "/cancel-driving-test"
+              },
+              {
+                "title": "Find your lost theory test pass certificate number",
+                "base_path": "/find-theory-test-pass-number"
+              }
+            ]
+          }
         }
-      }],
-      [{
-        "content_id": "77d7d1fa-145c-42a3-98f6-f2b35a2cc78a",
-        "title": "When you pass",
-        "description": "You can start driving as soon as you pass your driving test.",
-        "ordered_task_list": true,
-        "links": {
-          "ordered_tasks": [
-            {
-              "title": "Apply for your full driving licence",
-              "base_path": "/apply-for-your-full-driving-licence"
-            },
-            {
-              "title": "Pass Plus",
-              "external_link": "/pass-plus"
-            }
-          ]
+      ],
+      [
+        {
+          "content_id": "77d7d1fa-145c-42a3-98f6-f2b35a2cc78a",
+          "title": "When you pass",
+          "description": "You can start driving as soon as you pass your driving test.",
+          "ordered_task_list": true,
+          "links": {
+            "ordered_tasks": [
+              {
+                "title": "Apply for your full driving licence",
+                "base_path": "/apply-for-your-full-driving-licence"
+              },
+              {
+                "title": "Pass Plus",
+                "external_link": "/pass-plus"
+              }
+            ]
+          }
         }
-      }]
+      ]
     ],
     "ordered_related_items": [
     {
