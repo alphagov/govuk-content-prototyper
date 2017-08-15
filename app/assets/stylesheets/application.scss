@@ -66,3 +66,24 @@ main {
 .govuk-taxonomy-sidebar {
   margin-top: 0px;
 }
+
+
+.task-list {
+  .subsection {
+    position: relative;
+  }
+
+  .subsection-header,
+  .subsection-content {
+    padding-left: 15%;
+  }
+
+  .subsection-number {
+    position: absolute;
+    top: 14px;
+    left: 2%;
+    @include core-48;
+    font-weight: bold;
+    color: $black;
+  }
+}
