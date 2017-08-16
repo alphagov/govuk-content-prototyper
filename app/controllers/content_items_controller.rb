@@ -41,6 +41,7 @@ class ContentItemsController < ApplicationController
   # the browse pages, which rely on a JSON object being returned (but is currently broken, because the JSON is returned
   # as text/html, not as JSON)
   def fall_through
+    @cookie_name = "ABTest-EducationNavigation=B"
     bypass_slimmer
 
     if CONTENT_TYPES.keys.include? params["format"]
@@ -127,7 +128,7 @@ private
         'Cookie' => @cookie_name,
       ).read
 
-      request.path == '/' ? edit_home_page_html(raw_html) : raw_html
+#      request.path == '/' ? edit_home_page_html(raw_html) : raw_html
     end
   end
 
