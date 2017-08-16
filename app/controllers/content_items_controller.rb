@@ -4,8 +4,22 @@ class ContentItemsController < ApplicationController
   rescue_from OpenURI::HTTPError, with: :handle_http_error
 
   def show
+    @cookie_name = "ABTest-EducationNavigation=B"
     render :show, locals: {
       content_html: content_html,
+      stylesheet_links_html: stylesheet_links_html,
+      main_attributes: main_attributes,
+      breadcrumbs: breadcrumbs,
+      task_sidebar: task_sidebar,
+      taxonomy_sidebar: navigation_helpers.taxonomy_sidebar,
+      page_type: page_type,
+    }
+  end
+
+  def showforms
+    @cookie_name = "ABTest-EducationNavigation=A"
+    render :show_form, locals: {
+      content_html: main_html.inner_html.html_safe,
       stylesheet_links_html: stylesheet_links_html,
       main_attributes: main_attributes,
       breadcrumbs: breadcrumbs,
@@ -98,7 +112,7 @@ private
     @raw_html ||= begin
       raw_html = open("https://#{ENV['GOVUK_APP_DOMAIN']}#{request.fullpath}?cachebust=#{Time.zone.now.to_i}",
         # Ensure we get the new version of the page, which should have all content in a two-thirds column
-        'Cookie' => 'ABTest-EducationNavigation=B',
+        'Cookie' => @cookie_name,
       ).read
 
       request.path == '/' ? edit_home_page_html(raw_html) : raw_html

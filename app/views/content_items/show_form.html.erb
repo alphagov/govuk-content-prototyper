@@ -1,0 +1,42 @@
+<% content_for :head do %>
+  <%= stylesheet_links_html %>
+<% end %>
+
+<% content_for :page_type do %>
+  <%= page_type %>
+<% end %>
+
+<%= render partial: 'govuk_component/breadcrumbs',
+    locals: {
+        breadcrumbs: breadcrumbs,
+        collapse_on_mobile: true
+    } %>
+
+<main <%= main_attributes %>>
+  <%= content_html %>
+  <div class="grid-row">
+    <div class="column-two-thirds offset-one-third">
+
+      <% if override_sidebar?(base_path: params[:base_path]) %>
+        <aside class="govuk-taxonomy-sidebar">
+          <div class="sidebar-taxon">
+            <h2 class="task-list-navigation-heading">
+              <a href="<%= task_sidebar["base_path"] %>" class="taxon-link"><%= task_sidebar["title"] %></a>
+            </h2>
+            <ol class="task-list-navigation">
+              <% task_sidebar["ordered_steps"].each_with_index do |task_group, index| %>
+              <li<%= " class=highlighted" if page_is_in_task_group? task_group %>>
+                <% task_group.each_with_index do |task| %>
+                  <a href="<%= "#{task_sidebar['base_path']}#index-#{index}-0" %>"><%= task["title"] %></a>
+                <% end %>
+              </li>
+              <% end %>
+            </ol>
+          </div>
+        </aside>
+      <% else %>
+        <%= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>
+      <% end %>
+    </div>
+  </div>
+</main>
