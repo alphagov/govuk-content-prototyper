@@ -1,0 +1,140 @@
+{
+  "links": {
+    "ordered_tasks": {
+      "base_path": "/services/how-to-become-a-childminder",
+      "links": [
+        [
+          {
+            "title": "Check you can register",
+            "base_path": "/services/how-to-become-a-childminder#index-0-0",
+            "task_items": [
+              {
+                "title": "Find out if you can apply to be a childminder",
+                "base_path": "/government/publications/become-a-registered-early-years-or-childcare-provider-in-england"
+              },
+              {
+                "title": "Check if someone can work in the UK",
+                "base_path": "/legal-right-work-uk"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "title": "Contact your local council about training",
+            "base_path": "/services/how-to-become-a-childminder#index-1-0",
+            "task_items": [
+              {
+                "title": "Contact your council about childminding training",
+                "base_path": "/find-registered-childminder"
+              },
+              {
+                "title": "Get help with your training costs",
+                "base_path": "https://www.childcarebusinessgrants.com/"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "title": "Get a criminal record check",
+            "base_path": "/services/how-to-become-a-childminder#index-2-0",
+            "task_items": [
+              {
+                "title": "Disclosure and Barring Service (DBS) checks: childcare providers",
+                "base_path": "/government/publications/disclosure-and-barring-service-dbs-checks-for-childcare-providers-who-register-with-ofsted"
+              },
+              {
+                "title": "Apply for a DBS check",
+                "external_link": "http://ofsteddbsapplication.co.uk/step-one"
+              },
+              {
+                "title": "Get a DBS check for someone who lives with you",
+                "base_path": "/government/organisations/ofsted"
+              }
+            ]
+          },
+          {
+            "title": "Get a health check",
+            "base_path": "/services/how-to-become-a-childminder#index-2-1",
+            "task_items": [
+              {
+                "title": "Fill in a health declaration form",
+                "base_path": "/government/publications/become-a-childcare-provider-health-declaration"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "title": "Register with Ofsted",
+            "base_path": "/services/how-to-become-a-childminder#index-3-0",
+            "task_items": [
+              {
+                "title": "Apply to Ofsted",
+                "base_path": "https://online.ofsted.gov.uk/onlineofsted/Default.aspx"
+              },
+              {
+                "title": "What to register as",
+                "base_path": "/register-childminder-childcare-provider/what-to-register-as"
+              },
+              {
+                "title": "Application fees",
+                "base_path": "/register-childminder-childcare-provider/how-to-apply"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "title": "Prepare for your Ofsted registration visit",
+            "base_path": "/services/how-to-become-a-childminder#index-4-0",
+            "task_items": [
+              {
+                "title": "Your Ofsted registration visit",
+                "base_path": "/register-childminder-childcare-provider/after-you-apply"
+              },
+              {
+                "title": "Find out about the early years foundation stage",
+                "base_path": "/government/publications/early-years-foundation-stage-framework--2"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "title": "Arrange your taxes if you're self-employed",
+            "base_path": "/services/how-to-become-a-childminder#index-5-0",
+            "task_items": [
+              {
+                "title": "Working for yourself",
+                "base_path": "/working-for-yourself"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "title": "Get insurance",
+            "base_path": "/services/how-to-become-a-childminder#index-6-0",
+            "task_items": [
+            ]
+          }
+        ],
+        [
+          {
+            "title": "Register as a data controller",
+            "base_path": "/services/how-to-become-a-childminder#index-7-0",
+            "task_items": [
+              {
+                "title": "Register as a data controller",
+                "external_link": "https://ico.org.uk/for-organisations/register/"
+              }
+            ]
+          }
+        ]
+      ],
+      "title": "How to become a childminder"
+    }
+  }
+}

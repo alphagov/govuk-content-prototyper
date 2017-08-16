@@ -1,12 +1,12 @@
 class SchemaFinderService
 
   SERVICE_FILE_NAMES = %w(
-    learn-to-drive-a-car
+    how-to-drive-a-car
     how-to-become-a-childminder
   )
 
   def self.all
-    SERVICE_FILE_NAMES.map do |file_name|
+    @all ||= SERVICE_FILE_NAMES.map do |file_name|
       new(base_path: file_name)
     end
   end
@@ -15,9 +15,9 @@ class SchemaFinderService
     base_path = "/#{base_path}"
 
     all.any? do |service|
-      return false if service.learn_to_drive_a_car? && service.task_links.include?(base_path)
+      return false if service.learn_to_drive_a_car? && service.base_paths.include?(base_path)
 
-      service.task_links.include?(base_path)
+      service.base_paths.include?(base_path)
     end
   end
 
@@ -43,20 +43,38 @@ class SchemaFinderService
 
   # keep this method for now
   # might be useful to use it for other themes other than learn to drive.
-  def task_links
-    ordered_tasks = content_item.dig('links', 'ordered_steps').flat_map do |step|
-      step["links"]["ordered_tasks"]
-    end
+  def base_paths
+    @base_paths ||= find_base_paths
+  end
 
-    ordered_tasks.map! { |task| task["base_path"] }
+  def find_base_paths
+    task_base_paths = ordered_task_groups.flatten.map { |task| task["base_path"] }
 
     if learn_to_drive_a_car?
-      ordered_tasks.select(&:present?) + learn_to_drive_pages_to_show_sidebar
+      task_base_paths.select(&:present?) + learn_to_drive_pages_to_show_sidebar
     else
-      ordered_tasks.select(&:present?)
+      task_base_paths.select(&:present?)
     end
   end
 
+  def ordered_task_groups
+    @ordered_task_groups ||= extract_ordered_task_groups
+  end
+
+  def extract_ordered_task_groups
+    task_groups = []
+    ordered_steps.each do |group|
+      group.flat_map do |step|
+        task_groups << step["links"]["ordered_tasks"]
+      end
+    end
+
+    task_groups
+  end
+
+  def ordered_steps
+    @ordered_steps ||= content_item.dig('links', 'ordered_steps')
+  end
 
   # This pages are not in the JSON service schema
   def learn_to_drive_pages_to_show_sidebar

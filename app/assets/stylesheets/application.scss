@@ -64,9 +64,12 @@ main {
 }
 
 .govuk-taxonomy-sidebar {
-  margin-top: 0px;
-}
+  margin-top: $gutter;
 
+  @include media(tablet) {
+    margin-top: 0px;
+  }
+}
 
 .task-list {
   cursor: default;
@@ -124,3 +127,40 @@ main {
     }
   }
 }
+
+.task-list-navigation-heading {
+  padding-left: $gutter / 4;
+  padding-right: $gutter / 4;
+}
+
+.task-list-navigation {
+  counter-reset: item;
+
+  li {
+    position: relative;
+    padding: $gutter / 6 0 $gutter / 6 $gutter;
+
+    &:before {
+      content: counter(item) ". ";
+      counter-increment: item;
+      position: absolute;
+      top: 0.35em;
+      left: 0.35em;
+    }
+  }
+
+  a {
+    display: block;
+
+    & + a {
+      margin-top: $gutter / 4;
+    }
+  }
+
+  .highlighted {
+    z-index: 1;
+    background: $grey-3;
+    font-weight: bold;
+  }
+}
+

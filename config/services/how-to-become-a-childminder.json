@@ -22,6 +22,10 @@
           "links": {
             "ordered_tasks": [
               {
+                "title": "Find out if you can apply to be a childminder",
+                "base_path": "/government/publications/become-a-registered-early-years-or-childcare-provider-in-england"
+              },
+              {
                 "title": "Check if someone can work in the UK",
                 "base_path": "/legal-right-work-uk"
               }
@@ -63,7 +67,7 @@
               },
               {
                 "title": "Apply for a DBS check",
-                "external_link": "https://ofsteddbsapplication.co.uk/step-one.aspx"
+                "external_link": "http://ofsteddbsapplication.co.uk/step-one"
               },
               {
                 "title": "Get a DBS check for someone who lives with you",
@@ -125,7 +129,7 @@
               },
               {
                 "title": "Find out about the early years foundation stage",
-                "base_path": "/early-years-foundation-stage"
+                "base_path": "/government/publications/early-years-foundation-stage-framework--2"
               }
             ]
           }
@@ -141,7 +145,7 @@
             "ordered_tasks": [
               {
                 "title": "Working for yourself",
-                "base_path": "https://www.gov.uk/working-for-yourself"
+                "base_path": "/working-for-yourself"
               }]
           }
         }
