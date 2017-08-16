@@ -13,8 +13,8 @@ Rails.application.routes.draw do
 
   get '/prototype', to: 'welcome#index'
   get '/*base_path', to: 'taxons#show', constraints: TaxonConstraint.new
-  get '/*base_path', to: 'content_items#show', constraints: ContentItemConstraint.new
   get '/*base_path', to: 'content_items#showforms', constraints: FormConstraint.new
+  get '/*base_path', to: 'content_items#show', constraints: ContentItemConstraint.new
   get '/*base_path', to: 'content_items#fall_through'
   root to: 'content_items#fall_through'
 end
