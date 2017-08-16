@@ -125,6 +125,12 @@ main {
         }
       }
     }
+
+    .subsection-list-item{
+      a{
+        text-decoration: none;
+      }
+    }
   }
 }
 
@@ -151,6 +157,7 @@ main {
 
   a {
     display: block;
+    text-decoration: none;
 
     & + a {
       margin-top: $gutter / 4;
