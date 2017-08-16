@@ -123,10 +123,10 @@ private
 
   def raw_content_item_html
     @raw_html ||= begin
-      raw_html = open("https://#{ENV['GOVUK_APP_DOMAIN']}#{request.fullpath}?cachebust=#{Time.zone.now.to_i}",
-        # Ensure we get the new version of the page, which should have all content in a two-thirds column
-        'Cookie' => @cookie_name,
-      ).read
+      uri =  URI.parse("https://#{ENV['GOVUK_APP_DOMAIN']}#{request.fullpath}")
+      query_params = URI.decode_www_form(String(uri.query)) << ["cachebust", "Time.zone.now.to_i"]
+      uri.query = URI.encode_www_form(query_params)
+      raw_html = open(uri.to_s, 'Cookie' => @cookie_name).read
 
 #      request.path == '/' ? edit_home_page_html(raw_html) : raw_html
     end
