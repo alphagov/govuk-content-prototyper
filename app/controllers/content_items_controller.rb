@@ -9,6 +9,7 @@ class ContentItemsController < ApplicationController
       stylesheet_links_html: stylesheet_links_html,
       main_attributes: main_attributes,
       breadcrumbs: breadcrumbs,
+      task_sidebar: task_sidebar,
       taxonomy_sidebar: navigation_helpers.taxonomy_sidebar,
       page_type: page_type,
     }
@@ -26,8 +27,24 @@ class ContentItemsController < ApplicationController
 
 private
 
+  def task_sidebar
+    {
+      "title" => task_nav["title"],
+      "base_path" => task_nav["base_path"],
+      "ordered_steps" => task_nav["links"],
+    }
+  end
+
   def breadcrumbs
-    if SchemaFinderService.taxonomy_supported?(params[:base_path])
+    if TaskNavigationService.task_navigation_supported?(params[:base_path])
+      task_group = TaskNavigationService.task_for_page(params[:base_path])
+
+      [
+        { title: "Home", url: "/" },
+        { title: "How to become a childminder", url: "/services/how-to-become-a-childminder" },
+        { title: task_group["title"], url: task_group["base_path"] }
+      ]
+    elsif SchemaFinderService.taxonomy_supported?(params[:base_path])
       navigation_helpers.taxon_breadcrumbs[:breadcrumbs]
     else
       navigation_helpers.breadcrumbs[:breadcrumbs]
@@ -139,5 +156,13 @@ private
   def page_type
     wrapper_class = full_content_item_html.css('#wrapper').attr('class')
     wrapper_class && wrapper_class.value || 'guidance'
+  end
+
+  def schema
+    @schema ||= SchemaFinderService.new(base_path: '/how-to-become-a-childminder')
+  end
+
+  def task_nav
+    @task_nav ||= content_item["links"]["ordered_tasks"]
   end
 end

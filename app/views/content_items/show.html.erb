@@ -18,18 +18,24 @@
       <%= content_html %>
     </div>
     <div class="column-third add-title-margin">
-      <% if override_sidebar?(base_path: params[:base_path]) %>
-      <aside class="govuk-taxonomy-sidebar" data-module="track-click" role="complementary">
-      <div class="sidebar-taxon" data-track-count="sidebarTaxonSection">
-        <h2>
-          <a class="taxon-link" href="/services/learn-to-drive-a-car">Learn to drive a car</a>
-        </h2>
 
-        <p class="taxon-description">
-          Find out what you need to do to drive a car in the UK.
-        </p>
-      </div>
-  </aside>
+      <% if override_sidebar?(base_path: params[:base_path]) %>
+        <aside class="govuk-taxonomy-sidebar">
+          <div class="sidebar-taxon">
+            <h2 class="task-list-navigation-heading">
+              <a href="<%= task_sidebar["base_path"] %>" class="taxon-link"><%= task_sidebar["title"] %></a>
+            </h2>
+            <ol class="task-list-navigation">
+              <% task_sidebar["ordered_steps"].each_with_index do |task_group, index| %>
+              <li<%= " class=highlighted" if page_is_in_task_group? task_group %>>
+                <% task_group.each_with_index do |task| %>
+                  <a href="<%= "#{task_sidebar['base_path']}#index-#{index}-0" %>"><%= task["title"] %></a>
+                <% end %>
+              </li>
+              <% end %>
+            </ol>
+          </div>
+        </aside>
       <% else %>
         <%= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>
       <% end %>
