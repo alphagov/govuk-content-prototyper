@@ -28,8 +28,8 @@
             <ol class="task-list-navigation">
               <% task_sidebar["ordered_steps"].each_with_index do |task_group, index| %>
               <li<%= " class=highlighted" if page_is_in_task_group? task_group %>>
-                <% task_group.each_with_index do |task| %>
-                  <a href="<%= "#{task_sidebar['base_path']}#index-#{index}-0" %>"><%= task["title"] %></a>
+                <% task_group.each_with_index do |task, sub_index| %>
+                  <a href="<%= "#{task_sidebar['base_path']}#index-#{index}-#{sub_index}" %>"><%= task["title"] %></a>
                 <% end %>
               </li>
               <% end %>
