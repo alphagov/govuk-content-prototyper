@@ -3,6 +3,12 @@ require 'open-uri'
 class ContentItemsController < ApplicationController
   rescue_from OpenURI::HTTPError, with: :handle_http_error
 
+  CONTENT_TYPES = {
+    "pdf" => :pdf,
+    "doc" => "application/msword",
+    "png" => :png
+  }
+
   def show
     @cookie_name = "ABTest-EducationNavigation=B"
     render :show, locals: {
@@ -36,9 +42,10 @@ class ContentItemsController < ApplicationController
   # as text/html, not as JSON)
   def fall_through
     bypass_slimmer
-    if params["format"] == "pdf"
-      pdf = open("https://#{ENV['GOVUK_APP_DOMAIN']}#{request.fullpath}?cachebust=#{Time.zone.now.to_i}").read
-      send_data pdf, type: :pdf, disposition: :inline
+
+    if CONTENT_TYPES.keys.include? params["format"]
+      file = open("https://#{ENV['GOVUK_APP_DOMAIN']}#{request.fullpath}?cachebust=#{Time.zone.now.to_i}").read
+      send_data file, type: CONTENT_TYPES[params["format"]], disposition: :inline
     else
       render html: raw_content_item_html.html_safe
     end
