@@ -22,7 +22,12 @@ class ContentItemsController < ApplicationController
   # as text/html, not as JSON)
   def fall_through
     bypass_slimmer
-    render html: raw_content_item_html.html_safe
+    if params["format"] == "pdf"
+      pdf = open("https://#{ENV['GOVUK_APP_DOMAIN']}#{request.fullpath}?cachebust=#{Time.zone.now.to_i}").read
+      send_data pdf, type: :pdf, disposition: :inline
+    else
+      render html: raw_content_item_html.html_safe
+    end
   end
 
 private
