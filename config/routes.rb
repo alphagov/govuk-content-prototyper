@@ -17,4 +17,5 @@ Rails.application.routes.draw do
   get '/*base_path', to: 'content_items#show', constraints: ContentItemConstraint.new
   get '/*base_path', to: 'content_items#fall_through'
   root to: 'content_items#fall_through'
+  post '/:base_path', to: redirect('/%{base_path}/camden')
 end
