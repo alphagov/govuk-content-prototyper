@@ -23,12 +23,6 @@ main {
   -webkit-font-smoothing: antialiased;
 }
 
-.header-wrapper {
-  .site-search {
-    display: none;
-  }
-}
-
 .subsection-content {
   h3 {
     @include bold-24;
