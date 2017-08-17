@@ -1,7 +1,7 @@
 class FormConstraint
   def matches?(request)
     content_item = request.env['content_item']
-    content_item && (guidance_content?(content_item) || content_item['base_path'] == "/government/publications/become-a-registered-early-years-or-childcare-provider-in-england")
+    content_item && (guidance_content?(content_item))
   end
 
   def guidance_content?(content_item)
