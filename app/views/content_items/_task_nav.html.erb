@@ -1,0 +1,16 @@
+<aside class="govuk-taxonomy-sidebar">
+  <div class="sidebar-taxon">
+    <h2 class="task-list-navigation-heading">
+      <a href="<%= task_sidebar["base_path"] %>" class="taxon-link"><%= task_sidebar["title"] %></a>
+    </h2>
+    <ol class="task-list-navigation">
+      <% task_sidebar["ordered_steps"].each_with_index do |task_group, index| %>
+      <li<%= " class=highlighted" if page_is_in_task_group? task_group %>>
+        <% task_group.each_with_index do |task, sub_index| %>
+          <a href="<%= "#{task_sidebar['base_path']}#index-#{index}-#{sub_index}" %>"><%= task["title"] %></a>
+        <% end %>
+      </li>
+      <% end %>
+    </ol>
+  </div>
+</aside>
