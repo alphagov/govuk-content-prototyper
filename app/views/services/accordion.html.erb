@@ -34,11 +34,10 @@
                       <% end %>
                       <%= step.title %>
                     </h2>
-                    <p class="subsection-description"><%= step.description %></p>
                   </div>
-
                   <% if expandable %>
                     <div class="subsection-content js-subsection-content" id="subsection_content_<%= "#{index}-#{step_index}" %>">
+                      <p class="subsection-description"><%= step.description %></p>
                       <ul class="subsection-list">
                         <% step.links.ordered_tasks.each_with_index do |task, index| %>
                           <li class="subsection-list-item">
