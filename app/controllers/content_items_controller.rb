@@ -68,6 +68,8 @@ private
 
       [
         { title: "Home", url: "/" },
+        { title: "Parenting, childcare and children's services", url: "/childcare-parenting"},
+        { title: "Childcare and early years", url: "/childcare-parenting/childcare-and-early-years"},
         { title: "How to become a childminder", url: "/services/how-to-become-a-childminder" },
         { title: task_group["title"], url: task_group["base_path"] }
       ]
