@@ -47,7 +47,7 @@ class ContentItemsController < ApplicationController
     bypass_slimmer
 
     if CONTENT_TYPES.keys.include? params["format"]
-      file = open("https://#{ENV['GOVUK_APP_DOMAIN']}#{request.fullpath}?cachebust=#{Time.zone.now.to_i}").read
+      file = open("https://#{ENV['GOVUK_APP_DOMAIN']}#{request.fullpath}").read
       send_data file, type: CONTENT_TYPES[params["format"]], disposition: :inline
     else
       render html: raw_content_item_html.html_safe
