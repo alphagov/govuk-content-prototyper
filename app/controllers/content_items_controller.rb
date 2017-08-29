@@ -37,6 +37,14 @@ class ContentItemsController < ApplicationController
     }
   end
 
+  def browse
+    @cookie_name = "ABTest-EducationNavigation=B"
+    bypass_slimmer
+
+    raw_html = raw_content_item_html
+    render html: edit_browse_page_html(raw_html).html_safe
+  end
+
   # This method is used to display any pages the prototype is not concerned with. It does this by fetching the page
   # from the production site and rendering the response verbatim as HTML.
   # NB: Any **NON-HTML** requests will **STILL BE RETURNED AS HTML**. An example of this is the Miller Columns for
@@ -142,6 +150,21 @@ private
     document = Nokogiri::HTML(html)
     document.at_css('.header-logo a')['href'] = '/'
     update_childcare_and_parenting_on_home_page(document)
+    document.to_html
+  end
+
+  def edit_browse_page_html(html)
+    document = Nokogiri::HTML(html)
+    document.css('.high-volume ol li').last.replace('<li><a href="/services/how-to-become-a-childminder">How to become a childminder</a></li>')
+
+    how_to_object_link = document.at_css('[href="/government/publications/how-to-object-guidance-for-registered-childminders-and-childcare-providers"]')
+
+    if how_to_object_link
+      how_to_object_li = how_to_object_link.ancestors('li').first
+
+      how_to_object_li.add_previous_sibling('<li class="subsection-list-item"><a href="/services/how-to-become-a-childminder">How to become a childminder</a><p>You need to follow this process if you\'re registering as a childminder with Ofsted. You don\'t need to do this if you\'re registering with an agency. The process is different if you\'re in Wales, Scotland or Northern Ireland.</p></li>')
+    end
+
     document.to_html
   end
 
