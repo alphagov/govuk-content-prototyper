@@ -10,6 +10,8 @@ class ContentItemsController < ApplicationController
   }
 
   def show
+    @page_schema = SchemaFinderService.new(base_path: "how-to-become-a-childminder").page_schema
+
     @cookie_name = "ABTest-EducationNavigation=B"
     render :show, locals: {
       content_html: content_html,
@@ -68,6 +70,8 @@ private
 
       [
         { title: "Home", url: "/" },
+        { title: "Parenting, childcare and children's services", url: "/childcare-parenting"},
+        { title: "Childcare and early years", url: "/childcare-parenting/childcare-and-early-years"},
         { title: "How to become a childminder", url: "/services/how-to-become-a-childminder" },
         { title: task_group["title"], url: task_group["base_path"] }
       ]
@@ -110,6 +114,8 @@ private
     main_html.attributes.reduce('') do |attributes, (key, value)|
       attributes + "#{key}=#{value} "
     end
+
+    "class=taxon-page"
   end
 
   def main_html
