@@ -21,7 +21,7 @@
             <div class="subsection-border">
               <% group.each_with_index do |step, step_index| %>
                 <%
-                  expandable = true if step.links.ordered_tasks.length > 0
+                  expandable = true if (step.links.ordered_tasks.length > 0) || step.description
                   show_number = true if index != last_loop_index
                 %>
                 <div class="subsection <% if expandable %>js-subsection<% else %>subsection-no-expand<% end %>"
@@ -37,14 +37,16 @@
                   </div>
                   <% if expandable %>
                     <div class="subsection-content js-subsection-content" id="subsection_content_<%= "#{index}-#{step_index}" %>">
-                      <p class="subsection-description"><%= step.description %></p>
-                      <ul class="subsection-list">
-                        <% step.links.ordered_tasks.each_with_index do |task, index| %>
-                          <li class="subsection-list-item">
-                            <%= link_to(task.title, task.base_path || task.external_link) %>
-                          </li>
-                        <% end %>
-                      </ul>
+                      <div class="subsection-active-border">
+                        <p class="subsection-description"><%= step.description %></p>
+                        <ul class="subsection-list">
+                          <% step.links.ordered_tasks.each_with_index do |task, index| %>
+                            <li class="subsection-list-item">
+                              <%= link_to(task.title, task.base_path || task.external_link) %>
+                            </li>
+                          <% end %>
+                        </ul>
+                      </div>
                     </div>
                   <% end %>
                 </div>
