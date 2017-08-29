@@ -89,14 +89,16 @@
 
 .slidy-fixed {
   .arrow {
-    color: white;
-    float: right;
-    text-decoration: none;
-    background-image: url(image_path('arrow-01.png'));
-    width: 10px;
-    background-size: cover;
-    padding: 12px 15px;
-    background-repeat: no-repeat;
+    @include media(tablet) {
+      color: white;
+      float: right;
+      text-decoration: none;
+      background-image: url(image_path('arrow-01.png'));
+      width: 10px;
+      background-size: cover;
+      padding: 12px 15px;
+      background-repeat: no-repeat;
+    }
   }
 }
 
