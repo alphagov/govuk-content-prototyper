@@ -101,6 +101,13 @@ h2.subsection-title {
     border-top: solid 1px $grey-2;
   }
 
+  .subsection-smaller-border {
+    border-top: solid 1px $grey-2;
+    float: right;
+    min-width: 86%;
+    min-height: 0px;
+  }
+
   .subsection {
     cursor: pointer;
     position: relative;
@@ -126,11 +133,11 @@ h2.subsection-title {
       }
     }
 
-    .subsection-list-item{
-      a{
-        text-decoration: none;
-      }
-    }
+    // .subsection-list-item{
+    //   a{
+    //     text-decoration: none;
+    //   }
+    // }
   }
 }
 

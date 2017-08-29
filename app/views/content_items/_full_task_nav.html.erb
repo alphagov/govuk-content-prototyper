@@ -11,10 +11,14 @@
               <%
                 expandable = true if (step.links.ordered_tasks.length > 0) || step.description
                 show_number = true if index != last_loop_index
+                border = true
               %>
               <div class="subsection <%= expandable ? "js-subsection" : "subsection-no-expand" %>"
                     id="index-<%= "#{index}-#{step_index}" %>"
                     data-track-count="accordionSection">
+                <% if step_index == 1 && border ; border = false %>
+                  <div class="subsection-smaller-border"></div>
+                <% end %>
                 <div class="subsection-header js-subsection-header">
                   <h2 class="subsection-title <% if expandable %>js-subsection-title<% end %>">
                     <% if show_number %>
