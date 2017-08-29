@@ -21,7 +21,9 @@
       <%= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>
     </div>
   </div>
-  <div class="grid-row child-topic-contents">
-    <%= render partial: "full_task_nav", locals: { page_schema: @page_schema } %>
-  </div>
+  <% if override_sidebar?(base_path: params[:base_path]) %>
+    <div class="grid-row child-topic-contents">
+      <%= render partial: "full_task_nav", locals: { page_schema: @page_schema } %>
+    </div>
+  <% end %>
 </main>
