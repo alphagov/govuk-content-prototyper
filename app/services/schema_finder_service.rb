@@ -65,6 +65,16 @@ class SchemaFinderService
     task["title"]
   end
 
+  def find_current_step_number(base_path)
+    ordered_task_groups.each_with_index do |task, i|
+      current_task = task.find do |task|
+        task["base_path"] == "/#{base_path}"
+      end
+
+      return i+1 if current_task
+    end
+  end
+
   def ordered_task_groups
     @ordered_task_groups ||= extract_ordered_task_groups
   end

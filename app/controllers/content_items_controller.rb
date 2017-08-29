@@ -22,7 +22,8 @@ class ContentItemsController < ApplicationController
       task_sidebar: task_sidebar,
       taxonomy_sidebar: navigation_helpers.taxonomy_sidebar,
       page_type: page_type,
-      current_step_title: schema_finder.find_base_path_title(params[:base_path])
+      current_step_title: schema_finder.find_base_path_title(params[:base_path]),
+      current_step_number: schema_finder.find_current_step_number(params[:base_path])
     }
   end
 
