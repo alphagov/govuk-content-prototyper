@@ -29,6 +29,13 @@
     border-top: solid 1px $grey-2;
   }
 
+  .subsection-smaller-border {
+    border-top: solid 1px $grey-2;
+    float: right;
+    min-width: 86%;
+    min-height: 0px;
+  }
+
   .subsection {
     cursor: pointer;
     position: relative;
@@ -62,15 +69,47 @@
         }
       }
     }
-
-    .subsection-list-item{
-      a{
-        text-decoration: none;
-      }
-    }
   }
 }
 
 .taxon-page p.subsection-description {
   margin-top: 0;
+}
+
+.slidy-nav {
+  color: white;
+  background-color: $govuk-blue;
+  text-align: center;
+}
+
+.column-two-thirds.slidy-fixed, .column-two-thirds.slidy-nav {
+  padding: 20px;
+  font-weight: 700;
+}
+
+.slidy-fixed {
+  .arrow {
+    color: white;
+    float: right;
+    text-decoration: none;
+    background-image: url(image_path('arrow-01.png'));
+    width: 10px;
+    background-size: cover;
+    padding: 12px 15px;
+    background-repeat: no-repeat;
+  }
+}
+
+.slidy-fixed {
+  position: fixed;
+  top: 93%;
+  z-index: 99999;
+}
+.shim {
+  display: block;
+}
+
+.subsection-active-border {
+  padding-left: 5px;
+  border-left: 3px solid $govuk-blue;
 }

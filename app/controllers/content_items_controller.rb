@@ -10,7 +10,8 @@ class ContentItemsController < ApplicationController
   }
 
   def show
-    @page_schema = SchemaFinderService.new(base_path: "how-to-become-a-childminder").page_schema
+    schema_finder = SchemaFinderService.new(base_path: "how-to-become-a-childminder")
+    @page_schema = schema_finder.page_schema
 
     @cookie_name = "ABTest-EducationNavigation=B"
     render :show, locals: {
@@ -21,12 +22,17 @@ class ContentItemsController < ApplicationController
       task_sidebar: task_sidebar,
       taxonomy_sidebar: navigation_helpers.taxonomy_sidebar,
       page_type: page_type,
+      current_step_title: schema_finder.find_base_path_title(params[:base_path]),
+      current_step_number: schema_finder.find_current_step_number(params[:base_path])
     }
   end
 
   def showforms
+    schema_finder = SchemaFinderService.new(base_path: "how-to-become-a-childminder")
+    @page_schema = schema_finder.page_schema
+
     @cookie_name = "ABTest-EducationNavigation=A"
-    render :show_form, locals: {
+    render :show, locals: {
       content_html: main_html.inner_html.html_safe,
       stylesheet_links_html: stylesheet_links_html,
       main_attributes: main_attributes,
@@ -34,6 +40,8 @@ class ContentItemsController < ApplicationController
       task_sidebar: task_sidebar,
       taxonomy_sidebar: navigation_helpers.taxonomy_sidebar,
       page_type: page_type,
+      current_step_title: schema_finder.find_base_path_title(params[:base_path]),
+      current_step_number: schema_finder.find_current_step_number(params[:base_path])
     }
   end
 
@@ -47,7 +55,7 @@ class ContentItemsController < ApplicationController
     bypass_slimmer
 
     if CONTENT_TYPES.keys.include? params["format"]
-      file = open("https://#{ENV['GOVUK_APP_DOMAIN']}#{request.fullpath}?cachebust=#{Time.zone.now.to_i}").read
+      file = open("https://#{ENV['GOVUK_APP_DOMAIN']}#{request.fullpath}").read
       send_data file, type: CONTENT_TYPES[params["format"]], disposition: :inline
     else
       render html: raw_content_item_html.html_safe

@@ -24,6 +24,10 @@ main {
   -webkit-font-smoothing: antialiased;
 }
 
+h2.subsection-title {
+  color: black;
+}
+
 .subsection-content {
   h3 {
     @include bold-24;
@@ -66,6 +70,10 @@ main {
   }
 }
 
+span.theme-title {
+  text-decoration: underline;
+}
+
 .task-list {
   cursor: default;
 
@@ -97,6 +105,13 @@ main {
     border-top: solid 1px $grey-2;
   }
 
+  .subsection-smaller-border {
+    border-top: solid 1px $grey-2;
+    float: right;
+    min-width: 86%;
+    min-height: 0px;
+  }
+
   .subsection {
     cursor: pointer;
     position: relative;
@@ -122,11 +137,11 @@ main {
       }
     }
 
-    .subsection-list-item{
-      a{
-        text-decoration: none;
-      }
-    }
+    // .subsection-list-item{
+    //   a{
+    //     text-decoration: none;
+    //   }
+    // }
   }
 }
 

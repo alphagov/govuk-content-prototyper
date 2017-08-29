@@ -12,6 +12,8 @@
         collapse_on_mobile: true
     } %>
 
+<% page_schema = @page_schema %>
+
 <main <%= main_attributes %>>
   <div class="grid-row">
     <div class="column-two-thirds">
@@ -22,6 +24,15 @@
     </div>
   </div>
   <% if override_sidebar?(base_path: params[:base_path]) %>
+    <div class="grid-row">
+      <div class="column-two-thirds js-stick-at-top-when-scrolling slidy-fixed slidy-nav">
+        <span>Part of:</span>
+        <span class="theme-title">How to become a childminder</span>
+        <a href="#index-<%=current_step_number - 1%>-0" class="arrow"></a>
+      </div>
+    </div>
+    <div class="grid-row js-slidy-stick">
+    </div>
     <div class="grid-row child-topic-contents">
       <%= render partial: "full_task_nav", locals: { page_schema: @page_schema } %>
     </div>
