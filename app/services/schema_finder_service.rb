@@ -62,7 +62,7 @@ class SchemaFinderService
       task["base_path"] == "/#{base_path}"
     end
 
-    task["title"]
+    task["title"] if task
   end
 
   def find_current_step_number(base_path)

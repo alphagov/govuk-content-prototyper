@@ -130,8 +130,6 @@ private
     main_html.attributes.reduce('') do |attributes, (key, value)|
       attributes + "#{key}=#{value} "
     end
-
-    "class=taxon-page"
   end
 
   def main_html
