@@ -24,6 +24,13 @@
     </div>
   </div>
   <% if override_sidebar?(base_path: params[:base_path]) %>
+    <div class="grid-row">
+      <div class="column-two-thirds js-stick-at-top-when-scrolling slidy-fixed slidy-nav">
+          Menu stuff &#9660;
+      </div>
+    </div>
+    <div class="grid-row js-slidy-stick">
+    </div>
     <div class="grid-row child-topic-contents">
       <%= render partial: "full_task_nav", locals: { page_schema: @page_schema } %>
     </div>

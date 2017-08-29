@@ -74,3 +74,17 @@
 .taxon-page p.subsection-description {
   margin-top: 0;
 }
+
+.slidy-nav {
+  color: white;
+  background-color: $govuk-blue;
+  text-align: center;
+}
+
+.slidy-fixed {
+  position: fixed;
+  top: 90%;
+}
+.shim {
+  display: block;
+}

@@ -25,8 +25,10 @@ class ContentItemsController < ApplicationController
   end
 
   def showforms
+    @page_schema = SchemaFinderService.new(base_path: "how-to-become-a-childminder").page_schema
+
     @cookie_name = "ABTest-EducationNavigation=A"
-    render :show_form, locals: {
+    render :show, locals: {
       content_html: main_html.inner_html.html_safe,
       stylesheet_links_html: stylesheet_links_html,
       main_attributes: main_attributes,
