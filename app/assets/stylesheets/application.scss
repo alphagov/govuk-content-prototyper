@@ -9,7 +9,6 @@
 // These stylesheets are being fetched from GitHub via RemoteSass
 // From the collections app
 @import "views/_browse.scss";
-@import 'views/_taxons.scss';
 @import 'views/_email-signups.scss';
 
 // From this application
@@ -17,6 +16,7 @@
 @import 'modules/list-iterations';
 @import 'modules/headings';
 @import 'modules/prototype';
+@import 'modules/taxons.scss';
 
 main {
   @include core-19;
@@ -164,4 +164,3 @@ main {
     font-weight: bold;
   }
 }
-
