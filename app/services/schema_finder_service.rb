@@ -57,6 +57,14 @@ class SchemaFinderService
     end
   end
 
+  def find_base_path_title(base_path)
+    task = ordered_task_groups.flatten.find do |task|
+      task["base_path"] == "/#{base_path}"
+    end
+
+    task["title"]
+  end
+
   def ordered_task_groups
     @ordered_task_groups ||= extract_ordered_task_groups
   end

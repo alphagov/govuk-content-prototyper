@@ -10,7 +10,8 @@ class ContentItemsController < ApplicationController
   }
 
   def show
-    @page_schema = SchemaFinderService.new(base_path: "how-to-become-a-childminder").page_schema
+    schema_finder = SchemaFinderService.new(base_path: "how-to-become-a-childminder")
+    @page_schema = schema_finder.page_schema
 
     @cookie_name = "ABTest-EducationNavigation=B"
     render :show, locals: {
@@ -21,6 +22,7 @@ class ContentItemsController < ApplicationController
       task_sidebar: task_sidebar,
       taxonomy_sidebar: navigation_helpers.taxonomy_sidebar,
       page_type: page_type,
+      current_step_title: schema_finder.find_base_path_title(params[:base_path])
     }
   end
 
