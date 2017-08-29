@@ -12,7 +12,7 @@
                 expandable = true if (step.links.ordered_tasks.length > 0) || step.description
                 show_number = true if index != last_loop_index
               %>
-              <div class="subsection <% if expandable %>js-subsection<% else %>subsection-no-expand<% end %>"
+              <div class="subsection <%= expandable ? "js-subsection" : "subsection-no-expand" %>"
                     id="index-<%= "#{index}-#{step_index}" %>"
                     data-track-count="accordionSection">
                 <div class="subsection-header js-subsection-header">
@@ -50,5 +50,3 @@
     </div>
   </div>
 </div>
-
-

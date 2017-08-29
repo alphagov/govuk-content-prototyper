@@ -24,6 +24,10 @@ main {
   -webkit-font-smoothing: antialiased;
 }
 
+h2.subsection-title {
+  color: black;
+}
+
 .subsection-content {
   h3 {
     @include bold-24;
