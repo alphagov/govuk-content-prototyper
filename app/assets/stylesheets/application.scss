@@ -72,6 +72,11 @@ h2.subsection-title {
 
 span.theme-title {
   text-decoration: underline;
+
+  a {
+    color: white;
+    display:inline-block;
+  }
 }
 
 .task-list {
