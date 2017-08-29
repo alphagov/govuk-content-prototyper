@@ -1,0 +1,76 @@
+.nav-task-list {
+  cursor: default;
+
+  .subsection-header,
+  .subsection-content {
+    padding-left: 10%;
+  }
+
+  .subsection-header {
+    @include media(tablet) {
+      min-height: 45px;
+    }
+  }
+
+  &.js-accordion-with-descriptions .subsection-header {
+    border: 0;
+  }
+
+  .subsection-number {
+    position: absolute;
+    top: 14px;
+    left: 2%;
+    @include core-24;
+    font-weight: bold;
+    color: $black;
+  }
+
+  .subsection-border {
+    border-top: solid 1px $grey-2;
+  }
+
+  .subsection {
+    cursor: pointer;
+    position: relative;
+
+    &.subsection-no-expand {
+      cursor: default;
+
+      .subsection-title-link {
+        color: $black;
+      }
+
+      p.subsection-description {
+        margin: 0;
+      }
+
+
+      .subsection-title,
+      .subsection-header,
+      .subsection-header:hover,
+      .subsection-description {
+        cursor: default;
+      }
+
+      .subsection-icon {
+        display: none;
+      }
+
+      .subsection-header {
+        &:hover {
+          background: none;
+        }
+      }
+    }
+
+    .subsection-list-item{
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.taxon-page p.subsection-description {
+  margin-top: 0;
+}

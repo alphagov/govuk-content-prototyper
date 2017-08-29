@@ -17,6 +17,7 @@
 @import 'modules/headings';
 @import 'modules/prototype';
 @import 'modules/taxons.scss';
+@import 'modules/full-nav';
 
 main {
   @include core-19;
@@ -98,6 +99,7 @@ main {
 
   .subsection {
     cursor: pointer;
+    position: relative;
 
     &.subsection-no-expand {
       cursor: default;
