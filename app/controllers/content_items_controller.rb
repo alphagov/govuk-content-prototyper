@@ -10,6 +10,8 @@ class ContentItemsController < ApplicationController
   }
 
   def show
+    @page_schema = SchemaFinderService.new(base_path: "how-to-become-a-childminder").page_schema
+
     @cookie_name = "ABTest-EducationNavigation=B"
     render :show, locals: {
       content_html: content_html,
@@ -112,6 +114,8 @@ private
     main_html.attributes.reduce('') do |attributes, (key, value)|
       attributes + "#{key}=#{value} "
     end
+
+    "class=taxon-page"
   end
 
   def main_html
