@@ -26,7 +26,8 @@
   <% if override_sidebar?(base_path: params[:base_path]) %>
     <div class="grid-row">
       <div class="column-two-thirds js-stick-at-top-when-scrolling slidy-fixed slidy-nav">
-          How to become a childminder: Step <%= current_step_number %>. <%= current_step_title %> &#9660;
+        <span>This is Step  <%= current_step_number %> of How to become a childminder</span>
+        <a href="#" class="arrow"></a>
       </div>
     </div>
     <div class="grid-row js-slidy-stick">

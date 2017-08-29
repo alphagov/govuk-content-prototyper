@@ -81,9 +81,28 @@
   text-align: center;
 }
 
+.column-two-thirds.slidy-fixed, .column-two-thirds.slidy-nav {
+  padding: 20px;
+  font-weight: 700;
+}
+
+.slidy-fixed {
+  .arrow {
+    color: white;
+    float: right;
+    text-decoration: none;
+    background-image: url(image_path('arrow-01.png'));
+    width: 10px;
+    background-size: cover;
+    padding: 12px 15px;
+    background-repeat: no-repeat;
+  }
+}
+
 .slidy-fixed {
   position: fixed;
   top: 90%;
+  z-index: 99999;
 }
 .shim {
   display: block;
