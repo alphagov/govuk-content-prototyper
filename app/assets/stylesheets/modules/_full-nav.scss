@@ -3,7 +3,7 @@
 
   .subsection-header,
   .subsection-content {
-    padding-left: 10%;
+    padding-left: 15%;
   }
 
   .subsection-header {
@@ -20,7 +20,7 @@
     position: absolute;
     top: 14px;
     left: 2%;
-    @include core-24;
+    @include core-48;
     font-weight: bold;
     color: $black;
   }
