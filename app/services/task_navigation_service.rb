@@ -17,6 +17,13 @@ class TaskNavigationService
     @supported_paths ||= navigation_config.dig("links", "ordered_tasks", "links").flatten.map{ |link| link["task_items"] }.flatten.map{|item| item["base_path"]}
   end
 
+  def self.task_number_for_page(base_path)
+    base_path = formatted_base_path base_path
+    current.navigation_config.dig("links","ordered_tasks","links").flatten.each_with_index do |task, index|
+      return index if task["task_items"].any?{ |item| item["base_path"] == base_path }
+    end
+  end
+
   def self.task_for_page(base_path)
     base_path = formatted_base_path base_path
     current.navigation_config.dig("links","ordered_tasks","links").flatten.detect do |task|
