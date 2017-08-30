@@ -19,8 +19,10 @@ class TaskNavigationService
 
   def self.task_number_for_page(base_path)
     base_path = formatted_base_path base_path
-    current.navigation_config.dig("links","ordered_tasks","links").flatten.each_with_index do |task, index|
-      return index if task["task_items"].any?{ |item| item["base_path"] == base_path }
+    current.navigation_config.dig("links","ordered_tasks","links").each_with_index do |step, step_index|
+      step.each_with_index do |task, task_index|
+        return [step_index, task_index] if task["task_items"].any?{ |item| item["base_path"] == base_path }
+      end
     end
   end
 

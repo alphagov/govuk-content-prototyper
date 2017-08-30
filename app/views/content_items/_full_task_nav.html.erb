@@ -57,7 +57,7 @@
 
 <script type="text/javascript">
   $(document).ready(function(){
-      $('#index-<%= current_step_number - 1 %>-0').each(function() {
+      $('#index-<%= current_step_number %>-<%= current_task_number %>').each(function() {
         var subsectionView = new SubsectionView($(this))
         subsectionView.open()
       })

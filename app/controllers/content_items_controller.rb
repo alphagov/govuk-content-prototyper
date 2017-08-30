@@ -13,6 +13,8 @@ class ContentItemsController < ApplicationController
     schema_finder = SchemaFinderService.new(base_path: "how-to-become-a-childminder")
     @page_schema = schema_finder.page_schema
 
+    step_and_task_numbers = TaskNavigationService.task_number_for_page(params[:base_path])
+
     @cookie_name = "ABTest-EducationNavigation=B"
     render :show, locals: {
       content_html: content_html,
@@ -23,13 +25,16 @@ class ContentItemsController < ApplicationController
       taxonomy_sidebar: navigation_helpers.taxonomy_sidebar,
       page_type: page_type,
       current_step_title: schema_finder.find_base_path_title(params[:base_path]),
-      current_step_number: TaskNavigationService.task_number_for_page(params[:base_path])
+      current_step_number: step_and_task_numbers[0],
+      current_task_number: step_and_task_numbers[1]
     }
   end
 
   def showforms
     schema_finder = SchemaFinderService.new(base_path: "how-to-become-a-childminder")
     @page_schema = schema_finder.page_schema
+
+    step_and_task_numbers = TaskNavigationService.task_number_for_page(params[:base_path])
 
     @cookie_name = "ABTest-EducationNavigation=A"
     render :show, locals: {
@@ -41,7 +46,8 @@ class ContentItemsController < ApplicationController
       taxonomy_sidebar: navigation_helpers.taxonomy_sidebar,
       page_type: page_type,
       current_step_title: schema_finder.find_base_path_title(params[:base_path]),
-      current_step_number: TaskNavigationService.task_number_for_page(params[:base_path])
+      current_step_number: step_and_task_numbers[0],
+      current_task_number: step_and_task_numbers[1]
     }
   end
 
