@@ -77,7 +77,7 @@
 
           if (scrolledFrom && windowVerticalPosition > scrolledFrom) {
             sticky.release($el)
-          } else if (windowDimensions.width > 768 && windowVerticalPosition >= bottom) {
+          } else if (windowVerticalPosition >= bottom) {
             sticky.stick($el)
           }
         })
@@ -99,10 +99,6 @@
             var elParentWidth = $elParent.width()
             $shim.css('width', elParentWidth)
             $el.css('width', elParentWidth)
-          }
-
-          if (windowDimensions.width <= 768) {
-            sticky.release($el)
           }
         })
       }
