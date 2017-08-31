@@ -1,12 +1,13 @@
 class TaskNavigationService
 
   def self.task_navigation_supported?(base_path)
-    base_path = formatted_base_path base_path
+    base_path = formatted_base_path(base_path)
     current.supported_paths.include?(base_path)
   end
 
   def initialize
-    @file = File.read("config/task_nav/how-to-become-a-childminder.json")
+    # @file = File.read("config/task_nav/how-to-become-a-childminder.json")
+    @file = File.read("config/task_nav/how-to-drive-a-car.json")
   end
 
   def navigation_config

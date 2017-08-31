@@ -22,7 +22,7 @@ module ApplicationHelper
     ]
   }
 
-  def override_sidebar?(base_path:)
+  def show_task_nav?(base_path:)
     TaskNavigationService.task_navigation_supported?(base_path)
   end
 
