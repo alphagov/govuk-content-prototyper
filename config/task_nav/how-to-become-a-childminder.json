@@ -2,6 +2,7 @@
   "links": {
     "ordered_tasks": {
       "base_path": "/services/how-to-become-a-childminder",
+      "title": "How to become a childminder",
       "links": [
         [
           {
@@ -133,8 +134,7 @@
             ]
           }
         ]
-      ],
-      "title": "How to become a childminder"
+      ]
     }
   }
 }
