@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   end
 
   get '/prototype', to: 'welcome#index'
+  get '/search', to: 'search#results'
   get '/*base_path', to: 'content_items#browse', constraints: BrowseConstraint.new
   get '/*base_path', to: 'content_items#fall_through', constraints: TaxonConstraint.new
   get '/*base_path', to: 'content_items#showforms', constraints: FormConstraint.new
