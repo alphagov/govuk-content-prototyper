@@ -15,17 +15,21 @@
 <main <%= main_attributes %>>
   <div class="grid-row">
     <div class="column-two-thirds">
+      <a href="<%= @page_schema.base_path %>#index-<%=current_step_number %>-<%=current_task_number %>" style="background-color: #eee">
+        Part of Learning to drive: step by step
+      </a>
+
       <%= content_html %>
     </div>
     <div class="column-third add-title-margin">
-      <%= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>
+      <% if show_task_nav?(base_path: params[:base_path]) %>
+        <%= render partial: "full_task_nav", locals: {
+          page_schema: @page_schema,
+          current_step_number: current_step_number,
+          current_task_number: current_task_number,
+         } %>
+      <% end %>
+      <%#= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>
     </div>
   </div>
-  <% if show_task_nav?(base_path: params[:base_path]) %>
-    <%= render partial: "full_task_nav", locals: {
-      page_schema: @page_schema,
-      current_step_number: current_step_number,
-      current_task_number: current_task_number,
-     } %>
-  <% end %>
 </main>
