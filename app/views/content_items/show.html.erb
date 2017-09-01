@@ -22,7 +22,7 @@
       <%= content_html %>
     </div>
     <div class="column-third add-title-margin">
-      <% if show_task_nav?(base_path: params[:base_path]) %>
+      <% if override_sidebar?(base_path: params[:base_path]) %>
         <%= render partial: "sidebar", locals: {
           page_schema: @page_schema,
           current_step_number: current_step_number,
