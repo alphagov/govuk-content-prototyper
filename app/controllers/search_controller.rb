@@ -1,4 +1,8 @@
+require 'open-uri'
+
 class SearchController < ApplicationController
+  include SlimmerSkipper
+
   def results
     bypass_slimmer
 
@@ -22,9 +26,5 @@ private
     document.css('.results-list li').first.add_previous_sibling('<li><h3><a href="/services/how-to-drive-a-car">How to drive a car</a></h3><p>Find out what you need to do to drive a car in the UK.</p></li>')
 
     document.to_html
-  end
-
-  def bypass_slimmer
-    response.headers[Slimmer::Headers::SKIP_HEADER] = 'true'
   end
 end

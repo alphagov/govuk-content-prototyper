@@ -1,6 +1,8 @@
 require 'open-uri'
 
 class ContentItemsController < ApplicationController
+  include SlimmerSkipper
+
   rescue_from OpenURI::HTTPError, with: :handle_http_error
 
   CONTENT_TYPES = {
@@ -210,10 +212,6 @@ private
 
   def content_item
     request.env['content_item']
-  end
-
-  def bypass_slimmer
-    response.headers[Slimmer::Headers::SKIP_HEADER] = 'true'
   end
 
   def handle_http_error(error)
