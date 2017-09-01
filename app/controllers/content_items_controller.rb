@@ -1,9 +1,6 @@
-require 'open-uri'
-
 class ContentItemsController < ApplicationController
   include SlimmerSkipper
-
-  rescue_from OpenURI::HTTPError, with: :handle_http_error
+  include ContentRequester
 
   CONTENT_TYPES = {
     "pdf" => :pdf,
@@ -147,17 +144,6 @@ private
 
   def full_content_item_html
     @full_content_item_html ||= Nokogiri::HTML(raw_content_item_html)
-  end
-
-  def raw_content_item_html
-    @raw_html ||= begin
-      uri =  URI.parse("https://#{ENV['GOVUK_APP_DOMAIN']}#{request.fullpath}")
-      query_params = URI.decode_www_form(String(uri.query)) << ["cachebust", "Time.zone.now.to_i"]
-      uri.query = URI.encode_www_form(query_params)
-      raw_html = open(uri.to_s, 'Cookie' => @cookie_name).read
-
-#      request.path == '/' ? edit_home_page_html(raw_html) : raw_html
-    end
   end
 
   def edit_home_page_html(html)
