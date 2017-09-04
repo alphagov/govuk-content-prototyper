@@ -10,7 +10,10 @@ class ContentItemMutator
     base_path = content_item['base_path']
     mapping = mapping_for(base_path)
     mutated_content_item = content_item.to_hash.merge(mapping)
-    mutated_content_item.merge(task_nav) if TaskNavigationService.task_navigation_supported? base_path
+
+    if TaskNavigationService.new(base_path: base_path).task_navigation_supported?
+      mutated_content_item.merge(task_nav(base_path))
+    end
   end
 
   def self.empty_content_store_response?(content_item)
@@ -21,7 +24,10 @@ class ContentItemMutator
     Config.content_mappings[base_path] || {}
   end
 
-  def self.task_nav
-    TaskNavigationService.current.navigation_config || {}
+  def self.task_nav(base_path)
+    TaskNavigationService.new(base_path: base_path).navigation_config
+  end
+
+  def self.task_navigation_service(base_path)
   end
 end

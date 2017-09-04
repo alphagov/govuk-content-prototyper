@@ -11,7 +11,7 @@ class ContentItemsController < ApplicationController
 
   def show
     @page_schema = schema_finder.page_schema
-    step_and_task_numbers = TaskNavigationService.task_number_for_page(params[:base_path])
+    step_and_task_numbers = task_navigation_service.task_number_for_page
 
     @cookie_name = "ABTest-EducationNavigation=B"
     render :show, locals: {
@@ -24,13 +24,14 @@ class ContentItemsController < ApplicationController
       page_type: page_type,
       current_step_title: schema_finder.find_base_path_title(params[:base_path]),
       current_step_number: step_and_task_numbers[0],
-      current_task_number: step_and_task_numbers[1]
+      current_task_number: step_and_task_numbers[1],
+      override_sidebar: task_navigation_service.task_navigation_supported?
     }
   end
 
   def showforms
     @page_schema = schema_finder.page_schema
-    step_and_task_numbers = TaskNavigationService.task_number_for_page(params[:base_path])
+    step_and_task_numbers = task_number_for_page.task_number_for_page
 
     @cookie_name = "ABTest-EducationNavigation=A"
     render :show, locals: {
@@ -43,7 +44,8 @@ class ContentItemsController < ApplicationController
       page_type: page_type,
       current_step_title: schema_finder.find_base_path_title(params[:base_path]),
       current_step_number: step_and_task_numbers[0],
-      current_task_number: step_and_task_numbers[1]
+      current_task_number: step_and_task_numbers[1],
+      override_sidebar: task_navigation_service.task_navigation_supported?
     }
   end
 
@@ -83,8 +85,8 @@ private
   end
 
   def breadcrumbs
-    if TaskNavigationService.task_navigation_supported?(params[:base_path])
-      task_group = TaskNavigationService.task_for_page(params[:base_path])
+    if task_navigation_service.task_navigation_supported?
+      task_group = task_navigation_service.task_for_page
 
       [
         { title: "Home", url: "/" },
@@ -228,5 +230,12 @@ private
 
   def task_nav
     @task_nav ||= content_item["links"]["ordered_tasks"]
+  end
+
+  def task_navigation_service
+    TaskNavigationService.new(
+      schema_name: schema_finder.name,
+      base_path: params[:base_path]
+    )
   end
 end

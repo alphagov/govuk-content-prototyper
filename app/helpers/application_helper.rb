@@ -22,10 +22,6 @@ module ApplicationHelper
     ]
   }
 
-  def override_sidebar?(base_path:)
-    TaskNavigationService.task_navigation_supported?(base_path)
-  end
-
   def page_is_in_task_group?(task_group)
     base_path = "/#{params['base_path']}"
     task_group.any? do |task|

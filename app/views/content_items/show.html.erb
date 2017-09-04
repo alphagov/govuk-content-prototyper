@@ -12,8 +12,6 @@
         collapse_on_mobile: true
     } %>
 
-<% page_schema = @page_schema %>
-
 <main <%= main_attributes %>>
   <div class="grid-row">
     <div class="column-two-thirds">
@@ -23,7 +21,7 @@
       <%= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>
     </div>
   </div>
-  <% if override_sidebar?(base_path: params[:base_path]) %>
+  <% if override_sidebar %>
     <div class="grid-row">
       <div class="column-two-thirds js-stick-at-top-when-scrolling slidy-fixed slidy-nav">
         <span>This is step <%= current_step_number + 1 %> of </span>
