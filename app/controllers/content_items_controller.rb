@@ -10,9 +10,7 @@ class ContentItemsController < ApplicationController
   }
 
   def show
-    schema_finder = SchemaFinderService.new(base_path: "how-to-become-a-childminder")
     @page_schema = schema_finder.page_schema
-
     step_and_task_numbers = TaskNavigationService.task_number_for_page(params[:base_path])
 
     @cookie_name = "ABTest-EducationNavigation=B"
@@ -31,9 +29,7 @@ class ContentItemsController < ApplicationController
   end
 
   def showforms
-    schema_finder = SchemaFinderService.new(base_path: "how-to-become-a-childminder")
     @page_schema = schema_finder.page_schema
-
     step_and_task_numbers = TaskNavigationService.task_number_for_page(params[:base_path])
 
     @cookie_name = "ABTest-EducationNavigation=A"
@@ -226,8 +222,8 @@ private
     wrapper_class && wrapper_class.value || 'guidance'
   end
 
-  def schema
-    @schema ||= SchemaFinderService.new(base_path: '/how-to-become-a-childminder')
+  def schema_finder
+    @schema_finder ||= SchemaFinderService.new(base_path: '/how-to-drive-a-car')
   end
 
   def task_nav
