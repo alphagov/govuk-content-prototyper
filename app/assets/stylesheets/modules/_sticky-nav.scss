@@ -1,0 +1,8 @@
+.sticky-nav {
+  margin-top: 15px;
+  background-color: #eee;
+
+  h2 {
+    @include bold-24;
+  }
+}

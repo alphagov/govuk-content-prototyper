@@ -6,11 +6,15 @@
   <%= page_type %>
 <% end %>
 
-<%= render partial: 'govuk_component/breadcrumbs',
-    locals: {
-        breadcrumbs: breadcrumbs,
-        collapse_on_mobile: true
-    } %>
+<% if override_sidebar %>
+  <%= render partial: 'sticky_nav' %>
+<% else %>
+  <%= render partial: 'govuk_component/breadcrumbs',
+      locals: {
+          breadcrumbs: breadcrumbs,
+          collapse_on_mobile: true
+      } %>
+<% end %>
 
 <main <%= main_attributes %>>
   <div class="grid-row">
