@@ -18,6 +18,7 @@ gem 'remote-sass'
 gem 'sprockets', github: 'rails/sprockets'
 
 group :development, :test do
+  gem 'capybara'
   gem 'pry'
   gem 'rspec-rails'
   gem 'dotenv-rails'
