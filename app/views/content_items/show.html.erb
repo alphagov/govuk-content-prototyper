@@ -18,16 +18,17 @@
       <%= content_html %>
     </div>
     <div class="column-third add-title-margin">
-      <%= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>
+      <% if override_sidebar %>
+        <div class="grid-row child-topic-contents">
+          <%= render partial: "sidebar", locals: {
+            page_schema: @page_schema,
+            current_step_number: current_step_number,
+            current_task_number: current_task_number
+            } %>
+        </div>
+      <% else %>
+        <%= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>
+      <% end %>
     </div>
   </div>
-  <% if override_sidebar %>
-    <div class="grid-row child-topic-contents">
-      <%= render partial: "full_task_nav", locals: {
-        page_schema: @page_schema,
-        current_step_number: current_step_number,
-        current_task_number: current_task_number
-        } %>
-    </div>
-  <% end %>
 </main>
