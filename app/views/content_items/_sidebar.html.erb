@@ -30,20 +30,18 @@
 
                 <% if expandable %>
                   <div class="subsection-content js-subsection-content" id="subsection_content_<%= "#{index}-#{step_index}" %>">
-                    <div class="subsection-active-border">
-                      <p class="subsection-description"><%= step.description %></p>
-                      <ul class="subsection-list">
-                        <% step.links.ordered_tasks.each_with_index do |task, index| %>
-                          <li class="subsection-list-item">
-                            <% if request.path == task.base_path %>
-                              <strong><%= task.title %></strong>
-                            <% else %>
-                              <%= link_to(task.title, task.base_path || task.external_link) %>
-                            <% end %>
-                          </li>
-                        <% end %>
-                      </ul>
-                    </div>
+                    <p class="subsection-description"><%= step.description %></p>
+                    <ul class="subsection-list">
+                      <% step.links.ordered_tasks.each_with_index do |task, index| %>
+                        <li class="subsection-list-item">
+                          <% if request.path == task.base_path %>
+                            <strong><%= task.title %></strong>
+                          <% else %>
+                            <%= link_to(task.title, task.base_path || task.external_link) %>
+                          <% end %>
+                        </li>
+                      <% end %>
+                    </ul>
                   </div>
                 <% end %>
               </div>
