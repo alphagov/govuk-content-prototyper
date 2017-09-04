@@ -2,6 +2,10 @@
   <div class="topic-content">
     <div data-module="accordion-with-descriptions" class="sidebar">
       <div class="subsection-wrapper">
+        <h2>
+          <%= link_to("Learning to drive: step by step", page_schema.base_path) %>
+        </h2>
+
         <%
           page_schema.links.ordered_steps.each_with_index do |group, index|
             last_loop_index = nil
