@@ -1,5 +1,4 @@
-<% # TODO: implement own sidebar code. %>
-<div class="grid-row child-topic-contents">
+<div class="grid-row sidebar child-topic-contents">
   <div class="column-two-thirds child-topic-contents taxon-page">
     <div class="topic-content">
       <div data-module="govuk-sidebar" class="nav-task-list">
@@ -20,12 +19,12 @@
                     <div class="subsection-smaller-border"></div>
                   <% end %>
                   <div class="subsection-header js-subsection-header">
-                    <h2 class="subsection-title <% if expandable %>js-subsection-title<% end %>">
+                    <h6 class="subsection-title <% if expandable %>js-subsection-title<% end %>">
                       <% if show_number %>
-                        <span class="subsection-number"><%= "#{index + 1 }." %></span>
+                        <span class="subsection-number"><%= "#{index + 1 }" %></span>
                       <% end %>
                       <%= step.title %>
-                    </h2>
+                    </h6>
                   </div>
 
                   <% if expandable %>

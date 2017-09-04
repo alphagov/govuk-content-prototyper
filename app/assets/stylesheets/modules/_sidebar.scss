@@ -1,0 +1,120 @@
+.sidebar {
+  .nav-task-list {
+    cursor: default;
+
+    .subsection-header,
+    .subsection-content {
+      padding-left: 15%;
+    }
+
+    .subsection-header {
+      @include media(tablet) {
+        min-height: 45px;
+      }
+    }
+
+    &.js-accordion-with-descriptions .subsection-header {
+      border: 0;
+    }
+
+    .subsection-number {
+      position: absolute;
+      top: 14px;
+      left: 2%;
+      @include core-48;
+      font-weight: bold;
+      color: $black;
+    }
+
+    .subsection-border {
+      border-top: solid 1px $grey-2;
+    }
+
+    .subsection-smaller-border {
+      border-top: solid 1px $grey-2;
+      float: right;
+      min-width: 86%;
+      min-height: 0px;
+    }
+
+    .subsection {
+      cursor: pointer;
+      position: relative;
+
+      &.subsection-no-expand {
+        cursor: default;
+
+        .subsection-title-link {
+          color: $black;
+        }
+
+        p.subsection-description {
+          margin: 0;
+        }
+
+
+        .subsection-title,
+        .subsection-header,
+        .subsection-header:hover,
+        .subsection-description {
+          cursor: default;
+        }
+
+        .subsection-icon {
+          display: none;
+        }
+
+        .subsection-header {
+          &:hover {
+            background: none;
+          }
+        }
+      }
+    }
+  }
+
+  .taxon-page p.subsection-description {
+    margin-top: 0;
+  }
+
+  .slidy-nav {
+    color: white;
+    background-color: $govuk-blue;
+    text-align: center;
+  }
+
+  .column-two-thirds.slidy-fixed, .column-two-thirds.slidy-nav {
+    padding: 20px;
+    font-weight: 700;
+  }
+
+  .slidy-fixed {
+    .arrow {
+      @include media(tablet) {
+        color: white;
+        float: right;
+        text-decoration: none;
+        background-image: url(image_path('arrow-01.png'));
+        width: 10px;
+        background-size: cover;
+        padding: 12px 15px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .slidy-fixed {
+    position: fixed;
+    bottom: 0 ;
+    z-index: 99999;
+  }
+  .shim {
+    display: block;
+  }
+
+  .subsection-active-border {
+    padding-left: 10px;
+    border-left: 5px solid $govuk-blue;
+  }
+
+}
