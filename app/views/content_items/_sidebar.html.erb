@@ -1,18 +1,18 @@
 <div class="column-two-thirds child-topic-contents taxon-page">
   <div class="topic-content">
-    <div data-module="accordion-with-descriptions" class="nav-task-list">
+    <div data-module="accordion-with-descriptions" class="sidebar">
       <div class="subsection-wrapper">
-        <% page_schema.links.ordered_steps.each_with_index do |group, index| %>
-          <%
+        <%
+          page_schema.links.ordered_steps.each_with_index do |group, index|
             last_loop_index = nil
-          %>
+        %>
           <div class="subsection-border">
-            <% group.each_with_index do |step, step_index| %>
-              <%
+            <%
+              group.each_with_index do |step, step_index|
                 expandable = true if (step.links.ordered_tasks.length > 0) || step.description
                 show_number = true if index != last_loop_index
                 border = true
-              %>
+            %>
               <div class="subsection <%= expandable ? "js-subsection" : "subsection-no-expand" %>"
                     id="index-<%= "#{index}-#{step_index}" %>"
                     data-track-count="accordionSection">
@@ -20,12 +20,12 @@
                   <div class="subsection-smaller-border"></div>
                 <% end %>
                 <div class="subsection-header js-subsection-header">
-                  <h2 class="subsection-title <% if expandable %>js-subsection-title<% end %>">
+                  <span class="subsection-title <% if expandable %>js-subsection-title<% end %>">
                     <% if show_number %>
-                      <span class="subsection-number"><%= "#{index + 1 }." %></span>
+                      <span class="subsection-number"><%= "#{index + 1 }" %></span>
                     <% end %>
                     <%= step.title %>
-                  </h2>
+                  </span>
                 </div>
 
                 <% if expandable %>
