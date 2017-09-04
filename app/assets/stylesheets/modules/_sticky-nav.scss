@@ -6,3 +6,8 @@
     @include bold-24;
   }
 }
+
+.sticky-nav.sticky {
+  position: fixed;
+  top: 0;
+}
