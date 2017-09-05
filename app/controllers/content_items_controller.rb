@@ -31,7 +31,7 @@ class ContentItemsController < ApplicationController
 
   def showforms
     @page_schema = schema_finder.page_schema
-    step_and_task_numbers = task_number_for_page.task_number_for_page
+    step_and_task_numbers = task_navigation_service.task_number_for_page
 
     @cookie_name = "ABTest-EducationNavigation=A"
     render :show, locals: {
