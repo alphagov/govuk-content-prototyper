@@ -1,13 +1,18 @@
 .sticky-nav {
   margin-top: 15px;
   background-color: #eee;
+  z-index: 1;
 
   h2 {
     @include bold-24;
   }
 }
 
-.sticky-nav.sticky {
+.content-fixed {
   position: fixed;
   top: 0;
+}
+
+.shim {
+  display: block;
 }

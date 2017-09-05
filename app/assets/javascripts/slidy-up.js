@@ -26,7 +26,7 @@
       return $el.offset()
     },
     init: function () {
-      var $els = $('.js-slidy-stick')
+      var $els = $('.js-stick-at-top-when-scrolling')
 
       if ($els.length > 0) {
         sticky.$els = $els
@@ -66,18 +66,17 @@
       if (sticky._hasScrolled === true) {
         sticky._hasScrolled = false
 
-        var windowVerticalPosition = sticky.getWindowPositions().scrollTop + ($(window).height() * 0.9);
+        var windowVerticalPosition = sticky.getWindowPositions().scrollTop
 
         var windowDimensions = sticky.getWindowDimensions()
 
         sticky.$els.each(function (i, el) {
           var $el = $(el)
           var scrolledFrom = $el.data('scrolled-from')
-          var bottom = $(window).height() - sticky.getElementOffset($el).top - $el.height();
 
-          if (scrolledFrom && windowVerticalPosition > scrolledFrom) {
+          if (scrolledFrom && windowVerticalPosition < scrolledFrom) {
             sticky.release($el)
-          } else if (windowVerticalPosition >= bottom) {
+          } else if (windowDimensions.width > 768 && windowVerticalPosition >= sticky.getElementOffset($el).top) {
             sticky.stick($el)
           }
         })
@@ -100,29 +99,30 @@
             $shim.css('width', elParentWidth)
             $el.css('width', elParentWidth)
           }
+
+          if (windowDimensions.width <= 768) {
+            sticky.release($el)
+          }
         })
       }
     },
     stick: function ($el) {
-      if (!$el.hasClass('slidy-fixed')) {
+      if (!$el.hasClass('content-fixed')) {
         $el.data('scrolled-from', sticky.getElementOffset($el).top)
         var height = Math.max($el.height(), 1)
         var width = $el.width()
         $el.before('<div class="shim" style="width: ' + width + 'px; height: ' + height + 'px">&nbsp;</div>')
-        $el.css('width', width + 'px').addClass('slidy-fixed')
+        $el.css('width', width + 'px').addClass('content-fixed')
       }
     },
     release: function ($el) {
-      $('.slidy-fixed').each(function (i, el) {
-        $el = $(el)
-        if ($el.hasClass('slidy-fixed')) {
-          $el.data('scrolled-from', false)
-          $el.removeClass('slidy-fixed').css('width', '')
-          $el.siblings('.shim').remove()
-        }
-      })
+      if ($el.hasClass('content-fixed')) {
+        $el.data('scrolled-from', false)
+        $el.removeClass('content-fixed').css('width', '')
+        $el.siblings('.shim').remove()
+      }
     }
   }
-  GOVUK.slidyNav = sticky
+  GOVUK.stickAtTopWhenScrolling = sticky
   global.GOVUK = GOVUK
 })(window)
