@@ -22,6 +22,10 @@ module ApplicationHelper
     ]
   }
 
+  def highlight_sidebar_step?(ordered_tasks)
+    ordered_tasks.map(&:base_path).include?("/#{params[:base_path]}")
+  end
+
   def page_is_in_task_group?(task_group)
     base_path = "/#{params['base_path']}"
     task_group.any? do |task|

@@ -12,7 +12,8 @@
         %>
             <%
               group.each_with_index do |step, step_index|
-                expandable = true if (step.links.ordered_tasks.length > 0) || step.description
+                ordered_tasks = step.links.ordered_tasks
+                expandable = true if (ordered_tasks.length > 0) || step.description
                 show_number = true if index != last_loop_index
                 border = true
             %>
@@ -22,7 +23,7 @@
                 <% if step_index == 1 && border ; border = false %>
                   <div class="subsection-smaller-border"></div>
                 <% end %>
-                <div class="subsection-header js-subsection-header <% if nil %>subsection-title-highlight<% end %>">
+                <div class="subsection-header js-subsection-header <% if highlight_sidebar_step?(ordered_tasks) %>subsection-title-highlight<% end %>">
                   <span class="subsection-title <% if expandable %>js-subsection-title<% end %>">
                     <% if show_number %>
                       <span class="subsection-number"><%= "#{index + 1 }" %></span>
@@ -35,7 +36,7 @@
                   <div class="subsection-content js-subsection-content" id="subsection_content_<%= "#{index}-#{step_index}" %>">
                     <p class="subsection-description"><%= step.description %></p>
                     <ul class="subsection-list">
-                      <% step.links.ordered_tasks.each_with_index do |task, index| %>
+                      <% ordered_tasks.each_with_index do |task, index| %>
                         <li class="subsection-list-item">
                           <% if request.path == task.base_path %>
                             <span class="current-highlight"><%= task.title %></span>
