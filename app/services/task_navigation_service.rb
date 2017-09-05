@@ -1,13 +1,21 @@
 class TaskNavigationService
 
-  def initialize(schema_name: 'how-to-become-a-childminder', base_path:)
+  def initialize(schema_name: 'how-to-drive-a-car', base_path:)
     @schema_name = schema_name
     @base_path = formatted_base_path(base_path)
     @file = File.read("config/task_nav/#{schema_name}.json")
   end
 
+  def applicable_content?
+    task_navigation_supported? || is_secondary_content?
+  end
+
   def task_navigation_supported?
-    supported_paths.include?(@base_path)
+    supported_paths.any?{ |path| path.start_with? @base_path }
+  end
+
+  def is_secondary_content?
+    @base_path.start_with?(*secondary_content)
   end
 
   def navigation_config
@@ -30,13 +38,19 @@ class TaskNavigationService
 
 private
 
+  def secondary_content
+    @secondary_content ||= navigation_config.dig("links", "secondary_content") || []
+  end
+
   def formatted_base_path(base_path)
-    "/#{base_path}" unless base_path.start_with?("/")
+    return unless base_path
+    base_path.start_with?("/") ? base_path : "/#{base_path}"
   end
 
   def supported_paths
     @supported_paths ||= navigation_config.dig(
       "links", "ordered_tasks", "links"
     ).flatten.flat_map { |link| link["task_items"] }.map { |item| item["base_path"]}
+    .compact
   end
 end
