@@ -85,17 +85,7 @@ private
   end
 
   def breadcrumbs
-    if task_navigation_service.task_navigation_supported?
-      task_group = task_navigation_service.task_for_page
-
-      [
-        { title: "Home", url: "/" },
-        { title: "Parenting, childcare and children's services", url: "/childcare-parenting"},
-        { title: "Childcare and early years", url: "/childcare-parenting/childcare-and-early-years"},
-        { title: "How to become a childminder", url: "/services/how-to-become-a-childminder" },
-        { title: task_group["title"], url: task_group["base_path"] }
-      ]
-    elsif SchemaFinderService.taxonomy_supported?(params[:base_path])
+    if SchemaFinderService.taxonomy_supported?(params[:base_path])
       navigation_helpers.taxon_breadcrumbs[:breadcrumbs]
     else
       navigation_helpers.breadcrumbs[:breadcrumbs]
