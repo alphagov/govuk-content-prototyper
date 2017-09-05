@@ -1,0 +1,38 @@
+.sidebar {
+  font-size: 15px;
+
+  .subsection-number {
+    color: black;
+    font-weight: 600;
+    margin-right: 5px;
+  }
+
+  .subsection-title {
+
+  }
+
+  .subsection-header .subsection-title-link {
+    margin-right: 5px;
+    color: black;
+  }
+
+  .subsection-header .subsection-icon {
+    height: 10px;
+    width: 10px;
+    right: 0;
+    background-size: 10px;
+    background-position: 0 -10px;
+  }
+
+  .subsection-controls {
+    display: none;
+  }
+
+  .subsection-content .subsection-description {
+    font-size: 13px;
+  }
+
+  .subsection-list .subsection-list-item {
+    font-size: 13px;
+  }
+}

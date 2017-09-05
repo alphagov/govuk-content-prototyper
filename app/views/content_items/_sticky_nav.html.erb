@@ -1,0 +1,18 @@
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <div class="sticky-nav">
+      <h2><%= link_to("Learning to drive: step by step", @page_schema.base_path) %></h2>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready( function() {
+    var $stickyNav = $(".sticky-nav"),
+        stickyNavTopPosition = $stickyNav.offset().top;
+
+    $(window).scroll( function() {
+      $stickyNav.toggleClass("sticky", window.scrollY >= stickyNavTopPosition);
+    });
+  });
+</script>

@@ -17,7 +17,7 @@
   <div class="grid-row">
     <div class="column-two-thirds offset-one-third">
 
-      <% if override_sidebar?(base_path: params[:base_path]) %>
+      <% if override_sidebar %>
         <%= render partial: 'task_nav', locals: { task_sidebar: task_sidebar } %>
       <% else %>
         <%= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>

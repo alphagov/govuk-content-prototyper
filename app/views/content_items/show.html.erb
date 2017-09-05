@@ -6,37 +6,33 @@
   <%= page_type %>
 <% end %>
 
-<%= render partial: 'govuk_component/breadcrumbs',
-    locals: {
-        breadcrumbs: breadcrumbs,
-        collapse_on_mobile: true
-    } %>
-
-<% page_schema = @page_schema %>
+<% if override_sidebar %>
+  <%= render partial: 'sticky_nav' %>
+<% else %>
+  <%= render partial: 'govuk_component/breadcrumbs',
+      locals: {
+          breadcrumbs: breadcrumbs,
+          collapse_on_mobile: true
+      } %>
+<% end %>
 
 <main <%= main_attributes %>>
   <div class="grid-row">
     <div class="column-two-thirds">
       <%= content_html %>
     </div>
-    <div class="column-third add-title-margin">
-      <%= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>
+    <div class="column-third">
+      <% if override_sidebar %>
+        <div class="grid-row child-topic-contents">
+          <%= render partial: "sidebar", locals: {
+            page_schema: @page_schema,
+            current_step_number: current_step_number,
+            current_task_number: current_task_number
+            } %>
+        </div>
+      <% else %>
+        <%= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>
+      <% end %>
     </div>
   </div>
-  <% if override_sidebar?(base_path: params[:base_path]) %>
-    <div class="grid-row">
-      <div class="column-two-thirds js-stick-at-top-when-scrolling slidy-fixed slidy-nav">
-        <span>This is step <%= current_step_number + 1 %> of </span>
-        <span class="theme-title">
-          <a href="/services/how-to-become-a-childminder#index-<%=current_step_number %>-<%=current_task_number %>">how to become a childminder</a>
-        </span>
-        <a href="#index-<%=current_step_number %>-<%=current_task_number %>" class="arrow"></a>
-      </div>
-    </div>
-    <div class="grid-row js-slidy-stick">
-    </div>
-    <div class="grid-row child-topic-contents">
-      <%= render partial: "full_task_nav", locals: { page_schema: @page_schema, current_step_number: current_step_number, current_task_number: current_task_number } %>
-    </div>
-  <% end %>
 </main>

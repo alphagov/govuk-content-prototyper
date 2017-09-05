@@ -1,0 +1,178 @@
+{
+  "links": {
+    "ordered_tasks": {
+      "base_path": "/services/how-to-drive-a-car",
+      "title": "How to drive a car",
+      "links": [
+        [
+          {
+            "title": "Check you're allowed to drive",
+            "base_path": "/services/how-to-drive-a-car#index-0-0",
+            "task_items": [
+              {
+                "title": "Vehicles you can drive",
+                "base_path": "/vehicles-can-drive"
+              },
+              {
+                "title": "Driving eyesight rules",
+                "base_path": "/driving-eyesight-rules"
+              },
+              {
+                "title": "Legal obligations of drivers and riders",
+                "base_path": "/legal-obligations-drivers-riders"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "title": "Get a provisional driving licence",
+            "base_path": "/services/how-to-drive-a-car#index-1-0",
+            "task_items": [
+              {
+                "title": "Apply for your first provisional driving licence",
+                "base_path": "/apply-first-provisional-driving-licence"
+              },
+              {
+                "title": "Track your driving licence application",
+                "base_path": "/track-your-driving-licence-application"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "title": "Driving lessons and practice",
+            "base_path": "/services/how-to-drive-a-car#index-2-0",
+            "task_items": [
+              {
+                "title": "Taking driving lessons",
+                "base_path": "/driving-lessons-learning-to-drive/taking-driving-lessons"
+              },
+              {
+                "title": "Practising with family or friends",
+                "base_path": "/driving-lessons-learning-to-drive/practising-with-family-or-friends"
+              },
+              {
+                "title": "Find driving schools, lessons and instructors",
+                "external_link": "/find-driving-schools-and-lessons"
+              },
+              {
+                "title": "Using 'L' and 'P' plates",
+                "base_path": "/driving-lessons-learning-to-drive/using-l-and-p-plates"
+              },
+              {
+                "title": "‘Show me, tell me’ questions",
+                "base_path": "/government/publications/car-show-me-tell-me-vehicle-safety-questions"
+              },
+              {
+                "title": "Complain about a driving instructor",
+                "base_path": "/complain-about-a-driving-instructor"
+              },
+              {
+                "title": "Report an illegal driving instructor",
+                "base_path": "/report-an-illegal-driving-instructor"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "title": "Prepare for your theory test",
+            "base_path": "/services/how-to-drive-a-car#index-3-0",
+            "task_items": [
+              {
+                "title": "Theory test revision and practice",
+                "base_path": "/theory-test/revision-and-practice"
+              },
+              {
+                "title": "Take a practice theory test",
+                "base_path": "/take-practice-theory-test"
+              },
+              {
+                "title": "The Highway Code",
+                "base_path": "/guidance/the-highway-code"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "title": "Book and manage your theory test",
+            "base_path": "/services/how-to-drive-a-car#index-4-0",
+            "task_items": [
+              {
+                "title": "Book your theory test",
+                "base_path": "/book-theory-test"
+              },
+              {
+                "title": "What to take to your test",
+                "base_path": "/theory-test/what-to-take"
+              },
+              {
+                "title": "Change your theory test appointment",
+                "base_path": "/change-theory-test"
+              },
+              {
+                "title": "Check your theory test appointment details",
+                "base_path": "/check-theory-test"
+              },
+              {
+                "title": "Cancel your theory test",
+                "base_path": "/cancel-theory-test"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "title": "Book and manage your driving test",
+            "base_path": "/services/how-to-drive-a-car#index-5-0",
+            "task_items": [
+              {
+                "title": "Book your driving test",
+                "base_path": "/book-driving-test"
+              },
+              {
+                "title": "What to take to your test",
+                "base_path": "/driving-test/what-to-take"
+              },
+              {
+                "title": "Change your driving test appointment",
+                "base_path": "/change-driving-test"
+              },
+              {
+                "title": "Check your driving test appointment details",
+                "base_path": "/check-driving-test"
+              },
+              {
+                "title": "Cancel your driving test",
+                "base_path": "/cancel-driving-test"
+              },
+              {
+                "title": "Find your lost theory test pass certificate number",
+                "base_path": "/find-theory-test-pass-number"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "title": "When you pass",
+            "base_path": "/services/how-to-drive-a-car#index-6-0",
+            "task_items": [
+              {
+                "title": "Apply for your full driving licence",
+                "base_path": "/apply-for-your-full-driving-licence"
+              },
+              {
+                "title": "Pass Plus",
+                "base_path": "/pass-plus"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  }
+}

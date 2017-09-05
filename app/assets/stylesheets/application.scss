@@ -19,6 +19,8 @@
 @import 'modules/taxons.scss';
 @import 'modules/full-nav';
 @import 'modules/guide';
+@import 'modules/sidebar';
+@import 'modules/sticky-nav';
 
 main {
   @include core-19;
