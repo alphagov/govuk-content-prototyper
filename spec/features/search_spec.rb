@@ -9,7 +9,7 @@ RSpec.feature 'The search page' do
     visit '/search?q=test'
     first_result_title = page.first("h3").text
 
-    expect(first_result_title).to eq("How to drive a car")
+    expect(first_result_title).to eq("Learn to drive a car: Step by step")
     expect(page).to have_selector('h3', count: 4)
   end
 

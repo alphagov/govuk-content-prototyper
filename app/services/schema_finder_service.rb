@@ -1,7 +1,7 @@
 class SchemaFinderService
 
   SERVICE_FILE_NAMES = %w(
-    how-to-drive-a-car
+    learn-to-drive-a-car
     how-to-become-a-childminder
   )
 

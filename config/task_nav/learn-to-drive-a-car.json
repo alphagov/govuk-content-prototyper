@@ -1,13 +1,13 @@
 {
   "links": {
     "ordered_tasks": {
-      "base_path": "/services/how-to-drive-a-car",
-      "title": "How to drive a car",
+      "base_path": "/services/learn-to-drive-a-car",
+      "title": "Learn to drive a car: Step by step",
       "links": [
         [
           {
             "title": "Check you're allowed to drive",
-            "base_path": "/services/how-to-drive-a-car#index-0-0",
+            "base_path": "/services/learn-to-drive-a-car#index-0-0",
             "task_items": [
               {
                 "title": "Vehicles you can drive",
@@ -27,7 +27,7 @@
         [
           {
             "title": "Get a provisional driving licence",
-            "base_path": "/services/how-to-drive-a-car#index-1-0",
+            "base_path": "/services/learn-to-drive-a-car#index-1-0",
             "task_items": [
               {
                 "title": "Apply for your first provisional driving licence",
@@ -43,7 +43,7 @@
         [
           {
             "title": "Driving lessons and practice",
-            "base_path": "/services/how-to-drive-a-car#index-2-0",
+            "base_path": "/services/learn-to-drive-a-car#index-2-0",
             "task_items": [
               {
                 "title": "Taking driving lessons",
@@ -79,7 +79,7 @@
         [
           {
             "title": "Prepare for your theory test",
-            "base_path": "/services/how-to-drive-a-car#index-3-0",
+            "base_path": "/services/learn-to-drive-a-car#index-3-0",
             "task_items": [
               {
                 "title": "Theory test revision and practice",
@@ -99,7 +99,7 @@
         [
           {
             "title": "Book and manage your theory test",
-            "base_path": "/services/how-to-drive-a-car#index-4-0",
+            "base_path": "/services/learn-to-drive-a-car#index-4-0",
             "task_items": [
               {
                 "title": "Book your theory test",
@@ -127,7 +127,7 @@
         [
           {
             "title": "Book and manage your driving test",
-            "base_path": "/services/how-to-drive-a-car#index-5-0",
+            "base_path": "/services/learn-to-drive-a-car#index-5-0",
             "task_items": [
               {
                 "title": "Book your driving test",
@@ -159,7 +159,7 @@
         [
           {
             "title": "When you pass",
-            "base_path": "/services/how-to-drive-a-car#index-6-0",
+            "base_path": "/services/learn-to-drive-a-car#index-6-0",
             "task_items": [
               {
                 "title": "Apply for your full driving licence",
