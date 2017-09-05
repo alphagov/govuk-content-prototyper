@@ -3,5 +3,6 @@
 //= require slidy-up
 //= require subsection-view
 //= require accordion-with-descriptions
+//= require stop-scrolling-at-footer
 
-GOVUK.slidyNav.init()
+GOVUK.stickAtTopWhenScrolling.init()
