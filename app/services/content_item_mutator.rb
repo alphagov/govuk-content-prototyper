@@ -8,20 +8,16 @@ class ContentItemMutator
   def self.mutate_content_item(content_item)
     return content_item if empty_content_store_response?(content_item)
     base_path = content_item['base_path']
-    mapping = mapping_for(base_path)
-    mutated_content_item = content_item.to_hash.merge(mapping)
+    mutated_content_item = content_item.to_hash
 
     if TaskNavigationService.new(base_path: base_path).applicable_content?
-      mutated_content_item.merge(task_nav(base_path))
+      mutated_content_item.merge!(task_nav(base_path))
     end
+    mutated_content_item
   end
 
   def self.empty_content_store_response?(content_item)
     content_item.respond_to?(:raw_response_body) && content_item.raw_response_body.empty?
-  end
-
-  def self.mapping_for(base_path)
-    Config.content_mappings[base_path] || {}
   end
 
   def self.task_nav(base_path)

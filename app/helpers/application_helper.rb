@@ -2,22 +2,22 @@ module ApplicationHelper
   OVERRIDE_BROWSE_PAGES = {
     '/browse/driving/driving-licences' => [
       {
-        title: 'Learn to drive a car',
+        title: 'Learn to drive a car: step by step',
         base_path: '/services/learn-to-drive-a-car'
       }
     ],
     '/browse/driving/learning-to-drive' => [
       {
-        title: 'Learn to drive a car',
+        title: 'Learn to drive a car: step by step',
         base_path: '/services/learn-to-drive-a-car'
       },
       {
-        title: 'Learn to ride a motorcycle or moped',
-        base_path: '#'
+        title: 'Learn to ride a motorcycle or moped: step by step',
+        base_path: '/services/learn-to-drive-a-car'
       },
       {
-        title: 'Learn to drive a tractor or specialist vehicle',
-        base_path: '#'
+        title: 'Learn to drive a tractor or specialist vehicle: step by step',
+        base_path: '/services/learn-to-drive-a-car'
       }
     ]
   }

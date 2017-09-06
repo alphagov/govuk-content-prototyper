@@ -1463,7 +1463,8 @@
   {"groups":
     [{"name": "Popular services",
       "contents":
-       ["/apply-first-provisional-driving-licence",
+       ["/services/learn-to-drive-a-car",
+        "/apply-first-provisional-driving-licence",
         "/book-theory-test",
         "/book-driving-test",
         "/change-driving-test",

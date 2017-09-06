@@ -12,7 +12,7 @@ class MainstreamBrowsePage
 
   OVERRIDE_BROWSE_PAGES = [
       '/browse/driving/driving-licences',
-      '/browse/driving/learn-to-drive'
+      '/browse/driving/learning-to-drive',
     ].freeze
 
   def self.find(base_path)
@@ -46,7 +46,7 @@ class MainstreamBrowsePage
 
     if second_level_pages_curated?
       links.sort_by do |link|
-        details["ordered_second_level_browse_pages"].index(link.content_id)
+        details["ordered_second_level_browse_pages"].index(link.content_id) || 999
       end
     else
       links
