@@ -33,7 +33,7 @@
         {
           "content_id": "f248f590-d1a3-4f6e-838b-1d42dd38478f",
           "title": "Driving lessons and practice",
-          "description": "You must get a provisional driving licence before you can take lessons or practice.",
+          "description": "",
           "ordered_task_list": false,
           "links": {
             "ordered_tasks": [
@@ -87,7 +87,7 @@
         {
           "content_id": "21125700-2193-4021-9592-f6e9c1360951",
           "title": "Book and manage your theory test",
-          "description": "You need a provisional driving licence to book your theory test.",
+          "description": "",
           "ordered_task_list": false,
           "links": {
             "ordered_tasks": [
@@ -119,7 +119,7 @@
         {
           "content_id": "f13587be-2d3e-40e8-a87a-ccdd85f9ee2e",
           "title": "Book and manage your driving test",
-          "description": "You must pass your theory test before you can book your driving test.",
+          "description": "",
           "ordered_task_list": false,
           "links": {
             "ordered_tasks": [
