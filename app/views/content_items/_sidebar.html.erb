@@ -1,6 +1,6 @@
-<div class="column-two-thirds child-topic-contents taxon-page">
-  <div class="topic-content">
-    <div data-module="accordion-with-descriptions" class="sidebar">
+<div class="child-topic-contents taxon-page">
+  <div class="task-list sidebar">
+    <div data-module="accordion-with-descriptions">
       <div class="subsection-wrapper">
         <h2>
           <%= link_to("Learning to drive: step by step", page_schema.base_path) %>
@@ -10,20 +10,20 @@
           page_schema.links.ordered_steps.each_with_index do |group, index|
             last_loop_index = nil
         %>
-          <div class="subsection-border">
             <%
               group.each_with_index do |step, step_index|
-                expandable = true if (step.links.ordered_tasks.length > 0) || step.description
+                ordered_tasks = step.links.ordered_tasks
+                expandable = true if (ordered_tasks.length > 0) || step.description
                 show_number = true if index != last_loop_index
                 border = true
             %>
-              <div class="subsection <%= expandable ? "js-subsection" : "subsection-no-expand" %>"
+              <div class="subsection <%= expandable ? "js-subsection" : "subsection-no-expand" %> <% if highlight_sidebar_step?(ordered_tasks) %>subsection-title-highlight<% end %>"
                     id="index-<%= "#{index}-#{step_index}" %>"
                     data-track-count="accordionSection">
                 <% if step_index == 1 && border ; border = false %>
                   <div class="subsection-smaller-border"></div>
                 <% end %>
-                <div class="subsection-header js-subsection-header">
+                <div class="subsection-header js-subsection-header ">
                   <span class="subsection-title <% if expandable %>js-subsection-title<% end %>">
                     <% if show_number %>
                       <span class="subsection-number"><%= "#{index + 1 }" %></span>
@@ -36,10 +36,10 @@
                   <div class="subsection-content js-subsection-content" id="subsection_content_<%= "#{index}-#{step_index}" %>">
                     <p class="subsection-description"><%= step.description %></p>
                     <ul class="subsection-list">
-                      <% step.links.ordered_tasks.each_with_index do |task, index| %>
+                      <% ordered_tasks.each_with_index do |task, index| %>
                         <li class="subsection-list-item">
                           <% if request.path == task.base_path %>
-                            <strong><%= task.title %></strong>
+                            <span class="current-highlight"><%= task.title %></span>
                           <% else %>
                             <%= link_to(task.title, task.base_path || task.external_link) %>
                           <% end %>
@@ -54,7 +54,6 @@
                 last_loop_index = index
               %>
             <% end %>
-          </div>
         <% end %>
       </div>
     </div>
