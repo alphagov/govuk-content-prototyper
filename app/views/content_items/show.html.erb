@@ -7,7 +7,7 @@
 <% end %>
 
 <% if override_sidebar %>
-  <%= render partial: 'sticky_nav' %>
+  <%= render partial: 'sticky_nav', locals: { page_schema: @page_schema } %>
 <% else %>
   <%= render partial: 'govuk_component/breadcrumbs',
       locals: {
