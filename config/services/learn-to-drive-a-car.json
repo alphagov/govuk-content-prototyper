@@ -22,7 +22,7 @@
           "links": {
             "ordered_tasks": [
               {
-                "title": "Requirements for driving legally",
+                "title": "Apply for your first provisional driving licence",
                 "base_path": "/apply-first-provisional-driving-licence"
               }
             ]
@@ -38,7 +38,7 @@
           "links": {
             "ordered_tasks": [
               {
-                "title": "Legal obligations of drivers and riders",
+                "title": "Requirements for driving legally",
                 "base_path": "/legal-obligations-drivers-riders"
               },
               {
