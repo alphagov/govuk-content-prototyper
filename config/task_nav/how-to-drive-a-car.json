@@ -173,6 +173,27 @@
           }
         ]
       ]
-    }
+    },
+    "secondary_content": [
+      "/apply-for-your-full-driving-licence",
+      "/complain-about-a-driving-instructor",
+      "/contact-dvsa",
+      "/contact-the-dvla",
+      "/driving-eyesight-rules",
+      "/driving-test-cost",
+      "/dvlaforms",
+      "/government/publications/driving-instructor-grades-explained",
+      "/government/publications/know-your-traffic-signs",
+      "/guidance/rules-for-observing-driving-tests",
+      "/pass-plus",
+      "/report-an-illegal-driving-instructor",
+      "/report-driving-medical-condition",
+      "/seat-belts-law",
+      "/speed-limits",
+      "/speeding-penalties",
+      "/vehicle-insurance",
+      "/vehicles-can-drive",
+      "/view-driving-licence"
+    ]
   }
 }

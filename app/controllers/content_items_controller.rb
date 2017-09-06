@@ -25,7 +25,7 @@ class ContentItemsController < ApplicationController
       current_step_title: schema_finder.find_base_path_title(params[:base_path]),
       current_step_number: step_and_task_numbers[0],
       current_task_number: step_and_task_numbers[1],
-      override_sidebar: task_navigation_service.task_navigation_supported?
+      override_sidebar: task_navigation_service.applicable_content?
     }
   end
 
@@ -45,7 +45,7 @@ class ContentItemsController < ApplicationController
       current_step_title: schema_finder.find_base_path_title(params[:base_path]),
       current_step_number: step_and_task_numbers[0],
       current_task_number: step_and_task_numbers[1],
-      override_sidebar: task_navigation_service.task_navigation_supported?
+      override_sidebar: task_navigation_service.applicable_content?
     }
   end
 
@@ -85,17 +85,7 @@ private
   end
 
   def breadcrumbs
-    if task_navigation_service.task_navigation_supported?
-      task_group = task_navigation_service.task_for_page
-
-      [
-        { title: "Home", url: "/" },
-        { title: "Parenting, childcare and children's services", url: "/childcare-parenting"},
-        { title: "Childcare and early years", url: "/childcare-parenting/childcare-and-early-years"},
-        { title: "How to become a childminder", url: "/services/how-to-become-a-childminder" },
-        { title: task_group["title"], url: task_group["base_path"] }
-      ]
-    elsif SchemaFinderService.taxonomy_supported?(params[:base_path])
+    if SchemaFinderService.taxonomy_supported?(params[:base_path])
       navigation_helpers.taxon_breadcrumbs[:breadcrumbs]
     else
       navigation_helpers.breadcrumbs[:breadcrumbs]
@@ -235,7 +225,7 @@ private
   def task_navigation_service
     TaskNavigationService.new(
       schema_name: schema_finder.name,
-      base_path: params[:base_path]
+      base_path: request.env['content_item'].dig('base_path') || params[:base_path]
     )
   end
 end
