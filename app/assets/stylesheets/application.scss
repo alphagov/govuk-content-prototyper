@@ -84,6 +84,60 @@ span.theme-title {
 
 .task-list {
   cursor: default;
+  $dotsize: 1.1em;
+  $dotleft: 0.5em;
+  $dottop: 0.2em;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .subsection-wrapper {
+    border-top: solid 1px $grey-2;
+  }
+
+  .subsection-border {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: $dottop;
+      left: $dotleft;
+      margin-top: 1px;
+      margin-left: -4px;
+      width: 8px;
+      height: 100%;
+      background: $grey-3;
+      @include core-48;
+    }
+
+    &:last-child:after {
+      display: none;
+    }
+  }
+
+  .subsection-number {
+    position: absolute;
+    z-index: 2;
+    top: $dottop;
+    left: $dotleft;
+    width: $dotsize;
+    height: $dotsize;
+    margin-left: -$dotsize / 2;
+    @include core-48;
+    line-height: 1.2em !important; //argh yes I know sorry
+    font-weight: bold;
+    color: $black;
+    background: $grey-3;
+    border-radius: 200px;
+    text-align: center;
+  }
 
   .subsection-header,
   .subsection-content {
@@ -100,24 +154,9 @@ span.theme-title {
     border: 0;
   }
 
-  .subsection-number {
-    position: absolute;
-    top: 14px;
-    left: 2%;
-    @include core-48;
-    font-weight: bold;
-    color: $black;
-  }
-
-  .subsection-border {
-    border-top: solid 1px $grey-2;
-  }
-
   .subsection-smaller-border {
     border-top: solid 1px $grey-2;
-    float: right;
-    min-width: 86%;
-    min-height: 0px;
+    margin-left: 14%;
   }
 
   .subsection {

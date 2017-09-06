@@ -28,31 +28,31 @@
                 <div class="subsection <% if expandable %>js-subsection<% else %>subsection-no-expand<% end %>"
                       id="index-<%= "#{index}-#{step_index}" %>"
                       data-track-count="accordionSection">
-                  <% if step_index == 1 && border ; border = false %>
+                  <% if index > 0 %>
                     <div class="subsection-smaller-border"></div>
+                  <% end %>
+                  <% if step_index == 1 && border ; border = false %>
                   <% end %>
                   <div class="subsection-header js-subsection-header">
                     <h2 class="subsection-title <% if expandable %>js-subsection-title<% end %>">
                       <% if show_number %>
-                        <span class="subsection-number"><%= "#{index + 1 }." %></span>
+                        <span class="subsection-number"><%= "#{index + 1 }" %></span>
                       <% end %>
                       <%= step.title %>
                     </h2>
                   </div>
                   <% if expandable %>
                     <div class="subsection-content js-subsection-content" id="subsection_content_<%= "#{index}-#{step_index}" %>">
-                      <div class="subsection-active-border">
-                        <% if step.description.present? %>
+                      <% if step.description.present? %>
                         <p class="subsection-description"><%= step.description %></p>
+                      <% end %>
+                      <ul class="subsection-list">
+                        <% step.links.ordered_tasks.each_with_index do |task, index| %>
+                          <li class="subsection-list-item">
+                            <%= link_to(task.title, task.base_path || task.external_link) %>
+                          </li>
                         <% end %>
-                        <ul class="subsection-list">
-                          <% step.links.ordered_tasks.each_with_index do |task, index| %>
-                            <li class="subsection-list-item">
-                              <%= link_to(task.title, task.base_path || task.external_link) %>
-                            </li>
-                          <% end %>
-                        </ul>
-                      </div>
+                      </ul>
                     </div>
                   <% end %>
                 </div>

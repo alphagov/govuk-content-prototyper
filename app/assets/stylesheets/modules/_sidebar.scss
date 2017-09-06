@@ -1,4 +1,5 @@
 .task-list.sidebar {
+  margin-top: $gutter;
   @include core-16;
 
   @include media(tablet) {
@@ -7,7 +8,6 @@
   }
 
   a {
-    text-decoration: none;
     font-weight: normal;
   }
 
@@ -20,7 +20,19 @@
     }
   }
 
+  .subsection-border {
+    &:after {
+      top: 0.6em;
+      @include core-19;
+      width: 4px;
+      margin-left: -2px;
+      left: 0.7em;
+    }
+  }
+
   .subsection-number {
+    padding: 0.2em;
+    top: 0.6em;
     @include core-19;
     color: black;
     font-weight: 600;
@@ -28,8 +40,13 @@
   }
 
   .current-highlight {
-    background-color: $yellow;
+    display: block;
+    border: solid $yellow 3px;
     padding: 0 0.2em;
+  }
+
+  .subsection-header {
+    border-top: 0;
   }
 
   .subsection-header .subsection-title-link {
@@ -46,7 +63,7 @@
   }
 
   .subsection-header {
-    padding-left: 13%;
+    padding-left: 17%;
 
     @include media(tablet) {
       min-height: 0;
@@ -54,8 +71,13 @@
   }
 
   .subsection-content {
-    padding-left: 13%;
+    padding-left: 17%;
+    padding-top: 0;
     padding-right: $gutter-half;
+  }
+
+  .subsection-smaller-border {
+    margin-left: 17%;
   }
 
   .subsection-title {
@@ -63,13 +85,9 @@
   }
 
   .subsection-title-highlight {
-    .subsection-header,
-    .subsection-header:hover {
+    .subsection-number,
+    &.subsection-border:after {
       background: $yellow;
-    }
-
-    &.subsection-is-open .subsection-header {
-      background: none;
     }
   }
 
@@ -121,7 +139,7 @@
   }
 
   &.sticky {
-    z-index: 1;
+    z-index: 100;
     left: 0;
     width: 100%;
     margin: 0;
