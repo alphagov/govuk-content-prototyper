@@ -11,7 +11,7 @@ class ContentItemMutator
     mapping = mapping_for(base_path)
     mutated_content_item = content_item.to_hash.merge(mapping)
 
-    if TaskNavigationService.new(base_path: base_path).task_navigation_supported?
+    if TaskNavigationService.new(base_path: base_path).applicable_content?
       mutated_content_item.merge(task_nav(base_path))
     end
   end

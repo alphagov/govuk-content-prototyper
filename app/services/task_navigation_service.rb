@@ -15,7 +15,7 @@ class TaskNavigationService
   end
 
   def is_secondary_content?
-    @base_path.start_with?(*secondary_content)
+    secondary_content.any?{ |path| path.start_with? @base_path }
   end
 
   def navigation_config
