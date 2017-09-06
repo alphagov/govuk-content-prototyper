@@ -12,7 +12,7 @@ class MainstreamBrowsePage
 
   OVERRIDE_BROWSE_PAGES = [
       '/browse/driving/driving-licences',
-      '/browse/driving/learn-to-drive'
+      '/browse/driving/learning-to-drive',
     ].freeze
 
   def self.find(base_path)
