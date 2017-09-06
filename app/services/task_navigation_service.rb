@@ -1,6 +1,6 @@
 class TaskNavigationService
 
-  def initialize(schema_name: 'how-to-drive-a-car', base_path:)
+  def initialize(schema_name: 'learn-to-drive-a-car', base_path:)
     @schema_name = schema_name
     @base_path = formatted_base_path(base_path)
     @file = File.read("config/task_nav/#{schema_name}.json")
