@@ -77,6 +77,8 @@ class ContentItemsController < ApplicationController
 private
 
   def task_sidebar
+    return {} unless task_nav
+
     {
       "title" => task_nav["title"],
       "base_path" => task_nav["base_path"],
