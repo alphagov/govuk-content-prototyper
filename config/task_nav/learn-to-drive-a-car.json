@@ -6,26 +6,6 @@
       "links": [
         [
           {
-            "title": "Check you're allowed to drive",
-            "base_path": "/services/learn-to-drive-a-car#index-0-0",
-            "task_items": [
-              {
-                "title": "Vehicles you can drive",
-                "base_path": "/vehicles-can-drive"
-              },
-              {
-                "title": "Driving eyesight rules",
-                "base_path": "/driving-eyesight-rules"
-              },
-              {
-                "title": "Legal obligations of drivers and riders",
-                "base_path": "/legal-obligations-drivers-riders"
-              }
-            ]
-          }
-        ],
-        [
-          {
             "title": "Get a provisional driving licence",
             "base_path": "/services/learn-to-drive-a-car#index-1-0",
             "task_items": [
