@@ -1,11 +1,10 @@
 <div class="child-topic-contents taxon-page">
   <div class="task-list sidebar">
     <div data-module="accordion-with-descriptions">
+      <h2>
+        <%= link_to("Learning to drive: step by step", page_schema.base_path) %>
+      </h2>
       <div class="subsection-wrapper">
-        <h2>
-          <%= link_to("Learning to drive: step by step", page_schema.base_path) %>
-        </h2>
-
         <%
           page_schema.links.ordered_steps.each_with_index do |group, index|
             last_loop_index = nil
@@ -17,11 +16,13 @@
                 show_number = true if index != last_loop_index
                 border = true
             %>
-              <div class="subsection <%= expandable ? "js-subsection" : "subsection-no-expand" %> <% if highlight_sidebar_step?(ordered_tasks) %>subsection-title-highlight<% end %>"
+              <div class="subsection subsection-border <%= expandable ? "js-subsection" : "subsection-no-expand" %> <% if highlight_sidebar_step?(ordered_tasks) %>subsection-title-highlight<% end %>"
                     id="index-<%= "#{index}-#{step_index}" %>"
                     data-track-count="accordionSection">
-                <% if step_index == 1 && border ; border = false %>
+                <% if index > 0 %>
                   <div class="subsection-smaller-border"></div>
+                <% end %>
+                <% if step_index == 1 && border ; border = false %>
                 <% end %>
                 <div class="subsection-header js-subsection-header ">
                   <span class="subsection-title <% if expandable %>js-subsection-title<% end %>">
@@ -34,7 +35,9 @@
 
                 <% if expandable %>
                   <div class="subsection-content js-subsection-content" id="subsection_content_<%= "#{index}-#{step_index}" %>">
-                    <p class="subsection-description"><%= step.description %></p>
+                    <% if step.description.length > 0 %>
+                      <p class="subsection-description"><%= step.description %></p>
+                    <% end %>
                     <ul class="subsection-list">
                       <% ordered_tasks.each_with_index do |task, index| %>
                         <li class="subsection-list-item">
