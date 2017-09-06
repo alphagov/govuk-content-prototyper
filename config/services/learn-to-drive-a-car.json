@@ -22,7 +22,7 @@
           "links": {
             "ordered_tasks": [
               {
-                "title": "Requirements for driving legally",
+                "title": "Apply for your first provisional driving licence",
                 "base_path": "/apply-first-provisional-driving-licence"
               }
             ]
@@ -38,7 +38,7 @@
           "links": {
             "ordered_tasks": [
               {
-                "title": "Legal obligations of drivers and riders",
+                "title": "Requirements for driving legally",
                 "base_path": "/legal-obligations-drivers-riders"
               },
               {
@@ -150,7 +150,7 @@
       [
         {
           "content_id": "77d7d1fa-145c-42a3-98f6-f2b35a2cc78a",
-          "title": "After you pass",
+          "title": "When you pass",
           "description": "You'll be sent your full driving licence within 3 weeks of passing your test, but you can start driving as soon as you've passed.",
           "ordered_task_list": true,
           "links": {
