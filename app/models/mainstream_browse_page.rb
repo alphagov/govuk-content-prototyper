@@ -46,7 +46,7 @@ class MainstreamBrowsePage
 
     if second_level_pages_curated?
       links.sort_by do |link|
-        details["ordered_second_level_browse_pages"].index(link.content_id)
+        details["ordered_second_level_browse_pages"].index(link.content_id) || 999
       end
     else
       links
