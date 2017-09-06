@@ -42,7 +42,9 @@
                   <% if expandable %>
                     <div class="subsection-content js-subsection-content" id="subsection_content_<%= "#{index}-#{step_index}" %>">
                       <div class="subsection-active-border">
+                        <% if step.description.present? %>
                         <p class="subsection-description"><%= step.description %></p>
+                        <% end %>
                         <ul class="subsection-list">
                           <% step.links.ordered_tasks.each_with_index do |task, index| %>
                             <li class="subsection-list-item">
