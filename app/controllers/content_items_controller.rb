@@ -215,7 +215,7 @@ private
   end
 
   def schema_finder
-    @schema_finder ||= SchemaFinderService.new(base_path: '/how-to-drive-a-car')
+    @schema_finder ||= SchemaFinderService.new(base_path: '/learn-to-drive-a-car')
   end
 
   def task_nav

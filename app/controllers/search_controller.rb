@@ -25,7 +25,7 @@ private
 
   def edit_results_page_html(html)
     document = Nokogiri::HTML(html)
-    document.css('.results-list li').first.add_previous_sibling('<li><h3><a href="/services/how-to-drive-a-car">How to drive a car</a></h3><p>Find out what you need to do to drive a car in the UK.</p></li>')
+    document.css('.results-list li').first.add_previous_sibling('<li><h3><a href="/services/learn-to-drive-a-car">Learn to drive a car: step by step</a></h3><p>Check what you need to do to learn to drive. You can start learning when you\'re 17.</p></li>')
 
     document.to_html
   end

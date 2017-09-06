@@ -1,12 +1,12 @@
 {
-  "base_path": "/services/how-to-drive-a-car",
+  "base_path": "/services/learn-to-drive-a-car",
   "content_id": "4ba1356d-c4c7-4f6b-7777-3b9a52af1ddd",
   "document_type": "service",
   "government_document_supertype": "other",
   "navigation_document_supertype": "guidance",
   "locale": "en",
   "user_journey_document_supertype": "service",
-  "title": "How to drive a car",
+  "title": "Learn to drive a car: step by step",
   "publishing_app": "publisher",
   "rendering_app": "collections",
   "rendering_type": "accordion",
@@ -285,7 +285,7 @@
       }
     ]
   },
-  "description": "Find out what you need to do to drive a car in the UK.",
+  "description": "Check what you need to do to learn to drive. You can start learning when you're 17.",
   "details": {
     "body": "\n<div class=\"summary\">\n<p>Statutory guidance for learner drivers.</p>\n"
   }
