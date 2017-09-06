@@ -17,13 +17,13 @@
                 show_number = true if index != last_loop_index
                 border = true
             %>
-              <div class="subsection <%= expandable ? "js-subsection" : "subsection-no-expand" %>"
+              <div class="subsection <%= expandable ? "js-subsection" : "subsection-no-expand" %> <% if highlight_sidebar_step?(ordered_tasks) %>subsection-title-highlight<% end %>"
                     id="index-<%= "#{index}-#{step_index}" %>"
                     data-track-count="accordionSection">
                 <% if step_index == 1 && border ; border = false %>
                   <div class="subsection-smaller-border"></div>
                 <% end %>
-                <div class="subsection-header js-subsection-header <% if highlight_sidebar_step?(ordered_tasks) %>subsection-title-highlight<% end %>">
+                <div class="subsection-header js-subsection-header ">
                   <span class="subsection-title <% if expandable %>js-subsection-title<% end %>">
                     <% if show_number %>
                       <span class="subsection-number"><%= "#{index + 1 }" %></span>
