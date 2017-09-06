@@ -15,30 +15,6 @@
     "ordered_steps": [
       [
         {
-          "content_id": "6e7c1795-2592-4ada-adc7-2cdc478a607f",
-          "title": "Check you're allowed to drive",
-          "description": "Most people can start learning to drive when they’re 17.",
-          "ordered_task_list": false,
-          "links": {
-            "ordered_tasks": [
-              {
-                "title": "Vehicles you can drive",
-                "base_path": "/vehicles-can-drive"
-              },
-              {
-                "title": "Driving eyesight rules",
-                "base_path": "/driving-eyesight-rules"
-              },
-              {
-                "title": "Legal obligations of drivers and riders",
-                "base_path": "/legal-obligations-drivers-riders"
-              }
-            ]
-          }
-        }
-      ],
-      [
-        {
           "content_id": "7f4175a3-3585-41b8-bd43-02689af39f03",
           "title": "Get a provisional driving licence",
           "description": "",
@@ -46,12 +22,8 @@
           "links": {
             "ordered_tasks": [
               {
-                "title": "Apply for your first provisional driving licence",
+                "title": "Requirements for driving legally",
                 "base_path": "/apply-first-provisional-driving-licence"
-              },
-              {
-                "title": "Track your driving licence application",
-                "base_path": "/track-your-driving-licence-application"
               }
             ]
           }
@@ -66,38 +38,28 @@
           "links": {
             "ordered_tasks": [
               {
-                "title": "Taking driving lessons",
-                "base_path": "/driving-lessons-learning-to-drive/taking-driving-lessons"
+                "title": "Legal obligations of drivers and riders",
+                "base_path": "/legal-obligations-drivers-riders"
               },
               {
-                "title": "Practising with family or friends",
-                "base_path": "/driving-lessons-learning-to-drive/practising-with-family-or-friends"
+                "title": "The Highway Code",
+                "base_path": "/guidance/the-highway-code"
+              },
+              {
+                "title": "Taking driving lessons",
+                "base_path": "/driving-lessons-learning-to-drive/"
               },
               {
                 "title": "Find driving schools, lessons and instructors",
-                "external_link": "/find-driving-schools-and-lessons"
+                "base_path": "/find-driving-schools-and-lessons"
               },
               {
-                "title": "Using 'L' and 'P' plates",
-                "base_path": "/driving-lessons-learning-to-drive/using-l-and-p-plates"
-              },
-              {
-                "title": "‘Show me, tell me’ questions",
+                "title": "Practise vehicle safety questions",
                 "base_path": "/government/publications/car-show-me-tell-me-vehicle-safety-questions"
-              },
-              {
-                "title": "Complain about a driving instructor",
-                "base_path": "/complain-about-a-driving-instructor"
-              },
-              {
-                "title": "Report an illegal driving instructor",
-                "base_path": "/report-an-illegal-driving-instructor"
               }
             ]
           }
-        }
-      ],
-      [
+        },
         {
           "content_id": "e2268311-ada2-477c-90dc-9837216e0108",
           "title": "Prepare for your theory test",
@@ -114,8 +76,8 @@
                 "base_path": "/take-practice-theory-test"
               },
               {
-                "title": "The Highway Code",
-                "base_path": "/guidance/the-highway-code"
+                "title": "Theory and hazard perception test app",
+                "external_link": "http://www.safedrivingforlife.info/shop/product/official-dvsa-theory-test-kit-app-app"
               }
             ]
           }
@@ -180,10 +142,6 @@
               {
                 "title": "Cancel your driving test",
                 "base_path": "/cancel-driving-test"
-              },
-              {
-                "title": "Find your lost theory test pass certificate number",
-                "base_path": "/find-theory-test-pass-number"
               }
             ]
           }
@@ -192,20 +150,11 @@
       [
         {
           "content_id": "77d7d1fa-145c-42a3-98f6-f2b35a2cc78a",
-          "title": "When you pass",
-          "description": "You can start driving as soon as you pass your driving test.",
+          "title": "After you pass",
+          "description": "You'll be sent your full driving licence within 3 weeks of passing your test, but you can start driving as soon as you've passed.",
           "ordered_task_list": true,
           "links": {
-            "ordered_tasks": [
-              {
-                "title": "Apply for your full driving licence",
-                "base_path": "/apply-for-your-full-driving-licence"
-              },
-              {
-                "title": "Pass Plus",
-                "external_link": "/pass-plus"
-              }
-            ]
+            "ordered_tasks": []
           }
         }
       ]
