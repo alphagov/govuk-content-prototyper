@@ -42,7 +42,7 @@
                       <% ordered_tasks.each_with_index do |task, index| %>
                         <li class="subsection-list-item">
                           <% if request.path == task.base_path %>
-                            <span class="current-highlight"><%= task.title %></span>
+                            <a href="#global-header" class="current-highlight"><%= task.title %></a>
                           <% else %>
                             <%= link_to(task.title, task.base_path || task.external_link) %>
                           <% end %>

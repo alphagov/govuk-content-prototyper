@@ -1,6 +1,6 @@
 .task-list.sidebar {
   margin-top: $gutter;
-  @include core-16;
+  @include core-19;
 
   @include media(tablet) {
     padding-left: $gutter-half;
@@ -8,6 +8,7 @@
   }
 
   a {
+    @include core-19;
     font-weight: normal;
   }
 
@@ -16,7 +17,16 @@
     text-decoration: underline;
 
     a {
+      @include core-24;
       font-weight: bold;
+    }
+  }
+
+  .subsection-wrapper {
+    margin-top: 0.5em;
+
+    @include media(tablet) {
+      margin-top: 0;
     }
   }
 
@@ -26,7 +36,7 @@
       @include core-19;
       width: 4px;
       margin-left: -2px;
-      left: 0.7em;
+      left: 0.8em;
     }
   }
 
@@ -34,15 +44,29 @@
     padding: 0.2em;
     top: 0.6em;
     @include core-19;
-    color: black;
+    color: $black;
     font-weight: 600;
     margin-right: 5px;
   }
 
   .current-highlight {
+    position: relative;
     display: block;
-    border: solid $yellow 3px;
-    padding: 0 0.2em;
+    padding-left: 1em;
+    font-weight: bold;
+    color: $black;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0.3em;
+      left: 0;
+      background: $yellow;
+      width: 0.7em;
+      height: 0.7em;
+      background: $yellow;
+      border-radius: 50px;
+    }
   }
 
   .subsection-header {
@@ -72,7 +96,7 @@
 
   .subsection-content {
     padding-left: 17%;
-    padding-top: 0;
+    padding-top: 0.7em;
     padding-right: $gutter-half;
   }
 
@@ -88,6 +112,7 @@
     .subsection-number,
     &.subsection-border:after {
       background: $yellow;
+      color: $black;
     }
   }
 

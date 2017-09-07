@@ -84,8 +84,8 @@ span.theme-title {
 
 .task-list {
   cursor: default;
-  $dotsize: 1.1em;
-  $dotleft: 0.5em;
+  $dotsize: 1.3em;
+  $dotleft: 0.6em;
   $dottop: 0.2em;
 
   a {
@@ -114,7 +114,7 @@ span.theme-title {
       width: 8px;
       height: 100%;
       background: $grey-3;
-      @include core-48;
+      @include core-36;
     }
 
     &:last-child:after {
@@ -130,8 +130,8 @@ span.theme-title {
     width: $dotsize;
     height: $dotsize;
     margin-left: -$dotsize / 2;
-    @include core-48;
-    line-height: 1.2em !important; //argh yes I know sorry
+    @include core-36;
+    line-height: 1.4em !important; //argh yes I know sorry
     font-weight: bold;
     color: $black;
     background: $grey-3;
@@ -146,7 +146,7 @@ span.theme-title {
 
   .subsection-header {
     @include media(tablet) {
-      min-height: 45px;
+      //min-height: 45px;
     }
   }
 
