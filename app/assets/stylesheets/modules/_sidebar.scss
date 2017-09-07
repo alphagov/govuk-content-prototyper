@@ -14,11 +14,11 @@
 
   h2 {
     @include core-24;
-    text-decoration: underline;
 
     a {
       @include core-24;
       font-weight: bold;
+      text-decoration: underline;
     }
   }
 
