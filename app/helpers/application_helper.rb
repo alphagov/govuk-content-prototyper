@@ -10,14 +10,6 @@ module ApplicationHelper
       {
         title: 'Learn to drive a car: step by step',
         base_path: '/services/learn-to-drive-a-car'
-      },
-      {
-        title: 'Learn to ride a motorcycle or moped: step by step',
-        base_path: '/services/learn-to-drive-a-car'
-      },
-      {
-        title: 'Learn to drive a tractor or specialist vehicle: step by step',
-        base_path: '/services/learn-to-drive-a-car'
       }
     ]
   }
