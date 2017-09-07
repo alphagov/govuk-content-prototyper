@@ -142,8 +142,7 @@ private
       uri =  URI.parse("https://#{ENV['GOVUK_APP_DOMAIN']}#{request.fullpath}")
       query_params = URI.decode_www_form(String(uri.query)) << ["cachebust", Time.zone.now.to_i]
       uri.query = URI.encode_www_form(query_params)
-      raw_html = open(uri.to_s, 'Cookie' => @cookie_name).read
-      raw_html.gsub("https://www.gov.uk", "")
+      open(uri.to_s, 'Cookie' => @cookie_name).read
     end
   end
 
