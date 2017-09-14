@@ -22,11 +22,11 @@
           "links": {
             "ordered_tasks": [
               {
-                "title": "Vehicles you can drive",
+                "title": "Check what age you can drive",
                 "base_path": "/vehicles-can-drive"
               },
               {
-                "title": "Legal obligations of drivers and riders",
+                "title": "Requirements for driving legally",
                 "base_path": "/legal-obligations-drivers-riders"
               }
             ]
@@ -62,7 +62,7 @@
                 "base_path": "/guidance/the-highway-code"
               },
               {
-                "title": "Driving lessons and learning to drive - chapter 1: Overview",
+                "title": "Taking driving lessons",
                 "base_path": "/driving-lessons-learning-to-drive/"
               },
               {
@@ -70,7 +70,7 @@
                 "base_path": "/find-driving-schools-and-lessons"
               },
               {
-                "title": "'Show me, tell me' questions: car driving test",
+                "title": "Practise vehicle safety questions",
                 "base_path": "/government/publications/car-show-me-tell-me-vehicle-safety-questions"
               }
             ]
@@ -84,7 +84,7 @@
           "links": {
             "ordered_tasks": [
               {
-                "title": "Theory test: cars",
+                "title": "Theory test revision and practice",
                 "base_path": "/theory-test/revision-and-practice"
               },
               {
@@ -92,7 +92,7 @@
                 "base_path": "/theory-test/revision-and-practice"
               },
               {
-                "title": "The official DVSA theory test kit app",
+                "title": "Theory and hazard perception test app",
                 "external_link": "http://www.safedrivingforlife.info/shop/product/official-dvsa-theory-test-kit-app-app"
               }
             ]
@@ -112,7 +112,7 @@
                 "base_path": "/book-theory-test"
               },
               {
-                "title": "Theory test: cars",
+                "title": "What to take to your test",
                 "base_path": "/theory-test/what-to-take"
               },
               {
@@ -144,7 +144,7 @@
                 "base_path": "/book-driving-test"
               },
               {
-                "title": "Driving test: cars",
+                "title": "What to take to your test",
                 "base_path": "/driving-test/what-to-take"
               },
               {
@@ -172,7 +172,7 @@
           "links": {
             "ordered_tasks": [
               {
-                "title": "Pass Plus",
+                "title": "Find out about Pass Plus training courses",
                 "base_path": "/pass-plus"
               }
             ]
