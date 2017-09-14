@@ -88,21 +88,6 @@
 }
 
 .slidy-fixed {
-  .arrow {
-    @include media(tablet) {
-      color: white;
-      float: right;
-      text-decoration: none;
-      background-image: url(image_path('arrow-01.png'));
-      width: 10px;
-      background-size: cover;
-      padding: 12px 15px;
-      background-repeat: no-repeat;
-    }
-  }
-}
-
-.slidy-fixed {
   position: fixed;
   bottom: 0 ;
   z-index: 99999;
