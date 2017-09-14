@@ -15,6 +15,26 @@
     "ordered_steps": [
       [
         {
+          "content_id": "7f4175a3-3585-41b8-34bh-02689af39f03",
+          "title": "Check you're allowed to drive",
+          "description": "",
+          "ordered_task_list": false,
+          "links": {
+            "ordered_tasks": [
+              {
+                "title": "Vehicles you can drive",
+                "base_path": "/vehicles-can-drive"
+              },
+              {
+                "title": "Legal obligations of drivers and riders",
+                "base_path": "/legal-obligations-drivers-riders"
+              }
+            ]
+          }
+        }
+      ],
+      [
+        {
           "content_id": "7f4175a3-3585-41b8-bd43-02689af39f03",
           "title": "Get a provisional driving licence",
           "description": "",
@@ -38,30 +58,24 @@
           "links": {
             "ordered_tasks": [
               {
-                "title": "Requirements for driving legally",
-                "base_path": "/legal-obligations-drivers-riders"
-              },
-              {
                 "title": "The Highway Code",
                 "base_path": "/guidance/the-highway-code"
               },
               {
-                "title": "Taking driving lessons",
-                "base_path": "/driving-lessons-learning-to-drive"
+                "title": "Driving lessons and learning to drive - chapter 1: Overview",
+                "base_path": "/driving-lessons-learning-to-drive/"
               },
               {
                 "title": "Find driving schools, lessons and instructors",
                 "base_path": "/find-driving-schools-and-lessons"
               },
               {
-                "title": "Practise vehicle safety questions",
+                "title": "'Show me, tell me' questions: car driving test",
                 "base_path": "/government/publications/car-show-me-tell-me-vehicle-safety-questions"
               }
             ]
           }
-        }
-      ],
-      [
+        },
         {
           "content_id": "e2268311-ada2-477c-90dc-9837216e0108",
           "title": "Prepare for your theory test",
@@ -70,15 +84,15 @@
           "links": {
             "ordered_tasks": [
               {
-                "title": "Theory test revision and practice",
+                "title": "Theory test: cars",
                 "base_path": "/theory-test/revision-and-practice"
               },
               {
                 "title": "Take a practice theory test",
-                "base_path": "/take-practice-theory-test"
+                "base_path": "/theory-test/revision-and-practice"
               },
               {
-                "title": "Theory and hazard perception test app",
+                "title": "The official DVSA theory test kit app",
                 "external_link": "http://www.safedrivingforlife.info/shop/product/official-dvsa-theory-test-kit-app-app"
               }
             ]
@@ -98,7 +112,7 @@
                 "base_path": "/book-theory-test"
               },
               {
-                "title": "What to take to your test",
+                "title": "Theory test: cars",
                 "base_path": "/theory-test/what-to-take"
               },
               {
@@ -130,7 +144,7 @@
                 "base_path": "/book-driving-test"
               },
               {
-                "title": "What to take to your test",
+                "title": "Driving test: cars",
                 "base_path": "/driving-test/what-to-take"
               },
               {
@@ -152,11 +166,16 @@
       [
         {
           "content_id": "77d7d1fa-145c-42a3-98f6-f2b35a2cc78a",
-          "title": "When you pass",
-          "description": "You'll be sent your full driving licence within 3 weeks of passing your test, but you can start driving as soon as you've passed.",
+          "title": "After you pass",
+          "description": "",
           "ordered_task_list": true,
           "links": {
-            "ordered_tasks": []
+            "ordered_tasks": [
+              {
+                "title": "Pass Plus",
+                "base_path": "/pass-plus"
+              }
+            ]
           }
         }
       ]
@@ -254,7 +273,7 @@
       }
     ]
   },
-  "description": "Check what you need to do to learn to drive. You can start learning when you're 17.",
+  "description": "Check what you need to do to learn to drive.",
   "details": {
     "body": "\n<div class=\"summary\">\n<p>Statutory guidance for learner drivers.</p>\n"
   }
