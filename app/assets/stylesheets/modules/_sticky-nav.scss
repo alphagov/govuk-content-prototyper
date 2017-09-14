@@ -1,9 +1,17 @@
 .sticky-nav {
   margin-top: 15px;
   background-color: #eee;
+  padding-top: 15px;
 
   h2 {
     @include bold-24;
+    margin-top: 0;
+    line-height: 0 !important; // bypass rules from bold-24
+  }
+
+  .title-prefix {
+    font-weight: bold;
+    padding-left: 15px;
   }
 }
 
