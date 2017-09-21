@@ -19,7 +19,7 @@
               last_loop_index = nil
               border = true
             %>
-            <div class="subsection-border">
+            <div class="subsection-border <% if (index + 1) == page_schema.links.ordered_steps.size %>last-child<% end %>">
               <% group.each_with_index do |step, step_index| %>
                 <%
                   expandable = true if (step.links.ordered_tasks.length > 0) || step.description
@@ -28,9 +28,7 @@
                 <div class="subsection <% if expandable %>js-subsection<% else %>subsection-no-expand<% end %>"
                       id="index-<%= "#{index}-#{step_index}" %>"
                       data-track-count="accordionSection">
-                  <% if index > 0 %>
-                    <div class="subsection-smaller-border"></div>
-                  <% end %>
+                  <div class="subsection-smaller-border"></div>
                   <% if step_index == 1 && border ; border = false %>
                   <% end %>
                   <div class="subsection-header js-subsection-header">
@@ -56,13 +54,13 @@
                     </div>
                   <% end %>
                 </div>
-
                 <%
                   last_loop_index = index
                 %>
               <% end %>
             </div>
           <% end %>
+          <div class="subsection-smaller-border"></div>
         </div>
       </div>
     </div>

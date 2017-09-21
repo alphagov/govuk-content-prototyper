@@ -27,10 +27,6 @@ main {
   -webkit-font-smoothing: antialiased;
 }
 
-h2.subsection-title {
-  color: black;
-}
-
 .subsection-content {
   h3 {
     @include bold-24;
@@ -84,7 +80,7 @@ span.theme-title {
 
 .task-list {
   cursor: default;
-  $dotsize: 1.2em;
+  $dotsize: 1.5em;
   $dotleft: 0.6em;
   $dottop: 0.2em;
 
@@ -97,7 +93,7 @@ span.theme-title {
   }
 
   .subsection-wrapper {
-    border-top: solid 1px $grey-2;
+    border: 0 !important; //agh again, so sorry
   }
 
   .subsection-border {
@@ -110,14 +106,14 @@ span.theme-title {
       top: $dottop;
       left: $dotleft;
       margin-top: 1px;
-      margin-left: -4px;
-      width: 8px;
+      margin-left: -2px;
+      width: 4px;
       height: 100%;
       background: $grey-3;
-      @include core-36;
+      @include core-24;
     }
 
-    &:last-child:after {
+    &.last-child:after {
       display: none;
     }
   }
@@ -130,7 +126,9 @@ span.theme-title {
     width: $dotsize;
     height: $dotsize;
     margin-left: -$dotsize / 2;
-    @include core-36;
+    @include core-24;
+    @include box-sizing(border-box);
+    border: solid 2px $white;
     line-height: 1.4em !important; //argh yes I know sorry
     font-weight: bold;
     color: $black;

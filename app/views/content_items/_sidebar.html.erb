@@ -16,7 +16,9 @@
                 show_number = true if index != last_loop_index
                 border = true
             %>
-              <div class="subsection subsection-border <%= expandable ? "js-subsection" : "subsection-no-expand" %> <% if highlight_sidebar_step?(ordered_tasks) %>subsection-title-highlight<% end %>"
+              <div class="subsection subsection-border
+                  <% if (index + 1) == page_schema.links.ordered_steps.size %>last-child<% end %> <%= expandable ? "js-subsection" : "subsection-no-expand" %>
+                  <% if highlight_sidebar_step?(ordered_tasks) %>subsection-title-highlight<% end %>"
                     id="index-<%= "#{index}-#{step_index}" %>"
                     data-track-count="accordionSection">
                 <% if index > 0 %>
