@@ -1,21 +1,48 @@
 .sticky-nav {
-  margin-top: 15px;
-  background-color: #eee;
-  padding-top: 15px;
+  margin-top: 0;
+  padding-bottom: 8px;
 
   h2 {
     @include bold-24;
     margin-top: 0;
-    line-height: 0 !important; // bypass rules from bold-24
-  }
-
-  .title-prefix {
-    font-weight: bold;
-    padding-left: 15px;
   }
 }
 
-.sticky-nav.sticky {
-  position: fixed;
-  top: 0;
+.prototype {
+  padding: $gutter-half;
+  background-color: $grey-4;
+  border-bottom: solid 1px #bfc1c3;
+
+  .title-prefix {
+    font-weight: bold;
+  }
+
+  .sticky-link {
+    display: block;
+
+    .icon {
+      float: left;
+      margin-right: 0.3em;
+    }
+  }
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    padding: 0;
+    padding-top: $gutter-half;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    margin: 0;
+
+    .title-prefix {
+      padding-left: $gutter-half;
+    }
+
+    .sticky-link {
+      padding: $gutter-half;
+      padding-top: 0;
+    }
+  }
 }
