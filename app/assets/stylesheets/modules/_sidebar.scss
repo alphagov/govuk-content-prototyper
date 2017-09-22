@@ -87,6 +87,7 @@
 
   .subsection-header {
     padding-left: 17%;
+    padding-bottom: 10px;
 
     @include media(tablet) {
       min-height: 0;
@@ -125,11 +126,13 @@
   }
 
   .js-accordion-with-descriptions .subsection-is-open .subsection-content {
+    padding-top: 0;
     padding-bottom: $gutter-half;
   }
 
   .subsection-content .subsection-description {
     @include core-16;
+    padding-bottom: 15px;
   }
 
   .subsection-list .subsection-list-item {
@@ -154,4 +157,3 @@
     background: none;
   }
 }
-
