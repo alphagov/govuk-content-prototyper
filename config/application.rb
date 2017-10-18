@@ -23,5 +23,6 @@ module GovukServicesPrototype
 
     config.middleware.use 'ContentItemAppender'
     config.middleware.use 'PathLogger'
+    config.middleware.insert_after ActionDispatch::Executor, 'GovukUrlReplacer'
   end
 end
