@@ -13,6 +13,9 @@ class ServicesController < ApplicationController
   def index
   end
 
+  def divorce
+  end
+
 private
 
   def service
