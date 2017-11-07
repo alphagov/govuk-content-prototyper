@@ -1,0 +1,374 @@
+.pub-c-task-list-header {
+  margin-top: $gutter;
+}
+
+.task-list-related {
+  .task-list-related-header,
+  .task-list-related-link {
+    @include bold-24;
+
+    display: block;
+  }
+}
+
+$stroke-width: 3px; /* fixme 2px on mobile only */
+$number-circle-size: 26px;
+$number-circle-size-large: 32px;
+
+.task-list {
+  margin-bottom: $gutter;
+}
+
+.pub-c-task-list__controls {
+  padding-bottom: $gutter;
+}
+
+.task-list__list {
+  position: relative;
+}
+
+.task-list__group {
+  @extend %contain-floats;
+
+  position: relative;
+  padding-left: $gutter + $gutter-half;
+  padding-bottom: $gutter;
+
+  .task-list--large & {
+    @include media(tablet) {
+      padding-left: $gutter * 2;
+    }
+  }
+
+  &:last-child {
+    .task-list__step:before {
+      top: 0;
+    }
+  }
+
+  &:last-child {
+    /* little dash at the bottom of the line */
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: $gutter;
+      left: 0;
+      margin-left: $number-circle-size / 4;
+      width: $number-circle-size / 2;
+      height: 0;
+      border-top: solid $stroke-width $grey-2;
+    }
+
+    .task-list--large & {
+      @include media(tablet) {
+        &:before {
+          margin-left: $number-circle-size-large / 4;
+          width: $number-circle-size-large / 2;
+        }
+      }
+    }
+  }
+}
+
+.task-list__step {
+  position: relative;
+  float:left;
+  width: 100%;
+  margin-top: -$gutter-half;
+
+  /* line down the side of a step */
+  &:before {
+    content: "";
+    position: absolute;
+    top: $gutter;
+    left: -$gutter-half - $gutter;
+    width: $stroke-width;
+    height: 100%;
+    margin-left: ($number-circle-size / 2) - ($stroke-width / 2);
+    border-left: solid $stroke-width $grey-2;
+  }
+
+  .task-list--large & {
+    @include media(tablet) {
+      margin-top: -$gutter;
+
+      &:before {
+        left: -$gutter * 2;
+        margin-left: ($number-circle-size-large / 2) - ($stroke-width / 2);
+      }
+    }
+  }
+
+  &.task-list__step--optional {
+    /* broken line down the side of a step */
+    &:before {
+      background: none;
+      border-left: dotted $stroke-width $grey-2;
+    }
+  }
+
+  & + .task-list__step {
+    margin-top: 0;
+  }
+}
+
+.task-list__number {
+  @include bold-19(21px, 21px);
+  @include box-sizing(border-box);
+
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: $number-circle-size;
+  height: $number-circle-size;
+  color: $black;
+  background: $white;
+  //background: green;
+  border: solid $stroke-width $grey-2;
+  border-radius: 100px;
+  text-align: center;
+
+  @include media(tablet) {
+    @include bold-16(23px, 23px);
+    //background: yellow;
+  }
+
+  .task-list--large & {
+    @include media(tablet) {
+      @include bold-19(30px, 30px);
+      width: $number-circle-size-large;
+      height: $number-circle-size-large;
+      //background: red;
+    }
+  }
+}
+
+.task-list__header {
+  padding: $gutter-half 0;
+  border-top: solid 2px $grey-3;
+
+  .pub-c-task-list--active & {
+    cursor: pointer;
+  }
+
+  &:hover {
+    .task-list__button {
+      color: $link-colour;
+    }
+
+    .task-list__toggle {
+      text-decoration: underline;
+    }
+  }
+
+  .task-list--large & {
+    @include media(tablet) {
+      padding: $gutter 0;
+    }
+  }
+}
+
+.task-list__button {
+  @include bold-19;
+
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  text-align: left;
+
+  @include media(tablet) {
+    @include bold-16;
+  }
+
+  .task-list--large & {
+    @include media(tablet) {
+      @include bold-24;
+    }
+  }
+}
+
+.task-list__title {
+  @include bold-24;
+}
+
+.task-list__toggle {
+  @include core-19;
+  color: $link-colour;
+
+  @include media(tablet) {
+    @include core-14;
+  }
+
+  .task-list--large & {
+    @include media(tablet) {
+      @include core-16;
+    }
+  }
+
+  &.open-step {
+    display: block;
+
+    .step-is-open & {
+      display: none;
+    }
+  }
+
+  &.hide-step {
+    display: none;
+
+    .step-is-open & {
+      display: block;
+    }
+  }
+}
+
+.task-list__panel {
+  @include core-19;
+
+  @include media(tablet) {
+    @include core-16;
+  }
+
+  .task-list--large & {
+    @include media(tablet) {
+      @include core-19;
+    }
+  }
+
+  p {
+    padding-bottom: $gutter-half;
+    margin: 0;
+  }
+
+  ul {
+    padding-bottom: $gutter-half / 2;
+  }
+
+  li {
+    padding-bottom: $gutter-half / 2;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  hr {
+    padding: 0;
+    margin: 0;
+    margin-bottom: $gutter-half;
+    border: 0;
+    border-top: solid 2px $grey-3;
+    height: 0;
+
+    /* FIXME */
+    &.and {
+      position: relative;
+
+      &:before {
+        content: "and";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $white;
+      }
+    }
+  }
+
+  .task-list--large & {
+    @include media(tablet) {
+      p {
+        padding-bottom: $gutter;
+      }
+
+      ul {
+        padding-bottom: $gutter-half;
+      }
+
+      li {
+        padding-bottom: $gutter-half;
+      }
+
+      hr {
+        margin-bottom: $gutter;
+      }
+    }
+  }
+}
+
+.task-list__inner-step {
+  position: relative;
+  padding-top: $gutter-half;
+  border-top: solid 2px $grey-3;
+
+  .task-list--large & {
+    @include media(tablet) {
+      padding-top: $gutter;
+    }
+  }
+}
+
+.task-list__inner-step--optional {
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: -$gutter - $gutter-half;
+    width: $stroke-width;
+    height: 100%;
+    margin-left: ($number-circle-size / 2) - ($stroke-width / 2);
+    border-left: dotted $stroke-width $grey-2;
+    background: $white;
+  }
+
+  &:last-child {
+    &:before {
+      height: calc(100% + #{$gutter});
+    }
+  }
+
+  .task-list--large & {
+    @include media(tablet) {
+      &:before {
+        left: -$gutter * 2;
+        margin-left: ($number-circle-size-large / 2) - ($stroke-width / 2);
+      }
+    }
+  }
+}
+
+.task-list__panel-links--required {
+  font-weight: bold;
+}
+
+.task-list__panel-links--options {
+  margin-left: $gutter-half;
+
+  li {
+    list-style-type: disc;
+  }
+}
+
+.task-list__cost {
+  color: $grey-1;
+
+  &:before {
+    content: " - ";
+  }
+}
+
+.task-list__group--active {
+  &:last-child:before,
+  .task-list__number,
+  .task-list__step:before,
+  .task-list__inner-step--optional:before {
+    border-color: $black;
+  }
+}
