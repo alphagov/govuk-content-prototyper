@@ -8,12 +8,12 @@
 
     var bulkActions = {
       openAll: {
-        buttonText: "Open all",
-        eventLabel: "Open All"
+        buttonText: "Show all",
+        eventLabel: "Show All"
       },
       closeAll: {
-        buttonText: "Close all",
-        eventLabel: "Close All"
+        buttonText: "Hide all",
+        eventLabel: "Hide All"
       }
     };
 
@@ -77,8 +77,8 @@
       }
 
       function addIconsToSteps() {
-        $stepHeaders.find('.js-step-title-button').append('<span class="task-list__toggle open-step">Open step</span>');
-        $stepHeaders.find('.js-step-title-button').append('<span class="task-list__toggle hide-step">Close step</span>');
+        $stepHeaders.find('.js-step-title-button').append('<span class="task-list__toggle open-step">Show step</span>');
+        $stepHeaders.find('.js-step-title-button').append('<span class="task-list__toggle hide-step">Hide step</span>');
       }
 
       function addAriaControlsAttrForOpenCloseAllButton() {
