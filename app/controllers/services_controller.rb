@@ -16,6 +16,9 @@ class ServicesController < ApplicationController
   def divorce
   end
 
+  def civilpartnership
+  end
+
 private
 
   def service
