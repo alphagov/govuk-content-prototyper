@@ -13,6 +13,12 @@ class ServicesController < ApplicationController
   def index
   end
 
+  def divorce
+  end
+
+  def civilpartnership
+  end
+
 private
 
   def service

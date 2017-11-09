@@ -1,10 +1,11 @@
-<div class="prototype sticky-nav">
-  <span class="title-prefix">Part of</span>
-  <h2>
-    <a href="<%= @page_schema.base_path %>" class="sticky-link">
+<div class="pub-c-task-list-header">
+  <span class="pub-c-task-list-header__part-of">Part of</span>
+    <a href="<%= @page_schema.base_path %>" class="pub-c-task-list-header__title">
       <%= page_schema.title %>
     </a>
-  </h2>
+    <a href="#task-list-sidebar" class="pub-c-task-list-header__skip-link">
+      Skip content
+    </a>
 </div>
 
 <script>

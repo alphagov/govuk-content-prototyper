@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   get "/healthcheck", to: proc { [200, {}, ["OK"]] }
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
+  get '/services/get-a-divorce', to: 'services#divorce'
+  get '/services/end-a-civil-partnership', to: 'services#civilpartnership'
   get '/services/:base_path', to: 'services#show'
   get '/services', to: 'services#index'
 
