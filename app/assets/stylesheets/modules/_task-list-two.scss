@@ -354,16 +354,17 @@ $number-circle-size-large: 32px;
         padding-bottom: $gutter;
       }
 
-      p + ul {
+      p + .task-list__panel-links--options,
+      p + .task-list__panel-links {
         margin-top: -$gutter-half;
       }
 
       ul {
-        padding-bottom: $gutter-half;
+        padding-bottom: 20px;
       }
 
       li {
-        padding-bottom: $gutter-half;
+        padding-bottom: 10px;
       }
 
       hr {
@@ -416,12 +417,18 @@ $number-circle-size-large: 32px;
   }
 }
 
+// unstyled list
+.task-list__panel-links {
+}
+
+// bold list
 .task-list__panel-links--required {
   font-weight: bold;
 }
 
+// list with bullets
 .task-list__panel-links--options {
-  margin-left: $gutter-half;
+  margin-left: 20px;
 
   li {
     list-style-type: disc;
