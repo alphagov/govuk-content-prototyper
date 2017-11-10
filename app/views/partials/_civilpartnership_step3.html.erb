@@ -1,16 +1,22 @@
 <p>You need to fill in a dissolution application. The court will send a copy to your civil partner.</p>
 <ul class="task-list__panel-links--required">
-  <li>
+  <li
+    <% if on_this_page('/end-civil-partnership/file-application') %>class="task-list__panel-link--active"<% end %>
+    >
     <a href="/end-civil-partnership/file-application">How to start the process to end your civil partnership</a>
   </li>
   <li>
     <a href="http://hmctsformfinder.justice.gov.uk/HMCTS/GetForm.do?court_forms_id=1115">Fill in a dissolution application</a>
   </li>
-  <li>
+  <li
+    <% if on_this_page('/end-civil-partnership/file-application') %>class="task-list__panel-link--active"<% end %>
+    >
     <a href="/end-civil-partnership/file-application">Pay the fee</a>
     <span class="task-list__cost">&pound;550</span>
   </li>
-  <li>
+  <li
+    <% if on_this_page('/get-help-with-court-fees') %>class="task-list__panel-link--active"<% end %>
+    >
     <a href="/get-help-with-court-fees">Get help with court fees</a>
   </li>
   <li>
@@ -23,7 +29,9 @@
 <div class="task-list__inner-step task-list__inner-step--optional">
   <p>If you don't know your civil partner's address, you need to try to find it so the court can send them the dissolution application.</p>
   <ul class="task-list__panel-links">
-    <li>
+    <li
+      <% if on_this_page('/divorce-missing-husband-wife') %>class="task-list__panel-link--active"<% end %>
+      >
       <a href="/divorce-missing-husband-wife">Try to find your civil partner's address</a>
       <span class="task-list__cost">&pound;0 to &pound;100</span>
     </li>
@@ -35,14 +43,18 @@
 
   <p>If your civil partner can't make decisions by themselves, someone needs to respond to the dissolution application.</p>
   <ul class="task-list__panel-links">
-    <li>
+    <li
+      <% if on_this_page('/end-civil-partnership/if-your-partner-lacks-mental-capacity') %>class="task-list__panel-link--active"<% end %>
+      >
       <a href="/end-civil-partnership/if-your-partner-lacks-mental-capacity">Check they have someone to act on their behalf</a>
     </li>
   </ul>
 
   <p>If you think your civil partner might be dead, you don't need to file a dissolution application.</p>
   <ul class="task-list__panel-links">
-    <li>
+    <li
+      <% if on_this_page('/divorce-missing-husband-wife') %>class="task-list__panel-link--active"<% end %>
+      >
       <a href="/divorce-missing-husband-wife">Apply to end the civil partnership without filing for a dissolution</a>
       <span class="task-list__cost">&pound;365</span>
     </li>

@@ -123,6 +123,12 @@ module ApplicationHelper
     session[:tasklist]
   end
 
+  def on_this_page(url)
+    if request.path == url
+      true
+    end
+  end
+
   def highlight_sidebar_step?(ordered_tasks)
     ordered_tasks.map(&:base_path).include?("/#{params[:base_path]}")
   end

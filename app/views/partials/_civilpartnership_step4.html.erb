@@ -1,6 +1,8 @@
 <p>If the court agrees with your dissolution application, you can apply for a conditional order and give more information about why the civil partnership has broken down.</p>
 <ul class="task-list__panel-links--required">
-  <li>
+  <li
+    <% if on_this_page('/end-civil-partnership/apply-for-a-conditional-order') %>class="task-list__panel-link--active"<% end %>
+    >
     <a href="/end-civil-partnership/apply-for-a-conditional-order">Why you need a conditional order</a>
   </li>
   <li>
@@ -29,7 +31,9 @@
 <div class="task-list__inner-step task-list__inner-step--optional">
   <p>If your civil partner doesn't agree to end the civil partnership, you might have to attend a court hearing with a judge.</p>
   <ul class="task-list__panel-links">
-    <li>
+    <li
+      <% if on_this_page('/find-a-legal-adviser') %>class="task-list__panel-link--active"<% end %>
+      >
       <a href="/find-a-legal-adviser">Get legal advice about going to court</a>
       <span class="task-list__cost">&pound;15,000 to &pound;30,000</span>
     </li>

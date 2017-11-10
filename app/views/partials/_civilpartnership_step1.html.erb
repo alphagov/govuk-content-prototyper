@@ -1,9 +1,13 @@
 <p>You must meet certain legal requirements for you to end your civil partnership.</p>
 <ul class="task-list__panel-links--required">
-  <li>
+  <li
+    <% if on_this_page('/end-civil-partnership') %>class="task-list__panel-link--active"<% end %>
+    >
     <a href="/end-civil-partnership">Check your civil partnership meets the criteria</a>
   </li>
-  <li>
+  <li
+    <% if on_this_page('/end-civil-partnership/grounds-for-ending-a-civil-partnership') %>class="task-list__panel-link--active"<% end %>
+    >
     <a href="/end-civil-partnership/grounds-for-ending-a-civil-partnership">Check the list of reasons why you can end a civil partnership</a>
   </li>
 </ul>

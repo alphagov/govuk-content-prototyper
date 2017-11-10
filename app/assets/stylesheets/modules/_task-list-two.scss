@@ -437,6 +437,33 @@ $number-circle-size-large: 32px;
   }
 }
 
+.task-list__panel-link--active {
+  position: relative;
+
+  $circle-size: 16px;
+
+  &:before {
+    @include box-sizing(border-box);
+
+    content: "";
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: -32px;
+    width: $circle-size;
+    height: $circle-size;
+    margin-left: -($circle-size / 2);
+    margin-top: -14px;
+    background: $black;
+    border: solid 2px $white;
+    border-radius: 100px;
+  }
+
+  a {
+    color: $black;
+  }
+}
+
 .task-list__cost {
   font-weight: normal;
   color: $grey-1; // passes colour contrast AA
