@@ -25,7 +25,7 @@
 
   .task-list-related-header,
   .task-list-related-link {
-    @include bold-24;
+    @include bold-19;
 
     display: block;
   }
@@ -84,6 +84,7 @@ $number-circle-size-large: 32px;
   &:last-child {
     .task-list__step:before {
       top: 0;
+      z-index: 1;
     }
   }
 
@@ -123,6 +124,7 @@ $number-circle-size-large: 32px;
   &:before {
     content: "";
     position: absolute;
+    z-index: 2;
     top: $gutter;
     left: -$gutter-half - $gutter;
     width: 0;

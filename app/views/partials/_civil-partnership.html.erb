@@ -1,0 +1,101 @@
+<ol class="task-list__list">
+  <li class="task-list__group <% if on_civil_step(1, highlighting) %>task-list__group--active<% end %>">
+    <span class="task-list__number">
+      <span class="visuallyhidden">Step</span> 1
+    </span>
+
+    <div class="task-list__step js-step">
+      <div class="task-list__header js-toggle-panel">
+        <h2 class="task-list__title js-step-title">
+          Check if you can end your civil partnership
+        </h2>
+      </div>
+
+      <% if on_civil_step(1) %>
+        <div class="task-list__panel js-panel">
+          <%= render 'partials/civilpartnership_step1' %>
+        </div>
+      <% end %>
+    </div>
+  </li>
+
+  <li class="task-list__group <% if on_civil_step(2, highlighting) %>task-list__group--active<% end %>">
+    <span class="task-list__number">
+      <span class="visuallyhidden">Step</span> 2
+    </span>
+
+    <div class="task-list__step task-list__step--optional js-step">
+      <div class="task-list__header js-toggle-panel">
+        <h2 class="task-list__title js-step-title">
+          Make arrangements for your children, money and property
+        </h2>
+      </div>
+
+      <% if on_civil_step(2) %>
+        <div class="task-list__panel js-panel">
+          <%= render 'partials/civilpartnership_step2' %>
+        </div>
+      <% end %>
+    </div>
+  </li>
+
+  <li class="task-list__group <% if on_civil_step(3, highlighting) %>task-list__group--active<% end %>">
+    <span class="task-list__number">
+      <span class="visuallyhidden">Step</span> 3
+    </span>
+
+    <div class="task-list__step js-step">
+      <div class="task-list__header js-toggle-panel">
+        <h2 class="task-list__title js-step-title">
+          File an application
+        </h2>
+      </div>
+
+      <% if on_civil_step(3) %>
+        <div class="task-list__panel js-panel">
+          <%= render 'partials/civilpartnership_step3' %>
+        </div>
+      <% end %>
+    </div>
+  </li>
+
+  <li class="task-list__group <% if on_civil_step(4, highlighting) %>task-list__group--active<% end %>">
+    <span class="task-list__number">
+      <span class="visuallyhidden">Step</span> 4
+    </span>
+
+    <div class="task-list__step js-step">
+      <div class="task-list__header js-toggle-panel">
+        <h2 class="task-list__title js-step-title">
+          Send the court more details about ending your civil partnership
+        </h2>
+      </div>
+
+      <% if on_civil_step(4) %>
+        <div class="task-list__panel js-panel">
+          <%= render 'partials/civilpartnership_step4' %>
+        </div>
+      <% end %>
+    </div>
+  </li>
+
+  <li class="task-list__group <% if on_civil_step(5, highlighting) %>task-list__group--active<% end %>">
+    <span class="task-list__number">
+      <span class="visuallyhidden">Step</span> 5
+    </span>
+
+    <div class="task-list__step js-step">
+      <div class="task-list__header js-toggle-panel">
+        <h2 class="task-list__title js-step-title">
+          Apply for a final order
+        </h2>
+      </div>
+
+      <% if on_civil_step(5) %>
+        <div class="task-list__panel js-panel">
+          <%= render 'partials/civilpartnership_step5' %>
+        </div>
+      <% end %>
+    </div>
+  </li>
+</ol>
