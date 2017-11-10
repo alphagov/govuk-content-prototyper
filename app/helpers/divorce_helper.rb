@@ -38,8 +38,8 @@ module DivorceHelper
     result
   end
 
-  def on_divorce_step(step, highlighting = 0)
-    if highlighting and DIVORCE_URLS[step - 1].include? request.path # steps start at 1, let's not get confused
+  def on_divorce_step(step, on_sidebar = 0)
+    if on_sidebar and DIVORCE_URLS[step - 1].include? request.path # steps start at 1, let's not get confused
       true
     end
   end

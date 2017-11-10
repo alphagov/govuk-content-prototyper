@@ -40,8 +40,8 @@ module CivilpartnershipHelper
     result
   end
 
-  def on_civil_step(step, highlighting = 0)
-    if highlighting and CIVIL_URLS[step - 1].include? request.path # steps start at 1, let's not get confused
+  def on_civil_step(step, on_sidebar = 0)
+    if on_sidebar and CIVIL_URLS[step - 1].include? request.path # steps start at 1, let's not get confused
       true
     end
   end
