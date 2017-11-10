@@ -16,9 +16,9 @@
       } %>
 <% end %>
 
-<% if get_tasklist == 'divorce' %>
+<% if get_tasklist == 'divorce' and on_divorce_url %>
   <%= render 'partials/tasklist-header-divorce' %>
-<% elsif get_tasklist == 'civil' %>
+<% elsif get_tasklist == 'civil' and on_civil_url %>
   <%= render 'partials/tasklist-header-civil' %>
 <% end %>
 
@@ -28,9 +28,9 @@
       <%= content_html %>
     </div>
     <div class="column-third">
-      <% if get_tasklist == 'divorce' %>
+      <% if get_tasklist == 'divorce' and on_divorce_url %>
         <%= render 'partials/get-a-divorce-sidebar' %>
-      <% elsif get_tasklist == 'civil' %>
+      <% elsif get_tasklist == 'civil' and on_civil_url %>
         <%= render 'partials/end-a-civil-partnership-sidebar' %>
       <% end %>
 
