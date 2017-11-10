@@ -233,6 +233,16 @@ $number-circle-size-large: 32px;
   }
 }
 
+.task-list__header-link {
+  text-decoration: none;
+  color: $black !important; // sorry
+
+  &:hover {
+    text-decoration: underline;
+    color: $link-colour !important; // sorry
+  }
+}
+
 .task-list__button {
   @include bold-19;
 
@@ -473,6 +483,7 @@ $number-circle-size-large: 32px;
 
   a {
     color: $black;
+    text-decoration: underline;
   }
 }
 
