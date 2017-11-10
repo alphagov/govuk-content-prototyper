@@ -2,8 +2,25 @@
   margin-bottom: $gutter-half;
 }
 
+.sticky-wrapper {
+
+}
+
 .pub-c-task-list-header {
   //margin-top: $gutter;
+
+  .sticky-inner {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  &.sticky {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }
 
 .task-list-heading {
