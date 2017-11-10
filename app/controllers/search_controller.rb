@@ -25,9 +25,50 @@ private
 
   def edit_results_page_html(html)
     document = Nokogiri::HTML(html)
-    document.css('.results-list li').first.add_previous_sibling('<li><h3><a href="/services/learn-to-drive-a-car">Learn to drive a car: step by step</a></h3><p>Check what you need to do to learn to drive.</p></li>')
+
+    add_fake_results(document)
 
     document.to_html
+  end
+
+  def add_fake_results(document)
+    first_element = document.css('.results-list li').first
+
+    if document.text.scan(/\bcar\b/).count > 0
+      first_element.add_previous_sibling(
+        %q{
+          <li>
+            <h3>
+              <a href="/services/learn-to-drive-a-car">
+                Learn to drive a car: step by step
+              </a>
+            </h3>
+            <p>Check what you need to do to learn to drive.</p>
+          </li>
+        }
+      )
+    else
+      first_element.add_previous_sibling(
+        %q{
+          <li>
+            <h3>
+              <a href="/services/get-a-divorce">
+                Get a divorce: step by step
+              </a>
+            </h3>
+            <p>How to file for divorce if you’re in England or Wales.</p>
+          </li>
+          <li>
+            <h3>
+              <a href="/services/end-a-civil-partnership">
+                End a civil partnership: step by step
+              </a>
+            </h3>
+            <p>How to end your civil partnership if you’re in England or Wales.</p>
+          </li>
+        }
+      )
+    end
   end
 
   def bypass_slimmer
