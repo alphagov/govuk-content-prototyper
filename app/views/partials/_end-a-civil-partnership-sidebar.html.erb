@@ -1,0 +1,17 @@
+<div id="task-list-sidebar">
+  <h2 class="task-list-heading">
+    <span class="task-list-heading__part">Part of</span>
+    <a href="/services/end-a-civil-partnership">End a civil partnership</a>
+  </h2>
+
+  <div class="task-list">
+    <%= render 'partials/civil-partnership', highlighting: true %>
+  </div>
+
+  <% if on_divorce_url %>
+    <div class="task-list-related">
+      <h2 class="task-list-related-header">This page is also part of</h2>
+      <a href="/services/get-a-divorce" class="task-list-related-link">Get a divorce: step-by-step</a>
+    </div>
+  <% end %>
+</div>

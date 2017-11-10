@@ -22,16 +22,23 @@
       <%= content_html %>
     </div>
     <div class="column-third">
-      <% if override_sidebar %>
-        <div class="child-topic-contents">
-          <%= render partial: "sidebar", locals: {
-            page_schema: @page_schema,
-            current_step_number: current_step_number,
-            current_task_number: current_task_number
-            } %>
-        </div>
-      <% else %>
-        <%= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>
+      <% if get_tasklist == 'divorce' %>
+        <%= render 'partials/get-a-divorce-sidebar' %>
+      <% elsif get_tasklist == 'civil' %>
+        <%= render 'partials/end-a-civil-partnership-sidebar' %>
+      <% end %>
+
+      <% if false %>
+        <% if override_sidebar %>
+          <div class="child-topic-contents">
+            <%= render partial: "sidebar", locals: {
+              current_step_number: current_step_number,
+              current_task_number: current_task_number
+              } %>
+          </div>
+        <% else %>
+          <%= render partial: 'govuk_component/taxonomy_sidebar', locals: taxonomy_sidebar %>
+        <% end %>
       <% end %>
     </div>
   </div>

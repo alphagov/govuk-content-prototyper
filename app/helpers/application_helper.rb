@@ -14,6 +14,27 @@ module ApplicationHelper
     ]
   }
 
+  def set_tasklist(tasklist)
+    session[:tasklist] = tasklist
+  end
+
+  def get_tasklist
+    if not defined? session[:tasklist] or session[:tasklist] == nil
+      if on_divorce_url
+        set_tasklist('divorce')
+      elsif on_civil_url
+        set_tasklist('civil')
+      end
+    end
+    session[:tasklist]
+  end
+
+  def on_this_page(url)
+    if request.path == url
+      true
+    end
+  end
+
   def highlight_sidebar_step?(ordered_tasks)
     ordered_tasks.map(&:base_path).include?("/#{params[:base_path]}")
   end

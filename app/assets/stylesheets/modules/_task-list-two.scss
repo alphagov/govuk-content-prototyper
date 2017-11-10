@@ -25,7 +25,7 @@
 
   .task-list-related-header,
   .task-list-related-link {
-    @include bold-24;
+    @include bold-19;
 
     display: block;
   }
@@ -84,6 +84,7 @@ $number-circle-size-large: 32px;
   &:last-child {
     .task-list__step:before {
       top: 0;
+      z-index: 1;
     }
   }
 
@@ -123,6 +124,7 @@ $number-circle-size-large: 32px;
   &:before {
     content: "";
     position: absolute;
+    z-index: 2;
     top: $gutter;
     left: -$gutter-half - $gutter;
     width: 0;
@@ -432,6 +434,33 @@ $number-circle-size-large: 32px;
 
   li {
     list-style-type: disc;
+  }
+}
+
+.task-list__panel-link--active {
+  position: relative;
+
+  $circle-size: 16px;
+
+  &:before {
+    @include box-sizing(border-box);
+
+    content: "";
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: -32px;
+    width: $circle-size;
+    height: $circle-size;
+    margin-left: -($circle-size / 2);
+    margin-top: -14px;
+    background: $black;
+    border: solid 2px $white;
+    border-radius: 100px;
+  }
+
+  a {
+    color: $black;
   }
 }
 
