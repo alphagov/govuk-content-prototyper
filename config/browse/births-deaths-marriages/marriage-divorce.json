@@ -1,0 +1,1022 @@
+{
+  "analytics_identifier": null,
+  "base_path": "/browse/births-deaths-marriages/marriage-divorce",
+  "content_id": "a1c39054-4fd5-44e9-8d1d-0c7acd57a6a4",
+  "document_type": "mainstream_browse_page",
+  "email_document_supertype": "other",
+  "first_published_at": "2016-02-29T09:24:10.000+00:00",
+  "government_document_supertype": "other",
+  "locale": "en",
+  "navigation_document_supertype": "other",
+  "need_ids": [
+
+  ],
+  "phase": "live",
+  "public_updated_at": "2017-06-08T15:46:37.000+00:00",
+  "publishing_app": "collections-publisher",
+  "rendering_app": "collections",
+  "schema_name": "mainstream_browse_page",
+  "search_user_need_document_supertype": "government",
+  "title": "Marriage, civil partnership and divorce",
+  "updated_at": "2017-11-09T10:29:35.255Z",
+  "user_journey_document_supertype": "finding",
+  "withdrawn_notice": {
+
+  },
+  "publishing_request_id": "13383-1500884479.034-92.236.2.31-1680",
+  "links": {
+    "children": [
+      {
+        "api_path": "/api/content/looking-after-children-divorce",
+        "base_path": "/looking-after-children-divorce",
+        "content_id": "6b18888e-1bd2-4aa5-beac-08adb57f67d8",
+        "description": "How to make arrangements for your children if you divorce or separate, mediation and how to apply for a court order if you can't agree",
+        "document_type": "guide",
+        "locale": "en",
+        "public_updated_at": "2014-11-18T11:12:41Z",
+        "schema_name": "guide",
+        "title": "Making child arrangements if you divorce or separate",
+        "withdrawn": false,
+        "links": {
+          "parent": [
+            {
+              "api_path": "/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "base_path": "/browse/births-deaths-marriages/marriage-divorce",
+              "content_id": "a1c39054-4fd5-44e9-8d1d-0c7acd57a6a4",
+              "description": "Includes getting married abroad, decree absolutes and looking after children",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-06-08T15:46:37Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Marriage, civil partnership and divorce",
+              "withdrawn": false,
+              "links": {
+
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "web_url": "https://www.gov.uk/browse/births-deaths-marriages/marriage-divorce"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/looking-after-children-divorce",
+        "web_url": "https://www.gov.uk/looking-after-children-divorce"
+      },
+      {
+        "api_path": "/api/content/separation-divorce",
+        "base_path": "/separation-divorce",
+        "content_id": "4343f2ff-8670-4c6b-8933-d60f2ae6fc41",
+        "description": "Ending a relationship and agreeing on money and property, child arrangements (sometimes known as 'custody', 'residence' or 'contact') and child maintenance \r\n",
+        "document_type": "answer",
+        "locale": "en",
+        "public_updated_at": "2017-05-17T14:52:19Z",
+        "schema_name": "answer",
+        "title": "Separating or divorcing: what you need to do",
+        "withdrawn": false,
+        "links": {
+          "parent": [
+            {
+              "api_path": "/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "base_path": "/browse/births-deaths-marriages/marriage-divorce",
+              "content_id": "a1c39054-4fd5-44e9-8d1d-0c7acd57a6a4",
+              "description": "Includes getting married abroad, decree absolutes and looking after children",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-06-08T15:46:37Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Marriage, civil partnership and divorce",
+              "withdrawn": false,
+              "links": {
+
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "web_url": "https://www.gov.uk/browse/births-deaths-marriages/marriage-divorce"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/separation-divorce",
+        "web_url": "https://www.gov.uk/separation-divorce"
+      },
+      {
+        "api_path": "/api/content/money-property-when-relationship-ends",
+        "base_path": "/money-property-when-relationship-ends",
+        "content_id": "373762a3-aa76-4bab-b59c-406cedcfaca7",
+        "description": "How to work out splitting up money, property and possessions when you divorce or dissolve a civil partnership - including mediation",
+        "document_type": "guide",
+        "locale": "en",
+        "public_updated_at": "2015-07-21T11:42:01Z",
+        "schema_name": "guide",
+        "title": "Money and property when a relationship ends",
+        "withdrawn": false,
+        "links": {
+          "parent": [
+            {
+              "api_path": "/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "base_path": "/browse/births-deaths-marriages/marriage-divorce",
+              "content_id": "a1c39054-4fd5-44e9-8d1d-0c7acd57a6a4",
+              "description": "Includes getting married abroad, decree absolutes and looking after children",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-06-08T15:46:37Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Marriage, civil partnership and divorce",
+              "withdrawn": false,
+              "links": {
+
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "web_url": "https://www.gov.uk/browse/births-deaths-marriages/marriage-divorce"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/money-property-when-relationship-ends",
+        "web_url": "https://www.gov.uk/money-property-when-relationship-ends"
+      },
+      {
+        "api_path": "/api/content/legal-separation",
+        "base_path": "/legal-separation",
+        "content_id": "7545ec48-44af-4ca9-8084-3237773a75a0",
+        "description": "How to get a legal or judicial separation if you want to live apart from your partner without divorcing them.",
+        "document_type": "answer",
+        "locale": "en",
+        "public_updated_at": "2012-05-02T16:26:32Z",
+        "schema_name": "answer",
+        "title": "Get a legal separation",
+        "withdrawn": false,
+        "links": {
+          "parent": [
+            {
+              "api_path": "/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "base_path": "/browse/births-deaths-marriages/marriage-divorce",
+              "content_id": "a1c39054-4fd5-44e9-8d1d-0c7acd57a6a4",
+              "description": "Includes getting married abroad, decree absolutes and looking after children",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-06-08T15:46:37Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Marriage, civil partnership and divorce",
+              "withdrawn": false,
+              "links": {
+
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "web_url": "https://www.gov.uk/browse/births-deaths-marriages/marriage-divorce"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/legal-separation",
+        "web_url": "https://www.gov.uk/legal-separation"
+      },
+      {
+        "api_path": "/api/content/contact-grandchild-parents-divorce-separate",
+        "base_path": "/contact-grandchild-parents-divorce-separate",
+        "content_id": "545789cc-cfae-4c13-b1de-b243683c12ad",
+        "description": "How to get contact with your grandchildren if their parents divorce or separate and they won't let you see them, including how to apply for a court order to get access to the children",
+        "document_type": "answer",
+        "locale": "en",
+        "public_updated_at": "2016-10-10T13:54:35Z",
+        "schema_name": "answer",
+        "title": "Contact with your grandchild if their parents divorce or separate",
+        "withdrawn": false,
+        "links": {
+          "parent": [
+            {
+              "api_path": "/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "base_path": "/browse/births-deaths-marriages/marriage-divorce",
+              "content_id": "a1c39054-4fd5-44e9-8d1d-0c7acd57a6a4",
+              "description": "Includes getting married abroad, decree absolutes and looking after children",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-06-08T15:46:37Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Marriage, civil partnership and divorce",
+              "withdrawn": false,
+              "links": {
+
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "web_url": "https://www.gov.uk/browse/births-deaths-marriages/marriage-divorce"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/contact-grandchild-parents-divorce-separate",
+        "web_url": "https://www.gov.uk/contact-grandchild-parents-divorce-separate"
+      },
+      {
+        "api_path": "/api/content/stop-forced-marriage",
+        "base_path": "/stop-forced-marriage",
+        "content_id": "3f388b1c-7ce6-4577-838b-b46ec3890041",
+        "description": "What to do if you or someone you know is being forced into getting married, how you can try to stop the marriage from taking place, and what to do if you want to leave a forced marriage",
+        "document_type": "answer",
+        "locale": "en",
+        "public_updated_at": "2016-07-13T10:00:41Z",
+        "schema_name": "answer",
+        "title": "Forced marriage",
+        "withdrawn": false,
+        "links": {
+          "parent": [
+            {
+              "api_path": "/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "base_path": "/browse/births-deaths-marriages/marriage-divorce",
+              "content_id": "a1c39054-4fd5-44e9-8d1d-0c7acd57a6a4",
+              "description": "Includes getting married abroad, decree absolutes and looking after children",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-06-08T15:46:37Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Marriage, civil partnership and divorce",
+              "withdrawn": false,
+              "links": {
+
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "web_url": "https://www.gov.uk/browse/births-deaths-marriages/marriage-divorce"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/stop-forced-marriage",
+        "web_url": "https://www.gov.uk/stop-forced-marriage"
+      },
+      {
+        "api_path": "/api/content/divorce-missing-husband-wife",
+        "base_path": "/divorce-missing-husband-wife",
+        "content_id": "fc39f52f-8ebd-461e-9971-ee1b6643796d",
+        "description": "How to divorce your husband or wife if they've gone missing, you don't know their whereabouts or they are presumed dead",
+        "document_type": "answer",
+        "locale": "en",
+        "public_updated_at": "2016-11-21T15:56:26Z",
+        "schema_name": "answer",
+        "title": "Divorce a missing husband or wife",
+        "withdrawn": false,
+        "links": {
+          "parent": [
+            {
+              "api_path": "/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "base_path": "/browse/births-deaths-marriages/marriage-divorce",
+              "content_id": "a1c39054-4fd5-44e9-8d1d-0c7acd57a6a4",
+              "description": "Includes getting married abroad, decree absolutes and looking after children",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-06-08T15:46:37Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Marriage, civil partnership and divorce",
+              "withdrawn": false,
+              "links": {
+
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "web_url": "https://www.gov.uk/browse/births-deaths-marriages/marriage-divorce"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/divorce-missing-husband-wife",
+        "web_url": "https://www.gov.uk/divorce-missing-husband-wife"
+      },
+      {
+        "api_path": "/api/content/copy-decree-absolute-final-order",
+        "base_path": "/copy-decree-absolute-final-order",
+        "content_id": "31397e2d-2068-4855-94c5-f8acbdfae0a6",
+        "description": "How to order a copy of a decree absolute or a final order if you want to remarry or prove that you have divorced your former husband or wife or ended a civil partnership.",
+        "document_type": "answer",
+        "locale": "en",
+        "public_updated_at": "2015-07-14T10:39:41Z",
+        "schema_name": "answer",
+        "title": "Get a copy of a decree absolute or final order",
+        "withdrawn": false,
+        "links": {
+          "parent": [
+            {
+              "api_path": "/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "base_path": "/browse/births-deaths-marriages/marriage-divorce",
+              "content_id": "a1c39054-4fd5-44e9-8d1d-0c7acd57a6a4",
+              "description": "Includes getting married abroad, decree absolutes and looking after children",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-06-08T15:46:37Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Marriage, civil partnership and divorce",
+              "withdrawn": false,
+              "links": {
+
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "web_url": "https://www.gov.uk/browse/births-deaths-marriages/marriage-divorce"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/copy-decree-absolute-final-order",
+        "web_url": "https://www.gov.uk/copy-decree-absolute-final-order"
+      },
+      {
+        "api_path": "/api/content/end-civil-partnership",
+        "base_path": "/end-civil-partnership",
+        "content_id": "7ecd4ca4-1e9b-437f-ad66-5493325d261b",
+        "description": "How to dissolve a civil partnership, including the grounds for ending the partnership, how to file an application, and how to get a final order",
+        "document_type": "guide",
+        "locale": "en",
+        "public_updated_at": "2016-03-21T00:01:03Z",
+        "schema_name": "guide",
+        "title": "End a civil partnership",
+        "withdrawn": false,
+        "links": {
+          "parent": [
+            {
+              "api_path": "/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "base_path": "/browse/births-deaths-marriages/marriage-divorce",
+              "content_id": "a1c39054-4fd5-44e9-8d1d-0c7acd57a6a4",
+              "description": "Includes getting married abroad, decree absolutes and looking after children",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-06-08T15:46:37Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Marriage, civil partnership and divorce",
+              "withdrawn": false,
+              "links": {
+
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "web_url": "https://www.gov.uk/browse/births-deaths-marriages/marriage-divorce"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/end-civil-partnership",
+        "web_url": "https://www.gov.uk/end-civil-partnership"
+      },
+      {
+        "api_path": "/api/content/how-to-annul-marriage",
+        "base_path": "/how-to-annul-marriage",
+        "content_id": "8f5ecf79-6a69-4c9e-b894-79eb281b41c0",
+        "description": "How you can have a marriage annulled, the reasons you can give for annulling a marriage and the forms you will need to apply for an annulment",
+        "document_type": "guide",
+        "locale": "en",
+        "public_updated_at": "2016-03-21T00:01:04Z",
+        "schema_name": "guide",
+        "title": "Annul a marriage",
+        "withdrawn": false,
+        "links": {
+          "parent": [
+            {
+              "api_path": "/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "base_path": "/browse/births-deaths-marriages/marriage-divorce",
+              "content_id": "a1c39054-4fd5-44e9-8d1d-0c7acd57a6a4",
+              "description": "Includes getting married abroad, decree absolutes and looking after children",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-06-08T15:46:37Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Marriage, civil partnership and divorce",
+              "withdrawn": false,
+              "links": {
+
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "web_url": "https://www.gov.uk/browse/births-deaths-marriages/marriage-divorce"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/how-to-annul-marriage",
+        "web_url": "https://www.gov.uk/how-to-annul-marriage"
+      },
+      {
+        "api_path": "/api/content/divorce",
+        "base_path": "/divorce",
+        "content_id": "ae26e9b1-b5ec-451f-a235-87e9f323a921",
+        "description": "How to get a divorce - the grounds you can use, filing a petition, getting a decree nisi and a decree absolute, and applying if your spouse lacks mental capacity",
+        "document_type": "guide",
+        "locale": "en",
+        "public_updated_at": "2014-11-24T10:52:52Z",
+        "schema_name": "guide",
+        "title": "Get a divorce",
+        "withdrawn": false,
+        "links": {
+          "parent": [
+            {
+              "api_path": "/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "base_path": "/browse/births-deaths-marriages/marriage-divorce",
+              "content_id": "a1c39054-4fd5-44e9-8d1d-0c7acd57a6a4",
+              "description": "Includes getting married abroad, decree absolutes and looking after children",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-06-08T15:46:37Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Marriage, civil partnership and divorce",
+              "withdrawn": false,
+              "links": {
+
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "web_url": "https://www.gov.uk/browse/births-deaths-marriages/marriage-divorce"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/divorce",
+        "web_url": "https://www.gov.uk/divorce"
+      },
+      {
+        "api_path": "/api/content/visas-when-you-separate-or-divorce",
+        "base_path": "/visas-when-you-separate-or-divorce",
+        "content_id": "e43c7691-9414-4689-a6f4-0332c05a7a88",
+        "description": "You must tell the Home Office if your relationship ends and you or your partner have a temporary UK visa",
+        "document_type": "guide",
+        "locale": "en",
+        "public_updated_at": "2014-11-25T14:35:34Z",
+        "schema_name": "guide",
+        "title": "Visas when you separate or divorce",
+        "withdrawn": false,
+        "links": {
+          "parent": [
+            {
+              "api_path": "/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "base_path": "/browse/births-deaths-marriages/marriage-divorce",
+              "content_id": "a1c39054-4fd5-44e9-8d1d-0c7acd57a6a4",
+              "description": "Includes getting married abroad, decree absolutes and looking after children",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-06-08T15:46:37Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Marriage, civil partnership and divorce",
+              "withdrawn": false,
+              "links": {
+
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "web_url": "https://www.gov.uk/browse/births-deaths-marriages/marriage-divorce"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/visas-when-you-separate-or-divorce",
+        "web_url": "https://www.gov.uk/visas-when-you-separate-or-divorce"
+      },
+      {
+        "api_path": "/api/content/marriage-abroad",
+        "base_path": "/marriage-abroad",
+        "content_id": "d0a95767-f6ab-432a-aebc-096e37fb3039",
+        "description": "Requirements, paperwork and processes for weddings and civil partnerships overseas - registration, restrictions, fees",
+        "document_type": "transaction",
+        "locale": "en",
+        "public_updated_at": "2017-11-09T10:29:31Z",
+        "schema_name": "transaction",
+        "title": "Getting married abroad",
+        "withdrawn": false,
+        "links": {
+          "parent": [
+            {
+              "api_path": "/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "base_path": "/browse/births-deaths-marriages/marriage-divorce",
+              "content_id": "a1c39054-4fd5-44e9-8d1d-0c7acd57a6a4",
+              "description": "Includes getting married abroad, decree absolutes and looking after children",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-06-08T15:46:37Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Marriage, civil partnership and divorce",
+              "withdrawn": false,
+              "links": {
+
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "web_url": "https://www.gov.uk/browse/births-deaths-marriages/marriage-divorce"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/marriage-abroad",
+        "web_url": "https://www.gov.uk/marriage-abroad"
+      },
+      {
+        "api_path": "/api/content/convert-civil-partnership",
+        "base_path": "/convert-civil-partnership",
+        "content_id": "a0863fc6-f67f-4aaf-a224-9f196e521b4f",
+        "description": "Find out how to convert a civil partnership into a marriage, costs, converting abroad",
+        "document_type": "guide",
+        "locale": "en",
+        "public_updated_at": "2014-12-17T16:10:54Z",
+        "schema_name": "guide",
+        "title": "Convert a civil partnership into a marriage",
+        "withdrawn": false,
+        "links": {
+          "parent": [
+            {
+              "api_path": "/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "base_path": "/browse/births-deaths-marriages/marriage-divorce",
+              "content_id": "a1c39054-4fd5-44e9-8d1d-0c7acd57a6a4",
+              "description": "Includes getting married abroad, decree absolutes and looking after children",
+              "document_type": "mainstream_browse_page",
+              "locale": "en",
+              "public_updated_at": "2017-06-08T15:46:37Z",
+              "schema_name": "mainstream_browse_page",
+              "title": "Marriage, civil partnership and divorce",
+              "withdrawn": false,
+              "links": {
+
+              },
+              "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/marriage-divorce",
+              "web_url": "https://www.gov.uk/browse/births-deaths-marriages/marriage-divorce"
+            }
+          ]
+        },
+        "api_url": "https://www.gov.uk/api/content/convert-civil-partnership",
+        "web_url": "https://www.gov.uk/convert-civil-partnership"
+      }
+    ],
+    "active_top_level_browse_page": [
+      {
+        "api_path": "/api/content/browse/births-deaths-marriages",
+        "base_path": "/browse/births-deaths-marriages",
+        "content_id": "f5fe5c9e-e5f1-4b76-9b07-a0af649c440c",
+        "description": "Parenting, civil partnerships, divorce and lasting power of attorney",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-04-08T10:48:39Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Births, deaths, marriages and care",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages",
+        "web_url": "https://www.gov.uk/browse/births-deaths-marriages"
+      }
+    ],
+    "parent": [
+      {
+        "api_path": "/api/content/browse/births-deaths-marriages",
+        "base_path": "/browse/births-deaths-marriages",
+        "content_id": "f5fe5c9e-e5f1-4b76-9b07-a0af649c440c",
+        "description": "Parenting, civil partnerships, divorce and lasting power of attorney",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-04-08T10:48:39Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Births, deaths, marriages and care",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages",
+        "web_url": "https://www.gov.uk/browse/births-deaths-marriages"
+      }
+    ],
+    "second_level_browse_pages": [
+      {
+        "api_path": "/api/content/browse/births-deaths-marriages/register-offices",
+        "base_path": "/browse/births-deaths-marriages/register-offices",
+        "content_id": "553aa169-abde-4733-a84b-61fac93fe75e",
+        "description": "Birth certificates, registering a death, marriage, family history and correcting certificates",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-06-24T13:56:39Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Certificates, register offices, changes of name or gender",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/register-offices",
+        "web_url": "https://www.gov.uk/browse/births-deaths-marriages/register-offices"
+      },
+      {
+        "api_path": "/api/content/browse/births-deaths-marriages/child",
+        "base_path": "/browse/births-deaths-marriages/child",
+        "content_id": "998d8fca-0c10-4b47-a0c3-4507dae84d77",
+        "description": "Information about eligibility, claiming and when Child Benefit stops",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-06-24T13:56:42Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Child Benefit",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/child",
+        "web_url": "https://www.gov.uk/browse/births-deaths-marriages/child"
+      },
+      {
+        "api_path": "/api/content/browse/births-deaths-marriages/death",
+        "base_path": "/browse/births-deaths-marriages/death",
+        "content_id": "0384fade-ef89-4dd7-8578-3df1d1699fa4",
+        "description": "Reporting a death, wills, probate and Inheritance Tax",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-06-24T13:56:46Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Death and bereavement",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/death",
+        "web_url": "https://www.gov.uk/browse/births-deaths-marriages/death"
+      },
+      {
+        "api_path": "/api/content/browse/births-deaths-marriages/child-adoption",
+        "base_path": "/browse/births-deaths-marriages/child-adoption",
+        "content_id": "932a86f4-4916-4d9f-99cb-dfd34d7ee5d1",
+        "description": "Legal rights, birth certificates, parental rights and child maintenance",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-06-24T13:56:48Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Having a child, parenting and adoption",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/child-adoption",
+        "web_url": "https://www.gov.uk/browse/births-deaths-marriages/child-adoption"
+      },
+      {
+        "api_path": "/api/content/browse/births-deaths-marriages/lasting-power-attorney",
+        "base_path": "/browse/births-deaths-marriages/lasting-power-attorney",
+        "content_id": "affe9184-22a0-4e27-9254-2e43f6b2c870",
+        "description": "Includes dealing with benefits, taxes and leaving care",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-06-24T13:56:47Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Lasting power of attorney, being in care and your financial affairs",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/lasting-power-attorney",
+        "web_url": "https://www.gov.uk/browse/births-deaths-marriages/lasting-power-attorney"
+      },
+      {
+        "api_path": "/api/content/browse/births-deaths-marriages/marriage-divorce",
+        "base_path": "/browse/births-deaths-marriages/marriage-divorce",
+        "content_id": "a1c39054-4fd5-44e9-8d1d-0c7acd57a6a4",
+        "description": "Includes getting married abroad, decree absolutes and looking after children",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2017-06-08T15:46:37Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Marriage, civil partnership and divorce",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/marriage-divorce",
+        "web_url": "https://www.gov.uk/browse/births-deaths-marriages/marriage-divorce"
+      }
+    ],
+    "top_level_browse_pages": [
+      {
+        "api_path": "/api/content/browse/benefits",
+        "base_path": "/browse/benefits",
+        "content_id": "f141fa95-0d79-4aed-8429-ed223a8f106a",
+        "description": "Includes eligibility, appeals, tax credits and Universal Credit",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2017-07-24T08:21:19Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Benefits",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/benefits",
+        "web_url": "https://www.gov.uk/browse/benefits"
+      },
+      {
+        "api_path": "/api/content/browse/births-deaths-marriages",
+        "base_path": "/browse/births-deaths-marriages",
+        "content_id": "f5fe5c9e-e5f1-4b76-9b07-a0af649c440c",
+        "description": "Parenting, civil partnerships, divorce and lasting power of attorney",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-04-08T10:48:39Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Births, deaths, marriages and care",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages",
+        "web_url": "https://www.gov.uk/browse/births-deaths-marriages"
+      },
+      {
+        "api_path": "/api/content/browse/business",
+        "base_path": "/browse/business",
+        "content_id": "2e47e500-8d91-4747-b6d8-cf6524d570f1",
+        "description": "Information about starting up and running a business in the UK, including help if you're self employed or a sole trader.",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2016-11-18T16:02:29Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Business and self-employed",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/business",
+        "web_url": "https://www.gov.uk/browse/business"
+      },
+      {
+        "api_path": "/api/content/browse/childcare-parenting",
+        "base_path": "/browse/childcare-parenting",
+        "content_id": "451c8029-6fe3-41cf-80e8-717debd317bd",
+        "description": "Includes giving birth, fostering, adopting, benefits for children, childcare and schools",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-07-15T11:40:43Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Childcare and parenting",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/childcare-parenting",
+        "web_url": "https://www.gov.uk/browse/childcare-parenting"
+      },
+      {
+        "api_path": "/api/content/browse/citizenship",
+        "base_path": "/browse/citizenship",
+        "content_id": "764a2ce0-eae5-414a-a4a9-2217507165fb",
+        "description": "Voting, community participation, life in the UK, international projects",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-04-08T10:48:44Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Citizenship and living in the UK",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/citizenship",
+        "web_url": "https://www.gov.uk/browse/citizenship"
+      },
+      {
+        "api_path": "/api/content/browse/justice",
+        "base_path": "/browse/justice",
+        "content_id": "66e4e3cc-3c35-4272-bacf-afdea2bc4da1",
+        "description": "Legal processes, courts and the police",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-04-08T10:48:44Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Crime, justice and the law",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/justice",
+        "web_url": "https://www.gov.uk/browse/justice"
+      },
+      {
+        "api_path": "/api/content/browse/disabilities",
+        "base_path": "/browse/disabilities",
+        "content_id": "77d72043-cbf7-42bf-8b61-e970d854acc4",
+        "description": "Includes your rights, benefits, carers and the Equality Act",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-04-08T10:48:44Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Disabled people",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/disabilities",
+        "web_url": "https://www.gov.uk/browse/disabilities"
+      },
+      {
+        "api_path": "/api/content/browse/driving",
+        "base_path": "/browse/driving",
+        "content_id": "03531ffd-314b-4fed-9361-fa9816005c31",
+        "description": "Apply for a driving licence, tax your vehicle, book your driving test, and find out the legal requirements for buying, owning, importing or scrapping a car or motorcycle, and read about your rights and responsibilities as a driver",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2016-10-07T22:18:32Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Driving and transport",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/driving",
+        "web_url": "https://www.gov.uk/browse/driving"
+      },
+      {
+        "api_path": "/api/content/browse/education",
+        "base_path": "/browse/education",
+        "content_id": "4ba04d39-1f8c-4117-89f5-73ec4f1b48e8",
+        "description": "Get help if you’re at school, planning to go on to further or higher education, looking for training or interested in a student or career development loan.",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-04-08T10:48:39Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Education and learning",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/education",
+        "web_url": "https://www.gov.uk/browse/education"
+      },
+      {
+        "api_path": "/api/content/browse/employing-people",
+        "base_path": "/browse/employing-people",
+        "content_id": "a0a4c44e-5e8a-44f6-9e64-32ab2c9ba065",
+        "description": "Includes pay, contracts and hiring",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-04-08T10:48:44Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Employing people",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/employing-people",
+        "web_url": "https://www.gov.uk/browse/employing-people"
+      },
+      {
+        "api_path": "/api/content/browse/environment-countryside",
+        "base_path": "/browse/environment-countryside",
+        "content_id": "26b81913-d58a-47be-80b7-1e947212779a",
+        "description": "Includes boating, fishing, flooding, recycling and wildlife",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-08-03T13:25:05Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Environment and countryside",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/environment-countryside",
+        "web_url": "https://www.gov.uk/browse/environment-countryside"
+      },
+      {
+        "api_path": "/api/content/browse/housing-local-services",
+        "base_path": "/browse/housing-local-services",
+        "content_id": "61d038ad-ba54-40a1-b6ca-18b390138b41",
+        "description": "Includes owning or renting, council services, planning and building, neighbours, noise and pets",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-08-03T13:25:46Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Housing and local services",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/housing-local-services",
+        "web_url": "https://www.gov.uk/browse/housing-local-services"
+      },
+      {
+        "api_path": "/api/content/browse/tax",
+        "base_path": "/browse/tax",
+        "content_id": "71255733-af6c-4887-9991-9b288d8d431f",
+        "description": "Includes VAT, debt and inheritance tax",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-04-08T10:48:40Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Money and tax",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/tax",
+        "web_url": "https://www.gov.uk/browse/tax"
+      },
+      {
+        "api_path": "/api/content/browse/abroad",
+        "base_path": "/browse/abroad",
+        "content_id": "86eb717a-fb40-42e7-83fa-d031a03880fb",
+        "description": "Includes renewing passports and travel advice by country",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-04-08T10:48:43Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Passports, travel and living abroad",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/abroad",
+        "web_url": "https://www.gov.uk/browse/abroad"
+      },
+      {
+        "api_path": "/api/content/browse/visas-immigration",
+        "base_path": "/browse/visas-immigration",
+        "content_id": "df6fcdc4-62bc-4e05-90e3-cb2e452453a4",
+        "description": "Visas, settlement, asylum and sponsorship",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-04-08T10:48:44Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Visas and immigration",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/visas-immigration",
+        "web_url": "https://www.gov.uk/browse/visas-immigration"
+      },
+      {
+        "api_path": "/api/content/browse/working",
+        "base_path": "/browse/working",
+        "content_id": "a24f0662-bbfe-4b77-9ec0-e73240e88b9a",
+        "description": "Includes holidays and finding a job",
+        "document_type": "mainstream_browse_page",
+        "locale": "en",
+        "public_updated_at": "2015-04-08T10:48:40Z",
+        "schema_name": "mainstream_browse_page",
+        "title": "Working, jobs and pensions",
+        "withdrawn": false,
+        "links": {
+
+        },
+        "api_url": "https://www.gov.uk/api/content/browse/working",
+        "web_url": "https://www.gov.uk/browse/working"
+      }
+    ],
+    "available_translations": [
+      {
+        "title": "Marriage, civil partnership and divorce",
+        "public_updated_at": "2017-06-08T15:46:37Z",
+        "document_type": "mainstream_browse_page",
+        "schema_name": "mainstream_browse_page",
+        "base_path": "/browse/births-deaths-marriages/marriage-divorce",
+        "description": "Includes getting married abroad, decree absolutes and looking after children",
+        "api_path": "/api/content/browse/births-deaths-marriages/marriage-divorce",
+        "withdrawn": false,
+        "content_id": "a1c39054-4fd5-44e9-8d1d-0c7acd57a6a4",
+        "locale": "en",
+        "api_url": "https://www.gov.uk/api/content/browse/births-deaths-marriages/marriage-divorce",
+        "web_url": "https://www.gov.uk/browse/births-deaths-marriages/marriage-divorce",
+        "links": {
+
+        }
+      }
+    ]
+  },
+  "description": "Includes getting married abroad, decree absolutes and looking after children",
+  "details": {
+    "groups": [
+      {
+        "name": "Getting married ",
+        "contents": [
+          "/marriages-civil-partnerships",
+          "/marriage-abroad",
+          "/commemorative-marriage-certificate",
+          "/change-name-deed-poll",
+          "/convert-civil-partnership",
+          "/stop-forced-marriage",
+          "/order-copy-birth-death-marriage-certificate"
+        ]
+      },
+      {
+        "name": "Getting separated or divorced",
+        "contents": [
+          "/divorce",
+          "/copy-decree-absolute-final-order",
+          "/how-to-annul-marriage",
+          "/separation-divorce",
+          "/legal-separation",
+          "/end-civil-partnership",
+          "/divorce-missing-husband-wife",
+          "/money-property-when-relationship-ends",
+          "/visas-when-you-separate-or-divorce",
+          "/contact-grandchild-parents-divorce-separate"
+        ]
+      },
+      {
+        "name": "Child maintenance",
+        "contents": [
+          "/calculate-your-child-maintenance",
+          "/looking-after-children-divorce",
+          "/arranging-child-maintenance-yourself",
+          "/when-child-maintenance-payments-stop",
+          "/child-maintenance-if-one-parent-lives-abroad",
+          "/how-child-maintenance-is-worked-out",
+          "/child-maintenance",
+          "/remo-unit-helpline"
+        ]
+      },
+      {
+        "name": "Help and support if you have children",
+        "contents": [
+          "/childcare-grant",
+          "/sure-start-maternity-grant",
+          "/childcare-vouchers-better-off-calculator",
+          "/childcare-out-of-school-hours",
+          "/find-sure-start-childrens-centre",
+          "/law-on-leaving-your-child-home-alone"
+        ]
+      }
+    ],
+    "internal_name": "Births, deaths, marriages and care / Marriage, civil partnership and divorce",
+    "second_level_ordering": "alphabetical",
+    "ordered_second_level_browse_pages": [
+      "553aa169-abde-4733-a84b-61fac93fe75e",
+      "998d8fca-0c10-4b47-a0c3-4507dae84d77",
+      "0384fade-ef89-4dd7-8578-3df1d1699fa4",
+      "932a86f4-4916-4d9f-99cb-dfd34d7ee5d1",
+      "affe9184-22a0-4e27-9254-2e43f6b2c870",
+      "a1c39054-4fd5-44e9-8d1d-0c7acd57a6a4"
+    ]
+  }
+}
