@@ -16,6 +16,12 @@
       } %>
 <% end %>
 
+<% if get_tasklist == 'divorce' %>
+  <%= render 'partials/tasklist-header-divorce' %>
+<% elsif get_tasklist == 'civil' %>
+  <%= render 'partials/tasklist-header-civil' %>
+<% end %>
+
 <main <%= main_attributes %>>
   <div class="grid-row">
     <div class="column-two-thirds">
