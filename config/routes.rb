@@ -9,8 +9,6 @@ Rails.application.routes.draw do
 
   get "/browse.json" => redirect("/api/content/browse")
 
-  get '/browse/:base_path', to: 'browse#show', base_path: /.*json/
-
   resources :browse, only: [:show], param: :top_level_slug do
     get ':second_level_slug', on: :member, to: "second_level_browse_page#show"
   end
