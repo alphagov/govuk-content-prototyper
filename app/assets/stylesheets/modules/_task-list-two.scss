@@ -21,10 +21,14 @@
     left: 0;
     width: 100%;
   }
+
+  .pub-c-task-list-header__title {
+    @include bold-19;
+  }
 }
 
 .task-list-heading {
-  @include bold-24;
+  @include bold-19;
   margin-top: $gutter;
   padding-bottom: $gutter-half;
 
