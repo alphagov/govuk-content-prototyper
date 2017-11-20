@@ -1,9 +1,14 @@
-<p>You need to fill in a divorce petition form. The court will send a copy to your husband or wife.</p>
+<p>You need to fill in a divorce petition form.</p>
 <ul class="task-list__panel-links--required">
   <li
     <% if on_this_page('/divorce/file-for-divorce') %>class="task-list__panel-link--active"<% end %>
     >
     <a href="/divorce/file-for-divorce">How to start the divorce process</a>
+  </li>
+  <li
+    <% if on_this_page('/divorce/grounds-for-divorce') %>class="task-list__panel-link--active"<% end %>
+    >
+    <a href="/divorce/grounds-for-divorce">Check the list of reasons why you can get a divorce</a>
   </li>
   <li>
     <a href="http://hmctsformfinder.justice.gov.uk/HMCTS/GetForm.do?court_forms_id=1115">Fill in the divorce petition form</a>
@@ -22,38 +27,41 @@
     <a href="https://courttribunalfinder.service.gov.uk/search/postcode?aol=Divorce&amp;spoe=start">Send copies of the form to your nearest divorce centre</a>
   </li>
 </ul>
-<p>The court will tell you when your husband or wife responds and what you'll need to do next.</p>
+
+<p>Your husband or wife will receive a copy of the petition. You'll be told when they respond and what you'll need to do next.</p>
+
+<p>You might need to get legal advice if your husband or wife disagrees with your divorce petition.</p>
+
+<ul class="task-list__panel-links--required">
+  <li
+    <% if on_this_page('/find-a-legal-adviser') %>class="task-list__panel-link--active"<% end %>
+    >
+    <a href="/find-a-legal-adviser">Find a legal adviser</a>
+  </li>
+</ul>
+
 
 <div class="task-list__inner-step task-list__inner-step--optional">
-  <p>If you don't know your husband or wife's address, you need to try to find it so the court can send them the divorce petition.</p>
   <ul class="task-list__panel-links">
     <li
       <% if on_this_page('/divorce-missing-husband-wife') %>class="task-list__panel-link--active"<% end %>
       >
-      <a href="/divorce-missing-husband-wife">Try to find your husband or wife's address</a>
+      <a href="/divorce-missing-husband-wife">Find your husband or wife’s address</a>
       <span class="task-list__cost">&pound;0 to &pound;100</span>
     </li>
     <li>
-      <a href="http://hmctsformfinder.justice.gov.uk/HMCTS/GetForm.do?court_forms_id=1112">Apply to skip the divorce petition if you can't find their address</a>
+      <a href="http://hmctsformfinder.justice.gov.uk/HMCTS/GetForm.do?court_forms_id=1112">Apply to skip the divorce petition if you can’t find their address</a>
       <span class="task-list__cost">&pound;50</span>
     </li>
-  </ul>
-
-  <p>If your husband or wife can't make decisions by themselves, someone needs to respond to the divorce petition.</p>
-  <ul class="task-list__panel-links">
     <li
       <% if on_this_page('/divorce/if-your-husband-or-wife-lacks-mental-capacity') %>class="task-list__panel-link--active"<% end %>
       >
-      <a href="/divorce/if-your-husband-or-wife-lacks-mental-capacity">Check they have someone to act on their behalf</a>
+      <a href="/divorce/if-your-husband-or-wife-lacks-mental-capacity">Get help if your husband or wife can’t make decisions for themselves</a>
     </li>
-  </ul>
-
-  <p>If you think your husband or wife might be dead, you don't need to file a divorce petition.</p>
-  <ul class="task-list__panel-links">
     <li
       <% if on_this_page('/divorce-missing-husband-wife') %>class="task-list__panel-link--active"<% end %>
       >
-      <a href="/divorce-missing-husband-wife">Apply to end the marriage without filing for divorce</a>
+      <a href="/divorce-missing-husband-wife">End the marriage because you think your husband or wife is dead</a>
       <span class="task-list__cost">&pound;365</span>
     </li>
   </ul>
