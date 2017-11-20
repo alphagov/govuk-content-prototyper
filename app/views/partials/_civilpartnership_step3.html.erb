@@ -1,9 +1,14 @@
-<p>You need to fill in a dissolution application. The court will send a copy to your civil partner.</p>
+<p>You need to fill in a dissolution application.</p>
 <ul class="task-list__panel-links--required">
   <li
     <% if on_this_page('/end-civil-partnership/file-application') %>class="task-list__panel-link--active"<% end %>
     >
     <a href="/end-civil-partnership/file-application">How to start the process to end your civil partnership</a>
+  </li>
+  <li
+    <% if on_this_page('/end-civil-partnership/grounds-for-ending-a-civil-partnership') %>class="task-list__panel-link--active"<% end %>
+    >
+    <a href="/end-civil-partnership/grounds-for-ending-a-civil-partnership">Check the list of reasons why you can end a civil partnership</a>
   </li>
   <li>
     <a href="http://hmctsformfinder.justice.gov.uk/HMCTS/GetForm.do?court_forms_id=1115">Fill in a dissolution application</a>
@@ -24,38 +29,39 @@
   </li>
 </ul>
 
-<p>The court will tell you when your civil partner responds and what you'll need to do next.</p>
+<p>Your civil partner will receive a copy of the petition. You'll be told when they respond and what you'll need to do next.</p>
+
+<p>You might need to get legal advice if your civil partner disagrees with your application.</p>
+
+<ul class="task-list__panel-links--required">
+  <li
+    <% if on_this_page('/find-a-legal-adviser') %>class="task-list__panel-link--active"<% end %>
+    >
+    <a href="/find-a-legal-adviser">Find a legal adviser</a>
+  </li>
+</ul>
 
 <div class="task-list__inner-step task-list__inner-step--optional">
-  <p>If you don't know your civil partner's address, you need to try to find it so the court can send them the dissolution application.</p>
   <ul class="task-list__panel-links">
     <li
       <% if on_this_page('/divorce-missing-husband-wife') %>class="task-list__panel-link--active"<% end %>
       >
-      <a href="/divorce-missing-husband-wife">Try to find your civil partner's address</a>
+      <a href="/divorce-missing-husband-wife">Find your civil partner's address</a>
       <span class="task-list__cost">&pound;0 to &pound;100</span>
     </li>
     <li>
-      <a href="http://hmctsformfinder.justice.gov.uk/HMCTS/GetForm.do?court_forms_id=1112">Apply to skip the dissolution order if you can't find their address</a>
+      <a href="http://hmctsformfinder.justice.gov.uk/HMCTS/GetForm.do?court_forms_id=1112">Apply to skip the dissolution order if you can’t find their address</a>
       <span class="task-list__cost">&pound;50</span>
     </li>
-  </ul>
-
-  <p>If your civil partner can't make decisions by themselves, someone needs to respond to the dissolution application.</p>
-  <ul class="task-list__panel-links">
     <li
       <% if on_this_page('/end-civil-partnership/if-your-partner-lacks-mental-capacity') %>class="task-list__panel-link--active"<% end %>
       >
-      <a href="/end-civil-partnership/if-your-partner-lacks-mental-capacity">Check they have someone to act on their behalf</a>
+      <a href="/end-civil-partnership/if-your-partner-lacks-mental-capacity">Get help if your civil partner can’t make decisions for themselves</a>
     </li>
-  </ul>
-
-  <p>If you think your civil partner might be dead, you don't need to file a dissolution application.</p>
-  <ul class="task-list__panel-links">
     <li
       <% if on_this_page('/divorce-missing-husband-wife') %>class="task-list__panel-link--active"<% end %>
       >
-      <a href="/divorce-missing-husband-wife">Apply to end the civil partnership without filing for a dissolution</a>
+      <a href="/divorce-missing-husband-wife">End the civil partnership because you think your partner is dead</a>
       <span class="task-list__cost">&pound;365</span>
     </li>
   </ul>

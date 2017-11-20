@@ -2,8 +2,7 @@ module CivilpartnershipHelper
   CIVIL_URLS = [
     [
       '/services/end-a-civil-partnership',
-      '/end-civil-partnership',
-      '/end-civil-partnership/grounds-for-ending-a-civil-partnership'
+      '/end-civil-partnership'
     ],
     [
       '/services/end-a-civil-partnership',
@@ -12,8 +11,9 @@ module CivilpartnershipHelper
     ],
     [
       '/services/end-a-civil-partnership',
+      '/end-civil-partnership/grounds-for-ending-a-civil-partnership',
       '/end-civil-partnership/file-application',
-      '/end-civil-partnership/file-application',
+      '/find-a-legal-adviser',
       '/get-help-with-court-fees',
       '/divorce-missing-husband-wife',
       '/end-civil-partnership/if-your-partner-lacks-mental-capacity',
@@ -21,8 +21,7 @@ module CivilpartnershipHelper
     ],
     [
       '/services/end-a-civil-partnership',
-      '/end-civil-partnership/apply-for-a-conditional-order',
-      '/find-a-legal-adviser',
+      '/end-civil-partnership/apply-for-a-conditional-order'
     ],
     [
       '/services/end-a-civil-partnership',
