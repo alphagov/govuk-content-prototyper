@@ -3,7 +3,6 @@ module DivorceHelper
     [
       '/services/get-a-divorce', # slight hack to make every step always appear on the main task list page
       '/divorce',
-      '/divorce/grounds-for-divorce'
     ],
     [
       '/services/get-a-divorce',
@@ -12,15 +11,16 @@ module DivorceHelper
     ],
     [
       '/services/get-a-divorce',
+      '/divorce/grounds-for-divorce',
       '/divorce/file-for-divorce', # this occurs twice
       '/get-help-with-court-fees',
       '/divorce-missing-husband-wife', # so does this
-      '/divorce/if-your-husband-or-wife-lacks-mental-capacity'
+      '/divorce/if-your-husband-or-wife-lacks-mental-capacity',
+      '/find-a-legal-adviser'
     ],
     [
       '/services/get-a-divorce',
-      '/divorce/apply-for-decree-nisi',
-      '/find-a-legal-adviser'
+      '/divorce/apply-for-decree-nisi'
     ],
     [
       '/services/get-a-divorce',
