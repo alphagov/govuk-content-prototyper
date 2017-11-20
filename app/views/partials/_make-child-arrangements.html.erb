@@ -1,0 +1,50 @@
+<ol class="task-list__list">
+  <li class="task-list__group <% if on_childarrangements_step(1, on_sidebar) %>task-list__group--active<% end %>">
+    <span class="task-list__number">
+      <span class="visuallyhidden">Step</span> 1
+    </span>
+
+    <div class="task-list__step js-step" id="one">
+      <div class="task-list__header js-toggle-panel">
+        <h2 class="task-list__title js-step-title">
+          <% if on_sidebar %>
+            <a href="/services/make-child-arrangements" class="task-list__header-link">Step 1</a>
+          <% else %>
+            Step 1
+          <% end %>
+        </h2>
+      </div>
+
+      <% if on_childarrangements_step(1) %>
+        <div class="task-list__panel js-panel">
+          <%= render 'partials/childarrangements_step1' %>
+        </div>
+      <% end %>
+    </div>
+  </li>
+
+  <li class="task-list__group <% if on_childarrangements_step(2, on_sidebar) %>task-list__group--active<% end %>">
+    <span class="task-list__number">
+      <span class="visuallyhidden">Step</span> 2
+    </span>
+
+    <div class="task-list__step js-step" id="two">
+      <div class="task-list__header js-toggle-panel">
+        <h2 class="task-list__title js-step-title">
+          <% if on_sidebar %>
+            <a href="/services/make-child-arrangements" class="task-list__header-link">Step 2</a>
+          <% else %>
+            Step 2
+          <% end %>
+        </h2>
+      </div>
+
+      <% if on_childarrangements_step(2) %>
+        <div class="task-list__panel js-panel">
+          <%= render 'partials/childarrangements_step2' %>
+        </div>
+      <% end %>
+    </div>
+  </li>
+
+</ol>

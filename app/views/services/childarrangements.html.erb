@@ -1,0 +1,38 @@
+<%= render "govuk_component/breadcrumbs", {
+  breadcrumbs: [
+    {
+      title: "Home",
+      url: "/"
+    },
+    {
+      title: "Births, deaths, marriages and care",
+      url: "/browse/births-deaths-marriages"
+    },
+    {
+      title: "Marriage, civil partnership and divorce",
+      url: "/browse/births-deaths-marriages/marriage-divorce"
+    }
+  ]
+} %>
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <div class="pub-c-title pub-c-title--hack">
+      <h1 class="pub-c-title__text">
+        Make child arrangements: step by step
+      </h1>
+    </div>
+
+    <div class="govuk-govspeak">
+      <p>
+        FIXME
+      </p>
+    </div>
+
+    <% set_tasklist('childarrangements') %>
+
+    <div class="task-list task-list--large js-hidden" data-module="tasklistnew" data-remember>
+      <%= render 'partials/make-child-arrangements', on_sidebar: false %>
+    </div>
+  </div>
+</div>

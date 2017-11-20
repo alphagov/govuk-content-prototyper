@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get '/services/get-a-divorce', to: 'services#divorce'
   get '/services/end-a-civil-partnership', to: 'services#civilpartnership'
+  get '/services/make-child-arrangements', to: 'services#childarrangements'
   get '/services/:base_path', to: 'services#show'
   get '/services', to: 'services#index'
 

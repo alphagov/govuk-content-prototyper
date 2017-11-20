@@ -19,6 +19,9 @@ class ServicesController < ApplicationController
   def civilpartnership
   end
 
+  def childarrangements
+  end
+
 private
 
   def service
