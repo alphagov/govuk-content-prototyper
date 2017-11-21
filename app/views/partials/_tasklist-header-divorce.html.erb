@@ -1,4 +1,4 @@
-<div class="sticky-wrapper">
+<div class="sticky-wrapper" data-module="tasklistheader">
   <div class="pub-c-task-list-header">
     <div class="sticky-inner">
       <span class="pub-c-task-list-header__part-of">Part of</span>
@@ -11,18 +11,3 @@
     </div>
   </div>
 </div>
-
-<script>
-  $(document).ready( function() {
-    var $stickyNav = $(".pub-c-task-list-header"),
-        stickyNavTopPosition = $stickyNav.offset().top,
-        $stickyWrap = $('.sticky-wrapper');
-
-    $(window).scroll( function() {
-      $stickyNav.toggleClass("sticky", window.scrollY >= stickyNavTopPosition);
-      if ($stickyNav.hasClass("sticky")) {
-        $stickyWrap.height($stickyNav.outerHeight());
-      }
-    });
-  });
-</script>

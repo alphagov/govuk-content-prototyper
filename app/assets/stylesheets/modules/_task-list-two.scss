@@ -3,15 +3,18 @@
 }
 
 .sticky-wrapper {
-
 }
 
 .pub-c-task-list-header {
-  //margin-top: $gutter;
+  padding: 0;
 
   .sticky-inner {
-    max-width: 960px;
-    margin: 0 auto;
+    @include box-sizing(border-box);
+    padding: 10px;
+
+    @include media(desktop) {
+      padding: 15px;
+    }
   }
 
   &.sticky {
@@ -20,6 +23,11 @@
     top: 0;
     left: 0;
     width: 100%;
+    border-top: 0;
+
+    .sticky-inner {
+      @extend %site-width-container;
+    }
   }
 
   .pub-c-task-list-header__title {

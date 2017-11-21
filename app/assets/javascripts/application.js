@@ -4,6 +4,7 @@
 //= require subsection-view
 //= require accordion-with-descriptions
 //= require govuk-component/tasklist
+//= require govuk-component/task-list-header
 
 GOVUK.slidyNav.init()
 
