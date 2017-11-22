@@ -4,22 +4,16 @@
       <span class="visuallyhidden">Step</span> 1
     </span>
 
-    <div class="task-list__step js-step" id="get-support-for-you-and-your-child">
+    <div class="task-list__step js-step" id="get-support-for-you-and-your-child" <% if on_childarrangements_step(1) %>data-open<% end %>>
       <div class="task-list__header js-toggle-panel">
         <h2 class="task-list__title js-step-title">
-          <% if on_sidebar %>
-            <a href="/services/make-child-arrangements" class="task-list__header-link">Get support for you and your child</a>
-          <% else %>
-            Get support for you and your child
-          <% end %>
+          Get support for you and your child
         </h2>
       </div>
 
-      <% if on_childarrangements_step(1) %>
-        <div class="task-list__panel js-panel">
-          <%= render 'partials/childarrangements_step1' %>
-        </div>
-      <% end %>
+      <div class="task-list__panel js-panel">
+        <%= render 'partials/childarrangements_step1' %>
+      </div>
     </div>
   </li>
 
@@ -28,22 +22,16 @@
       <span class="visuallyhidden">Step</span> 2
     </span>
 
-    <div class="task-list__step js-step" id="check-your-parental-rights-and-responsibilities">
+    <div class="task-list__step js-step" id="check-your-parental-rights-and-responsibilities" <% if on_childarrangements_step(2) %>data-open<% end %>>
       <div class="task-list__header js-toggle-panel">
         <h2 class="task-list__title js-step-title">
-          <% if on_sidebar %>
-            <a href="/services/make-child-arrangements" class="task-list__header-link">Check your parental rights and responsibilities</a>
-          <% else %>
-            Check your parental rights and responsibilities
-          <% end %>
+          Check your parental rights and responsibilities
         </h2>
       </div>
 
-      <% if on_childarrangements_step(2) %>
-        <div class="task-list__panel js-panel">
-          <%= render 'partials/childarrangements_step2' %>
-        </div>
-      <% end %>
+      <div class="task-list__panel js-panel">
+        <%= render 'partials/childarrangements_step2' %>
+      </div>
     </div>
   </li>
 
@@ -52,22 +40,16 @@
       <span class="visuallyhidden">Step</span> 3
     </span>
 
-    <div class="task-list__step task-list__step--optional js-step" id="agree-who-your-child-will-live-with">
+    <div class="task-list__step task-list__step--optional js-step" id="agree-who-your-child-will-live-with" <% if on_childarrangements_step(3) %>data-open<% end %>>
       <div class="task-list__header js-toggle-panel">
         <h2 class="task-list__title js-step-title">
-          <% if on_sidebar %>
-            <a href="/services/make-child-arrangements" class="task-list__header-link">Agree who your child will live with and when they'll see the other parent</a>
-          <% else %>
-            Agree who your child will live with and when they'll see the other parent
-          <% end %>
+          Agree who your child will live with and when they'll see the other parent
         </h2>
       </div>
 
-      <% if on_childarrangements_step(3) %>
-        <div class="task-list__panel js-panel">
-          <%= render 'partials/childarrangements_step3' %>
-        </div>
-      <% end %>
+      <div class="task-list__panel js-panel">
+        <%= render 'partials/childarrangements_step3' %>
+      </div>
     </div>
   </li>
 
@@ -76,40 +58,28 @@
       <span class="visuallyhidden">Step</span> 4
     </span>
 
-    <div class="task-list__step js-step" id="get-help-if-you-cant-agree">
+    <div class="task-list__step js-step" id="get-help-if-you-cant-agree" <% if on_childarrangements_step(4) %>data-open<% end %>>
       <div class="task-list__header js-toggle-panel">
         <h2 class="task-list__title js-step-title">
-          <% if on_sidebar %>
-            <a href="/services/make-child-arrangements" class="task-list__header-link">Get help if you can't agree about child arrangements</a>
-          <% else %>
-            Get help if you can't agree about child arrangements
-          <% end %>
+          Get help if you can't agree about child arrangements
         </h2>
       </div>
 
-      <% if on_childarrangements_step(4) %>
-        <div class="task-list__panel js-panel">
-          <%= render 'partials/childarrangements_step4' %>
-        </div>
-      <% end %>
+      <div class="task-list__panel js-panel">
+        <%= render 'partials/childarrangements_step4' %>
+      </div>
     </div>
 
-    <div class="task-list__step task-list__step--or js-step" id="get-a-court-to-decide">
+    <div class="task-list__step task-list__step--or js-step" id="get-a-court-to-decide" <% if on_childarrangements_step(5) %>data-open<% end %>>
       <div class="task-list__header js-toggle-panel">
         <h2 class="task-list__title js-step-title">
-          <% if on_sidebar %>
-            <a href="/services/make-child-arrangements" class="task-list__header-link">Get a court to decide your child arrangements</a>
-          <% else %>
-            Get a court to decide your child arrangements
-          <% end %>
+          Get a court to decide your child arrangements
         </h2>
       </div>
 
-      <% if on_childarrangements_step(5) %>
-        <div class="task-list__panel js-panel">
-          <%= render 'partials/childarrangements_step5' %>
-        </div>
-      <% end %>
+      <div class="task-list__panel js-panel">
+        <%= render 'partials/childarrangements_step5' %>
+      </div>
     </div>
   </li>
 
@@ -118,22 +88,16 @@
       <span class="visuallyhidden">Step</span> 5
     </span>
 
-    <div class="task-list__step js-step" id="agree-child-maintenance-payments">
+    <div class="task-list__step js-step" id="agree-child-maintenance-payments" <% if on_childarrangements_step(6) %>data-open<% end %>>
       <div class="task-list__header js-toggle-panel">
         <h2 class="task-list__title js-step-title">
-          <% if on_sidebar %>
-            <a href="/services/make-child-arrangements" class="task-list__header-link">Agree child maintenance payments</a>
-          <% else %>
-            Agree child maintenance payments
-          <% end %>
+          Agree child maintenance payments
         </h2>
       </div>
 
-      <% if on_childarrangements_step(6) %>
-        <div class="task-list__panel js-panel">
-          <%= render 'partials/childarrangements_step6' %>
-        </div>
-      <% end %>
+      <div class="task-list__panel js-panel">
+        <%= render 'partials/childarrangements_step6' %>
+      </div>
     </div>
   </li>
 

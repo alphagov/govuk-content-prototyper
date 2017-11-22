@@ -83,7 +83,7 @@
 $stroke-width: 2px;
 $stroke-width-large: 3px;
 $number-circle-size: 26px;
-$number-circle-size-large: 32px;
+$number-circle-size-large: 35px;
 
 .task-list {
   margin-top: $gutter-half;
@@ -101,7 +101,11 @@ $number-circle-size-large: 32px;
 }
 
 .pub-c-task-list__controls {
-  padding-bottom: $gutter;
+  padding-bottom: $gutter-half;
+
+  .task-list--large & {
+    padding-bottom: $gutter;
+  }
 }
 
 .task-list__list {
@@ -286,7 +290,7 @@ $number-circle-size-large: 32px;
 }
 
 .task-list__button {
-  @include bold-19;
+  @include bold-24;
 
   padding: 0;
   margin: 0;
@@ -296,7 +300,7 @@ $number-circle-size-large: 32px;
   text-align: left;
 
   @include media(tablet) {
-    @include bold-16;
+    @include bold-19;
   }
 
   .task-list--large & {
@@ -326,7 +330,7 @@ $number-circle-size-large: 32px;
   color: $link-colour;
 
   @include media(tablet) {
-    @include core-14;
+    @include core-16;
   }
 
   .task-list--large & {
@@ -525,7 +529,6 @@ $number-circle-size-large: 32px;
 
   a {
     color: $black;
-    text-decoration: underline;
   }
 }
 
