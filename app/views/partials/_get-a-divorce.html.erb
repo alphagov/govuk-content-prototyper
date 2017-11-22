@@ -4,22 +4,16 @@
       <span class="visuallyhidden">Step</span> 1
     </span>
 
-    <div class="task-list__step js-step" id="check-if-you-can-get-divorced">
+    <div class="task-list__step js-step" id="check-if-you-can-get-divorced" <% if on_divorce_step(1) %>data-open<% end %>>
       <div class="task-list__header js-toggle-panel">
         <h2 class="task-list__title js-step-title">
-          <% if on_sidebar %>
-            <a href="/services/get-a-divorce" class="task-list__header-link">Check if you can get divorced</a>
-          <% else %>
-            Check if you can get divorced
-          <% end %>
+          Check if you can get divorced
         </h2>
       </div>
 
-      <% if on_divorce_step(1) %>
-        <div class="task-list__panel js-panel">
-          <%= render 'partials/divorce_step1' %>
-        </div>
-      <% end %>
+      <div class="task-list__panel js-panel">
+        <%= render 'partials/divorce_step1' %>
+      </div>
     </div>
   </li>
 
@@ -28,22 +22,16 @@
       <span class="visuallyhidden">Step</span> 2
     </span>
 
-    <div class="task-list__step task-list__step--optional js-step" id="make-arrangements-for-your-children-money-and-property">
+    <div class="task-list__step task-list__step--optional js-step" id="make-arrangements-for-your-children-money-and-property" <% if on_divorce_step(2) %>data-open<% end %>>
       <div class="task-list__header js-toggle-panel">
         <h2 class="task-list__title js-step-title">
-          <% if on_sidebar %>
-            <a href="/services/get-a-divorce" class="task-list__header-link">Make arrangements for your children, money and property</a>
-          <% else %>
-            Make arrangements for your children, money and property
-          <% end %>
+          Make arrangements for your children, money and property
         </h2>
       </div>
 
-      <% if on_divorce_step(2) %>
-        <div class="task-list__panel js-panel">
-          <%= render 'partials/divorce_step2' %>
-        </div>
-      <% end %>
+      <div class="task-list__panel js-panel">
+        <%= render 'partials/divorce_step2' %>
+      </div>
     </div>
   </li>
 
@@ -52,22 +40,16 @@
       <span class="visuallyhidden">Step</span> 3
     </span>
 
-    <div class="task-list__step js-step" id="file-for-divorce">
+    <div class="task-list__step js-step" id="file-for-divorce" <% if on_divorce_step(3) %>data-open<% end %>>
       <div class="task-list__header js-toggle-panel">
         <h2 class="task-list__title js-step-title">
-          <% if on_sidebar %>
-            <a href="/services/get-a-divorce" class="task-list__header-link">File for divorce</a>
-          <% else %>
-            File for divorce
-          <% end %>
+          File for divorce
         </h2>
       </div>
 
-      <% if on_divorce_step(3) %>
-        <div class="task-list__panel js-panel">
-          <%= render 'partials/divorce_step3' %>
-        </div>
-      <% end %>
+      <div class="task-list__panel js-panel">
+        <%= render 'partials/divorce_step3' %>
+      </div>
     </div>
   </li>
 
@@ -76,22 +58,16 @@
       <span class="visuallyhidden">Step</span> 4
     </span>
 
-    <div class="task-list__step js-step" id="send-the-court-more-details-about-your-divorce">
+    <div class="task-list__step js-step" id="send-the-court-more-details-about-your-divorce" <% if on_divorce_step(4) %>data-open<% end %>>
       <div class="task-list__header js-toggle-panel">
         <h2 class="task-list__title js-step-title">
-          <% if on_sidebar %>
-            <a href="/services/get-a-divorce" class="task-list__header-link">Send the court more details about your divorce</a>
-          <% else %>
-            Send the court more details about your divorce
-          <% end %>
+          Send the court more details about your divorce
         </h2>
       </div>
 
-      <% if on_divorce_step(4) %>
-        <div class="task-list__panel js-panel">
-          <%= render 'partials/divorce_step4' %>
-        </div>
-      <% end %>
+      <div class="task-list__panel js-panel">
+        <%= render 'partials/divorce_step4' %>
+      </div>
     </div>
   </li>
 
@@ -100,22 +76,16 @@
       <span class="visuallyhidden">Step</span> 5
     </span>
 
-    <div class="task-list__step js-step" id="finalise-your-divorce">
+    <div class="task-list__step js-step" id="finalise-your-divorce" <% if on_divorce_step(5) %>data-open<% end %>>
       <div class="task-list__header js-toggle-panel">
         <h2 class="task-list__title js-step-title">
-          <% if on_sidebar %>
-            <a href="/services/get-a-divorce" class="task-list__header-link">Finalise your divorce</a>
-          <% else %>
-            Finalise your divorce
-          <% end %>
+          Finalise your divorce
         </h2>
       </div>
 
-      <% if on_divorce_step(5) %>
-        <div class="task-list__panel js-panel">
-          <%= render 'partials/divorce_step5' %>
-        </div>
-      <% end %>
+      <div class="task-list__panel js-panel">
+        <%= render 'partials/divorce_step5' %>
+      </div>
     </div>
   </li>
 </ol>
