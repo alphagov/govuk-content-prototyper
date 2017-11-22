@@ -35,12 +35,12 @@
     </div>
   </li>
 
-  <li class="task-list__group <% if on_childarrangements_step(3, on_sidebar) %>task-list__group--active<% end %>">
+  <li class="task-list__group <% if on_childarrangements_step(3, on_sidebar) or on_childarrangements_step(4, on_sidebar) or on_childarrangements_step(5, on_sidebar) %>task-list__group--active<% end %>">
     <span class="task-list__number">
       <span class="visuallyhidden">Step</span> 3
     </span>
 
-    <div class="task-list__step task-list__step--optional js-step" id="agree-who-your-child-will-live-with" <% if on_childarrangements_step(3) %>data-open<% end %>>
+    <div class="task-list__step js-step" id="agree-who-your-child-will-live-with" <% if on_childarrangements_step(3) %>data-open<% end %>>
       <div class="task-list__header js-toggle-panel">
         <h2 class="task-list__title js-step-title">
           Agree who your child will live with and when they'll see the other parent
@@ -51,14 +51,8 @@
         <%= render 'partials/childarrangements_step3' %>
       </div>
     </div>
-  </li>
 
-  <li class="task-list__group <% if on_childarrangements_step(4, on_sidebar) or on_childarrangements_step(5, on_sidebar) %>task-list__group--active<% end %>">
-    <span class="task-list__number">
-      <span class="visuallyhidden">Step</span> 4
-    </span>
-
-    <div class="task-list__step js-step" id="get-help-if-you-cant-agree" <% if on_childarrangements_step(4) %>data-open<% end %>>
+    <div class="task-list__step task-list__step--optional task-list__step--or js-step" id="get-help-if-you-cant-agree" <% if on_childarrangements_step(4) %>data-open<% end %>>
       <div class="task-list__header js-toggle-panel">
         <h2 class="task-list__title js-step-title">
           Get help if you can't agree about child arrangements
@@ -70,7 +64,7 @@
       </div>
     </div>
 
-    <div class="task-list__step task-list__step--or js-step" id="get-a-court-to-decide" <% if on_childarrangements_step(5) %>data-open<% end %>>
+    <div class="task-list__step task-list__step--optional task-list__step--or js-step" id="get-a-court-to-decide" <% if on_childarrangements_step(5) %>data-open<% end %>>
       <div class="task-list__header js-toggle-panel">
         <h2 class="task-list__title js-step-title">
           Get a court to decide your child arrangements
@@ -85,7 +79,7 @@
 
   <li class="task-list__group <% if on_childarrangements_step(6, on_sidebar) %>task-list__group--active<% end %>">
     <span class="task-list__number">
-      <span class="visuallyhidden">Step</span> 5
+      <span class="visuallyhidden">Step</span> 4
     </span>
 
     <div class="task-list__step js-step" id="agree-child-maintenance-payments" <% if on_childarrangements_step(6) %>data-open<% end %>>

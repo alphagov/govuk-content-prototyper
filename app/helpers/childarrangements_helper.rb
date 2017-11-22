@@ -15,6 +15,7 @@ module ChildarrangementsHelper
     ],
     [
       '/services/make-child-arrangements',
+      '/legal-aid'
     ],
     [
       '/services/make-child-arrangements',

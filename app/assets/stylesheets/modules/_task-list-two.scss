@@ -131,9 +131,7 @@ $number-circle-size-large: 35px;
       top: 0;
       z-index: 1;
     }
-  }
 
-  &:last-child {
     /* little dash at the bottom of the line */
     &:before {
       content: "";
@@ -144,6 +142,10 @@ $number-circle-size-large: 35px;
       width: $number-circle-size / 2;
       height: 0;
       border-top: solid $stroke-width $grey-2;
+    }
+
+    .task-list__inner-step--optional:before {
+      height: 100%;
     }
 
     .task-list--large & {

@@ -1,24 +1,31 @@
-<p>You must attend mediation sessions before you apply to court.</p>
+<p>You can avoid going to court if you and the other parent can come to an agreement using a mediator or a lawyer.</p>
 
 <ul class="task-list__panel-links--required">
   <li>
     <a href="https://helpwithchildarrangements.service.justice.gov.uk/professional-mediation">Find a mediator</a>
     <span class="task-list__cost">&pound;90 to &pound;160 per session</span>
   </li>
+  <li>
+    <a href="https://helpwithchildarrangements.service.justice.gov.uk/negotiating-between-parents">Get advice to help you reach an agreement</a>
+  </li>
+  <li>
+    <a href="https://helpwithchildarrangements.service.justice.gov.uk/lawyer-negotiation">Hire a lawyer to negotiate an agreement for you</a>
+    <span class="task-list__cost">&pound;110 to &pound;410 per hour</span>
+  </li>
+  <li>
+    <a href="https://helpwithchildarrangements.service.justice.gov.uk/collaborative-law">Hire lawyers to negotiate with you and the other parent</a>
+    <span class="task-list__cost">&pound;110 to &pound;410 per hour</span>
+  </li>
 </ul>
 
-<div class="task-list__inner-step task-list__inner-step--optional">
+<div class="task-list__inner-step">
+  <p>You might be able to get help if you can't afford to pay for mediation and legal fees, or your family is at risk, for example domestic abuse.</p>
+
   <ul class="task-list__panel-links">
-    <li>
-      <a href="https://helpwithchildarrangements.service.justice.gov.uk/negotiating-between-parents">Get advice to help you reach an agreement</a>
-    </li>
-    <li>
-      <a href="https://helpwithchildarrangements.service.justice.gov.uk/lawyer-negotiation">Hire a lawyer to negotiate an agreement for you</a>
-      <span class="task-list__cost">&pound;110 to &pound;410 per hour</span>
-    </li>
-    <li>
-      <a href="https://helpwithchildarrangements.service.justice.gov.uk/collaborative-law">Hire lawyers to negotiate with you and the other parent</a>
-      <span class="task-list__cost">&pound;110 to &pound;410 per hour</span>
+    <li
+      <% if on_this_page('/legal-aid') %>class="task-list__panel-link--active"<% end %>
+      >
+      <a href="/legal-aid">Get help with mediation or legal fees</a>
     </li>
   </ul>
 </div>
