@@ -123,7 +123,7 @@ $number-circle-size-large: 32px;
   }
 
   &:last-child {
-    .task-list__step:before {
+    .task-list__step:after {
       top: 0;
       z-index: 1;
     }
@@ -162,7 +162,7 @@ $number-circle-size-large: 32px;
   margin-top: -$gutter-half;
 
   /* line down the side of a step */
-  &:before {
+  &:after {
     content: "";
     position: absolute;
     z-index: 2;
@@ -178,7 +178,7 @@ $number-circle-size-large: 32px;
     @include media(tablet) {
       margin-top: -$gutter;
 
-      &:before {
+      &:after {
         left: -$gutter * 2;
         margin-left: ($number-circle-size-large / 2) - ($stroke-width-large / 2);
         border-width: $stroke-width-large;
@@ -188,14 +188,14 @@ $number-circle-size-large: 32px;
 
   &.task-list__step--optional {
     /* broken line down the side of a step */
-    &:before {
+    &:after {
       background: none;
       border-left: dotted $stroke-width $grey-2;
     }
 
     .task-list--large & {
       @include media(tablet) {
-        &:before {
+        &:after {
           border-width: $stroke-width-large;
         }
       }
@@ -204,6 +204,19 @@ $number-circle-size-large: 32px;
 
   & + .task-list__step {
     margin-top: 0;
+  }
+}
+
+.task-list__step--or {
+  &:before {
+    @include bold-16;
+    content: "or";
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -0.5em;
+    padding-right: 1em;
+    background: $white;
   }
 }
 
@@ -528,7 +541,7 @@ $number-circle-size-large: 32px;
 .task-list__group--active {
   &:last-child:before,
   .task-list__number,
-  .task-list__step:before,
+  .task-list__step:after,
   .task-list__inner-step--optional:before {
     border-color: $black;
   }

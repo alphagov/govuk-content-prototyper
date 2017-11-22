@@ -5,7 +5,31 @@ module ChildarrangementsHelper
     ],
     [
       '/services/make-child-arrangements',
+      '/parental-rights-responsibilities',
+      '/parental-rights-responsibilities/who-has-parental-responsibility',
+      '/parental-rights-responsibilities/apply-for-parental-responsibility'
     ],
+    [
+      '/services/make-child-arrangements',
+      '/looking-after-children-divorce/if-you-agree'
+    ],
+    [
+      '/services/make-child-arrangements',
+    ],
+    [
+      '/services/make-child-arrangements',
+      '/represent-yourself-in-court',
+      '/looking-after-children-divorce/apply-for-court-order',
+      '/get-help-with-court-fees',
+      '/looking-after-children-divorce/after-you-apply-for-a-court-order'
+    ],
+    [
+      '/services/make-child-arrangements',
+      '/arranging-child-maintenance-yourself',
+      '/calculate-your-child-maintenance',
+      '/money-property-when-relationship-ends/apply-for-consent-order',
+      '/child-maintenance'
+    ]
   ]
 
   def on_childarrangements_url

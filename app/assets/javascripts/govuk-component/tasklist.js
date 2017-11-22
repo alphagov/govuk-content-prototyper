@@ -77,8 +77,8 @@
       }
 
       function addIconsToSteps() {
-        $stepHeaders.find('.js-step-title-button').append('<span class="task-list__toggle open-step">Show step</span>');
-        $stepHeaders.find('.js-step-title-button').append('<span class="task-list__toggle hide-step">Hide step</span>');
+        $stepHeaders.find('.js-step-title-button').append('<span class="task-list__toggle open-step">Show</span>');
+        $stepHeaders.find('.js-step-title-button').append('<span class="task-list__toggle hide-step">Hide</span>');
       }
 
       function addAriaControlsAttrForOpenCloseAllButton() {
