@@ -20,6 +20,8 @@
   <%= render 'partials/tasklist-header-divorce' %>
 <% elsif get_tasklist == 'civil' and on_civil_url %>
   <%= render 'partials/tasklist-header-civil' %>
+<% elsif get_tasklist == 'childarrangements' and on_childarrangements_url %>
+  <%= render 'partials/tasklist-header-childarrangements' %>
 <% end %>
 
 <main <%= main_attributes %>>
@@ -32,6 +34,8 @@
         <%= render 'partials/get-a-divorce-sidebar' %>
       <% elsif get_tasklist == 'civil' and on_civil_url %>
         <%= render 'partials/end-a-civil-partnership-sidebar' %>
+      <% elsif get_tasklist == 'childarrangements' and on_childarrangements_url %>
+        <%= render 'partials/childarrangements-sidebar' %>
       <% end %>
 
       <% if false %>

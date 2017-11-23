@@ -41,6 +41,7 @@
   padding-bottom: $gutter-half;
 
   a {
+    display: block;
     text-decoration: none;
 
     &:hover {
@@ -83,7 +84,7 @@
 $stroke-width: 2px;
 $stroke-width-large: 3px;
 $number-circle-size: 26px;
-$number-circle-size-large: 32px;
+$number-circle-size-large: 35px;
 
 .task-list {
   margin-top: $gutter-half;
@@ -101,7 +102,11 @@ $number-circle-size-large: 32px;
 }
 
 .pub-c-task-list__controls {
-  padding-bottom: $gutter;
+  padding-bottom: $gutter-half;
+
+  .task-list--large & {
+    padding-bottom: $gutter;
+  }
 }
 
 .task-list__list {
@@ -123,13 +128,11 @@ $number-circle-size-large: 32px;
   }
 
   &:last-child {
-    .task-list__step:before {
+    .task-list__step:after {
       top: 0;
       z-index: 1;
     }
-  }
 
-  &:last-child {
     /* little dash at the bottom of the line */
     &:before {
       content: "";
@@ -140,6 +143,10 @@ $number-circle-size-large: 32px;
       width: $number-circle-size / 2;
       height: 0;
       border-top: solid $stroke-width $grey-2;
+    }
+
+    .task-list__inner-step--optional:before {
+      height: 100%;
     }
 
     .task-list--large & {
@@ -162,7 +169,7 @@ $number-circle-size-large: 32px;
   margin-top: -$gutter-half;
 
   /* line down the side of a step */
-  &:before {
+  &:after {
     content: "";
     position: absolute;
     z-index: 2;
@@ -178,7 +185,7 @@ $number-circle-size-large: 32px;
     @include media(tablet) {
       margin-top: -$gutter;
 
-      &:before {
+      &:after {
         left: -$gutter * 2;
         margin-left: ($number-circle-size-large / 2) - ($stroke-width-large / 2);
         border-width: $stroke-width-large;
@@ -188,14 +195,14 @@ $number-circle-size-large: 32px;
 
   &.task-list__step--optional {
     /* broken line down the side of a step */
-    &:before {
+    &:after {
       background: none;
       border-left: dotted $stroke-width $grey-2;
     }
 
     .task-list--large & {
       @include media(tablet) {
-        &:before {
+        &:after {
           border-width: $stroke-width-large;
         }
       }
@@ -204,6 +211,19 @@ $number-circle-size-large: 32px;
 
   & + .task-list__step {
     margin-top: 0;
+  }
+}
+
+.task-list__step--or {
+  &:before {
+    @include bold-16;
+    content: "or";
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -0.5em;
+    padding-right: 1em;
+    background: $white;
   }
 }
 
@@ -273,7 +293,7 @@ $number-circle-size-large: 32px;
 }
 
 .task-list__button {
-  @include bold-19;
+  @include bold-24;
 
   padding: 0;
   margin: 0;
@@ -283,7 +303,7 @@ $number-circle-size-large: 32px;
   text-align: left;
 
   @include media(tablet) {
-    @include bold-16;
+    @include bold-19;
   }
 
   .task-list--large & {
@@ -313,7 +333,7 @@ $number-circle-size-large: 32px;
   color: $link-colour;
 
   @include media(tablet) {
-    @include core-14;
+    @include core-16;
   }
 
   .task-list--large & {
@@ -512,7 +532,6 @@ $number-circle-size-large: 32px;
 
   a {
     color: $black;
-    text-decoration: underline;
   }
 }
 
@@ -528,7 +547,7 @@ $number-circle-size-large: 32px;
 .task-list__group--active {
   &:last-child:before,
   .task-list__number,
-  .task-list__step:before,
+  .task-list__step:after,
   .task-list__inner-step--optional:before {
     border-color: $black;
   }

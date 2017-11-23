@@ -1,0 +1,53 @@
+<%= render "govuk_component/breadcrumbs", {
+  breadcrumbs: [
+    {
+      title: "Home",
+      url: "/"
+    },
+    {
+      title: "Births, deaths, marriages and care",
+      url: "/browse/births-deaths-marriages"
+    },
+    {
+      title: "Marriage, civil partnership and divorce",
+      url: "/browse/births-deaths-marriages/marriage-divorce"
+    }
+  ]
+} %>
+
+<%= render 'partials/tasklist-header-divorce' %>
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <div class="pub-c-title pub-c-title--hack">
+      <h1 class="pub-c-title__text">
+        Make child arrangements: step by step
+      </h1>
+    </div>
+
+    <div class="govuk-govspeak">
+      <p>
+        Get help making arrangements for your children if you’re divorcing or separating. You can get counselling and mediation, find out how to put your children’s needs first, and make decisions about financial support.
+      </p>
+      <p>
+        There's other information if you're in <a href="https://www.citizensadvice.org.uk/scotland/relationships/relationship-problems-s/">Scotland</a> or <a href="https://www.nidirect.gov.uk/information-and-services/parents/divorce-relationship-breakdown-and-family-courts">Northern Ireland</a>.
+      </p>
+    </div>
+
+    <% set_tasklist('childarrangements') %>
+
+    <div class="task-list task-list--large js-hidden" data-module="tasklistnew" data-remember>
+      <%= render 'partials/make-child-arrangements', on_sidebar: false %>
+    </div>
+  </div>
+
+  <div class="column-one-third">
+    <div id="task-list-sidebar">
+      <h2 class="task-list-heading">
+        <span class="task-list-heading__part">This page is part of</span>
+        <a href="/services/get-a-divorce">Get a divorce: step by step</a>
+        <a href="/services/end-a-civil-partnership">End a civil partnership: step by step</a>
+      </h2>
+    </div>
+  </div>
+</div>
