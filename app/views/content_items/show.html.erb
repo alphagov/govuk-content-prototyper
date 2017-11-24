@@ -16,11 +16,11 @@
       } %>
 <% end %>
 
-<% if get_tasklist == 'divorce' and on_divorce_url %>
+<% if in_divorce %>
   <%= render 'partials/tasklist-header-divorce' %>
-<% elsif get_tasklist == 'civil' and on_civil_url %>
+<% elsif in_civil %>
   <%= render 'partials/tasklist-header-civil' %>
-<% elsif get_tasklist == 'childarrangements' and on_childarrangements_url %>
+<% elsif in_childarrangements %>
   <%= render 'partials/tasklist-header-childarrangements' %>
 <% end %>
 
@@ -29,12 +29,13 @@
     <div class="column-two-thirds">
       <%= content_html %>
     </div>
+
     <div class="column-third">
-      <% if get_tasklist == 'divorce' and on_divorce_url %>
+      <% if in_divorce %>
         <%= render 'partials/get-a-divorce-sidebar' %>
-      <% elsif get_tasklist == 'civil' and on_civil_url %>
+      <% elsif in_civil %>
         <%= render 'partials/end-a-civil-partnership-sidebar' %>
-      <% elsif get_tasklist == 'childarrangements' and on_childarrangements_url %>
+      <% elsif in_childarrangements %>
         <%= render 'partials/childarrangements-sidebar' %>
       <% end %>
 
