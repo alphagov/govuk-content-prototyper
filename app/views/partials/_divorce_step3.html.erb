@@ -40,29 +40,30 @@
   </li>
 </ul>
 
-
-<div class="task-list__inner-step task-list__inner-step--optional">
-  <ul class="task-list__panel-links">
-    <li
-      <% if on_this_page('/divorce-missing-husband-wife') %>class="task-list__panel-link--active"<% end %>
-      >
-      <a href="/divorce-missing-husband-wife">Find your husband or wife’s address</a>
-      <span class="task-list__cost">&pound;0 to &pound;100</span>
-    </li>
-    <li>
-      <a href="http://hmctsformfinder.justice.gov.uk/HMCTS/GetForm.do?court_forms_id=1112">Apply to skip the divorce petition if you can’t find their address</a>
-      <span class="task-list__cost">&pound;50</span>
-    </li>
-    <li
-      <% if on_this_page('/divorce/if-your-husband-or-wife-lacks-mental-capacity') %>class="task-list__panel-link--active"<% end %>
-      >
-      <a href="/divorce/if-your-husband-or-wife-lacks-mental-capacity">Get help if your husband or wife can’t make decisions for themselves</a>
-    </li>
-    <li
-      <% if on_this_page('/divorce-missing-husband-wife') %>class="task-list__panel-link--active"<% end %>
-      >
-      <a href="/divorce-missing-husband-wife">End the marriage because you think your husband or wife is dead</a>
-      <span class="task-list__cost">&pound;365</span>
-    </li>
-  </ul>
-</div>
+<% if not on_sidebar %>
+  <div class="task-list__inner-step task-list__inner-step--optional">
+    <ul class="task-list__panel-links">
+      <li
+        <% if on_this_page('/divorce-missing-husband-wife') %>class="task-list__panel-link--active"<% end %>
+        >
+        <a href="/divorce-missing-husband-wife">Find your husband or wife’s address</a>
+        <span class="task-list__cost">&pound;0 to &pound;100</span>
+      </li>
+      <li>
+        <a href="http://hmctsformfinder.justice.gov.uk/HMCTS/GetForm.do?court_forms_id=1112">Apply to skip the divorce petition if you can’t find their address</a>
+        <span class="task-list__cost">&pound;50</span>
+      </li>
+      <li
+        <% if on_this_page('/divorce/if-your-husband-or-wife-lacks-mental-capacity') %>class="task-list__panel-link--active"<% end %>
+        >
+        <a href="/divorce/if-your-husband-or-wife-lacks-mental-capacity">Get help if your husband or wife can’t make decisions for themselves</a>
+      </li>
+      <li
+        <% if on_this_page('/divorce-missing-husband-wife') %>class="task-list__panel-link--active"<% end %>
+        >
+        <a href="/divorce-missing-husband-wife">End the marriage because you think your husband or wife is dead</a>
+        <span class="task-list__cost">&pound;365</span>
+      </li>
+    </ul>
+  </div>
+<% end %>

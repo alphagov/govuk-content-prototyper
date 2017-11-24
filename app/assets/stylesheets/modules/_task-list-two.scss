@@ -6,6 +6,10 @@
 }
 
 .pub-c-task-list-header {
+  padding: 0 !important; //ugh sorry
+}
+
+.pub-c-task-list-header {
   padding: 0;
 
   .sticky-inner {
@@ -145,7 +149,8 @@ $number-circle-size-large: 35px;
       border-top: solid $stroke-width $grey-2;
     }
 
-    .task-list__inner-step--optional:before {
+    .task-list__inner-step--optional:before,
+    .task-list__get-help:after {
       height: 100%;
     }
 
@@ -198,6 +203,7 @@ $number-circle-size-large: 35px;
     &:after {
       background: none;
       border-left: dotted $stroke-width $grey-2;
+      background: $white;
     }
 
     .task-list--large & {
@@ -550,5 +556,36 @@ $number-circle-size-large: 35px;
   .task-list__step:after,
   .task-list__inner-step--optional:before {
     border-color: $black;
+  }
+}
+
+.task-list__get-help {
+  position: relative;
+  padding: $gutter-half 0;
+  border-top: solid 2px $grey-3;
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    top: 0; //$gutter;
+    left: -$gutter-half - $gutter;
+    width: 0;
+    height: calc(100% + #{$gutter});
+    margin-left: ($number-circle-size / 2) - ($stroke-width / 2);
+    border-left: dotted $stroke-width $grey-2;
+    background: $white;
+  }
+
+  .task-list__group--active & {
+    &:after {
+      border-color: $black;
+    }
+  }
+
+  .task-list--large & {
+    @include media(tablet) {
+      padding: $gutter 0;
+    }
   }
 }

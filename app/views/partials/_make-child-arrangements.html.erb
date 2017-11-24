@@ -4,7 +4,7 @@
       <span class="visuallyhidden">Step</span> 1
     </span>
 
-    <div class="task-list__step js-step" id="get-support-for-you-and-your-child" <% if on_childarrangements_step(1) %>data-open<% end %>>
+    <div class="task-list__step js-step task-list__step--optional" id="get-support-for-you-and-your-child" <% if on_childarrangements_step(1) %>data-open<% end %>>
       <div class="task-list__header js-toggle-panel">
         <h2 class="task-list__title js-step-title">
           Get support for you and your child
@@ -12,7 +12,7 @@
       </div>
 
       <div class="task-list__panel js-panel">
-        <%= render 'partials/childarrangements_step1' %>
+        <%= render 'partials/childarrangements_step1', on_sidebar: on_sidebar %>
       </div>
     </div>
   </li>
@@ -30,7 +30,7 @@
       </div>
 
       <div class="task-list__panel js-panel">
-        <%= render 'partials/childarrangements_step2' %>
+        <%= render 'partials/childarrangements_step2', on_sidebar: on_sidebar %>
       </div>
     </div>
   </li>
@@ -48,7 +48,7 @@
       </div>
 
       <div class="task-list__panel js-panel">
-        <%= render 'partials/childarrangements_step3' %>
+        <%= render 'partials/childarrangements_step3', on_sidebar: on_sidebar %>
       </div>
     </div>
 
@@ -60,7 +60,7 @@
       </div>
 
       <div class="task-list__panel js-panel">
-        <%= render 'partials/childarrangements_step4' %>
+        <%= render 'partials/childarrangements_step4', on_sidebar: on_sidebar %>
       </div>
     </div>
 
@@ -72,7 +72,7 @@
       </div>
 
       <div class="task-list__panel js-panel">
-        <%= render 'partials/childarrangements_step5' %>
+        <%= render 'partials/childarrangements_step5', on_sidebar: on_sidebar %>
       </div>
     </div>
   </li>
@@ -90,7 +90,13 @@
       </div>
 
       <div class="task-list__panel js-panel">
-        <%= render 'partials/childarrangements_step6' %>
+        <%= render 'partials/childarrangements_step6', on_sidebar: on_sidebar %>
+
+        <% if on_sidebar %>
+          <div class="task-list__get-help">
+            <a href="/services/make-child-arrangements#agree-child-maintenance-payments">Get help completing this step</a>
+          </div>
+        <% end %>
       </div>
     </div>
   </li>
