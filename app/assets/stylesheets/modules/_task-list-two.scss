@@ -46,6 +46,7 @@
 
   a {
     display: block;
+    margin-top: 10px;
     text-decoration: none;
 
     &:hover {
@@ -77,6 +78,7 @@
   }
 
   .task-list-related-link {
+    margin-top: 10px;
     text-decoration: none;
 
     &:hover {
@@ -222,14 +224,36 @@ $number-circle-size-large: 35px;
 
 .task-list__step--or {
   &:before {
-    @include bold-16;
+    @include bold-19(23px, 23px);
+    //@include bold-16;
     content: "or";
     position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: -0.5em;
-    padding-right: 1em;
+    z-index: 4;
+    top: $gutter-half;
+    left: -($gutter + $gutter-half);
     background: $white;
+    width: $number-circle-size;
+    height: $number-circle-size;
+    border-radius: 100px;
+    text-align: center;
+  }
+
+  @include media(tablet) {
+    &:before {
+      @include bold-16(23px, 23px);
+    }
+  }
+
+  .task-list--large & {
+    @include media(tablet) {
+      &:before {
+        @include bold-19(30px, 30px);
+        top: $gutter;
+        left: -$gutter * 2;
+        width: $number-circle-size-large;
+        height: $number-circle-size-large;
+      }
+    }
   }
 }
 
@@ -335,11 +359,11 @@ $number-circle-size-large: 35px;
 }
 
 .task-list__toggle {
-  @include core-19;
+  @include core-16;
   color: $link-colour;
 
   @include media(tablet) {
-    @include core-16;
+    @include core-14;
   }
 
   .task-list--large & {
@@ -440,6 +464,10 @@ $number-circle-size-large: 35px;
 
       ul {
         padding-bottom: 20px;
+      }
+
+      ul + .task-list__or {
+        margin-top: -20px;
       }
 
       li {

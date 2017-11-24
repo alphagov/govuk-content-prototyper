@@ -7,7 +7,7 @@
   </li>
 </ul>
 
-<p>or</p>
+<p class="task-list__or">or</p>
 
 <ul class="task-list__panel-links">
   <li
@@ -19,24 +19,22 @@
 
 <p>then</p>
 
-<div class="task-list__inner-step">
-  <ul class="task-list__panel-links--required">
-    <li
-      <% if on_this_page('/looking-after-children-divorce/apply-for-court-order') %>class="task-list__panel-link--active"<% end %>
-      >
-      <a href="/looking-after-children-divorce/apply-for-court-order">Apply for a court order</a>
-      <span class="task-list__cost">&pound;215</span>
-    </li>
-    <li>
-      <a href="https://courttribunalfinder.service.gov.uk/search/">Find the right court to send your application</a>
-    </li>
-    <li
-      <% if on_this_page('/get-help-with-court-fees') %>class="task-list__panel-link--active"<% end %>
-      >
-      <a href="/get-help-with-court-fees">Get help with court fees</a>
-    </li>
-  </ul>
-</div>
+<ul class="task-list__panel-links--required">
+  <li
+    <% if on_this_page('/looking-after-children-divorce/apply-for-court-order') %>class="task-list__panel-link--active"<% end %>
+    >
+    <a href="/looking-after-children-divorce/apply-for-court-order">Apply for a court order</a>
+    <span class="task-list__cost">&pound;215</span>
+  </li>
+  <li>
+    <a href="https://courttribunalfinder.service.gov.uk/search/">Find the right court to send your application</a>
+  </li>
+  <li
+    <% if on_this_page('/get-help-with-court-fees') %>class="task-list__panel-link--active"<% end %>
+    >
+    <a href="/get-help-with-court-fees">Get help with court fees</a>
+  </li>
+</ul>
 
 <p>The court will send you a date for your first hearing 4 to 6 weeks after your application. You'll be told when and where your hearing will take place.</p>
 

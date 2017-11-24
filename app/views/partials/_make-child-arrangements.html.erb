@@ -61,6 +61,12 @@
 
       <div class="task-list__panel js-panel">
         <%= render 'partials/childarrangements_step4', on_sidebar: on_sidebar %>
+
+        <% if on_sidebar %>
+          <div class="task-list__get-help">
+            <a href="/services/make-child-arrangements#get-help-if-you-cant-agree">Get help completing this step</a>
+          </div>
+        <% end %>
       </div>
     </div>
 
