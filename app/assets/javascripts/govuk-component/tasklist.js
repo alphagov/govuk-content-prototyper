@@ -49,6 +49,7 @@
 
       closeAllSteps();
       openLinkedStep();
+      checkForDoubleDots();
 
       bindToggleForSteps(tasklistTracker);
       bindToggleOpenCloseAllButton(tasklistTracker);
@@ -161,6 +162,42 @@
           var linkClick = new componentLinkClick(event, tasklistTracker, $(this).attr('data-position'));
           linkClick.track();
         });
+
+        $element.find('.js-panel a').click(function (e) {
+          saveToLocalStorage($(this).parent().index());
+        });
+      }
+
+      function saveToLocalStorage(value) {
+        localStorage.setItem('govuk-task-list-active-link', JSON.stringify(value));
+      }
+
+      function getLinkFromLocalStorage() {
+        return parseInt(localStorage.getItem('govuk-task-list-active-link'));
+      }
+
+      // this is super clunky but will be better when the markup/classes are improved
+      function checkForDoubleDots() {
+        var lastClicked = getLinkFromLocalStorage();
+        var $highlightedLinks = $element.find('.task-list__panel-link--active');
+
+        if ($highlightedLinks.length > 1) {
+          if (lastClicked !== null) {
+            $highlightedLinks.each(function() {
+              if ($(this).index() !== lastClicked) {
+                $(this).removeClass('task-list__panel-link--active');
+              }
+            });
+
+          }
+          else {
+            console.log('wat')
+            $highlightedLinks.each(function() {
+              $(this).removeClass('task-list__panel-link--active');
+            });
+            $highlightedLinks.first().addClass('.task-list__panel-link--active');
+          }
+        }
       }
 
       function preventLinkFollowingForCurrentTab(event) {

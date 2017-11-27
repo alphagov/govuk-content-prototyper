@@ -43,6 +43,16 @@ module ChildarrangementsHelper
     result
   end
 
+  def in_childarrangements
+    if in_more_than_one_tasklist
+      if get_tasklist == 'childarrangements' and on_childarrangements_url
+        true
+      end
+    elsif on_childarrangements_url
+      true
+    end
+  end
+
   def on_childarrangements_step(step, on_sidebar = 0)
     if on_sidebar and CHILDARRANGEMENT_URLS[step - 1].include? request.path # steps start at 1, let's not get confused
       true

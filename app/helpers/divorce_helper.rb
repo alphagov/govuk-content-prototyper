@@ -38,6 +38,16 @@ module DivorceHelper
     result
   end
 
+  def in_divorce
+    if in_more_than_one_tasklist
+      if get_tasklist == 'divorce' and on_divorce_url
+        true
+      end
+    elsif on_divorce_url
+      true
+    end
+  end
+
   def on_divorce_step(step, on_sidebar = 0)
     if on_sidebar and DIVORCE_URLS[step - 1].include? request.path # steps start at 1, let's not get confused
       true

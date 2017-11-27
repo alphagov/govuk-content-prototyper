@@ -18,14 +18,16 @@
   </li>
 </ul>
 
-<div class="task-list__inner-step">
-  <p>You might be able to get help if you can't afford to pay for mediation and legal fees, or your family is at risk, for example domestic abuse.</p>
+<% if not on_sidebar %>
+  <div class="task-list__inner-step">
+    <p>You might be able to get help if you can't afford to pay for mediation and legal fees, or your family is at risk, for example domestic abuse.</p>
 
-  <ul class="task-list__panel-links">
-    <li
-      <% if on_this_page('/legal-aid') %>class="task-list__panel-link--active"<% end %>
-      >
-      <a href="/legal-aid">Get help with mediation or legal fees</a>
-    </li>
-  </ul>
-</div>
+    <ul class="task-list__panel-links">
+      <li
+        <% if on_this_page('/legal-aid') %>class="task-list__panel-link--active"<% end %>
+        >
+        <a href="/legal-aid">Get help with mediation or legal fees</a>
+      </li>
+    </ul>
+  </div>
+<% end %>

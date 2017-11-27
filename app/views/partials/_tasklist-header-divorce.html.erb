@@ -1,4 +1,7 @@
-<div class="sticky-wrapper" data-module="tasklistheader">
+<%
+  prevent_sticky ||= false
+%>
+<div class="sticky-wrapper" <% if not prevent_sticky %>data-module="tasklistheader"<% end %>>
   <div class="pub-c-task-list-header">
     <div class="sticky-inner">
       <span class="pub-c-task-list-header__part-of">Part of</span>

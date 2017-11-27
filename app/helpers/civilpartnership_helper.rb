@@ -39,6 +39,16 @@ module CivilpartnershipHelper
     result
   end
 
+  def in_civil
+    if in_more_than_one_tasklist
+      if get_tasklist == 'civil' and on_civil_url
+        true
+      end
+    elsif on_civil_url
+      true
+    end
+  end
+
   def on_civil_step(step, on_sidebar = 0)
     if on_sidebar and CIVIL_URLS[step - 1].include? request.path # steps start at 1, let's not get confused
       true

@@ -12,7 +12,7 @@
       </div>
 
       <div class="task-list__panel js-panel">
-        <%= render 'partials/civilpartnership_step1' %>
+        <%= render 'partials/civilpartnership_step1', on_sidebar: on_sidebar %>
       </div>
     </div>
   </li>
@@ -30,7 +30,7 @@
       </div>
 
       <div class="task-list__panel js-panel">
-        <%= render 'partials/civilpartnership_step2' %>
+        <%= render 'partials/civilpartnership_step2', on_sidebar: on_sidebar %>
       </div>
     </div>
   </li>
@@ -48,7 +48,13 @@
       </div>
 
       <div class="task-list__panel js-panel">
-        <%= render 'partials/civilpartnership_step3' %>
+        <%= render 'partials/civilpartnership_step3', on_sidebar: on_sidebar %>
+
+        <% if on_sidebar %>
+          <div class="task-list__get-help">
+            <a href="/services/end-a-civil-partnership#file-an-application">Get help completing this step</a>
+          </div>
+        <% end %>
       </div>
     </div>
   </li>
@@ -66,7 +72,7 @@
       </div>
 
       <div class="task-list__panel js-panel">
-        <%= render 'partials/civilpartnership_step4' %>
+        <%= render 'partials/civilpartnership_step4', on_sidebar: on_sidebar %>
       </div>
     </div>
   </li>
@@ -84,7 +90,7 @@
       </div>
 
       <div class="task-list__panel js-panel">
-        <%= render 'partials/civilpartnership_step5' %>
+        <%= render 'partials/civilpartnership_step5', on_sidebar: on_sidebar %>
       </div>
     </div>
   </li>

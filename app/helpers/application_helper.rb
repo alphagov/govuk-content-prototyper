@@ -4,11 +4,16 @@ module ApplicationHelper
   end
 
   def get_tasklist
+    #session[:tasklist] = nil
     if not defined? session[:tasklist] or session[:tasklist] == nil
       if on_divorce_url
         set_tasklist('divorce')
       elsif on_civil_url
         set_tasklist('civil')
+      elsif on_childarrangements_url
+        set_tasklist('childarrangements')
+      else
+        set_tasklist(nil)
       end
     end
     session[:tasklist]
@@ -16,6 +21,20 @@ module ApplicationHelper
 
   def on_this_page(url)
     if request.path == url
+      true
+    end
+  end
+
+  def in_more_than_one_tasklist
+    matches = 0
+
+    [on_divorce_url, on_civil_url, on_childarrangements_url].each do |match|
+      if match
+        matches += 1
+      end
+    end
+
+    if matches > 1
       true
     end
   end
