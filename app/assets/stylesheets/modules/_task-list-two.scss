@@ -466,8 +466,9 @@ $number-circle-size-large: 35px;
         padding-bottom: $gutter;
       }
 
+      p + .task-list__panel-links,
       p + .task-list__panel-links--options,
-      p + .task-list__panel-links {
+      p + .task-list__panel-links--required {
         margin-top: -$gutter-half;
       }
 
@@ -489,7 +490,7 @@ $number-circle-size-large: 35px;
       }
 
       .task-list__then {
-        padding-bottom: 10px;
+        padding-bottom: 20px;
       }
     }
   }
