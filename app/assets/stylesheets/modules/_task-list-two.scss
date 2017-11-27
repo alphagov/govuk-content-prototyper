@@ -53,6 +53,10 @@
       text-decoration: underline;
     }
   }
+
+  @include media(tablet) {
+    padding-bottom: 0;
+  }
 }
 
 #task-list-sidebar {
@@ -389,6 +393,20 @@ $number-circle-size-large: 35px;
   }
 }
 
+.pub-c-task-list__button--controls {
+  @include core-16;
+
+  @include media(tablet) {
+    @include core-14;
+  }
+
+  .task-list--large & {
+    @include media(tablet) {
+      @include core-16;
+    }
+  }
+}
+
 .task-list__panel {
   @include core-19;
 
@@ -466,8 +484,9 @@ $number-circle-size-large: 35px;
         padding-bottom: $gutter;
       }
 
+      p + .task-list__panel-links,
       p + .task-list__panel-links--options,
-      p + .task-list__panel-links {
+      p + .task-list__panel-links--required {
         margin-top: -$gutter-half;
       }
 
@@ -489,7 +508,7 @@ $number-circle-size-large: 35px;
       }
 
       .task-list__then {
-        padding-bottom: 10px;
+        padding-bottom: 20px;
       }
     }
   }
