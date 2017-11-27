@@ -66,6 +66,17 @@ module BrowseHelper
     OVERRIDE_BROWSE_PAGES[path]
   end
 
+  def override_child_arrangements?
+    "/browse/births-deaths-marriages/marriage-divorce" == path ||
+    "/browse/childcare-parenting/divorce-separation-legal" == path
+  end
+
+  def add_child_arrangements_link?(title)
+    title == "Getting separated or divorced" ||
+      title == "Child maintenance" ||
+      title == "Child custody"
+  end
+
   def path
     "/browse/#{params[:top_level_slug]}/#{params[:second_level_slug]}"
   end
