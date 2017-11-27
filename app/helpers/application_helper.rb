@@ -4,7 +4,6 @@ module ApplicationHelper
   end
 
   def get_tasklist
-    #session[:tasklist] = nil
     if not defined? session[:tasklist] or session[:tasklist] == nil
       if on_divorce_url
         set_tasklist('divorce')

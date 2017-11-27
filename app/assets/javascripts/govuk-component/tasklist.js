@@ -191,7 +191,6 @@
 
           }
           else {
-            console.log('wat')
             $highlightedLinks.each(function() {
               $(this).removeClass('task-list__panel-link--active');
             });
