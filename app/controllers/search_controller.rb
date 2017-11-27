@@ -32,10 +32,26 @@ private
   end
 
   def add_fake_results(document)
-    third_element = document.search('.results-list li:nth-child(2)').first
+    first_element = document.css('.results-list li').first
 
-    third_element.add_next_sibling(
+    first_element.add_previous_sibling(
       %q{
+        <li>
+          <h3>
+            <a href="/services/get-a-divorce">
+              Get a divorce: step by step
+            </a>
+          </h3>
+          <p>How to file for divorce if you’re in England or Wales.</p>
+        </li>
+        <li>
+          <h3>
+            <a href="/services/end-a-civil-partnership">
+              End a civil partnership: step by step
+            </a>
+          </h3>
+          <p>How to end your civil partnership if you’re in England or Wales.</p>
+        </li>
         <li>
           <h3>
             <a href="/services/make-child-arrangements">
