@@ -9,6 +9,12 @@
     <% end %>
 
     <ul>
+      <% if add_child_arrangements_link?(list.title) %>
+        <li>
+          <%= link_to "Make child arrangements: step by step", "/services/make-child-arrangements" %>
+        </li>
+      <% end %>
+
       <% if override_browse_page?(params) && index.zero? %>
         <% override_browse_page_with(params).each do |link| %>
         <li>
@@ -23,6 +29,10 @@
         <% end %>
       <% else %>
         <% list.contents.each_with_index do |list_item, list_index| %>
+          <% if override_child_arrangements? %>
+            <% next if list_item.title == "Making child arrangements if you divorce or separate" %>
+          <% end %>
+
           <% if list_index.zero? && override_divorce_browse_page?(list.title) %>
             <% divorce_service_browse_links.each do |link| %>
             <li>
