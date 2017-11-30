@@ -164,37 +164,34 @@
         });
 
         $element.find('.js-panel a').click(function (e) {
-          saveToLocalStorage($(this).parent().index());
+          saveToSessionStorage($(this).parent().index() + 1); // doesn't like zeroes
         });
       }
 
-      function saveToLocalStorage(value) {
-        localStorage.setItem('govuk-task-list-active-link', JSON.stringify(value));
+      function saveToSessionStorage(value) {
+        sessionStorage.setItem('govuk-task-list-active-link', JSON.stringify(value));
       }
 
-      function getLinkFromLocalStorage() {
-        return parseInt(localStorage.getItem('govuk-task-list-active-link'));
+      function getLinkFromSessionStorage() {
+        return parseInt(sessionStorage.getItem('govuk-task-list-active-link')) || null;
       }
 
       // this is super clunky but will be better when the markup/classes are improved
       function checkForDoubleDots() {
-        var lastClicked = getLinkFromLocalStorage();
+        var lastClicked = getLinkFromSessionStorage();
         var $highlightedLinks = $element.find('.task-list__panel-link--active');
 
         if ($highlightedLinks.length > 1) {
           if (lastClicked !== null) {
+            lastClicked--;
             $highlightedLinks.each(function() {
               if ($(this).index() !== lastClicked) {
                 $(this).removeClass('task-list__panel-link--active');
               }
             });
-
           }
           else {
-            $highlightedLinks.each(function() {
-              $(this).removeClass('task-list__panel-link--active');
-            });
-            $highlightedLinks.first().addClass('.task-list__panel-link--active');
+            $highlightedLinks.slice(1).removeClass('task-list__panel-link--active')
           }
         }
       }
