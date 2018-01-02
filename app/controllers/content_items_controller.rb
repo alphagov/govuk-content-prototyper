@@ -13,7 +13,7 @@ class ContentItemsController < ApplicationController
     @page_schema = schema_finder.page_schema
     step_and_task_numbers = task_navigation_service.task_number_for_page
 
-    @cookie_name = "ABTest-EducationNavigation=B"
+    @cookie_name = "ABTest-GetADivorceTaskListSidebar=B"
     render :show, locals: {
       content_html: content_html,
       stylesheet_links_html: stylesheet_links_html,
@@ -33,7 +33,7 @@ class ContentItemsController < ApplicationController
     @page_schema = schema_finder.page_schema
     step_and_task_numbers = task_navigation_service.task_number_for_page
 
-    @cookie_name = "ABTest-EducationNavigation=A"
+    @cookie_name = "ABTest-GetADivorceTaskListSidebar=A"
     render :show, locals: {
       content_html: main_html.inner_html.html_safe,
       stylesheet_links_html: stylesheet_links_html,
@@ -50,7 +50,7 @@ class ContentItemsController < ApplicationController
   end
 
   def browse
-    @cookie_name = "ABTest-EducationNavigation=B"
+    @cookie_name = "ABTest-GetADivorceTaskListSidebar=B"
     bypass_slimmer
 
     raw_html = raw_content_item_html
@@ -63,7 +63,7 @@ class ContentItemsController < ApplicationController
   # the browse pages, which rely on a JSON object being returned (but is currently broken, because the JSON is returned
   # as text/html, not as JSON)
   def fall_through
-    @cookie_name = "ABTest-EducationNavigation=B"
+    @cookie_name = "ABTest-GetADivorceTaskListSidebar=B"
     bypass_slimmer
 
     if CONTENT_TYPES.keys.include? params["format"]
