@@ -19,26 +19,25 @@
 
 <div class="grid-row">
   <div class="column-two-thirds">
-    <div class="pub-c-title pub-c-title--hack">
-      <h1 class="pub-c-title__text">
+    <div class="pub-c-title">
+      <h1 class="pub-c-title__text pub-c-title__text--long">
         End a civil partnership: step by step
       </h1>
     </div>
 
     <div class="govuk-govspeak">
-      <p>
-        How to end your civil partnership if you’re in England or Wales.
-      </p>
-
-      <p>
-        There is a different process if you’re in <a href="https://www.scotcourts.gov.uk/taking-action/divorce-and-dissolution-of-civil-partnership">Scotland</a> or <a href="https://www.nidirect.gov.uk/articles/getting-divorcedissolution-civil-partnership">Northern Ireland</a>.
-      </p>
+      <p>How to end your civil partnership if you’re in England or Wales.</p>
+      <p>There is a different process if you’re in <a href="https://www.scotcourts.gov.uk/taking-action/divorce-and-dissolution-of-civil-partnership">Scotland</a> or <a href="https://www.nidirect.gov.uk/articles/getting-divorcedissolution-civil-partnership">Northern Ireland</a>.</p>
     </div>
 
     <% set_tasklist('civil') %>
 
+    <%= render partial: 'partials/end_a_civil_partnership/tasklist-end-a-civil-partnership' %>
+
+<% if false %>
     <div class="task-list task-list--large js-hidden" data-module="tasklistnew" data-remember>
       <%= render 'partials/civil-partnership', on_sidebar: false %>
     </div>
+<% end %>
   </div>
 </div>
