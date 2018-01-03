@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   get '/services/get-a-divorce', to: 'services#divorce'
   get '/services/end-a-civil-partnership', to: 'services#civilpartnership'
   get '/services/make-child-arrangements', to: 'services#childarrangements'
+
+  get '/get-a-divorce', to: 'services#divorce'
+  get '/end-a-civil-partnership', to: 'services#civilpartnership'
+
   get '/services/:base_path', to: 'services#show'
   get '/services', to: 'services#index'
 
@@ -16,9 +20,6 @@ Rails.application.routes.draw do
 
   get '/prototype', to: 'welcome#index'
   get '/search', to: 'search#results'
-  get '/*base_path', to: 'content_items#fall_through', constraints: TaxonConstraint.new
-  get '/*base_path', to: 'content_items#showforms', constraints: FormConstraint.new
-  get '/*base_path', to: 'content_items#show', constraints: ContentItemConstraint.new
   get '/*base_path', to: 'content_items#fall_through'
   root to: 'content_items#fall_through'
   post '/:base_path', to: redirect('/%{base_path}/camden')
