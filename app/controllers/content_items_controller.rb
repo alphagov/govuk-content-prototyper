@@ -74,6 +74,14 @@ class ContentItemsController < ApplicationController
     end
   end
 
+  def sticky_nav
+    bypass_slimmer
+
+    raw_html = raw_content_item_html
+
+    render html: add_sticky_nav_functionality(raw_html).html_safe
+  end
+
 private
 
   def task_sidebar
@@ -169,6 +177,14 @@ private
     document.to_html
   end
 
+  def add_sticky_nav_functionality(html)
+    document = Nokogiri::HTML(html)
+    document.at_css('link[rel="stylesheet"]').before('<link rel="stylesheet" href="example.css" >')
+    document.at_css('script').before('<script src="example.js"/>')
+    document.at_css('.gem-c-task-list-header').attributes['data-module'].value = 'tasklistheader'
+    document.to_html
+  end
+
   def update_childcare_and_parenting_on_home_page(document)
     taxon = childcare_parenting_taxon
 
@@ -229,4 +245,6 @@ private
       base_path: request.env['content_item'].dig('base_path') || params[:base_path]
     )
   end
+
+
 end
