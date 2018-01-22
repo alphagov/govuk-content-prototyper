@@ -179,8 +179,9 @@ private
 
   def add_sticky_nav_functionality(html)
     document = Nokogiri::HTML(html)
-    document.at_css('link[rel="stylesheet"]').before('<link rel="stylesheet" href="/assets/modules/sticky.css" >')
-    document.at_css('body') << '<script src="/assets/govuk-component/task-list-header.js"/>'
+    document.at_css('link[rel="stylesheet"]').before('<link rel="stylesheet" href="https://cdn.rawgit.com/alphagov/govuk-services-prototype/eca40904ccb42564b539a387fc73f0cad8d55705/app/assets/stylesheets/modules/sticky.css" >')
+    document.at_css('body') << '<script src="https://cdn.rawgit.com/alphagov/govuk_publishing_components/62b6dbe49564543f786e66d169c8fc7aa78f18ed/app/assets/javascripts/current-location.js"/>'
+    document.at_css('body') << '<script src="https://cdn.rawgit.com/alphagov/govuk-services-prototype/4f6c574509db51efbc558f1dbc03db4407a0ccf4/app/assets/javascripts/govuk-component/task-list-header.js"/>'
     document.at_css('.gem-c-task-list-header').attributes['data-module'].value = 'tasklistheader'
     document.to_html
   end
