@@ -21,6 +21,6 @@ Rails.application.routes.draw do
   get '/prototype', to: 'welcome#index'
   get '/search', to: 'search#results'
   get '/*base_path', to: 'content_items#sticky_nav'
-  root to: 'content_items#sticky_nav'
+  root to: 'content_items#fall_through'
   post '/:base_path', to: redirect('/%{base_path}/camden')
 end
