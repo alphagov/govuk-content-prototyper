@@ -2,7 +2,7 @@
   render(
     partial: 'common',
     locals: {
-      page_schema: page_schema,
+      content_item: content_item,
       navigation: navigation
     }
   )
@@ -10,12 +10,16 @@
 
 <div class="grid-row">
   <div class="column-two-thirds">
-    <%= render partial: 'partials/learn_to_drive_a_car/tasklist-learn-to-drive-a-car' %>
+    <%= render 'govuk_component/title',
+        title: content_item["title"],
+        average_title_length: 'long',
+        margin_bottom: 0 %>
 
-<% # TODO: render the sidebar when we decide to render it on a task list page. %>
-<% if false %>
-    <%= render(partial: 'sidebar', locals: {navigation: navigation}) %>
-<% end %>
-
+    <div class="govuk-govspeak"><%= raw(content_item["description"]) %></div>
+  </div>
+</div>
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <%= render "govuk_publishing_components/components/step_by_step_nav", content_item["step_nav"].deep_symbolize_keys %>
   </div>
 </div>
