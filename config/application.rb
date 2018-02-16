@@ -3,6 +3,7 @@ require_relative 'boot'
 require "action_controller/railtie"
 require "action_mailer/railtie"
 require "sprockets/railtie"
+require_relative "../app/middleware/content_item_appender"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -18,10 +19,9 @@ module GovukServicesPrototype
     # autoloadable.
     config.autoload_paths += %W[
       #{config.root}/lib
-      app/controllers/segment_constraints
+      app/controllers/segment_constraints,
     ]
 
-    config.middleware.use 'ContentItemAppender'
-    config.middleware.use 'PathLogger'
+    config.middleware.use ContentItemAppender
   end
 end
