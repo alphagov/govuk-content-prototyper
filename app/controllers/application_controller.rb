@@ -10,9 +10,9 @@ class ApplicationController < ActionController::Base
   def authenticate
     return unless Rails.env.production?
 
-    # authenticate_or_request_with_http_basic do |username, password|
-    #   username == ENV['USERNAME'] && password == ENV['PASSWORD']
-    # end
+    authenticate_or_request_with_http_basic do |username, password|
+      username == ENV['USERNAME'] && password == ENV['PASSWORD']
+    end
   end
 
   def setup_content_item_and_navigation_helpers(model)
