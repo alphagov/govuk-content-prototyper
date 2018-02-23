@@ -22,6 +22,8 @@
 //@import 'modules/sticky-nav';
 @import 'modules/task-list-two';
 
+@import "govuk_publishing_components/all_components";
+
 main {
   @include core-19;
   -webkit-font-smoothing: antialiased;
