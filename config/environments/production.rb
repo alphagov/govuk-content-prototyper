@@ -1,5 +1,11 @@
 Rails.application.configure do
-    config.logstasher.enabled = true
+  # Set GOVUK_ASSET_ROOT for heroku - for review apps we have the hostname set
+  # at the time of the app being built so can't be set up in the app.json
+  if !ENV.include?('GOVUK_ASSET_ROOT') && ENV['HEROKU_APP_NAME']
+    ENV['GOVUK_ASSET_ROOT'] = "https://#{ENV['HEROKU_APP_NAME']}.herokuapp.com"
+  end
+
+  config.logstasher.enabled = true
   config.logstasher.logger = Logger.new(Rails.root.join("log/production.json.log"))
   config.logstasher.suppress_app_log = true
 
@@ -24,10 +30,10 @@ Rails.application.configure do
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
-  # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
+  config.assets.css_compressor = nil
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
