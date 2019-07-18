@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield :title %> - GOV.UK</title>
+  </head>
+
+  <body>
+  <div class="wrapper" id="wrapper">
+    <main role="main" class="content <%= yield :page_class %>">
+      <%= yield %>
+    </main>
+  </div>
+</body>
+</html>

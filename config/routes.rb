@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   get '/services/:base_path', to: 'services#show'
   get '/services', to: 'services#index'
 
+  get '/dfe', to: 'dfe#index'
+
   get "/browse.json" => redirect("/api/content/browse")
 
   resources :browse, only: [:show], param: :top_level_slug do
