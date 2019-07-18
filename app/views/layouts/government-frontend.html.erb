@@ -2,10 +2,17 @@
 <html>
   <head>
     <title><%= yield :title %> - GOV.UK</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_include_tag "application" %>
+    <script src="https://rawgit.com/alphagov/collections/79923aefc157d2e8377fe9ade698c3a53af005e0/app/assets/javascripts/support.js"/>
+    <script src="https://rawgit.com/alphagov/collections/79923aefc157d2e8377fe9ade698c3a53af005e0/app/assets/javascripts/modules/current-location.js"/>
+    <script src="https://rawgit.com/alphagov/collections/79923aefc157d2e8377fe9ade698c3a53af005e0/app/assets/javascripts/modules/accordion-with-descriptions.js"></script>
   </head>
 
   <body>
   <div class="wrapper" id="wrapper">
+    <%= yield :breadcrumbs %>
     <main role="main" class="content <%= yield :page_class %>">
       <%= yield %>
     </main>
