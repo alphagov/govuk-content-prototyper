@@ -13,6 +13,14 @@ Rails.application.routes.draw do
   get '/services', to: 'services#index'
 
   get '/dfe', to: 'dfe#index'
+  get '/government/publications/supporting-early-career-teachers--2/set-high-expectations', to: 'dfe#content_page_1'
+  get '/government/publications/supporting-early-career-teachers--2/promote-good-progress', to: 'dfe#content_page_2'
+  get '/government/publications/supporting-early-career-teachers--2/plan-and-teach-well-structured-lessons', to: 'dfe#content_page_3'
+  get '/government/publications/supporting-early-career-teachers--2/adaptive-teaching', to: 'dfe#content_page_4'
+  get '/government/publications/supporting-early-career-teachers--2/manage-behaviour-effectively', to: 'dfe#content_page_5'
+  get '/government/publications/supporting-early-career-teachers--2/fulfil-wider-professional-responsibilities', to: 'dfe#content_page_6'
+  get '/government/publications/supporting-early-career-teachers--2/demonstrate-good-subject-and-curriculum-knowledge', to: 'dfe#content_page_7'
+  get '/government/publications/supporting-early-career-teachers--2/make-accurate-and-productive-use-of-assessment', to: 'dfe#content_page_8'
 
   get "/browse.json" => redirect("/api/content/browse")
 
