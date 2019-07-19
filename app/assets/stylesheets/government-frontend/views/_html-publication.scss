@@ -1,0 +1,72 @@
+.html-publication {
+  @include sidebar-with-body;
+
+  .direction-rtl & {
+    direction: rtl;
+    text-align: start;
+  }
+
+  .publication-external {
+    margin-bottom: govuk-spacing(4);
+    position: relative;
+
+    .organisation-logos {
+      list-style-type: none;
+
+      .organisation-logo {
+        padding-bottom: govuk-spacing(2);
+      }
+    }
+
+    // design calls for the logos at the top to always be left aligned
+    .direction-rtl & {
+      direction: ltr;
+    }
+  }
+
+  .publication-header__last-changed {
+    @include core-19;
+    margin-top: govuk-spacing(3);
+  }
+
+  .main-content-container {
+    .direction-rtl & {
+      float: left;
+    }
+  }
+
+  .contents-list-container {
+    .direction-rtl & {
+      float: right;
+    }
+  }
+
+  .main-content-container {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    @include media(desktop) {
+      width: 75%;
+      float: right;
+    }
+  }
+
+  .offset-empty-contents-list {
+    float: right;
+
+    .direction-rtl & {
+      float: left;
+    }
+  }
+
+  .print-meta-data {
+    display: none;
+  }
+
+  @include media(false, $desktop-breakpoint) {
+    .govuk-sticky-element--enabled {
+      position: static;
+    }
+  }
+}

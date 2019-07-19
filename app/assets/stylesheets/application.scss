@@ -25,6 +25,10 @@
 
 @import "govuk_publishing_components/all_components";
 
+@import 'government-frontend/components/back-to-top';
+@import 'government-frontend/helpers/sidebar-with-body';
+@import 'government-frontend/views/html-publication';
+
 main {
   @include core-19;
   -webkit-font-smoothing: antialiased;
