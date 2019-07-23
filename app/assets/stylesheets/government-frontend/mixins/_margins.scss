@@ -1,0 +1,24 @@
+@mixin responsive-bottom-margin {
+  margin-bottom: govuk-spacing(3);
+
+  @include media(tablet) {
+    margin-bottom: govuk-spacing(8);
+  }
+}
+
+@mixin responsive-top-margin {
+  margin-top: govuk-spacing(3);
+
+  @include media(tablet) {
+    margin-top: govuk-spacing(8);
+  }
+}
+
+@mixin responsive-vertical-margins {
+  @include responsive-bottom-margin;
+  @include responsive-top-margin;
+}
+
+.responsive-bottom-margin {
+  @include responsive-bottom-margin;
+}
