@@ -1,0 +1,44 @@
+// this is a copy of the sass from government-frontend for this component
+// with modifications to account for missing stuff from government-frontend
+
+img { max-width: 100%; }
+
+.app-c-publisher-metadata {
+  border-top: 1px solid #bfc1c3;
+  margin-bottom: 60px;
+  padding-top: 15px;
+  @include core-16;
+  padding-top: govuk-spacing(3);
+}
+
+.app-c-publisher-metadata__other a {
+  font-weight: bold;
+}
+
+.app-c-publisher-metadata__term {
+  float: left;
+  padding-right: govuk-spacing(1);
+
+  .direction-rtl & {
+    float: none;
+    display: inline-block;
+    padding-right: 0;
+    padding-left: 5px;
+  }
+}
+
+.app-c-publisher-metadata__definition {
+  .direction-rtl & {
+    float: none;
+    display: inline-block;
+  }
+}
+
+.app-c-publisher-metadata__toggle,
+.app-c-publisher-metadata__definition-others {
+  display: none;
+
+  .js-enabled & {
+    display: inline-block;
+  }
+}

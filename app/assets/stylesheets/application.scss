@@ -21,8 +21,16 @@
 @import 'modules/guide';
 //@import 'modules/sticky-nav';
 @import 'modules/task-list-two';
+@import 'modules/publisher-metadata';
 
 @import "govuk_publishing_components/all_components";
+
+@import 'government-frontend/mixins/margins';
+@import 'government-frontend/components/back-to-top';
+@import 'government-frontend/components/contents-list-with-body';
+@import 'government-frontend/components/published-dates';
+@import 'government-frontend/helpers/sidebar-with-body';
+@import 'government-frontend/views/html-publication';
 
 main {
   @include core-19;
